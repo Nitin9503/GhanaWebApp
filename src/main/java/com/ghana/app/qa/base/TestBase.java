@@ -51,7 +51,7 @@ public class TestBase {
 		if (OSName.equalsIgnoreCase("Mac OS X")) {
 			System.out.println(OSName);
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(driverPath+"/src/main/java/com/torenzosite/qa/config/config.properties");
+			FileInputStream fis = new FileInputStream(driverPath+"/src/main/java/com/ghana/app/qa/config/config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
 		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
@@ -269,7 +269,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-		driver.get(prop.getProperty("torenzoURL"));	
+		driver.get(prop.getProperty("GhanaWebURL"));	
 		// driver.get(prop.getProperty("url1"));
 		// driver.get("https://www.ixigo.com/trains");
 	}
