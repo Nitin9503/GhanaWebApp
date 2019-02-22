@@ -42,6 +42,7 @@ public class TestBase {
 	public static Properties prop;
 	public static String OSName = "";
 	public static String driverPath;
+	
 	//E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
 	public TestBase() throws IOException, InterruptedException {
 		 driverPath = System.getProperty("user.dir");
@@ -58,7 +59,7 @@ public class TestBase {
 			System.out.println(OSName);
 			prop = new Properties();
 			System.out.println(OSName);
-			FileInputStream fis = new FileInputStream(driverPath+"\\src\\main\\java\\com\\torenzosite\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(driverPath+"\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
 		}
@@ -270,8 +271,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 		driver.get(prop.getProperty("GhanaWebURL"));	
-		// driver.get(prop.getProperty("url1"));
-		// driver.get("https://www.ixigo.com/trains");
+	
 	}
 
 }

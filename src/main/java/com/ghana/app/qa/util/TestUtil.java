@@ -29,7 +29,8 @@ public class TestUtil extends TestBase  {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	public static String OSName = "";
+	public static String driverPath;
 	public static long PAGE_LOAD_TIMEOUT = 120;
 	public static long IMPLICIT_WAIT = 120;
 	public static String title = "";

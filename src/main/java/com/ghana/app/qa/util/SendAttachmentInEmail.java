@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import static com.ghana.app.qa.util.TestUtil.driverPath;
 import static com.ghana.app.qa.util.TestUtil.OSName;
-//import static com.ghana.aap.qa.util.TestUtil.screenshotName;
+import static com.ghana.app.qa.util.TestUtil.screenshotName;
 
 import java.util.Properties;
 public class SendAttachmentInEmail {
