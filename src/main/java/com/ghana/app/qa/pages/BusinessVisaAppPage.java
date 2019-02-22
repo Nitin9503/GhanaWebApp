@@ -1,5 +1,5 @@
 package com.ghana.app.qa.pages;
 
-public class ContactUsPage {
+public class BusinessVisaAppPage {
 
 }

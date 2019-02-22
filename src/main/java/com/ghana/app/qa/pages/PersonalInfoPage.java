@@ -1,5 +1,5 @@
 package com.ghana.app.qa.pages;
 
-public class Homepage {
+public class PersonalInfoPage {
 
 }

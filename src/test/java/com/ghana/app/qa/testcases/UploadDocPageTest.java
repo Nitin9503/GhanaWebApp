@@ -1,5 +1,5 @@
 package com.ghana.app.qa.testcases;
 
-public class ConsularServicePageTest {
+public class UploadDocPageTest {
 
 }

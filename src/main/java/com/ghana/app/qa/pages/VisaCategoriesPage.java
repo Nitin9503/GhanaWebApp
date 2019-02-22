@@ -8,12 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
 
-public class VisaCategories extends TestBase {
+public class VisaCategoriesPage extends TestBase {
 	
-	public VisaCategories()throws IOException, InterruptedException{
+	public VisaCategoriesPage()throws IOException, InterruptedException{
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	@FindBy(xpath="//h3[@class='title-a']")
+	WebElement visaCategorisText;
+	
 	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
 	WebElement touristVisa;
 	
@@ -29,13 +32,12 @@ public class VisaCategories extends TestBase {
 	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
 	WebElement studentVisa;
 	
+	public String validateVisaTypeTitle(){
+		return driver.getTitle();
+	}
 	
-	
-	
-
-	
-
-	
-	
+	public String visaCategorisText(){
+		return visaCategorisText.getText();
+	}
 	
 }

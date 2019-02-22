@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 
 import com.ghana.app.qa.base.TestBase;
 
-public class AboutUsPageTest extends TestBase{
+public class SignUpPageTest extends TestBase{
 
 	
 	
-	public AboutUsPageTest() throws IOException, InterruptedException {
+	public SignUpPageTest() throws IOException, InterruptedException {
 		super();
 		// TODO Auto-generated constructor stub
 	}

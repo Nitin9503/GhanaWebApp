@@ -1,5 +1,5 @@
 package com.ghana.app.qa.testcases;
 
-public class SectorInGhanaPageTest {
+public class PaymentPageTest {
 
 }
