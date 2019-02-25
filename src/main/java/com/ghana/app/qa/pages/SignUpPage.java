@@ -3,11 +3,13 @@ package com.ghana.app.qa.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
 
 public class SignUpPage extends TestBase {
 
@@ -17,7 +19,7 @@ public class SignUpPage extends TestBase {
 
 	// elements from signup page
 	@FindBy(xpath = "//span[text()='Passport Type']")
-	WebElement PassportType;
+	public static WebElement PassportType;
 
 	@FindBy(id = "Official")
 	// Diplomatic, Service, Special, Ordinary
@@ -83,8 +85,9 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void SelectPassportType() {
-		PassportType.click();
-		//PassportTypeName.click();
+		TestUtil.actionClassMethod(PassportType);
+		//PassportType.click();
+		PassportTypeName.click();
 	}
 
 	public void SelectNationality() {
