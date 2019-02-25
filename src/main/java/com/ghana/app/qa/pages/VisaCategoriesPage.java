@@ -20,16 +20,16 @@ public class VisaCategoriesPage extends TestBase {
 	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
 	WebElement touristVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
+	@FindBy(xpath="html/body/div[2]/div/div[2]/div[2]/div/div[2]/button")
 	WebElement businessVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
+	@FindBy(xpath="html/body/div[2]/div/div[2]/div[3]/div/div[2]/button")
 	WebElement transitVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
+	@FindBy(xpath="html/body/div[2]/div/div[2]/div[4]/div/div[2]/button")
 	WebElement employmentVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
+	@FindBy(xpath="html/body/div[2]/div/div[2]/div[5]/div/div[2]/button")
 	WebElement studentVisa;
 	
 	public String validateVisaTypeTitle(){
@@ -39,5 +39,11 @@ public class VisaCategoriesPage extends TestBase {
 	public String visaCategorisText(){
 		return visaCategorisText.getText();
 	}
+	
+	public void clickOnVisaType(){
+		touristVisa.click();
+		
+	}
+	
 	
 }

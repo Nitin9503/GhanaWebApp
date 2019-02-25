@@ -1,6 +1,10 @@
 package com.ghana.app.qa.pages;
 
+<<<<<<< Updated upstream:src/main/java/com/ghana/app/qa/pages/SignUpPage.java
+public class SignUpPage {
+=======
 import java.io.IOException;
+>>>>>>> Stashed changes:src/main/java/com/ghana/app/qa/pages/Homepage.java
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,7 +38,7 @@ public class HomePage extends TestBase {
 					
 					return driver.getTitle();
 	}
-				public VisaCategoriesPage clickOnApplyVisa() throws IOException, InterruptedException{
+				public VisaCategoriesPage verifyApplyVisa() throws IOException, InterruptedException{
 					applyVisa.click();
 					return new VisaCategoriesPage();
 				}

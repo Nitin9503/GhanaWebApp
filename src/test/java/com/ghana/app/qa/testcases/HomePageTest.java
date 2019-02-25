@@ -9,29 +9,21 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ghana.app.qa.base.DriverInit;
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.pages.HomePage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
 
-public class HomePageTest extends TestBase {
+public class HomePageTest extends DriverInit {
 
-	HomePage homePage;
-	VisaCategoriesPage visaCategoriesPage;
+
 
 	public HomePageTest() throws IOException, InterruptedException {
 		super();
 
 	}
 
-	@BeforeMethod
-	public void setUp() throws IOException, InterruptedException {
-
-		initialization();
-		homePage = new HomePage();
-		visaCategoriesPage = new VisaCategoriesPage();
-	}
-
-	@Test(priority = 1)
+   @Test(priority = 1)
 	public void validateHomePageTitle() {
 		System.out.println("home page title   "
 				+ homePage.validateHomePageTitle());
@@ -42,7 +34,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 2)
 	public void verifyApplyVisaClickTest() throws IOException,
 			InterruptedException {
-		homePage.verifyApplyVisa();
+		homePage.clickOnApplyVisa();
 		Thread.sleep(2000);
 		System.out.println("visa category heading title "+visaCategoriesPage.visaCategorisText());
 		visaCategoriesPage.visaCategorisText();
@@ -50,10 +42,5 @@ public class HomePageTest extends TestBase {
 
 	}
 
-	@AfterMethod
-	public void tearDown() {
-
-		driver.quit();
-
-	}
+	
 }
