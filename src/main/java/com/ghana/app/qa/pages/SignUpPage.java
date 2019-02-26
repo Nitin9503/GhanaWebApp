@@ -2,6 +2,9 @@ package com.ghana.app.qa.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -40,7 +43,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Ghana Airport']")
 	WebElement selectPortofArrival;
 
-	@FindBy(xpath = "//label[text()='Phone Number']")
+	@FindBy(id = "phone_number")
 	WebElement PhoneNumber;
 
 	@FindBy(xpath = "//input[@id='dateofbirth']")
@@ -61,7 +64,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//input[@id='customCheck1']")
 	WebElement customCheck1;
 
-	@FindBy(xpath = "//div[@id='touristVisa']//input[@type='radio' and @value='1']")
+	@FindBy(xpath = "//input[@id='customRadio3']")
 	WebElement visaTypeCheckBox;
 
 	@FindBy(xpath = "//input[@id='usercaptchacode']")
@@ -76,8 +79,9 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//button[text()='Cancel']")
 	WebElement Cancel;
 
-	@FindBy(xpath = "//input[@value='//input[@value='Continue']']")
+	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement Continue;
+	
 
 	public String validateSignUpPageTitle() {
 
@@ -86,43 +90,46 @@ public class SignUpPage extends TestBase {
 
 	public void SelectPassportType() {
 		TestUtil.actionClassMethod(PassportType);
-		//PassportType.click();
 		PassportTypeName.click();
 	}
 
-	public void SelectNationality() {
-		Nationality.click();
-		nationalitySearchField.sendKeys("India");
-		Select select0 = new Select(selectNationality);
-		select0.selectByValue("India");
-
+	public void selectNationality() throws InterruptedException {
+		TestUtil.actionClassMethod(Nationality);
+	nationalitySearchField.sendKeys("India");
+		Thread.sleep(2000);
+		selectNationality.click();
+	
 	}
 
 	public void selectPortOfArrival() {
-		PortofArrival.click();
-		Select select0 = new Select(selectPortofArrival);
-		select0.selectByValue("Ghana Airport");
-
+		TestUtil.actionClassMethod(PortofArrival);
+		selectPortofArrival.click();
+		
 	}
 
-	public void passPhoneNo() {
-		PhoneNumber.sendKeys("7620098193");
+	public void passPhoneNo(String phoneNo) {
+		PhoneNumber.sendKeys(phoneNo);
+	}
+	
+	public void selectDateOfBirth(String birthDate) throws InterruptedException {
+	((JavascriptExecutor)driver).executeScript ("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
+    dateofbirth.sendKeys(birthDate); //Enter date in required format
+	 }
+	
+	public void passEmailId(String EmailId) {
+		emailId.sendKeys(EmailId);//nitinthaokar9@gmail.com
 	}
 
-	public void passEmailId() {
-		emailId.sendKeys("nitinthaokar9@gmail.com");
-	}
-
-	public void passReEmailId() {
-		emailId.sendKeys("nitinthaokar9@gmail.com");
+	public void passReEmailId(String EmailId) {
+		reenterEmailId.sendKeys(EmailId);
 	}
 
 	public void visaTypeRadioBtn() {
 		visaTypeCheckBox.click();
 	}
 
-	public void enterCaptchaField() {
-		usercaptchacode.sendKeys("AUX125P");
+	public void enterCaptchaField(String captchacode) {
+		usercaptchacode.sendKeys(captchacode);
 	}
 
 	public void cancelBtn() {

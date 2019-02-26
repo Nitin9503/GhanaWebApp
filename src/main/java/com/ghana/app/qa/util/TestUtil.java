@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+
 import com.ghana.app.qa.base.TestBase;
 
 
@@ -135,5 +136,10 @@ public class TestUtil extends TestBase  {
 		actions.moveToElement(element).click().perform();
 		
 	}
+	public static void datePickerMethod(WebElement element) {
+		((JavascriptExecutor)driver).executeScript ("document.getElementById(element).removeAttribute('readonly',0);"); // Enables the from date box
 
+		
+		
+	}
 }

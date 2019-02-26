@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.ghana.app.qa.pages.HomePage;
+import com.ghana.app.qa.pages.PersonalInfoPage;
 import com.ghana.app.qa.pages.SignUpPage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
 
@@ -21,6 +22,7 @@ public class DriverInit extends TestBase {
 	public static HomePage homePage;
 	public static VisaCategoriesPage visaCategoriesPage;
 	public static SignUpPage signUpPage;
+	public static PersonalInfoPage personalInfoPage;
 	
 
 	@BeforeClass

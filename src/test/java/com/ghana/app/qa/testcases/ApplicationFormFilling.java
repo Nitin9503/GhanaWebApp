@@ -1,18 +1,15 @@
 package com.ghana.app.qa.testcases;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
 import org.testng.annotations.Test;
 
 import com.ghana.app.qa.base.DriverInit;
-import com.ghana.app.qa.base.TestBase;
 
-public class SignUpPageTest extends DriverInit {
-
-	public SignUpPageTest() throws IOException, InterruptedException {
-		super();
-		// TODO Auto-generated constructor stub
+public class ApplicationFormFilling extends DriverInit {
+	
+	public ApplicationFormFilling() throws IOException, InterruptedException{
+	super();	
 	}
 
 	@Test(priority = 6)
@@ -66,5 +63,11 @@ public class SignUpPageTest extends DriverInit {
 		signUpPage.selectDateOfBirth("8-Dec-2014");
 		signUpPage.continueBtn();
 		
+	}
+	@Test(priority=14)
+	public void getApplicationIdTest(){
+		String st =personalInfoPage.getApplicationId();
+	System.out.println(st);
+	
 	}
 }
