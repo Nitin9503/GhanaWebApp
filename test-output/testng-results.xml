@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
   <reporter-output>
   </reporter-output>
+<<<<<<< Updated upstream
   <suite name="Default suite" duration-ms="45488" started-at="2019-02-26T11:29:04Z" finished-at="2019-02-26T11:29:50Z">
     <groups>
     </groups>
@@ -12,6 +13,18 @@
           </reporter-output>
         </test-method> <!-- setUp -->
         <test-method status="PASS" signature="selectPassPortType()[pri:6, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectPassPortType" duration-ms="3834" started-at="2019-02-26T11:29:11Z" finished-at="2019-02-26T11:29:15Z">
+=======
+  <suite name="Default suite" duration-ms="20311" started-at="2019-02-25T07:47:33Z" finished-at="2019-02-25T07:47:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20311" started-at="2019-02-25T07:47:33Z" finished-at="2019-02-25T07:47:53Z">
+      <class name="com.ghana.app.qa.testcases.SignUpPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.SignUpPageTest@1fc2b765]" name="setUp" is-config="true" duration-ms="16832" started-at="2019-02-25T07:47:33Z" finished-at="2019-02-25T07:47:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectPassPortType()[pri:6, instance:com.ghana.app.qa.testcases.SignUpPageTest@1fc2b765]" name="selectPassPortType" duration-ms="3317" started-at="2019-02-25T07:47:50Z" finished-at="2019-02-25T07:47:53Z">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassPortType -->

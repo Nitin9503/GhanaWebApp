@@ -172,146 +172,153 @@ public class ReviewApplicationPage extends TestBase{
 	}
 	
 	public String getTextBirthDate(){
-		return birthDate.getText();
+		return birthDate.getText().substring(13, 22);
 		
 	}
 	
 	public String getTextFromBirthPlace(){
-		return birthPlace.getText();
+		return birthPlace.getText().substring(40);
 		
 	}
 	
 	public String getTextFromPassportNumber(){
-		return passportNumber.getText();
+		return passportNumber.getText().substring(14, 22);
 		
 	}
 	
 	public String getTextFromPassportIssuedDate(){
-		return passportIssuedDate.getText();
+		return passportIssuedDate.getText().substring(44, 53);
 		
 	}
 	public String getTextFromPassportExpiryDate(){
-		return passportExpiryDate.getText();
+		return passportExpiryDate.getText().substring(69);
 		
 	}
 	public String getTextFromAddress(){
-		return address.getText();
+		return address.getText().substring(10);
 		
 	}
 	public String getTextFrompinCode(){
-		return pinCode.getText();
+		return pinCode.getText().substring(6, 11);
 		
 	}	
 
 	public String getTextFromCityName(){
-		return cityName.getText();
+		return cityName.getText().substring(23, 29);
 		
 	}
 	public String getTextFromStateName(){
-		return stateName.getText();
+		return stateName.getText().substring(41, 51);
 		
 	}
 	public String getTextFromCountryName(){
-		return countryName.getText();
+		return countryName.getText().substring(70);
 		
 	}
+	
 	public String getTextFromAddressType(){
-		return nationality.getText();
+		return addressType.getText().substring(14);
+	}
+	
+	
+	
+	public String getTextFromNationality(){
+		return nationality.getText().substring(15, 19);
 		
 	}
 	public String getTextFromFormerNationality(){
-		return formerNationality.getText();
+		return formerNationality.getText().substring(28);
 		
 	}
 	public String getTextFromEmailId(){
-		return emailId.getText();
+		return emailId.getText().substring(8);
 		
 	}
 	public String getTextFromPhoneNumber(){
-		return phoneNumber.getText();
+		return phoneNumber.getText().substring(11);
 		
 	}
 	public String getTextFromEmerContactName(){
-		return emerContactName.getText();
+		return emerContactName.getText().substring(7);
 		
 	}
 	public String getTextFromRelationShip(){
-		return relationShip.getText();
+		return relationShip.getText().substring(10);
 		
 	}
 	
 	public String getTextFromEmerPhoneNumber(){
-		return emerPhoneNumber.getText();
+		return emerPhoneNumber.getText().substring(16);
 		
 	}
 	
 	public String getTextFromProfession(){
-		return profession.getText();
+		return profession.getText().substring(23);
 		
 	}
 	public String getTextFromEmployer(){
-		return employer.getText();
+		return employer.getText().substring(15);
 		
 	}
 	
 	public String getTextFromEmployerAddress(){
-		return employerAddress.getText();
+		return employerAddress.getText().substring(20);
 		
 	}
 	public String getTextFromEmerPincode(){
-		return emerPincode.getText();
+		return emerPincode.getText().substring(11, 16);
 		
 	}
 	public String getTextFromEmerCityName(){
-		return emerCityName.getText();
+		return emerCityName.getText().substring(28, 34);
 		
 	}
 	public String getTextFromEmerState(){
-		return emerState.getText();
+		return emerState.getText().substring(58, 65);
 		
 	}
 	public String getTextFromEmerCountry(){
-		return emerCountry.getText();
+		return emerCountry.getText().substring(78);
 		
 	}
 	public String getTextFromEmerEmployerPhoneNumber(){
-		return emerEmployerPhoneNumber.getText();
+		return emerEmployerPhoneNumber.getText().substring(22);
 		
 	}
 	public String getTextFromDateOfDeparture(){
-		return dateOfDeparture.getText();
+		return dateOfDeparture.getText().substring(19);
 		
 	}
 	public String getTextFromtTicketNumber(){
-		return ticketNumber.getText();
+		return ticketNumber.getText().substring(14, 24);
 		
 	}
 	public String getTextFromRoundTicket(){
-		return roundTicket.getText();
+		return roundTicket.getText().substring(38);
 		
 	}
 	public String getTextFromTravellingBy(){
-		return travellingBy.getText();
+		return travellingBy.getText().substring(17);
 		
 	}
 	public String getTextFromReachBy(){
-		return reachBy.getText();
+		return reachBy.getText().substring(13);
 		
 	}
 	public String getTextFromPrimaryFirstLastName(){
-		return primaryFirstLastName.getText();
+		return primaryFirstLastName.getText().substring(9);
 		
 	}
 	public String getTextFromPrimaryAddress(){
-		return primaryAddress.getText();
+		return primaryAddress.getText().substring(12);
 		
 	}
 	public String getTextFromPrimaryPinCode(){
-		return primaryPinCode.getText();
+		return primaryPinCode.getText().substring(13, 18);
 		
 	}
 	public String getTextFromPrimaryCity(){
-		return reachBy.getText();
+		return primaryCity.getText().substring(24, 30);
 		
 	}
 	public String getTextFromPrimaryState(){
