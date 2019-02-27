@@ -32,6 +32,7 @@ public class DriverInit extends TestBase {
 		homePage = new HomePage();
 		visaCategoriesPage = new VisaCategoriesPage();
 		signUpPage = new SignUpPage();
+		personalInfoPage = new PersonalInfoPage();
 		
 		
 	}

@@ -5,8 +5,10 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
         <methods>
-          <include name="getApplicationIdTest"/>
+          <include name="selectPassIssueDateTest"/>
+          <include name="selectPassExpiryDateTest"/>
           <include name="setUp"/>
+          <include name="clickOnGenderTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
     </classes>

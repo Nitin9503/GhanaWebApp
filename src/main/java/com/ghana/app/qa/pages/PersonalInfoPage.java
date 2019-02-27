@@ -17,7 +17,7 @@ public class PersonalInfoPage extends TestBase {
 	}
 
 	// elements from personnel information page
-	@FindBy(xpath = "//div[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
+	@FindBy(xpath = ".//*[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
 	WebElement applicationId;
 	@FindBy(xpath = "//span[text()='Visa Fees']")
 	WebElement visaFees;//
@@ -48,8 +48,12 @@ public class PersonalInfoPage extends TestBase {
 	@FindBy(xpath = "//button[@id='applicant_personal_info_form_btn']")
 	WebElement saveAndContinue;
 
+	public String getApplicantPageTitle() {
+		return driver.getTitle();
+	}
+	
 	public String getApplicationId() {
-		return applicationId.getText();
+		return applicationId.getText().substring(16);
 	}
 
 	public void SelectvisaFees() {
@@ -74,21 +78,21 @@ public class PersonalInfoPage extends TestBase {
 		passport_number.sendKeys(passportNumber);
 	}
 
-	public void clickOnPassportNumber() {
-		gender.click();
+	public void clickOnGender() {
+		TestUtil.actionClassMethod(gender);
 	}
 
 	public void selectPassIssueDate(String PassIssueDate)
 			throws InterruptedException {
 		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
+				.executeScript("document.getElementById('date_of_issued').removeAttribute('readonly',0);");
 		date_of_issued.sendKeys(PassIssueDate); // Enter date in required format
 	}
 
 	public void selectPassExpiryDate(String PassExpiryDate)
 			throws InterruptedException {
 		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
+				.executeScript("document.getElementById('passport_expiry').removeAttribute('readonly',0);");
 		date_of_expiry.sendKeys(PassExpiryDate); // Enter date in required
 													// format
 	}
