@@ -1,6 +1,7 @@
 package com.ghana.app.qa.pages;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -82,6 +83,12 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement Continue;
 	
+	@FindBy(xpath = "//div[@class ='custom-control custom-checkbox']")
+	List<WebElement> checkBoxesClick;
+
+	@FindBy(xpath = "//div[@class ='custom-control custom-radio custom-control-inline']")
+	List<WebElement> selectRadioButton;
+	
 
 	public String validateSignUpPageTitle() {
 
@@ -143,5 +150,36 @@ public class SignUpPage extends TestBase {
 	public void termsCheckboxselect() {
 		termsCheckkbox.click();
 	}
+	
+	public void clickOnCheckBoxes(){
+		
+		try{
+			for (WebElement we : checkBoxesClick){
+				TestUtil.actionClassMethod(we);					
+			}
+			
+		}catch(Exception e){
+			System.out.println("all check boxes click done");
+			
+		}
+	
+		
+	}
+	public void selectRadioButton(){
+		
+		try{
+			for (WebElement we : selectRadioButton){
+				TestUtil.actionClassMethod(we);					
+			}
+			
+		}catch(Exception e){
+			System.out.println("all check boxes click done");
+			
+		}
+	
+		
+	}
 
+	
+	
 }

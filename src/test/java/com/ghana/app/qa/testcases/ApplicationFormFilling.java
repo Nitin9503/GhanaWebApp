@@ -2,9 +2,11 @@ package com.ghana.app.qa.testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.ghana.app.qa.base.DriverInit;
+import com.ghana.app.qa.util.TestUtil;
 
 public class ApplicationFormFilling extends DriverInit {
 	
@@ -14,9 +16,16 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 6)
 	public void selectPassPortType() throws InterruptedException, IOException {
+		
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
 		Thread.sleep(2000);
+		//TestUtil.actionClassMethod(driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")));
+		
+		signUpPage.clickOnCheckBoxes();
+		signUpPage.selectRadioButton();
+		//driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")).click();
+		//signUpPage.termsCheckboxselect();
 		signUpPage.SelectPassportType();
       
 	}
