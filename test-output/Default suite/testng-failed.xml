@@ -5,10 +5,11 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
         <methods>
-          <include name="selectPassIssueDateTest"/>
-          <include name="selectPassExpiryDateTest"/>
+          <include name="clickPurpose_of_journeyTest"/>
+          <include name="PassSecondaryRefDetailsTest"/>
+          <include name="pass_primary_ref_pincodeTest"/>
           <include name="setUp"/>
-          <include name="clickOnGenderTest"/>
+          <include name="passPrimaryRefLastnameTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
     </classes>

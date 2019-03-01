@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
 
 public class TravelInfoPage extends TestBase{
 
@@ -44,6 +45,11 @@ public class TravelInfoPage extends TestBase{
 	
 	@FindBy(xpath = "//li[text()='Train']")
 	WebElement train ;
+	
+	@FindBy(xpath = "//input[@id='purpose_of_journey']")
+	WebElement purpose_of_journey ;
+	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Visit Family']")
+	WebElement VisitFamily;
 	
 	@FindBy(xpath = "//input[@id='primary_ref_firstname']")
 	WebElement primaryRefFirstname ;
@@ -114,7 +120,7 @@ public class TravelInfoPage extends TestBase{
 		
 	}
 	public void clickOnIsApplicantPossessionRoundTicket(){
-		isApplicantPossessionRoundTicket.click();
+		TestUtil.actionClassMethod(isApplicantPossessionRoundTicket);
 		
 	}
 	public void clickOnYes(){
@@ -126,7 +132,7 @@ public class TravelInfoPage extends TestBase{
 		
 	}
 	public void clickOnTravelBy(){
-		travelingBy.click();
+		TestUtil.actionClassMethod(travelingBy);
 		
 	}
 	public void clickOnTravelByAir(){
@@ -143,6 +149,12 @@ public class TravelInfoPage extends TestBase{
 	}
 	public void clickOnTravelByTrain(){
 		train.click();
+		
+	}
+	public void clickPurpose_of_journey() throws InterruptedException{
+		TestUtil.actionClassMethod(purpose_of_journey);
+		Thread.sleep(1000);
+		VisitFamily.click();
 		
 	}
 	public void passPrimaryRefFirstname(String firstname){
@@ -214,7 +226,16 @@ public class TravelInfoPage extends TestBase{
 		secondary_ref_phone_number.sendKeys(phoneNo);
 		
 	}
-	
+	public void PassSecondaryRefDetails(String sec_firstname, String sec_lastName, String sec_adress, String sec_pincode, String sec_city, String sec_state, String sec_country, String sec_phoneNo){
+		secondaryRefFirstname.sendKeys(sec_firstname);
+		secondary_ref_lastname.sendKeys(sec_lastName);
+		secondary_ref_address.sendKeys(sec_adress);
+		secondary_ref_pincode.sendKeys(sec_pincode);
+		secondary_ref_city.sendKeys(sec_city);
+		secondary_ref_state.sendKeys(sec_state);
+		secondary_ref_country.sendKeys(sec_country);
+		secondary_ref_phone_number.sendKeys(sec_phoneNo);
+	}
 	public void clickOnContinuebutton(){
 		applicant_travel_information_form_btn.click();
 		

@@ -7,10 +7,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+
+
+
+import com.ghana.app.qa.pages.EmergencyContactPage;
 import com.ghana.app.qa.pages.HighAndConsulateLoginPage;
+import com.ghana.app.qa.pages.AddressInfoPage;
 import com.ghana.app.qa.pages.HomePage;
 import com.ghana.app.qa.pages.PersonalInfoPage;
 import com.ghana.app.qa.pages.SignUpPage;
+import com.ghana.app.qa.pages.TravelInfoPage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
 
 public class DriverInit extends TestBase {
@@ -24,8 +30,11 @@ public class DriverInit extends TestBase {
 	public static VisaCategoriesPage visaCategoriesPage;
 	public static SignUpPage signUpPage;
 	public static PersonalInfoPage personalInfoPage;
-	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
-	
+    public static HighAndConsulateLoginPage highAndConsulateLoginPage;
+	public static AddressInfoPage addressInfoPage;
+	public static EmergencyContactPage emergencyContactPage;
+	public static TravelInfoPage travelInfoPage;
+
 
 	@BeforeClass
 	public void setUp() throws IOException, InterruptedException {
@@ -35,8 +44,11 @@ public class DriverInit extends TestBase {
 		visaCategoriesPage = new VisaCategoriesPage();
 		signUpPage = new SignUpPage();
 		personalInfoPage = new PersonalInfoPage();
-		highAndConsulateLoginPage =new HighAndConsulateLoginPage();
-		
+        highAndConsulateLoginPage =new HighAndConsulateLoginPage();
+		addressInfoPage = new AddressInfoPage();
+		emergencyContactPage = new EmergencyContactPage();
+		travelInfoPage =new TravelInfoPage();
+
 		
 	}
 	
