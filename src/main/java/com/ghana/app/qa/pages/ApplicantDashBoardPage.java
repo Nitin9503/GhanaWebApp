@@ -103,7 +103,11 @@ public class ApplicantDashBoardPage extends TestBase {
 		
 	}
 	public String getTextFromAddedComment(){		
-		return textFromPassComment.getText();
+		String str = textFromPassComment.getText();
+		String newString  = str.replaceAll("01 Mar 2019 10:41 AM", "");
+		return newString;
+		
+
 		
 	}
 

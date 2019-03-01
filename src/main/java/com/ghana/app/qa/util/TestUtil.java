@@ -33,7 +33,6 @@ public class TestUtil extends TestBase  {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public static WebDriver driver;
 	public static DesiredCapabilities caps;
 	public static Properties prop;
 	public static String driverPath;	

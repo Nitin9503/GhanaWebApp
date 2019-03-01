@@ -3,20 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+      <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
         <methods>
-<<<<<<< Updated upstream
           <include name="clickPurpose_of_journeyTest"/>
           <include name="PassSecondaryRefDetailsTest"/>
           <include name="pass_primary_ref_pincodeTest"/>
           <include name="setUp"/>
           <include name="passPrimaryRefLastnameTest"/>
-=======
-          <include name="setUp"/>
-          <include name="passComment"/>
->>>>>>> Stashed changes
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+      </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ghana.app.qa.base.DriverInit;
@@ -83,7 +84,7 @@ public class ApplicationFormFilling extends DriverInit {
 	@Test(priority = 14)
 	public void getApplicationPageTitleTest() throws InterruptedException {
 		Thread.sleep(2000);
-		assertEquals(personalInfoPage.getApplicantPageTitle(), "Applicant Form");
+		Assert.assertEquals(personalInfoPage.getApplicantPageTitle(), "Applicant Form");
 
 	}
 

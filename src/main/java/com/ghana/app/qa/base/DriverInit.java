@@ -36,8 +36,6 @@ public class DriverInit extends TestBase {
 	public static EmergencyContactPage emergencyContactPage;
 	public static TravelInfoPage travelInfoPage;
 
-
-
 	// Consulate and HighCommission side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
 	public static ConsulatedashBoardPage consulatedashBoardPage;
@@ -60,13 +58,7 @@ public class DriverInit extends TestBase {
 		addressInfoPage = new AddressInfoPage();
 		emergencyContactPage = new EmergencyContactPage();
 		travelInfoPage =new TravelInfoPage();
-
 		
-	}
-	
-	/*@AfterClass
-	public void tearDown() {
-=======
 		highAndConsulateLoginPage = new HighAndConsulateLoginPage();
 		consulatedashBoardPage = new ConsulatedashBoardPage();
 		applicantDashBoardPage = new ApplicantDashBoardPage();
@@ -74,9 +66,11 @@ public class DriverInit extends TestBase {
 		cNTravelInfo = new CNTravelInfo();
 		cNDocumentVerificaton = new CNDocumentVerificaton();
 		cNInterviewSchedule = new CNInterviewSchedule();
->>>>>>> Stashed changes
 
+		
 	}
+	
+
 
 	/*
 	 * @AfterClass public void tearDown() {

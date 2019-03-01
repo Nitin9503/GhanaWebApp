@@ -1,164 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< Updated upstream
 <testng-results skipped="0" failed="4" ignored="0" total="41" passed="37">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="148525" started-at="2019-02-28T12:41:54Z" finished-at="2019-02-28T12:44:22Z">
+  <suite name="Default suite" duration-ms="222018" started-at="2019-03-01T05:56:08Z" finished-at="2019-03-01T05:59:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="148525" started-at="2019-02-28T12:41:54Z" finished-at="2019-02-28T12:44:22Z">
+    <test name="Default test" duration-ms="222018" started-at="2019-03-01T05:56:08Z" finished-at="2019-03-01T05:59:50Z">
       <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="setUp" is-config="true" duration-ms="7219" started-at="2019-02-28T12:41:54Z" finished-at="2019-02-28T12:42:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="setUp" is-config="true" duration-ms="14984" started-at="2019-03-01T05:56:08Z" finished-at="2019-03-01T05:56:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectPassPortType()[pri:6, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectPassPortType" duration-ms="4838" started-at="2019-02-28T12:42:01Z" finished-at="2019-02-28T12:42:06Z">
+        <test-method status="PASS" signature="selectPassPortType()[pri:6, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectPassPortType" duration-ms="68547" started-at="2019-03-01T05:56:23Z" finished-at="2019-03-01T05:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassPortType -->
-        <test-method status="PASS" signature="selectNationalityTest()[pri:7, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectNationalityTest" duration-ms="2342" started-at="2019-02-28T12:42:06Z" finished-at="2019-02-28T12:42:08Z">
+        <test-method status="PASS" signature="selectNationalityTest()[pri:7, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectNationalityTest" duration-ms="2620" started-at="2019-03-01T05:57:32Z" finished-at="2019-03-01T05:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNationalityTest -->
-        <test-method status="PASS" signature="selectPortOfArrivalTest()[pri:8, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectPortOfArrivalTest" duration-ms="147" started-at="2019-02-28T12:42:08Z" finished-at="2019-02-28T12:42:08Z">
+        <test-method status="PASS" signature="selectPortOfArrivalTest()[pri:8, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectPortOfArrivalTest" duration-ms="181" started-at="2019-03-01T05:57:35Z" finished-at="2019-03-01T05:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPortOfArrivalTest -->
-        <test-method status="PASS" signature="passPhoneNoTest()[pri:9, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passPhoneNoTest" duration-ms="161" started-at="2019-02-28T12:42:08Z" finished-at="2019-02-28T12:42:08Z">
+        <test-method status="PASS" signature="passPhoneNoTest()[pri:9, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passPhoneNoTest" duration-ms="281" started-at="2019-03-01T05:57:35Z" finished-at="2019-03-01T05:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPhoneNoTest -->
-        <test-method status="PASS" signature="passEmailIdTest()[pri:10, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passEmailIdTest" duration-ms="218" started-at="2019-02-28T12:42:08Z" finished-at="2019-02-28T12:42:09Z">
+        <test-method status="PASS" signature="passEmailIdTest()[pri:10, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passEmailIdTest" duration-ms="267" started-at="2019-03-01T05:57:35Z" finished-at="2019-03-01T05:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passEmailIdTest -->
-        <test-method status="PASS" signature="selectDateOfBirthTest()[pri:11, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectDateOfBirthTest" duration-ms="424" started-at="2019-02-28T12:42:09Z" finished-at="2019-02-28T12:42:09Z">
+        <test-method status="PASS" signature="selectDateOfBirthTest()[pri:11, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectDateOfBirthTest" duration-ms="404" started-at="2019-03-01T05:57:35Z" finished-at="2019-03-01T05:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDateOfBirthTest -->
-        <test-method status="PASS" signature="passReEmailIdTest()[pri:12, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passReEmailIdTest" duration-ms="265" started-at="2019-02-28T12:42:09Z" finished-at="2019-02-28T12:42:09Z">
+        <test-method status="PASS" signature="passReEmailIdTest()[pri:12, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passReEmailIdTest" duration-ms="384" started-at="2019-03-01T05:57:36Z" finished-at="2019-03-01T05:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passReEmailIdTest -->
-        <test-method status="PASS" signature="enterCaptchaFieldTest()[pri:13, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="enterCaptchaFieldTest" duration-ms="1104" started-at="2019-02-28T12:42:09Z" finished-at="2019-02-28T12:42:10Z">
+        <test-method status="PASS" signature="enterCaptchaFieldTest()[pri:13, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="enterCaptchaFieldTest" duration-ms="1023" started-at="2019-03-01T05:57:36Z" finished-at="2019-03-01T05:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCaptchaFieldTest -->
-        <test-method status="PASS" signature="getApplicationPageTitleTest()[pri:14, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="getApplicationPageTitleTest" duration-ms="2007" started-at="2019-02-28T12:42:10Z" finished-at="2019-02-28T12:42:12Z">
+        <test-method status="PASS" signature="getApplicationPageTitleTest()[pri:14, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="getApplicationPageTitleTest" duration-ms="2029" started-at="2019-03-01T05:57:37Z" finished-at="2019-03-01T05:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getApplicationPageTitleTest -->
-        <test-method status="PASS" signature="getApplicationIdTest()[pri:15, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="getApplicationIdTest" duration-ms="32" started-at="2019-02-28T12:42:12Z" finished-at="2019-02-28T12:42:12Z">
+        <test-method status="PASS" signature="getApplicationIdTest()[pri:15, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="getApplicationIdTest" duration-ms="34" started-at="2019-03-01T05:57:39Z" finished-at="2019-03-01T05:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getApplicationIdTest -->
-        <test-method status="PASS" signature="selectVisaFeesTest()[pri:16, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectVisaFeesTest" duration-ms="135" started-at="2019-02-28T12:42:12Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="selectVisaFeesTest()[pri:16, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectVisaFeesTest" duration-ms="140" started-at="2019-03-01T05:57:39Z" finished-at="2019-03-01T05:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectVisaFeesTest -->
-        <test-method status="PASS" signature="selectVisaLocationTest()[pri:17, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectVisaLocationTest" duration-ms="135" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="selectVisaLocationTest()[pri:17, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectVisaLocationTest" duration-ms="151" started-at="2019-03-01T05:57:39Z" finished-at="2019-03-01T05:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectVisaLocationTest -->
-        <test-method status="PASS" signature="passFirstNameTest()[pri:18, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passFirstNameTest" duration-ms="123" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="passFirstNameTest()[pri:18, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passFirstNameTest" duration-ms="126" started-at="2019-03-01T05:57:39Z" finished-at="2019-03-01T05:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passFirstNameTest -->
-        <test-method status="PASS" signature="passLastNameTest()[pri:19, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passLastNameTest" duration-ms="101" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="passLastNameTest()[pri:19, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passLastNameTest" duration-ms="112" started-at="2019-03-01T05:57:40Z" finished-at="2019-03-01T05:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passLastNameTest -->
-        <test-method status="PASS" signature="passPassportNumberTest()[pri:20, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passPassportNumberTest" duration-ms="148" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="passPassportNumberTest()[pri:20, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passPassportNumberTest" duration-ms="142" started-at="2019-03-01T05:57:40Z" finished-at="2019-03-01T05:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPassportNumberTest -->
-        <test-method status="PASS" signature="clickOnGenderTest()[pri:21, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickOnGenderTest" duration-ms="75" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="clickOnGenderTest()[pri:21, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickOnGenderTest" duration-ms="74" started-at="2019-03-01T05:57:40Z" finished-at="2019-03-01T05:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnGenderTest -->
-        <test-method status="PASS" signature="selectPassIssueDateTest()[pri:22, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectPassIssueDateTest" duration-ms="262" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:13Z">
+        <test-method status="PASS" signature="selectPassIssueDateTest()[pri:22, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectPassIssueDateTest" duration-ms="242" started-at="2019-03-01T05:57:40Z" finished-at="2019-03-01T05:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassIssueDateTest -->
-        <test-method status="PASS" signature="selectPassExpiryDateTest()[pri:23, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectPassExpiryDateTest" duration-ms="243" started-at="2019-02-28T12:42:13Z" finished-at="2019-02-28T12:42:14Z">
+        <test-method status="PASS" signature="selectPassExpiryDateTest()[pri:23, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectPassExpiryDateTest" duration-ms="354" started-at="2019-03-01T05:57:40Z" finished-at="2019-03-01T05:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassExpiryDateTest -->
-        <test-method status="PASS" signature="passPlaceOfBirthTest()[pri:24, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passPlaceOfBirthTest" duration-ms="121" started-at="2019-02-28T12:42:14Z" finished-at="2019-02-28T12:42:14Z">
+        <test-method status="PASS" signature="passPlaceOfBirthTest()[pri:24, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passPlaceOfBirthTest" duration-ms="136" started-at="2019-03-01T05:57:41Z" finished-at="2019-03-01T05:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPlaceOfBirthTest -->
-        <test-method status="PASS" signature="clickOnSaveAndContinueTest()[pri:25, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickOnSaveAndContinueTest" duration-ms="144" started-at="2019-02-28T12:42:14Z" finished-at="2019-02-28T12:42:14Z">
+        <test-method status="PASS" signature="clickOnSaveAndContinueTest()[pri:25, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickOnSaveAndContinueTest" duration-ms="149" started-at="2019-03-01T05:57:41Z" finished-at="2019-03-01T05:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveAndContinueTest -->
-        <test-method status="PASS" signature="selectFormerNationalityTest()[pri:26, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectFormerNationalityTest" duration-ms="2276" started-at="2019-02-28T12:42:14Z" finished-at="2019-02-28T12:42:16Z">
+        <test-method status="PASS" signature="selectFormerNationalityTest()[pri:26, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectFormerNationalityTest" duration-ms="2296" started-at="2019-03-01T05:57:41Z" finished-at="2019-03-01T05:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFormerNationalityTest -->
-        <test-method status="PASS" signature="filladdressInfoTest()[pri:27, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="filladdressInfoTest" duration-ms="1306" started-at="2019-02-28T12:42:16Z" finished-at="2019-02-28T12:42:18Z">
+        <test-method status="PASS" signature="filladdressInfoTest()[pri:27, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="filladdressInfoTest" duration-ms="1380" started-at="2019-03-01T05:57:43Z" finished-at="2019-03-01T05:57:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filladdressInfoTest -->
-        <test-method status="PASS" signature="clickSaveAndContinuebtnTest()[pri:28, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickSaveAndContinuebtnTest" duration-ms="122" started-at="2019-02-28T12:42:18Z" finished-at="2019-02-28T12:42:18Z">
+        <test-method status="PASS" signature="clickSaveAndContinuebtnTest()[pri:28, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickSaveAndContinuebtnTest" duration-ms="162" started-at="2019-03-01T05:57:44Z" finished-at="2019-03-01T05:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSaveAndContinuebtnTest -->
-        <test-method status="PASS" signature="emergencyContactDetailsTest()[pri:29, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="emergencyContactDetailsTest" duration-ms="337" started-at="2019-02-28T12:42:18Z" finished-at="2019-02-28T12:42:18Z">
+        <test-method status="PASS" signature="emergencyContactDetailsTest()[pri:29, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="emergencyContactDetailsTest" duration-ms="355" started-at="2019-03-01T05:57:45Z" finished-at="2019-03-01T05:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emergencyContactDetailsTest -->
-        <test-method status="PASS" signature="selectRelationTest()[pri:30, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="selectRelationTest" duration-ms="123" started-at="2019-02-28T12:42:18Z" finished-at="2019-02-28T12:42:18Z">
+        <test-method status="PASS" signature="selectRelationTest()[pri:30, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="selectRelationTest" duration-ms="147" started-at="2019-03-01T05:57:45Z" finished-at="2019-03-01T05:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectRelationTest -->
-        <test-method status="PASS" signature="emergencyProfessionDetailsTest()[pri:31, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="emergencyProfessionDetailsTest" duration-ms="1372" started-at="2019-02-28T12:42:18Z" finished-at="2019-02-28T12:42:19Z">
+        <test-method status="PASS" signature="emergencyProfessionDetailsTest()[pri:31, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="emergencyProfessionDetailsTest" duration-ms="1580" started-at="2019-03-01T05:57:45Z" finished-at="2019-03-01T05:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emergencyProfessionDetailsTest -->
-        <test-method status="PASS" signature="clickOnIsApplicantPossessionRoundTicketTest()[pri:32, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickOnIsApplicantPossessionRoundTicketTest" duration-ms="133" started-at="2019-02-28T12:42:19Z" finished-at="2019-02-28T12:42:20Z">
+        <test-method status="PASS" signature="clickOnIsApplicantPossessionRoundTicketTest()[pri:32, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickOnIsApplicantPossessionRoundTicketTest" duration-ms="135" started-at="2019-03-01T05:57:47Z" finished-at="2019-03-01T05:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnIsApplicantPossessionRoundTicketTest -->
-        <test-method status="PASS" signature="passDateOfDepartureTest()[pri:33, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passDateOfDepartureTest" duration-ms="411" started-at="2019-02-28T12:42:20Z" finished-at="2019-02-28T12:42:20Z">
+        <test-method status="PASS" signature="passDateOfDepartureTest()[pri:33, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passDateOfDepartureTest" duration-ms="381" started-at="2019-03-01T05:57:47Z" finished-at="2019-03-01T05:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passDateOfDepartureTest -->
-        <test-method status="PASS" signature="passTicketNumberTest()[pri:34, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passTicketNumberTest" duration-ms="139" started-at="2019-02-28T12:42:20Z" finished-at="2019-02-28T12:42:20Z">
+        <test-method status="PASS" signature="passTicketNumberTest()[pri:34, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passTicketNumberTest" duration-ms="205" started-at="2019-03-01T05:57:47Z" finished-at="2019-03-01T05:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passTicketNumberTest -->
-        <test-method status="PASS" signature="clickOnTravelByTest()[pri:35, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickOnTravelByTest" duration-ms="152" started-at="2019-02-28T12:42:20Z" finished-at="2019-02-28T12:42:20Z">
+        <test-method status="PASS" signature="clickOnTravelByTest()[pri:35, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickOnTravelByTest" duration-ms="195" started-at="2019-03-01T05:57:47Z" finished-at="2019-03-01T05:57:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnTravelByTest -->
-        <test-method status="FAIL" signature="clickPurpose_of_journeyTest()[pri:36, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickPurpose_of_journeyTest" duration-ms="120176" started-at="2019-02-28T12:42:20Z" finished-at="2019-02-28T12:44:20Z">
+        <test-method status="FAIL" signature="clickPurpose_of_journeyTest()[pri:36, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickPurpose_of_journeyTest" duration-ms="121166" started-at="2019-03-01T05:57:48Z" finished-at="2019-03-01T05:59:49Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
               <![CDATA[element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -169,82 +168,21 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy8.click(Unknown Source)
-at com.ghana.app.qa.pages.TravelInfoPage.clickPurpose_of_journey(TravelInfoPage.java:156)
-at com.ghana.app.qa.testcases.ApplicationFormFilling.clickPurpose_of_journeyTest(ApplicationFormFilling.java:243)
-=======
-<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="31153" started-at="2019-03-01T04:13:43Z" finished-at="2019-03-01T04:14:15Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="31153" started-at="2019-03-01T04:13:43Z" finished-at="2019-03-01T04:14:15Z">
-      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="setUp" is-config="true" duration-ms="20409" started-at="2019-03-01T04:13:43Z" finished-at="2019-03-01T04:14:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginIntoConsulate()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="loginIntoConsulate" duration-ms="3141" started-at="2019-03-01T04:14:04Z" finished-at="2019-03-01T04:14:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntoConsulate -->
-        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="verifyTitleOfConsulateTitle" duration-ms="45" started-at="2019-03-01T04:14:07Z" finished-at="2019-03-01T04:14:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitleOfConsulateTitle -->
-        <test-method status="PASS" signature="clickOnNewApplication()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="clickOnNewApplication" duration-ms="2267" started-at="2019-03-01T04:14:07Z" finished-at="2019-03-01T04:14:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnNewApplication -->
-        <test-method status="PASS" signature="verfiyTitleOfApplcationDetails()[pri:3, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="verfiyTitleOfApplcationDetails" duration-ms="19" started-at="2019-03-01T04:14:09Z" finished-at="2019-03-01T04:14:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verfiyTitleOfApplcationDetails -->
-        <test-method status="PASS" signature="verfiyTitleOfCNAddressInfoPage()[pri:4, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="verfiyTitleOfCNAddressInfoPage" duration-ms="1154" started-at="2019-03-01T04:14:09Z" finished-at="2019-03-01T04:14:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verfiyTitleOfCNAddressInfoPage -->
-        <test-method status="PASS" signature="verfiyTitleOfCNTravelInfoPage()[pri:5, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="verfiyTitleOfCNTravelInfoPage" duration-ms="1938" started-at="2019-03-01T04:14:10Z" finished-at="2019-03-01T04:14:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verfiyTitleOfCNTravelInfoPage -->
-        <test-method status="PASS" signature="verfiyTitleOfCNDocumentVerificatonPage()[pri:6, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="verfiyTitleOfCNDocumentVerificatonPage" duration-ms="644" started-at="2019-03-01T04:14:12Z" finished-at="2019-03-01T04:14:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verfiyTitleOfCNDocumentVerificatonPage -->
-        <test-method status="PASS" signature="clickOnCheckBoxes()[pri:7, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="clickOnCheckBoxes" duration-ms="91" started-at="2019-03-01T04:14:13Z" finished-at="2019-03-01T04:14:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnCheckBoxes -->
-        <test-method status="FAIL" signature="passComment()[pri:8, instance:com.ghana.app.qa.testcases.ConsulatePageTest@75881071]" name="passComment" duration-ms="1353" started-at="2019-03-01T04:14:13Z" finished-at="2019-03-01T04:14:15Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Latest passed comment is not matched after getting text from comment section expected [Verifying your Application] but found [Verifying your Application
-01 Mar 2019 09:43 AM]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Latest passed comment is not matched after getting text from comment section expected [Verifying your Application] but found [Verifying your Application
-01 Mar 2019 09:43 AM]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.ghana.app.qa.testcases.ConsulatePageTest.passComment(ConsulatePageTest.java:69)
->>>>>>> Stashed changes
+at com.ghana.app.qa.pages.TravelInfoPage.clickPurpose_of_journey(TravelInfoPage.java:157)
+at com.ghana.app.qa.testcases.ApplicationFormFilling.clickPurpose_of_journeyTest(ApplicationFormFilling.java:244)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -264,42 +202,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-<<<<<<< Updated upstream
           </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickPurpose_of_journeyTest -->
-        <test-method status="PASS" signature="passPrimaryRefFirstnameTest()[pri:37, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passPrimaryRefFirstnameTest" duration-ms="126" started-at="2019-02-28T12:44:20Z" finished-at="2019-02-28T12:44:21Z">
+        <test-method status="PASS" signature="passPrimaryRefFirstnameTest()[pri:37, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passPrimaryRefFirstnameTest" duration-ms="111" started-at="2019-03-01T05:59:49Z" finished-at="2019-03-01T05:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPrimaryRefFirstnameTest -->
-        <test-method status="FAIL" signature="passPrimaryRefLastnameTest()[pri:38, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="passPrimaryRefLastnameTest" duration-ms="93" started-at="2019-02-28T12:44:21Z" finished-at="2019-02-28T12:44:21Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="passPrimaryRefLastnameTest()[pri:38, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="passPrimaryRefLastnameTest" duration-ms="89" started-at="2019-03-01T05:59:49Z" finished-at="2019-03-01T05:59:49Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[unknown error: cannot focus element
+              <![CDATA[element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -310,21 +247,21 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-at com.ghana.app.qa.pages.TravelInfoPage.passPrimaryRefLastname(TravelInfoPage.java:164)
-at com.ghana.app.qa.testcases.ApplicationFormFilling.passPrimaryRefLastnameTest(ApplicationFormFilling.java:257)
+at com.ghana.app.qa.pages.TravelInfoPage.passPrimaryRefLastname(TravelInfoPage.java:165)
+at com.ghana.app.qa.testcases.ApplicationFormFilling.passPrimaryRefLastnameTest(ApplicationFormFilling.java:258)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -344,41 +281,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPrimaryRefLastnameTest -->
-        <test-method status="PASS" signature="pass_Primary_ref_addressTest()[pri:39, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_Primary_ref_addressTest" duration-ms="338" started-at="2019-02-28T12:44:21Z" finished-at="2019-02-28T12:44:21Z">
+        <test-method status="PASS" signature="pass_Primary_ref_addressTest()[pri:39, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_Primary_ref_addressTest" duration-ms="275" started-at="2019-03-01T05:59:49Z" finished-at="2019-03-01T05:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_Primary_ref_addressTest -->
-        <test-method status="FAIL" signature="pass_primary_ref_pincodeTest()[pri:40, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_primary_ref_pincodeTest" duration-ms="89" started-at="2019-02-28T12:44:21Z" finished-at="2019-02-28T12:44:21Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="pass_primary_ref_pincodeTest()[pri:40, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_primary_ref_pincodeTest" duration-ms="62" started-at="2019-03-01T05:59:49Z" finished-at="2019-03-01T05:59:49Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[unknown error: cannot focus element
+              <![CDATA[element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -389,21 +326,21 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-at com.ghana.app.qa.pages.TravelInfoPage.pass_primary_ref_pincode(TravelInfoPage.java:173)
-at com.ghana.app.qa.testcases.ApplicationFormFilling.pass_primary_ref_pincodeTest(ApplicationFormFilling.java:271)
+at com.ghana.app.qa.pages.TravelInfoPage.pass_primary_ref_pincode(TravelInfoPage.java:174)
+at com.ghana.app.qa.testcases.ApplicationFormFilling.pass_primary_ref_pincodeTest(ApplicationFormFilling.java:272)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -423,53 +360,53 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_pincodeTest -->
-        <test-method status="PASS" signature="pass_primary_ref_cityTest()[pri:41, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_primary_ref_cityTest" duration-ms="255" started-at="2019-02-28T12:44:21Z" finished-at="2019-02-28T12:44:21Z">
+        <test-method status="PASS" signature="pass_primary_ref_cityTest()[pri:41, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_primary_ref_cityTest" duration-ms="227" started-at="2019-03-01T05:59:49Z" finished-at="2019-03-01T05:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_cityTest -->
-        <test-method status="PASS" signature="pass_primary_ref_stateTest()[pri:42, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_primary_ref_stateTest" duration-ms="193" started-at="2019-02-28T12:44:21Z" finished-at="2019-02-28T12:44:22Z">
+        <test-method status="PASS" signature="pass_primary_ref_stateTest()[pri:42, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_primary_ref_stateTest" duration-ms="183" started-at="2019-03-01T05:59:50Z" finished-at="2019-03-01T05:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_stateTest -->
-        <test-method status="PASS" signature="pass_primary_ref_countryTest()[pri:43, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_primary_ref_countryTest" duration-ms="109" started-at="2019-02-28T12:44:22Z" finished-at="2019-02-28T12:44:22Z">
+        <test-method status="PASS" signature="pass_primary_ref_countryTest()[pri:43, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_primary_ref_countryTest" duration-ms="103" started-at="2019-03-01T05:59:50Z" finished-at="2019-03-01T05:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_countryTest -->
-        <test-method status="PASS" signature="pass_primary_ref_phone_numberTest()[pri:44, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="pass_primary_ref_phone_numberTest" duration-ms="186" started-at="2019-02-28T12:44:22Z" finished-at="2019-02-28T12:44:22Z">
+        <test-method status="PASS" signature="pass_primary_ref_phone_numberTest()[pri:44, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="pass_primary_ref_phone_numberTest" duration-ms="187" started-at="2019-03-01T05:59:50Z" finished-at="2019-03-01T05:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_phone_numberTest -->
-        <test-method status="FAIL" signature="PassSecondaryRefDetailsTest()[pri:45, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="PassSecondaryRefDetailsTest" duration-ms="160" started-at="2019-02-28T12:44:22Z" finished-at="2019-02-28T12:44:22Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="PassSecondaryRefDetailsTest()[pri:45, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="PassSecondaryRefDetailsTest" duration-ms="156" started-at="2019-03-01T05:59:50Z" finished-at="2019-03-01T05:59:50Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[unknown error: cannot focus element
+              <![CDATA[element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot focus element
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Mac OS X 10.11.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'NAMET5', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+System info: host: 'RahulKaelsMini2', ip: '192.168.1.33', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51615}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 0e6e623a52d942765f09fdb196323d56
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: /var/folders/kx/zbpb8zjd5rs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
+Session ID: 47c01c33a2937a078b3145b394a7364c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -480,21 +417,21 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
-at com.ghana.app.qa.pages.TravelInfoPage.PassSecondaryRefDetails(TravelInfoPage.java:230)
-at com.ghana.app.qa.testcases.ApplicationFormFilling.PassSecondaryRefDetailsTest(ApplicationFormFilling.java:307)
+at com.ghana.app.qa.pages.TravelInfoPage.PassSecondaryRefDetails(TravelInfoPage.java:231)
+at com.ghana.app.qa.testcases.ApplicationFormFilling.PassSecondaryRefDetailsTest(ApplicationFormFilling.java:308)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -514,22 +451,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PassSecondaryRefDetailsTest -->
-        <test-method status="PASS" signature="clickOnContinuebuttonTest()[pri:46, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@7403c468]" name="clickOnContinuebuttonTest" duration-ms="88" started-at="2019-02-28T12:44:22Z" finished-at="2019-02-28T12:44:22Z">
+        <test-method status="PASS" signature="clickOnContinuebuttonTest()[pri:46, instance:com.ghana.app.qa.testcases.ApplicationFormFilling@75881071]" name="clickOnContinuebuttonTest" duration-ms="125" started-at="2019-03-01T05:59:50Z" finished-at="2019-03-01T05:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnContinuebuttonTest -->
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
-=======
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passComment -->
-      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
->>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
