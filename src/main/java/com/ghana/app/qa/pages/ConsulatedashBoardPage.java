@@ -20,6 +20,21 @@ public class ConsulatedashBoardPage extends TestBase{
 	@FindBy(xpath = "//ul[@class='list-group list-group-flush']")
 	List<WebElement> clickOnNewApplication;
 	
+	@FindBy(xpath = "//h6[contains(text(), 'Reverification')]")
+	WebElement reverification;
+		
+	@FindBy(xpath = "//h6[contains(text(),'Approved Applications')]")
+	WebElement approvedApplications;
+	
+	@FindBy(xpath = "//h6[contains(text(),'Rejected Application')]")
+	WebElement rejectedApplication;
+	
+	@FindBy(xpath = "//h6[contains(text(),'Interview Scheduled')]")
+	WebElement interviewScheduled;
+	
+	@FindBy(xpath = "//h6[contains(text(),'HCG Application')]")
+	WebElement HCGApplication;
+	
 	
 	public void clickOnNewApplication(){
 	

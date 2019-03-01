@@ -14,6 +14,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,12 +32,16 @@ public class TestUtil extends TestBase  {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	public static WebDriver driver;
+	public static DesiredCapabilities caps;
+	public static Properties prop;
+	public static String driverPath;	
 	public static String OSName = "";
-	public static String driverPath;
+
 	public static long PAGE_LOAD_TIMEOUT = 120;
 	public static long IMPLICIT_WAIT = 120;
 	public static String title = "";
-
 	public static String screenshotName = "";
 	
 	// Static variable for Launch activety of browser

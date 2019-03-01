@@ -155,6 +155,8 @@ public class SignUpPage extends TestBase {
 		
 		try{
 			for (WebElement we : checkBoxesClick){
+				System.out.println("checkBoxesClick==>" +checkBoxesClick.size());
+				Thread.sleep(2000);
 				TestUtil.actionClassMethod(we);					
 			}
 			

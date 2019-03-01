@@ -11,6 +11,10 @@ import static com.ghana.app.qa.util.TestUtil.prop;
 import static com.ghana.app.qa.util.TestUtil.USERNAME;
 import static com.ghana.app.qa.util.TestUtil.ACCESS_KEY;
 import static com.ghana.app.qa.util.TestUtil.SauceLabURL;
+import static com.ghana.app.qa.util.TestUtil.driver;
+import static com.ghana.app.qa.util.TestUtil.driverPath;
+import static com.ghana.app.qa.util.TestUtil.caps;
+import static com.ghana.app.qa.util.TestUtil.OSName;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Platform;
@@ -38,10 +42,6 @@ public class TestBase {
 	// public static String hubURL1 = "http://192.168.1.32:5566/wd/hub";
 	//Logger log = Logger.getLogger(TestBase.class) ;	
 	public static WebDriver driver;
-	public static DesiredCapabilities caps;
-	public static Properties prop;
-	public static String OSName = "";
-	public static String driverPath;
 	
 	//E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
 	public TestBase() throws IOException, InterruptedException {
@@ -270,7 +270,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-		driver.get(prop.getProperty("GhanaWebURL"));	
+		driver.get(prop.getProperty("HCDLoginURL"));	
 	
 	}
 
