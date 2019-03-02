@@ -3,12 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
         <methods>
           <include name="setUp"/>
+<<<<<<< HEAD
           <include name="getUploadDoc1Test"/>
+=======
+          <include name="clickOnDocuments"/>
+>>>>>>> 9d6606a6bce0d714577ee7babfb3da40d92b986b
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

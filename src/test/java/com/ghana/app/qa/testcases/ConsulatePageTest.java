@@ -65,10 +65,17 @@ public class ConsulatePageTest extends DriverInit {
 	@Test(priority=8)
 	public void passComment(){	
 		applicantDashBoardPage.passComment("Verifying your Application");
-		applicantDashBoardPage.addCooment();		
+		applicantDashBoardPage.addCooment();
+		applicantDashBoardPage.getTextFromAddedComment();
 		Assert.assertEquals(applicantDashBoardPage.getTextFromAddedComment(), "Verifying your Application", "Latest passed comment is not matched after getting text from comment section");
 		
 	}
-	
+	@Test(priority=9)
+	public void clickOnDocuments() throws InterruptedException{	
+		cNDocumentVerificaton.clickOnDocument();
+		Assert.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), "Confirmed air ticket", "Confirmed air ticket window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section");
+		
+	}
+
 	
 }

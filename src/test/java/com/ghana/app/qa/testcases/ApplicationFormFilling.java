@@ -18,7 +18,12 @@ public class ApplicationFormFilling extends DriverInit {
 		
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
+<<<<<<< HEAD
         signUpPage.clickOnCheckBoxes();
+=======
+		Thread.sleep(2000);
+		signUpPage.clickOnCheckBoxes();
+>>>>>>> 9d6606a6bce0d714577ee7babfb3da40d92b986b
 		signUpPage.selectRadioButton();
 		signUpPage.SelectPassportType();
        Thread.sleep(2000);

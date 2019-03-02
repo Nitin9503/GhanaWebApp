@@ -1,13 +1,14 @@
 package com.ghana.app.qa.pages;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.applicationID;
 public class CNDocumentVerificaton extends TestBase {
 
 	public CNDocumentVerificaton() throws IOException, InterruptedException {
@@ -53,7 +54,93 @@ public class CNDocumentVerificaton extends TestBase {
 	@FindBy(xpath = "//input[@type='checkbox' and @onclick='selectall(this)']")
 	WebElement selectAllCheckBox;
 	
+	
+	@FindBy(xpath = "//img[@src='/images/pdfimg.png']")
+	List<WebElement> clcikOnDocuments;
+	
+	@FindBy(xpath = "/uploaded_Doc/applicationID/1.png")
+	WebElement clcikOnPhoto;
 
+	@FindBy(xpath = "//h4[contains(text(),'Confirmed air ticket')]")
+	WebElement titleOfConfirmedAirTicketWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Recent passport size photo')]")
+	WebElement titleOfRecentPhotoWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Yellow fever vaccination')]")
+	WebElement titleOfYellowFeverWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Covering letter')]")
+	WebElement titleOfCoveringLetterWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Photocopy of draft')]")
+	WebElement titleOfPhotocopyOfDraftWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'ID proof of reference')]")
+	WebElement titleOfIDProofOfReferenceWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Original invitation letter')]")
+	WebElement titleOfOriginalInvitationLetterWindow;
+	
+	@FindBy(xpath = "//h4[contains(text(),'Proof of transit valid visa')]")
+	WebElement titleOfProofOfTransitValidVisaWindow;
+
+	@FindBy(xpath = "//div[@id='270965']//button[@type='button'][contains(text(),'×')]")
+	WebElement crossButtonToCloseWindow;
+
+	@FindBy(xpath = "//button[@type='button' and text()='Close']")
+	WebElement closeButtonToCloseWindow;
+	
+	public void crossButtonToCloseWindow(){
+		crossButtonToCloseWindow.click();
+		
+	}
+	public void closeButtonToCloseWindow(){
+		closeButtonToCloseWindow.click();
+		
+	}
+	public void clickOnDocument() {
+	WebElement i =	clcikOnDocuments.get(3);	
+			i.click();	
+
+	}
+	public String titleOfConfirmedAirTicketWindow() throws InterruptedException{
+		Thread.sleep(2000);
+		return titleOfConfirmedAirTicketWindow.getText();
+	}
+    
+	public String titleOfRecentPhotoWindow(){
+		
+		return titleOfRecentPhotoWindow.getText();
+		
+	}
+	public String titleOfYellowFeverWindow(){
+		return titleOfYellowFeverWindow.getText();
+		
+	}
+	public String titleOfCoveringLetterWindow(){
+		
+		return titleOfCoveringLetterWindow.getText();
+	}
+	public String titleOfPhotocopyOfDraftWindow(){
+		return titleOfPhotocopyOfDraftWindow.getText();
+		
+	}
+	public String titleOfIDProofOfReferenceWindow(){
+		return titleOfIDProofOfReferenceWindow.getText();
+		
+	}
+	public String titleOfOriginalInvitationLetterWindow(){
+		return titleOfOriginalInvitationLetterWindow.getText();
+		
+	}
+	public String titleOfProofOfTransitValidVisaWindow(){
+	return titleOfProofOfTransitValidVisaWindow.getText();	
+		
+	}
+	
+	
+	
 	public void clickOnReject() {
 		reject.click();
 
