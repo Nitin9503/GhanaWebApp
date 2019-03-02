@@ -24,12 +24,8 @@ public class ApplicationFormFilling extends DriverInit {
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
 		Thread.sleep(2000);
-		// TestUtil.actionClassMethod(driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")));
-
 		signUpPage.clickOnCheckBoxes();
 		signUpPage.selectRadioButton();
-		// driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")).click();
-		// signUpPage.termsCheckboxselect();
 		signUpPage.SelectPassportType();
 
 	}

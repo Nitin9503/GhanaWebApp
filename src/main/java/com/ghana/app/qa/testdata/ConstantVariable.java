@@ -1,6 +1,10 @@
 package com.ghana.app.qa.testdata;
 
 public class ConstantVariable {
+	//Consulate Side 
+	public static String applicationID= "";
+	
+	
 	
 	// **Review Application page **
 	//Personal info

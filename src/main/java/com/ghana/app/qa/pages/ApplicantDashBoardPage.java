@@ -1,7 +1,7 @@
 package com.ghana.app.qa.pages;
 
 import java.io.IOException;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.applicationID;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -28,8 +28,8 @@ public class ApplicantDashBoardPage extends TestBase {
 	@FindBy(xpath = "//span[text()='Schedule Interview']")
 	WebElement scheduleInterviewClick;
 	
-	@FindBy(xpath = "//input[@id='applicantID' and @value='AP12354']")
-	WebElement applicationID ;
+	@FindBy(xpath = "//input[@id='applicantID']")
+	WebElement applicationId ;
 	
 	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Employment']")
 	WebElement yettoconfirm ;
@@ -102,12 +102,15 @@ public class ApplicantDashBoardPage extends TestBase {
 		addComment.click();
 		
 	}
+	public void applicationID(){		
+		applicationID = applicationId.getText();
+		System.out.println("applicationID===>" +applicationID);
+		
+	}
 	public String getTextFromAddedComment(){		
 		String str = textFromPassComment.getText();
-		String newString  = str.replaceAll("01 Mar 2019 10:41 AM", "");
-		return newString;
-		
-
+		String properString =str.substring(0, str.length()-21);
+		return properString;
 		
 	}
 
