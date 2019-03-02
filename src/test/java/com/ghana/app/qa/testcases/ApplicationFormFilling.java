@@ -1,13 +1,8 @@
 package com.ghana.app.qa.testcases;
-
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.ghana.app.qa.base.DriverInit;
 import com.ghana.app.qa.util.TestUtil;
 
@@ -20,25 +15,20 @@ public class ApplicationFormFilling extends DriverInit {
 	// ---------------------SignUp page Test----------------------------------//
 	@Test(priority = 6)
 	public void selectPassPortType() throws InterruptedException, IOException {
-
+		
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
-		Thread.sleep(2000);
-		// TestUtil.actionClassMethod(driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")));
-
-		signUpPage.clickOnCheckBoxes();
+        signUpPage.clickOnCheckBoxes();
 		signUpPage.selectRadioButton();
-		// driver.findElement(By.xpath("//input[@type='checkbox' and @id ='customCheck3']")).click();
-		// signUpPage.termsCheckboxselect();
 		signUpPage.SelectPassportType();
-
+       Thread.sleep(2000);
 	}
 
 	@Test(priority = 7)
 	public void selectNationalityTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectNationality();
-
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 8)
@@ -208,8 +198,7 @@ public class ApplicationFormFilling extends DriverInit {
 
 	}
 
-	// ----------------------Travel Info page
-	// Test----------------------------------//
+	// ----------------------Travel Info page Test----------------------------------//
 	@Test(priority = 32)
 	public void clickOnIsApplicantPossessionRoundTicketTest()
 			throws InterruptedException, IOException {
@@ -318,5 +307,21 @@ public class ApplicationFormFilling extends DriverInit {
 		travelInfoPage.clickOnContinuebutton();
 
 	}
+	// ----------------------Upload Doc page Test----------------------------------//
+	@Test(priority = 47)
+	public void getUploadDocTest() throws InterruptedException,
+			IOException {
 
+		uploadDocPage.getUploadDoc();
+
+	}
+	@Test(priority = 48)
+	public void clicksaveAndContiBtnTest() throws InterruptedException,
+			IOException {
+
+		uploadDocPage.clicksaveAndContiBtn();
+
+	}
+	
+	
 }

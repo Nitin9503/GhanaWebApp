@@ -61,7 +61,7 @@ public class EmergencyContactPage extends TestBase {
 	}
 	public void emergencyProfessionDetails(String empProfession, String employerOrSchoolName, String employerOrSchooladdress, String ePincode, String eCity, String eState, String eCountry, String eSchoolContactNo){
 		emergency_profession.sendKeys(empProfession);
-		emergencyCompanyOrSchoolname.sendKeys(employerOrSchooladdress);
+		emergencyCompanyOrSchoolname.sendKeys(employerOrSchoolName);
 		emergency_pincode.sendKeys(ePincode);
 		emergency_employer_address.sendKeys(employerOrSchooladdress);
 		emergency_city.sendKeys(eCity);

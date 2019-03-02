@@ -56,7 +56,9 @@ public class PersonalInfoPage extends TestBase {
 		return applicationId.getText().substring(16);
 	}
 
-	public void SelectvisaFees() {
+	public void SelectvisaFees() throws InterruptedException {
+		
+		Thread.sleep(2000);
 		TestUtil.actionClassMethod(visaFees);
 		clickVisaFees.click();
 	}

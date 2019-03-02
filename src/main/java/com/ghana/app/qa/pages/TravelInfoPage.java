@@ -46,21 +46,22 @@ public class TravelInfoPage extends TestBase{
 	@FindBy(xpath = "//li[text()='Train']")
 	WebElement train ;
 	
-	@FindBy(xpath = "//input[@id='purpose_of_journey']")
+	@FindBy(xpath = "//span[text()='Purpose of journey']")
 	WebElement purpose_of_journey ;
+	
 	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Visit Family']")
 	WebElement VisitFamily;
 	
 	@FindBy(xpath = "//input[@id='primary_ref_firstname']")
 	WebElement primaryRefFirstname ;
 	
-	@FindBy(xpath = "//label[@for='primary_ref_lastname']")
+	@FindBy(id = "primary_ref_lastname")
 	WebElement primary_ref_lastname ;
 	
 	@FindBy(xpath = "//input[@id='primary_ref_address']")
 	WebElement primary_ref_address ;
 	
-	@FindBy(xpath = "//label[@for='primary_ref_pincode']")
+	@FindBy(id = "primary_ref_pincode")
 	WebElement primary_ref_pincode ;
 
 	@FindBy(xpath = "//input[@id='primary_ref_city']")
@@ -78,13 +79,13 @@ public class TravelInfoPage extends TestBase{
 	@FindBy(xpath = "//input[@id='secondary_ref_firstname']")
 	WebElement secondaryRefFirstname ;
 	
-	@FindBy(xpath = "//label[@for='secondary_ref_lastname']")
+	@FindBy(id = "secondary_ref_lastname")
 	WebElement secondary_ref_lastname ;
 	
 	@FindBy(xpath = "//input[@id='secondary_ref_address']")
 	WebElement secondary_ref_address ;
 	
-	@FindBy(xpath = "//label[@for='secondary_ref_pincode']")
+	@FindBy(id = "secondary_ref_pincode")
 	WebElement secondary_ref_pincode ;
 
 	@FindBy(xpath = "//input[@id='secondary_ref_city']")
@@ -153,7 +154,7 @@ public class TravelInfoPage extends TestBase{
 	}
 	public void clickPurpose_of_journey() throws InterruptedException{
 		TestUtil.actionClassMethod(purpose_of_journey);
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		VisitFamily.click();
 		
 	}
