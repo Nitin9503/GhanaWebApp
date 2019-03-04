@@ -114,8 +114,5 @@ public class ApplicantDashBoardPage extends TestBase {
 		
 	}
 
-	
-	
-	
 
 }

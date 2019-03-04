@@ -1,4 +1,5 @@
 package com.ghana.app.qa.testcases;
+
 import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -15,30 +16,23 @@ public class ApplicationFormFilling extends DriverInit {
 	// ---------------------SignUp page Test----------------------------------//
 	@Test(priority = 6)
 	public void selectPassPortType() throws InterruptedException, IOException {
-		
+
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
-<<<<<<< HEAD
-        signUpPage.clickOnCheckBoxes();
-=======
-		Thread.sleep(2000);
 		signUpPage.clickOnCheckBoxes();
->>>>>>> 9d6606a6bce0d714577ee7babfb3da40d92b986b
 		signUpPage.selectRadioButton();
 		signUpPage.SelectPassportType();
-       Thread.sleep(2000);
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 7)
-	public void selectNationalityTest() throws InterruptedException,
-			IOException {
+	public void selectNationalityTest() throws InterruptedException, IOException {
 		signUpPage.selectNationality();
 		Thread.sleep(2000);
 	}
 
 	@Test(priority = 8)
-	public void selectPortOfArrivalTest() throws InterruptedException,
-			IOException {
+	public void selectPortOfArrivalTest() throws InterruptedException, IOException {
 		signUpPage.selectPortOfArrival();
 
 	}
@@ -59,16 +53,14 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 13)
-	public void enterCaptchaFieldTest() throws InterruptedException,
-			IOException {
+	public void enterCaptchaFieldTest() throws InterruptedException, IOException {
 		signUpPage.enterCaptchaField("AUX125P");
 		signUpPage.continueBtn();
 		// signUpPage.cancelBtn();
 	}
 
 	@Test(priority = 11)
-	public void selectDateOfBirthTest() throws InterruptedException,
-			IOException {
+	public void selectDateOfBirthTest() throws InterruptedException, IOException {
 		signUpPage.selectDateOfBirth("8-Dec-2000");
 		signUpPage.continueBtn();
 
@@ -96,8 +88,7 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 17)
-	public void selectVisaLocationTest() throws InterruptedException,
-			IOException {
+	public void selectVisaLocationTest() throws InterruptedException, IOException {
 		personalInfoPage.SelectvisaLocation();
 
 	}
@@ -115,8 +106,7 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 20)
-	public void passPassportNumberTest() throws InterruptedException,
-			IOException {
+	public void passPassportNumberTest() throws InterruptedException, IOException {
 		personalInfoPage.passPassportNumber("A986532A");
 
 	}
@@ -128,15 +118,13 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 22)
-	public void selectPassIssueDateTest() throws InterruptedException,
-			IOException {
+	public void selectPassIssueDateTest() throws InterruptedException, IOException {
 		personalInfoPage.selectPassIssueDate("28-Jan-2014");
 
 	}
 
 	@Test(priority = 23)
-	public void selectPassExpiryDateTest() throws InterruptedException,
-			IOException {
+	public void selectPassExpiryDateTest() throws InterruptedException, IOException {
 		personalInfoPage.selectPassExpiryDate("8-Dec-2032");
 
 	}
@@ -148,8 +136,7 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 25)
-	public void clickOnSaveAndContinueTest() throws InterruptedException,
-			IOException {
+	public void clickOnSaveAndContinueTest() throws InterruptedException, IOException {
 		personalInfoPage.clickOnSaveAndContinue();
 
 	}
@@ -157,23 +144,20 @@ public class ApplicationFormFilling extends DriverInit {
 	// ----------------------Address Info page
 	// Test----------------------------------//
 	@Test(priority = 26)
-	public void selectFormerNationalityTest() throws InterruptedException,
-			IOException {
+	public void selectFormerNationalityTest() throws InterruptedException, IOException {
 		addressInfoPage.selectFormerNaitonality();
 
 	}
 
 	@Test(priority = 27)
 	public void filladdressInfoTest() throws InterruptedException, IOException {
-		addressInfoPage.PassAddressInfofield("Flat No. 302 Lambodhar Classic",
-				"Serene Medows, Gangapur Raod ", " Near Media House,",
-				"444015", "Nashik", "Maharashtra", "India");
+		addressInfoPage.PassAddressInfofield("Flat No. 302 Lambodhar Classic", "Serene Medows, Gangapur Raod ",
+				" Near Media House,", "444015", "Nashik", "Maharashtra", "India");
 
 	}
 
 	@Test(priority = 28)
-	public void clickSaveAndContinuebtnTest() throws InterruptedException,
-			IOException {
+	public void clickSaveAndContinuebtnTest() throws InterruptedException, IOException {
 		addressInfoPage.clickSaveAndContinuebtn();
 
 	}
@@ -181,10 +165,8 @@ public class ApplicationFormFilling extends DriverInit {
 	// ----------------------Emergency contact page
 	// Test----------------------------------//
 	@Test(priority = 29)
-	public void emergencyContactDetailsTest() throws InterruptedException,
-			IOException {
-		emergencyContactPage.emergencyContactDetails("Pratik", "Shirsath",
-				"7620098193");
+	public void emergencyContactDetailsTest() throws InterruptedException, IOException {
+		emergencyContactPage.emergencyContactDetails("Pratik", "Shirsath", "7620098193");
 
 	}
 
@@ -195,26 +177,23 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 31)
-	public void emergencyProfessionDetailsTest() throws InterruptedException,
-			IOException {
+	public void emergencyProfessionDetailsTest() throws InterruptedException, IOException {
 		emergencyContactPage.emergencyProfessionDetails("Engineer", "infosys ",
-				"B wing Complex It park, hinjewadi phage 1", "440012", "Pune",
-				"Maharashtra", "India", "9856231254");
+				"B wing Complex It park, hinjewadi phage 1", "440012", "Pune", "Maharashtra", "India", "9856231254");
 
 	}
 
-	// ----------------------Travel Info page Test----------------------------------//
+	// ----------------------Travel Info page
+	// Test----------------------------------//
 	@Test(priority = 32)
-	public void clickOnIsApplicantPossessionRoundTicketTest()
-			throws InterruptedException, IOException {
+	public void clickOnIsApplicantPossessionRoundTicketTest() throws InterruptedException, IOException {
 		travelInfoPage.clickOnIsApplicantPossessionRoundTicket();
 		travelInfoPage.clickOnYes();
 
 	}
 
 	@Test(priority = 33)
-	public void passDateOfDepartureTest() throws InterruptedException,
-			IOException {
+	public void passDateOfDepartureTest() throws InterruptedException, IOException {
 		travelInfoPage.passDateOfDeparture("8-Dec-2019");
 		travelInfoPage.clickOnContinuebutton();
 	}
@@ -233,100 +212,88 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 36)
-	public void clickPurpose_of_journeyTest() throws InterruptedException,
-			IOException {
+	public void clickPurpose_of_journeyTest() throws InterruptedException, IOException {
 		travelInfoPage.clickPurpose_of_journey();
 
 	}
 
 	@Test(priority = 37)
-	public void passPrimaryRefFirstnameTest() throws InterruptedException,
-			IOException {
+	public void passPrimaryRefFirstnameTest() throws InterruptedException, IOException {
 		travelInfoPage.passPrimaryRefFirstname("Kojo");
 
 	}
 
 	@Test(priority = 38)
-	public void passPrimaryRefLastnameTest() throws InterruptedException,
-			IOException {
+	public void passPrimaryRefLastnameTest() throws InterruptedException, IOException {
 		travelInfoPage.passPrimaryRefLastname("Amankwah");
 
 	}
 
 	@Test(priority = 39)
-	public void pass_Primary_ref_addressTest() throws InterruptedException,
-			IOException {
+	public void pass_Primary_ref_addressTest() throws InterruptedException, IOException {
 		travelInfoPage.pass_Primary_ref_address("8 John Wall Way, Ashaiman");
 
 	}
 
 	@Test(priority = 40)
-	public void pass_primary_ref_pincodeTest() throws InterruptedException,
-			IOException {
+	public void pass_primary_ref_pincodeTest() throws InterruptedException, IOException {
 		travelInfoPage.pass_primary_ref_pincode("GA017");
 
 	}
 
 	@Test(priority = 41)
-	public void pass_primary_ref_cityTest() throws InterruptedException,
-			IOException {
+	public void pass_primary_ref_cityTest() throws InterruptedException, IOException {
 		travelInfoPage.pass_primary_ref_city("Sekondi-Takoradi");
 
 	}
 
 	@Test(priority = 42)
-	public void pass_primary_ref_stateTest() throws InterruptedException,
-			IOException {
+	public void pass_primary_ref_stateTest() throws InterruptedException, IOException {
 		travelInfoPage.pass_primary_ref_state("Brong-Aha[5]fo");
 
 	}
 
 	@Test(priority = 43)
-	public void pass_primary_ref_countryTest() throws InterruptedException,
-			IOException {
+	public void pass_primary_ref_countryTest() throws InterruptedException, IOException {
 		travelInfoPage.pass_primary_ref_country("Ghana");
 
 	}
 
 	@Test(priority = 44)
-	public void pass_primary_ref_phone_numberTest()
-			throws InterruptedException, IOException {
+	public void pass_primary_ref_phone_numberTest() throws InterruptedException, IOException {
 
 		travelInfoPage.pass_primary_ref_phone_number("+233-24 222 3344");
 
 	}
 
 	@Test(priority = 45)
-	public void PassSecondaryRefDetailsTest() throws InterruptedException,
-			IOException {
-		travelInfoPage.PassSecondaryRefDetails("Ebo", "Afriyie",
-				"77436 Fairview Trail, Sekondi-Takoradi", "GA015", "Kumasi",
-				"Ashanti[4]", "Ghana", "+233-24 222 3344");
+	public void PassSecondaryRefDetailsTest() throws InterruptedException, IOException {
+		travelInfoPage.PassSecondaryRefDetails("Ebo", "Afriyie", "77436 Fairview Trail, Sekondi-Takoradi", "GA015",
+				"Kumasi", "Ashanti[4]", "Ghana", "+233-24 222 3344");
 
 	}
 
 	@Test(priority = 46)
-	public void clickOnContinuebuttonTest() throws InterruptedException,
-			IOException {
+	public void clickOnContinuebuttonTest() throws InterruptedException, IOException {
 
 		travelInfoPage.clickOnContinuebutton();
 
 	}
-	// ----------------------Upload Doc page Test----------------------------------//
+
+	// ----------------------Upload Doc page
+	// Test----------------------------------//
 	@Test(priority = 47)
-	public void getUploadDocTest() throws InterruptedException,
-			IOException {
+	public void getUploadDocTest() throws InterruptedException, IOException {
 
 		uploadDocPage.getUploadDoc();
 
 	}
+
 	@Test(priority = 48)
-	public void clicksaveAndContiBtnTest() throws InterruptedException,
-			IOException {
+	public void clicksaveAndContiBtnTest() throws InterruptedException, IOException {
 
 		uploadDocPage.clicksaveAndContiBtn();
 
 	}
-	
-	
+
 }

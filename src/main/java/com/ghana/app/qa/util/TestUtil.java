@@ -130,10 +130,10 @@ public class TestUtil extends TestBase  {
 		element.click();
 	}
 
-	public static void waitForElementforType(WebElement element, int maxTimeout, String value) {
+	public static void waitForElementforType(WebElement element, int maxTimeout) {
 		WebDriverWait wait = new WebDriverWait(driver, maxTimeout);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
-		element.sendKeys(value);
+		
 	}
 
 	public static void actionClassMethod(WebElement element) {
