@@ -166,13 +166,14 @@ public class ReviewApplicationPage extends TestBase{
 	@FindBy(className = "btn btn-primary btn-lg btnPrevious")
 	WebElement previous ;
 
+	//--------Applicant info
 	public String getTextFromfirstLastName(){
-		return firstLastName.getText();
+		return firstLastName.getText().substring(7);
 		
 	}
 	
 	public String getTextBirthDate(){
-		return birthDate.getText().substring(13, 22);
+		return birthDate.getText().substring(13, 23);
 		
 	}
 	
@@ -187,13 +188,15 @@ public class ReviewApplicationPage extends TestBase{
 	}
 	
 	public String getTextFromPassportIssuedDate(){
-		return passportIssuedDate.getText().substring(44, 53);
+		return passportIssuedDate.getText().substring(43, 53);
 		
 	}
 	public String getTextFromPassportExpiryDate(){
-		return passportExpiryDate.getText().substring(69);
+		return passportExpiryDate.getText().substring(74);
 		
 	}
+	
+	//------------------------Address Info
 	public String getTextFromAddress(){
 		return address.getText().substring(10);
 		
@@ -238,6 +241,8 @@ public class ReviewApplicationPage extends TestBase{
 		return phoneNumber.getText().substring(11);
 		
 	}
+	
+//-----------------Emergency Contact
 	public String getTextFromEmerContactName(){
 		return emerContactName.getText().substring(7);
 		
@@ -285,6 +290,8 @@ public class ReviewApplicationPage extends TestBase{
 		return emerEmployerPhoneNumber.getText().substring(22);
 		
 	}
+	
+	//-------Travel info
 	public String getTextFromDateOfDeparture(){
 		return dateOfDeparture.getText().substring(19);
 		

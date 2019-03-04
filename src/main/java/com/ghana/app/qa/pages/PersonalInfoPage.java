@@ -74,6 +74,10 @@ public class PersonalInfoPage extends TestBase {
 
 	public void passLastName(String lastName) {
 		lastname.sendKeys(lastName);
+		//return lastname.getText();
+		
+		
+		
 	}
 
 	public void passPassportNumber(String passportNumber) {

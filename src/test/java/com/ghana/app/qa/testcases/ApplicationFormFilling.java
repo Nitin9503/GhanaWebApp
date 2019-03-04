@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.ghana.app.qa.base.DriverInit;
 import com.ghana.app.qa.util.TestUtil;
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 
 public class ApplicationFormFilling extends DriverInit {
 
@@ -19,8 +20,10 @@ public class ApplicationFormFilling extends DriverInit {
 
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
-		signUpPage.clickOnCheckBoxes();
-		signUpPage.selectRadioButton();
+
+        signUpPage.clickOnCheckBoxes();
+        signUpPage.selectRadioButton();
+
 		signUpPage.SelectPassportType();
 		Thread.sleep(2000);
 	}
@@ -60,8 +63,12 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 11)
-	public void selectDateOfBirthTest() throws InterruptedException, IOException {
-		signUpPage.selectDateOfBirth("8-Dec-2000");
+
+
+	public void selectDateOfBirthTest() throws InterruptedException,
+			IOException {
+		signUpPage.selectDateOfBirth(birthDate);
+
 		signUpPage.continueBtn();
 
 	}
@@ -95,19 +102,22 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 18)
 	public void passFirstNameTest() throws InterruptedException, IOException {
-		personalInfoPage.passFirstName("Sachin");
+		personalInfoPage.passFirstName(firstName);
 
 	}
 
 	@Test(priority = 19)
 	public void passLastNameTest() throws InterruptedException, IOException {
-		personalInfoPage.passLastName("Patil");
+		personalInfoPage.passLastName(lastName);
 
 	}
 
 	@Test(priority = 20)
-	public void passPassportNumberTest() throws InterruptedException, IOException {
-		personalInfoPage.passPassportNumber("A986532A");
+
+	public void passPassportNumberTest() throws InterruptedException,
+			IOException {
+		personalInfoPage.passPassportNumber(passportNumber);
+
 
 	}
 
@@ -118,20 +128,26 @@ public class ApplicationFormFilling extends DriverInit {
 	}
 
 	@Test(priority = 22)
-	public void selectPassIssueDateTest() throws InterruptedException, IOException {
-		personalInfoPage.selectPassIssueDate("28-Jan-2014");
+
+	public void selectPassIssueDateTest() throws InterruptedException,
+			IOException {
+		personalInfoPage.selectPassIssueDate(passportIssuedDate);
+
 
 	}
 
 	@Test(priority = 23)
-	public void selectPassExpiryDateTest() throws InterruptedException, IOException {
-		personalInfoPage.selectPassExpiryDate("8-Dec-2032");
+
+	public void selectPassExpiryDateTest() throws InterruptedException,
+			IOException {
+		personalInfoPage.selectPassExpiryDate(passportExpiryDate);
+
 
 	}
 
 	@Test(priority = 24)
 	public void passPlaceOfBirthTest() throws InterruptedException, IOException {
-		personalInfoPage.passPlaceOfBirth("Nagpur");
+		personalInfoPage.passPlaceOfBirth(birthPlace);
 
 	}
 

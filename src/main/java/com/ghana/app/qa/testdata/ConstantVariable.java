@@ -8,16 +8,17 @@ public class ConstantVariable {
 	
 	// **Review Application page **
 	//Personal info
-	public static String firstLastName= "";
-	public static String birthDate= "";	
-	public static String birthPlace= "";
-	public static String passportNumber= "";
-	public static String passportIssuedDate= "";
-	public static String passportExpiryDate= "";
+	public static String firstName= "Arjun";
+	public static String lastName= "Thawkar";
+	public static String birthDate= "04/02/1991";	
+	public static String birthPlace= "Nagpur";
+	public static String passportNumber= "A12345BA";
+	public static String passportIssuedDate= "04/29/2018";
+	public static String passportExpiryDate= "04/29/2020";
 	
 	
 	//Address Infoi
-	public static String address= "";
+	public static String address= "Arjun";
 	public static String pinCode= "";
 	public static String cityName= "";
 	public static String stateName= "";
