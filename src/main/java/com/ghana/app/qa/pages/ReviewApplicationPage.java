@@ -15,150 +15,151 @@ public class ReviewApplicationPage extends TestBase{
 	}
 	
 	//Personal Info
-	@FindBy(xpath = "//label[@id='lbl_name']")
+	@FindBy(id = "lbl_name")
 	WebElement firstLastName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_birth']")
+	@FindBy(id = "lbl_birth")
 	WebElement birthDate ;
 	
-	@FindBy(xpath = "//label[@id='lbl_birth']")
+	@FindBy(id = "lbl_place")
 	WebElement birthPlace ;
 	
-	@FindBy(xpath = "//label[@id='lbl_passport']")
+	@FindBy(id = "lbl_passport")
 	WebElement passportNumber ;
 	
-	@FindBy(xpath = "//label[@id='lbl_passport']")
+	@FindBy(id = "lbl_passport_issue")
 	WebElement passportIssuedDate ;
 	
-	@FindBy(xpath = "//label[@id='lbl_passport']")
+	@FindBy(id = "lbl_passport_expiry")
 	WebElement passportExpiryDate ;
 	
 	// Address info
-	@FindBy(xpath = "//label[@id='lbl_address']")
+	@FindBy(id = "lbl_address")
 	WebElement address ;
 	
-	@FindBy(xpath = "//label[@id='lbl_pin']")
+	@FindBy(id = "lbl_addresspin")
 	WebElement pinCode ;
 	
-	@FindBy(xpath = "//label[@id='lbl_pin']")
+	@FindBy(id = "lbl_addresscity")
 	WebElement cityName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_pin']")
+	@FindBy(id = "lbl_addressstate")
 	WebElement stateName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_pin']")
+	@FindBy(id = "lbl_addresscountry")
 	WebElement countryName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_address_type']")
+	@FindBy(id = "lbl_address_type]")
 	WebElement addressType ;
 	
-	@FindBy(xpath = "//label[@id='lbl_nationality']")
+	@FindBy(id = "lbl_nationality")
 	WebElement nationality ;
 	
-	@FindBy(xpath = "//label[@id='lbl_nationality']")
+	@FindBy(id = "lbl_formarnationality")
 	WebElement formerNationality ;
 	
-	@FindBy(xpath = "//label[@id='lbl_email']")
+	@FindBy(id = "lbl_email")
 	WebElement emailId ;
 	
-	@FindBy(xpath = "//label[@id='lbl_phone']")
+	@FindBy(id = "lbl_phone")
 	WebElement phoneNumber ;
 	
 	// Emergency contact
-	@FindBy(xpath = "//label[@id='lbl_em_name']")
+	@FindBy(id = "lbl_em_name")
 	WebElement emerContactName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_reln']")
+	@FindBy(id = "lbl_reln")
 	WebElement relationShip ;
 	
-	@FindBy(xpath = "//label[@id='lbl_em_phon']")
+	@FindBy(id = "lbl_em_phon")
 	WebElement emerPhoneNumber ;
 	
-	@FindBy(xpath = "//label[@id='lbl_profession']")
+	@FindBy(id = "lbl_profession")
 	WebElement profession ;
 	
-	@FindBy(xpath = "//label[@id='lbl_employer']")
+	@FindBy(id = "lbl_employer")
 	WebElement employer ;
 	
-	@FindBy(xpath = "//label[@id='lbl_em_address']")
+	@FindBy(id = "lbl_em_address")
 	WebElement employerAddress ;
 	
-	@FindBy(xpath = "//label[@id='lbl_em_pin']")
+	@FindBy(id = "lbl_em_pin")
 	WebElement emerPincode ;
 	
-	@FindBy(xpath = "//label[@id='lbl_em_pin']")
+	@FindBy(id = "lbl_em_city")
 	WebElement emerCityName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_profession']")
+	@FindBy(id = "lbl_em_state")
 	WebElement emerState ;
 	
-	@FindBy(xpath = "//label[@id='lbl_profession']")
+	@FindBy(id = "lbl_em_country")
 	WebElement emerCountry ;
 	
-	@FindBy(xpath = "//label[@id='lbl_em_phone']")
+	@FindBy(id = "lbl_em_phone")
 	WebElement emerEmployerPhoneNumber ;
 	
 	// Travel Info
 	
-	@FindBy(xpath = "//label[@id='lbl_depart']")
+	@FindBy(id = "lbl_depart")
 	WebElement dateOfDeparture ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tkt_no']")
+	@FindBy(id = "lbl_tkt_no")
 	WebElement ticketNumber ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tkt_no']")
+	@FindBy(id = "lbl_tkt_Rdno")
 	WebElement roundTicket ;
 	
-	@FindBy(xpath = "//label[@id='lbl_trav_by']")
+	@FindBy(id = "lbl_trav_by")
 	WebElement travellingBy ;
 	
-	@FindBy(xpath = "//label[@id='lbl_reach']")
+	@FindBy(id = "lbl_purpose_journey")
 	WebElement reachBy ;
 	
 	//Primary Reference
-	@FindBy(xpath = "//label[@id='lbl_tr_name']")
+	@FindBy(id = "lbl_tr_name")
 	WebElement primaryFirstLastName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_address']")
+	@FindBy(id = "lbl_tr_address")
 	WebElement primaryAddress ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin']")
+	@FindBy(id = "lbl_tr_pin")
 	WebElement primaryPinCode ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin']")
+	@FindBy(id = "lbl_tr_city")
 	WebElement primaryCity ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin']")
+	@FindBy(id = "lbl_tr_state")
 	WebElement primaryState ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin']")
+	@FindBy(id = "lbl_tr_country")
 	WebElement primaryCountry ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_ref']")
+	@FindBy(id = "lbl_tr_ref")
 	WebElement primaryRefrencePhoneNo ;
 	
 	// Secondary Reference
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_name2']")
+	@FindBy(id = "lbl_tr_name2")
 	WebElement secondaryFirstLastName ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_address2']")
+	@FindBy(id = "lbl_tr_address2")
 	WebElement secondaryAddress ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin2']")
+	@FindBy(id = "lbl_tr_pin2")
 	WebElement secondaryPinCode ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin2']")
+	@FindBy(id = "lbl_tr_city2")
 	WebElement secondaryCity ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin2']")
+	@FindBy(id = "lbl_tr_state2")
 	WebElement secondaryState ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_pin2']")
+	@FindBy(id = "lbl_tr_city2")
 	WebElement secondaryCountry ;
 	
-	@FindBy(xpath = "//label[@id='lbl_tr_ref2']")
+	@FindBy(id = "lbl_tr_ref2")
 	WebElement secondaryRefrencePhoneNo ;
+	
 
 	@FindBy(id = "applicant_review_application_form_btn")
 	WebElement saveContinueButton ;
@@ -168,164 +169,164 @@ public class ReviewApplicationPage extends TestBase{
 
 	//--------Applicant info
 	public String getTextFromfirstLastName(){
-		return firstLastName.getText().substring(7);
+		return firstLastName.getText().substring(2);
 		
 	}
 	
 	public String getTextBirthDate(){
-		return birthDate.getText().substring(13, 23);
+		return birthDate.getText().substring(2);
 		
 	}
 	
 	public String getTextFromBirthPlace(){
-		return birthPlace.getText().substring(40);
+		return birthPlace.getText().substring(2);
 		
 	}
 	
 	public String getTextFromPassportNumber(){
-		return passportNumber.getText().substring(14, 22);
+		return passportNumber.getText().substring(2);
 		
 	}
 	
 	public String getTextFromPassportIssuedDate(){
-		return passportIssuedDate.getText().substring(43, 53);
+		return passportIssuedDate.getText().substring(2);
 		
 	}
 	public String getTextFromPassportExpiryDate(){
-		return passportExpiryDate.getText().substring(74);
+		return passportExpiryDate.getText().substring(2);
 		
 	}
 	
 	//------------------------Address Info
 	public String getTextFromAddress(){
-		return address.getText().substring(10);
+		return address.getText().substring(2);
 		
 	}
 	public String getTextFrompinCode(){
-		return pinCode.getText().substring(6, 11);
+		return pinCode.getText().substring(2);
 		
 	}	
 
 	public String getTextFromCityName(){
-		return cityName.getText().substring(23, 29);
+		return cityName.getText().substring(2);
 		
 	}
 	public String getTextFromStateName(){
-		return stateName.getText().substring(41, 51);
+		return stateName.getText().substring(2);
 		
 	}
 	public String getTextFromCountryName(){
-		return countryName.getText().substring(70);
+		return countryName.getText().substring(2);
 		
 	}
 	
 	public String getTextFromAddressType(){
-		return addressType.getText().substring(14);
+		return addressType.getText().substring(2);
 	}
 	
 	
 	
 	public String getTextFromNationality(){
-		return nationality.getText().substring(15, 19);
+		return nationality.getText().substring(2);
 		
 	}
 	public String getTextFromFormerNationality(){
-		return formerNationality.getText().substring(28);
+		return formerNationality.getText();
 		
 	}
 	public String getTextFromEmailId(){
-		return emailId.getText().substring(8);
+		return emailId.getText().substring(2);
 		
 	}
 	public String getTextFromPhoneNumber(){
-		return phoneNumber.getText().substring(11);
+		return phoneNumber.getText().substring(2);
 		
 	}
 	
 //-----------------Emergency Contact
 	public String getTextFromEmerContactName(){
-		return emerContactName.getText().substring(7);
+		return emerContactName.getText();
 		
 	}
 	public String getTextFromRelationShip(){
-		return relationShip.getText().substring(10);
+		return relationShip.getText();
 		
 	}
 	
 	public String getTextFromEmerPhoneNumber(){
-		return emerPhoneNumber.getText().substring(16);
+		return emerPhoneNumber.getText();
 		
 	}
 	
 	public String getTextFromProfession(){
-		return profession.getText().substring(23);
+		return profession.getText();
 		
 	}
 	public String getTextFromEmployer(){
-		return employer.getText().substring(15);
+		return employer.getText();
 		
 	}
 	
 	public String getTextFromEmployerAddress(){
-		return employerAddress.getText().substring(20);
+		return employerAddress.getText();
 		
 	}
 	public String getTextFromEmerPincode(){
-		return emerPincode.getText().substring(11, 16);
+		return emerPincode.getText();
 		
 	}
 	public String getTextFromEmerCityName(){
-		return emerCityName.getText().substring(28, 34);
+		return emerCityName.getText();
 		
 	}
 	public String getTextFromEmerState(){
-		return emerState.getText().substring(58, 65);
+		return emerState.getText();
 		
 	}
 	public String getTextFromEmerCountry(){
-		return emerCountry.getText().substring(78);
+		return emerCountry.getText();
 		
 	}
 	public String getTextFromEmerEmployerPhoneNumber(){
-		return emerEmployerPhoneNumber.getText().substring(22);
+		return emerEmployerPhoneNumber.getText();
 		
 	}
 	
 	//-------Travel info
 	public String getTextFromDateOfDeparture(){
-		return dateOfDeparture.getText().substring(19);
+		return dateOfDeparture.getText();
 		
 	}
 	public String getTextFromtTicketNumber(){
-		return ticketNumber.getText().substring(14, 24);
+		return ticketNumber.getText();
 		
 	}
 	public String getTextFromRoundTicket(){
-		return roundTicket.getText().substring(38);
+		return roundTicket.getText();
 		
 	}
 	public String getTextFromTravellingBy(){
-		return travellingBy.getText().substring(17);
+		return travellingBy.getText();
 		
 	}
 	public String getTextFromReachBy(){
-		return reachBy.getText().substring(13);
+		return reachBy.getText();
 		
 	}
 	public String getTextFromPrimaryFirstLastName(){
-		return primaryFirstLastName.getText().substring(9);
+		return primaryFirstLastName.getText();
 		
 	}
 	public String getTextFromPrimaryAddress(){
-		return primaryAddress.getText().substring(12);
+		return primaryAddress.getText();
 		
 	}
 	public String getTextFromPrimaryPinCode(){
-		return primaryPinCode.getText().substring(13, 18);
+		return primaryPinCode.getText();
 		
 	}
 	public String getTextFromPrimaryCity(){
-		return primaryCity.getText().substring(24, 30);
+		return primaryCity.getText();
 		
 	}
 	public String getTextFromPrimaryState(){

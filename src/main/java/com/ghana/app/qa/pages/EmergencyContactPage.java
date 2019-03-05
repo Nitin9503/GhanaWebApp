@@ -22,7 +22,7 @@ public class EmergencyContactPage extends TestBase {
 	WebElement emergency_lastname;
 	@FindBy(xpath="//span[text()='Relationship']")
 	WebElement Relationship;
-	@FindBy(xpath="//ul[@id='img_category_options']/li[text()='Mother']")
+	@FindBy(xpath="//div[@id='nav-contact']//span[text()='Mother']")
 	WebElement Mother;
 	@FindBy(xpath="//input[@id='emergency_phone_number']")
 	WebElement emergency_phone_number;

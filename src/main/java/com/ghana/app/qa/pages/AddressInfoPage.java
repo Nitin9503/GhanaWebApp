@@ -21,7 +21,7 @@ public class AddressInfoPage extends TestBase {
 	WebElement FormerNationality;
 	@FindBy(xpath = "//input[@id='former_nationality_search']")
 	WebElement former_nationality_search;
-	@FindBy(xpath = "//ul[@id='ul_former_nationality']//li[text()='India']")
+	@FindBy(xpath = "//div[@id='nav-address']//span[text()='None']")
 	WebElement former_nationality_click;
 	@FindBy(xpath = "//input[@id='nationalityText']")
 	WebElement nationalityText;
@@ -47,7 +47,7 @@ public class AddressInfoPage extends TestBase {
 	WebElement mailing_country;
 	@FindBy(xpath = "//span[text()='Address Type']")
 	WebElement AddressType;
-	@FindBy(xpath = "//li[text()='Present Address']")
+	@FindBy(xpath = "//span[text()='Present Address']")
 	WebElement PresentAddress;
 	@FindBy(xpath = "//div[@id='nav-address']//input[@value='Previous']")
 	WebElement PreviousBtn;
@@ -60,8 +60,8 @@ public class AddressInfoPage extends TestBase {
 
 	public void selectFormerNaitonality() throws InterruptedException {
 		TestUtil.actionClassMethod(FormerNationality);
-		former_nationality_search.sendKeys("India");
-		Thread.sleep(2000);
+		//former_nationality_search.sendKeys("India");
+		//Thread.sleep(2000);
 		former_nationality_click.click();
 
 	}

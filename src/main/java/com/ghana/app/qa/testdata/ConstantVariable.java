@@ -18,16 +18,18 @@ public class ConstantVariable {
 	
 	
 	//Address Infoi
-	public static String address= "Arjun";
-	public static String pinCode= "";
-	public static String cityName= "";
-	public static String stateName= "";
-	public static String countryName= "";
-	public static String addressType= "";
-	public static String nationality= "";
-	public static String formerNationality= "";
-	public static String emailId= "";
-	public static String phoneNumber= "";
+	public static String FlatNo= "Flat No. 302 Lambodhar Classic";
+	public static String StreetName= "Serene Medows, Gangapur Raod";
+	public static String Landmark= "Near Media House.";
+	public static String pinCode= "444015";
+	public static String cityName= "Nashik";
+	public static String stateName= "Maharashtra";
+	public static String countryName= "India";
+	public static String addressType= "Present Address";
+	public static String nationality= "India";
+	public static String formerNationality= "India";
+	public static String emailId= "arjunthaokar9@gmail.com";
+	public static String phoneNumber= "9503152126";
 	
 	//Emergency contact 
 	public static String emerContactName= "";

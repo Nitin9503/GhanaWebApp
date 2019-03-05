@@ -17,19 +17,19 @@ public class VisaCategoriesPage extends TestBase {
 	@FindBy(xpath="//h3[@class='title-a']")
 	WebElement visaCategorisText;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[1]/div/div[2]/button")
+	@FindBy(id="btn_tourist")
 	WebElement touristVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[2]/div/div[2]/button")
+	@FindBy(id="btn_business")
 	WebElement businessVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[3]/div/div[2]/button")
+	@FindBy(id="btn_transit")
 	WebElement transitVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[4]/div/div[2]/button")
+	@FindBy(id="btn_employment")
 	WebElement employmentVisa;
 	
-	@FindBy(xpath="html/body/div[2]/div/div[2]/div[5]/div/div[2]/button")
+	@FindBy(id="btn_student")
 	WebElement studentVisa;
 	
 	public String validateVisaTypeTitle(){

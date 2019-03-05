@@ -22,10 +22,10 @@ public class TravelInfoPage extends TestBase{
 	@FindBy(xpath = "//span[text()='Is Applicant in Possession of Round Ticket?']")
 	WebElement isApplicantPossessionRoundTicket ;
 	
-	@FindBy(xpath = "//li[text()='Yes']")
+	@FindBy(xpath = "//span[text()='Yes']")
 	WebElement yes ;
 	
-	@FindBy(xpath = "//li[text()='No']")
+	@FindBy(xpath = "//span[text()='No']")
 	WebElement no ;
 	
 	@FindBy(id = "ticket_number")
@@ -34,22 +34,22 @@ public class TravelInfoPage extends TestBase{
 	@FindBy(xpath = "//span[text()='Traveling By']")
 	WebElement travelingBy ;
 	
-	@FindBy(xpath = "//li[text()='Air']")
+	@FindBy(xpath = "//span[text()='Air']")
 	WebElement air ;
 	
-	@FindBy(xpath = "//li[text()='Ship']")
+	@FindBy(xpath = "//span[text()='Ship']")
 	WebElement ship ;
 	
-	@FindBy(xpath = "//li[text()='Road']")
+	@FindBy(xpath = "//span[text()='Road']")
 	WebElement road ;
 	
-	@FindBy(xpath = "//li[text()='Train']")
+	@FindBy(xpath = "//span[text()='Train']")
 	WebElement train ;
 	
 	@FindBy(xpath = "//span[text()='Purpose of journey']")
 	WebElement purpose_of_journey ;
 	
-	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Visit Family']")
+	@FindBy(xpath = "//div[@id='nav-travel']//span[text()='Visit Family']")
 	WebElement VisitFamily;
 	
 	@FindBy(xpath = "//input[@id='primary_ref_firstname']")

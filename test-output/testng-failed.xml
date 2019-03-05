@@ -5,12 +5,8 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.ReviewApplicationPageTest">
         <methods>
-          <include name="getTextPersonalInfoTest"/>
+          <include name="getTextAddressInfoTest"/>
           <include name="setUp"/>
-<<<<<<< Updated upstream
-          <include name="clickOnConfirmedAirTicketWindow"/>
-=======
->>>>>>> Stashed changes
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
     </classes>

@@ -167,8 +167,8 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 27)
 	public void filladdressInfoTest() throws InterruptedException, IOException {
-		addressInfoPage.PassAddressInfofield("Flat No. 302 Lambodhar Classic", "Serene Medows, Gangapur Raod ",
-				" Near Media House,", "444015", "Nashik", "Maharashtra", "India");
+		addressInfoPage.PassAddressInfofield(FlatNo, StreetName,
+				Landmark, pinCode, cityName, stateName, countryName);
 
 	}
 

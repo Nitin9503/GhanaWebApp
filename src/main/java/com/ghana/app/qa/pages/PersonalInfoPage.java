@@ -21,11 +21,15 @@ public class PersonalInfoPage extends TestBase {
 	WebElement applicationId;
 	@FindBy(xpath = "//span[text()='Visa Fees']")
 	WebElement visaFees;//
-	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
+	//@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
+	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Single entry(3 months) visa Rs.8500.0']")
+	
 	WebElement clickVisaFees;//
 	@FindBy(xpath = "//span[text()='Select Visa Location']")
 	WebElement visaLocation;//
-	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Mumbai']")
+	//@FindBy(xpath = "//ul[@id='img_category_options']//span[text()='Mumbai']")
+	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Mumbai']")
+	
 	WebElement clickVisaLocation;//
 	@FindBy(xpath = "//input[@id='firstname']")
 	WebElement firstname;
