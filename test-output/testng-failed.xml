@@ -3,12 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ReviewApplicationPageTest">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
         <methods>
           <include name="setUp"/>
+<<<<<<< Updated upstream
           <include name="clickOnContinueBtnTest"/>
+=======
+          <include name="clickOnApprove"/>
+>>>>>>> Stashed changes
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

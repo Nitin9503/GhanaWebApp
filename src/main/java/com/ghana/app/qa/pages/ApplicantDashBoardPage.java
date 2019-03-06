@@ -68,6 +68,12 @@ public class ApplicantDashBoardPage extends TestBase {
 	WebElement textFromPassComment;
 		
 
+	public void clickOnNextButton(){
+		nextButton.click();
+	}
+	public void clickOnBackButton(){
+		backButton.click();
+	}
 	
 	public void clickOnApplicantInfor(){
 		applicantInforClick.click();

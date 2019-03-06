@@ -38,8 +38,7 @@ public class CNAddressInfo extends TestBase {
 	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='India']")
 	WebElement country;
 	
-	
-	
+
 	public String titleOfCNAddressInfoPage(){
 		
 		return driver.getTitle();

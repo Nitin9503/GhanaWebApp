@@ -4,25 +4,31 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.hslf.model.Sheet;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
 
 import com.ghana.app.qa.base.TestBase;
+import com.google.common.base.Function;
 
 
 
@@ -71,16 +77,6 @@ public class TestUtil extends TestBase  {
 
 	}
 
-	public static void clickOn(WebElement element, int timeouts) {
-
-		new WebDriverWait(driver, timeouts)
-				.until(ExpectedConditions.elementToBeClickable(element));
-		element.click();
-
-		/*WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(eleke));option for the same*/ 
-	}
-
 	public static void flashOnElement(WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		String bgcolor = element.getCssValue("backgroundColor");
@@ -118,22 +114,15 @@ public class TestUtil extends TestBase  {
 	public static void uploadfile(WebElement element, String path) {
 		element.sendKeys(path);
 	}
-	public static void waitForElement(WebElement element, int maxTimeout) {
+	public static void waitForElemenToClick(WebElement element, int maxTimeout) {
 		WebDriverWait wait = new WebDriverWait(driver, maxTimeout);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 	}
-
-	public static void waitForElementforClick(WebElement element, int maxTimeout) {
+	public static void waitForElementToVisible(WebElement element, int maxTimeout) {
 		WebDriverWait wait = new WebDriverWait(driver, maxTimeout);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
-	}
-
-	public static void waitForElementforType(WebElement element, int maxTimeout) {
-		WebDriverWait wait = new WebDriverWait(driver, maxTimeout);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
-		
 	}
 
 	public static void actionClassMethod(WebElement element) {
@@ -142,9 +131,21 @@ public class TestUtil extends TestBase  {
 		
 	}
 	public static void datePickerMethod(WebElement element) {
-		((JavascriptExecutor)driver).executeScript ("document.getElementById(element).removeAttribute('readonly',0);"); // Enables the from date box
-
-		
+		((JavascriptExecutor)driver).executeScript ("document.getElementById(element).removeAttribute('readonly',0);"); // Enables the from date box	
 		
 	}
+	public static void fluentWait(WebElement element) {
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+			    .withTimeout(30, TimeUnit.SECONDS)
+			    .pollingEvery(5, TimeUnit.SECONDS)
+			    .ignoring(NoSuchElementException.class);
+
+			WebElement foo = wait.until(new Function<WebDriver, WebElement>() 
+			{
+			  public WebElement apply(WebDriver driver) {
+			  return driver.findElement(By.id("foo"));
+			}
+			});
+	}
+	
 }

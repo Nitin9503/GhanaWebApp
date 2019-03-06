@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results skipped="0" failed="0" ignored="0" total="48" passed="48">
   <reporter-output>
   </reporter-output>
@@ -204,6 +205,69 @@
           </reporter-output>
         </test-method> <!-- clickOnContinueBtnTest -->
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23971" started-at="2019-03-05T12:16:06Z" finished-at="2019-03-05T12:16:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23971" started-at="2019-03-05T12:16:06Z" finished-at="2019-03-05T12:16:30Z">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="setUp" is-config="true" duration-ms="12322" started-at="2019-03-05T12:16:06Z" finished-at="2019-03-05T12:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginIntoConsulate()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="loginIntoConsulate" duration-ms="1292" started-at="2019-03-05T12:16:19Z" finished-at="2019-03-05T12:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoConsulate -->
+        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="verifyTitleOfConsulateTitle" duration-ms="49" started-at="2019-03-05T12:16:20Z" finished-at="2019-03-05T12:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfConsulateTitle -->
+        <test-method status="PASS" signature="clickOnNewApplication()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnNewApplication" duration-ms="1482" started-at="2019-03-05T12:16:20Z" finished-at="2019-03-05T12:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewApplication -->
+        <test-method status="PASS" signature="verfiyTitleOfCNAddressInfoPage()[pri:3, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="verfiyTitleOfCNAddressInfoPage" duration-ms="531" started-at="2019-03-05T12:16:22Z" finished-at="2019-03-05T12:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNAddressInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNTravelInfoPage()[pri:4, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="verfiyTitleOfCNTravelInfoPage" duration-ms="615" started-at="2019-03-05T12:16:22Z" finished-at="2019-03-05T12:16:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNTravelInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNDocumentVerificatonPage()[pri:5, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="verfiyTitleOfCNDocumentVerificatonPage" duration-ms="685" started-at="2019-03-05T12:16:23Z" finished-at="2019-03-05T12:16:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNDocumentVerificatonPage -->
+        <test-method status="PASS" signature="clickOnCheckBoxes()[pri:6, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnCheckBoxes" duration-ms="253" started-at="2019-03-05T12:16:23Z" finished-at="2019-03-05T12:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckBoxes -->
+        <test-method status="PASS" signature="clickOnApplicantInfor()[pri:16, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnApplicantInfor" duration-ms="600" started-at="2019-03-05T12:16:24Z" finished-at="2019-03-05T12:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicantInfor -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleAddressInformation()[pri:17, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnNextButtonAndVerifyTitleAddressInformation" duration-ms="588" started-at="2019-03-05T12:16:24Z" finished-at="2019-03-05T12:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleTravelInformation()[pri:18, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnNextButtonAndVerifyTitleTravelInformation" duration-ms="642" started-at="2019-03-05T12:16:25Z" finished-at="2019-03-05T12:16:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleDocumentVerification()[pri:19, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnNextButtonAndVerifyTitleDocumentVerification" duration-ms="595" started-at="2019-03-05T12:16:26Z" finished-at="2019-03-05T12:16:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleDocumentVerification -->
+        <test-method status="PASS" signature="clickOnApprove()[pri:20, instance:com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b]" name="clickOnApprove" duration-ms="4240" started-at="2019-03-05T12:16:26Z" finished-at="2019-03-05T12:16:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApprove -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+>>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
