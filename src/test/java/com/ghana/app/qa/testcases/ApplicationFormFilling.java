@@ -182,7 +182,7 @@ public class ApplicationFormFilling extends DriverInit {
 	// Test----------------------------------//
 	@Test(priority = 29)
 	public void emergencyContactDetailsTest() throws InterruptedException, IOException {
-		emergencyContactPage.emergencyContactDetails("Pratik", "Shirsath", "7620098193");
+		emergencyContactPage.emergencyContactDetails(emerContactName, emerContactSurname, emerPhoneNumber);
 
 	}
 
@@ -194,8 +194,8 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 31)
 	public void emergencyProfessionDetailsTest() throws InterruptedException, IOException {
-		emergencyContactPage.emergencyProfessionDetails("Engineer", "infosys ",
-				"B wing Complex It park, hinjewadi phage 1", "440012", "Pune", "Maharashtra", "India", "9856231254");
+		emergencyContactPage.emergencyProfessionDetails(profession, employer,
+				employerAddress, emerPincode, emerCityName, emerState, emerCountry, emerEmployerPhoneNumber);
 
 	}
 
@@ -210,13 +210,13 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 33)
 	public void passDateOfDepartureTest() throws InterruptedException, IOException {
-		travelInfoPage.passDateOfDeparture("8-Dec-2019");
+		travelInfoPage.passDateOfDeparture(dateOfDeparture);
 		travelInfoPage.clickOnContinuebutton();
 	}
 
 	@Test(priority = 34)
 	public void passTicketNumberTest() throws InterruptedException, IOException {
-		travelInfoPage.passTicketNumber("AF123652");
+		travelInfoPage.passTicketNumber(ticketNumber);
 
 	}
 
@@ -235,57 +235,57 @@ public class ApplicationFormFilling extends DriverInit {
 
 	@Test(priority = 37)
 	public void passPrimaryRefFirstnameTest() throws InterruptedException, IOException {
-		travelInfoPage.passPrimaryRefFirstname("Kojo");
+		travelInfoPage.passPrimaryRefFirstname(priFirstName);
 
 	}
 
 	@Test(priority = 38)
 	public void passPrimaryRefLastnameTest() throws InterruptedException, IOException {
-		travelInfoPage.passPrimaryRefLastname("Amankwah");
+		travelInfoPage.passPrimaryRefLastname(priLastName);
 
 	}
 
 	@Test(priority = 39)
 	public void pass_Primary_ref_addressTest() throws InterruptedException, IOException {
-		travelInfoPage.pass_Primary_ref_address("8 John Wall Way, Ashaiman");
+		travelInfoPage.pass_Primary_ref_address(primaryAddress);
 
 	}
 
 	@Test(priority = 40)
 	public void pass_primary_ref_pincodeTest() throws InterruptedException, IOException {
-		travelInfoPage.pass_primary_ref_pincode("GA017");
+		travelInfoPage.pass_primary_ref_pincode(primaryPinCode);
 
 	}
 
 	@Test(priority = 41)
 	public void pass_primary_ref_cityTest() throws InterruptedException, IOException {
-		travelInfoPage.pass_primary_ref_city("Sekondi-Takoradi");
+		travelInfoPage.pass_primary_ref_city(primaryCity);
 
 	}
 
 	@Test(priority = 42)
 	public void pass_primary_ref_stateTest() throws InterruptedException, IOException {
-		travelInfoPage.pass_primary_ref_state("Brong-Aha[5]fo");
+		travelInfoPage.pass_primary_ref_state(primaryState);
 
 	}
 
 	@Test(priority = 43)
 	public void pass_primary_ref_countryTest() throws InterruptedException, IOException {
-		travelInfoPage.pass_primary_ref_country("Ghana");
+		travelInfoPage.pass_primary_ref_country(primaryCountry);
 
 	}
 
 	@Test(priority = 44)
 	public void pass_primary_ref_phone_numberTest() throws InterruptedException, IOException {
 
-		travelInfoPage.pass_primary_ref_phone_number("+233-24 222 3344");
+		travelInfoPage.pass_primary_ref_phone_number(primaryRefrencePhoneNo);
 
 	}
 
 	@Test(priority = 45)
 	public void PassSecondaryRefDetailsTest() throws InterruptedException, IOException {
-		travelInfoPage.PassSecondaryRefDetails("Ebo", "Afriyie", "77436 Fairview Trail, Sekondi-Takoradi", "GA015",
-				"Kumasi", "Ashanti[4]", "Ghana", "+233-24 222 3344");
+		travelInfoPage.PassSecondaryRefDetails(secFirstName, secLastName, secondaryAddress, secondaryPinCode,
+				secondaryCity, secondaryState, secondaryCountry, secondaryRefrencePhoneNo);
 
 	}
 

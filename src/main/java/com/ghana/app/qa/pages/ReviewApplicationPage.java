@@ -154,7 +154,7 @@ public class ReviewApplicationPage extends TestBase{
 	@FindBy(id = "lbl_tr_state2")
 	WebElement secondaryState ;
 	
-	@FindBy(id = "lbl_tr_city2")
+	@FindBy(id = "lbl_tr_country2")
 	WebElement secondaryCountry ;
 	
 	@FindBy(id = "lbl_tr_ref2")
@@ -245,60 +245,60 @@ public class ReviewApplicationPage extends TestBase{
 	
 //-----------------Emergency Contact
 	public String getTextFromEmerContactName(){
-		return emerContactName.getText();
+		return emerContactName.getText().substring(2);
 		
 	}
 	public String getTextFromRelationShip(){
-		return relationShip.getText();
+		return relationShip.getText().substring(2);
 		
 	}
 	
 	public String getTextFromEmerPhoneNumber(){
-		return emerPhoneNumber.getText();
+		return emerPhoneNumber.getText().substring(2);
 		
 	}
 	
 	public String getTextFromProfession(){
-		return profession.getText();
+		return profession.getText().substring(2);
 		
 	}
 	public String getTextFromEmployer(){
-		return employer.getText();
+		return employer.getText().substring(2);
 		
 	}
 	
 	public String getTextFromEmployerAddress(){
-		return employerAddress.getText();
+		return employerAddress.getText().substring(2);
 		
 	}
 	public String getTextFromEmerPincode(){
-		return emerPincode.getText();
+		return emerPincode.getText().substring(2);
 		
 	}
 	public String getTextFromEmerCityName(){
-		return emerCityName.getText();
+		return emerCityName.getText().substring(2);
 		
 	}
 	public String getTextFromEmerState(){
-		return emerState.getText();
+		return emerState.getText().substring(2);
 		
 	}
 	public String getTextFromEmerCountry(){
-		return emerCountry.getText();
+		return emerCountry.getText().substring(2);
 		
 	}
 	public String getTextFromEmerEmployerPhoneNumber(){
-		return emerEmployerPhoneNumber.getText();
+		return emerEmployerPhoneNumber.getText().substring(2);
 		
 	}
 	
 	//-------Travel info
 	public String getTextFromDateOfDeparture(){
-		return dateOfDeparture.getText();
+		return dateOfDeparture.getText().substring(2);
 		
 	}
 	public String getTextFromtTicketNumber(){
-		return ticketNumber.getText();
+		return ticketNumber.getText().substring(2);
 		
 	}
 	public String getTextFromRoundTicket(){
@@ -314,59 +314,62 @@ public class ReviewApplicationPage extends TestBase{
 		
 	}
 	public String getTextFromPrimaryFirstLastName(){
-		return primaryFirstLastName.getText();
+		return primaryFirstLastName.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryAddress(){
-		return primaryAddress.getText();
+		return primaryAddress.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryPinCode(){
-		return primaryPinCode.getText();
+		return primaryPinCode.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryCity(){
-		return primaryCity.getText();
+		return primaryCity.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryState(){
-		return primaryState.getText();
+		return primaryState.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryCountry(){
-		return primaryCountry.getText();
+		return primaryCountry.getText().substring(2);
 		
 	}
 	public String getTextFromPrimaryRefrencePhoneNo(){
-		return primaryRefrencePhoneNo.getText();
+		return primaryRefrencePhoneNo.getText().substring(2);
 		
 	}
 	
 	
 	
 	public String getTextFromSecondaryFirstLastName(){
-		return secondaryFirstLastName.getText();
+		return secondaryFirstLastName.getText().substring(2);
 		
 	}
 	public String getTextFromSecondaryAddress(){
-		return secondaryAddress.getText();
+		return secondaryAddress.getText().substring(2);
 		
 	}
 	public String getTextFromSecondaryPinCode(){
-		return secondaryPinCode.getText();
+		return secondaryPinCode.getText().substring(2);
 		
 	}
-	
+	public String getTextFromSecondaryCity(){
+		return secondaryCity.getText().substring(2);
+		
+	}
 	public String getTextFromSecondaryState(){
-		return secondaryState.getText();
+		return secondaryState.getText().substring(2);
 		
 	}
 	public String getTextFromSecondaryCountry(){
-		return secondaryCountry.getText();
+		return secondaryCountry.getText().substring(2);
 		
 	}
 	public String getTextFromSecondaryRefrencePhoneNo(){
-		return secondaryRefrencePhoneNo.getText();
+		return secondaryRefrencePhoneNo.getText().substring(2);
 		
 	}
 	

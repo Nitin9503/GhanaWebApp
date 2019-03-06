@@ -23,6 +23,7 @@ import com.ghana.app.qa.pages.SignUpPage;
 import com.ghana.app.qa.pages.TravelInfoPage;
 import com.ghana.app.qa.pages.UploadDocPage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
+import com.ghana.app.qa.pages.VisaPaymentPage;
 
 public class DriverInit extends TestBase {
 
@@ -39,6 +40,7 @@ public class DriverInit extends TestBase {
 	public static EmergencyContactPage emergencyContactPage;
 	public static TravelInfoPage travelInfoPage;
 	public static ReviewApplicationPage reviewApplicationPage;
+	public static VisaPaymentPage visaPaymentPage;
 
 	// Consulate and HighCommission side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
@@ -65,6 +67,7 @@ public class DriverInit extends TestBase {
 		travelInfoPage =new TravelInfoPage();
 		uploadDocPage = new UploadDocPage();
 		reviewApplicationPage = new ReviewApplicationPage();
+		visaPaymentPage = new VisaPaymentPage();
 		
 		highAndConsulateLoginPage = new HighAndConsulateLoginPage();
 		consulatedashBoardPage = new ConsulatedashBoardPage();

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.ReviewApplicationPageTest">
         <methods>
-          <include name="getTextAddressInfoTest"/>
           <include name="setUp"/>
+          <include name="clickOnContinueBtnTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
     </classes>
