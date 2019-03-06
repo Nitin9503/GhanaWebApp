@@ -1,5 +1,12 @@
 package com.ghana.app.qa.pages;
 
+import static com.ghana.app.qa.util.TestUtil.OSName;
+import static com.ghana.app.qa.util.TestUtil.driverPath;
+import static com.ghana.app.qa.util.TestUtil.prop;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,15 +42,37 @@ public class UploadDocPage extends TestBase {
 	
 	
 	public void getUploadDoc(){
-		// enter the file path onto the file-selection input field
-		attachFileBtn1.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\airticket.jpeg");
-		attachFileBtn2.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\Passport-size-photo.jpg");
-		attachFileBtn3.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\YellowFeverVaccination.pdf");
-		attachFileBtn4.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\Covering Letter for tourist.pdf");
-		attachFileBtn5.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\demand-draft-1.jpg");
-		attachFileBtn6.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\IDcard_Ghana.jpg");
-		attachFileBtn7.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\invitation letter.pdf");
-		attachFileBtn8.sendKeys("C:\\Users\\nikhil.sonawane\\Downloads\\Visa Doc\\proofofvisa.pdf");
+		
+		driverPath = System.getProperty("user.dir");
+		System.out.println("path==>" +driverPath);
+		OSName = System.getProperty("os.name");
+		System.out.println(OSName);
+		if (OSName.equalsIgnoreCase("Mac OS X")) {
+			System.out.println(OSName);
+			// enter the file path onto the file-selection input field
+			attachFileBtn1.sendKeys(driverPath+"/DocumentAttach/airticket.jpeg");
+			attachFileBtn2.sendKeys(driverPath+"/DocumentAttach/Passport-size-photo.jpg");
+			attachFileBtn3.sendKeys(driverPath+"/DocumentAttach/YellowFeverVaccination.pdf");
+			attachFileBtn4.sendKeys(driverPath+"/DocumentAttach/Covering Letter for tourist.pdf");
+			attachFileBtn5.sendKeys(driverPath+"/DocumentAttach/demand-draft-1.jpg");
+			attachFileBtn6.sendKeys(driverPath+"/DocumentAttach/IDcard_Ghana.jpg");
+			attachFileBtn7.sendKeys(driverPath+"/DocumentAttach/invitation letter.pdf");
+			attachFileBtn8.sendKeys(driverPath+"/DocumentAttach/proofofvisa.pdf");
+		 
+		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
+			System.out.println(OSName);
+			// enter the file path onto the file-selection input field
+			attachFileBtn1.sendKeys(driverPath+"\\DocumentAttach\\airticket.jpeg");
+			attachFileBtn2.sendKeys(driverPath+"\\DocumentAttach\\Passport-size-photo.jpg");
+			attachFileBtn3.sendKeys(driverPath+"\\DocumentAttach\\YellowFeverVaccination.pdf");
+			attachFileBtn4.sendKeys(driverPath+"\\DocumentAttach\\Covering Letter for tourist.pdf");
+			attachFileBtn5.sendKeys(driverPath+"\\DocumentAttach\\demand-draft-1.jpg");
+			attachFileBtn6.sendKeys(driverPath+"\\DocumentAttach\\IDcard_Ghana.jpg");
+			attachFileBtn7.sendKeys(driverPath+"\\DocumentAttach\\invitation letter.pdf");
+			attachFileBtn8.sendKeys(driverPath+"\\DocumentAttach\\proofofvisa.pdf");
+		 
+		}
+		
 	 
 	}
 	public void clicksaveAndContiBtn(){
