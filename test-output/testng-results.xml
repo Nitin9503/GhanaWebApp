@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="48" passed="48">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="34269" started-at="2019-03-07T05:19:58Z" finished-at="2019-03-07T05:20:33Z">
     <groups>
     </groups>
@@ -204,6 +205,62 @@
           </reporter-output>
         </test-method> <!-- clickOnContinueBtnTest -->
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
+=======
+  <suite name="Default suite" duration-ms="33671" started-at="2019-03-06T12:50:15Z" finished-at="2019-03-06T12:50:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33671" started-at="2019-03-06T12:50:15Z" finished-at="2019-03-06T12:50:49Z">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="setUp" is-config="true" duration-ms="5768" started-at="2019-03-06T12:50:15Z" finished-at="2019-03-06T12:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginIntoConsulate()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="loginIntoConsulate" duration-ms="1249" started-at="2019-03-06T12:50:21Z" finished-at="2019-03-06T12:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoConsulate -->
+        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verifyTitleOfConsulateTitle" duration-ms="29" started-at="2019-03-06T12:50:22Z" finished-at="2019-03-06T12:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfConsulateTitle -->
+        <test-method status="PASS" signature="clickOnNewApplication()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNewApplication" duration-ms="4004" started-at="2019-03-06T12:50:22Z" finished-at="2019-03-06T12:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewApplication -->
+        <test-method status="PASS" signature="clickOnApplicantInfor()[pri:16, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApplicantInfor" duration-ms="2549" started-at="2019-03-06T12:50:26Z" finished-at="2019-03-06T12:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicantInfor -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleAddressInformation()[pri:17, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleAddressInformation" duration-ms="592" started-at="2019-03-06T12:50:28Z" finished-at="2019-03-06T12:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleTravelInformation()[pri:18, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleTravelInformation" duration-ms="615" started-at="2019-03-06T12:50:29Z" finished-at="2019-03-06T12:50:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleDocumentVerification()[pri:19, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleDocumentVerification" duration-ms="608" started-at="2019-03-06T12:50:30Z" finished-at="2019-03-06T12:50:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleDocumentVerification -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText()[pri:20, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApproveAndVerifyPopText" duration-ms="929" started-at="2019-03-06T12:50:30Z" description="Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-06T12:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText1()[pri:21, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApproveAndVerifyPopText1" duration-ms="6737" started-at="2019-03-06T12:50:31Z" description="Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-06T12:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText1 -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText()[pri:22, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnRejectAndVerifyPopText" duration-ms="3792" started-at="2019-03-06T12:50:38Z" description="Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-06T12:50:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText1()[pri:23, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnRejectAndVerifyPopText1" duration-ms="6758" started-at="2019-03-06T12:50:42Z" description="Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-06T12:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText1 -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+>>>>>>> 6bf66fcfbdcfee09e1f8787ba5e79b5ddca776ae
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

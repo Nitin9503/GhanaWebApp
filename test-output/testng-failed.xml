@@ -7,6 +7,10 @@
         <methods>
           <include name="selectPassPortType"/>
           <include name="setUp"/>
+<<<<<<< HEAD
+=======
+          <include name="clickOnRejectAndVerifyPopText"/>
+>>>>>>> 6bf66fcfbdcfee09e1f8787ba5e79b5ddca776ae
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
     </classes>

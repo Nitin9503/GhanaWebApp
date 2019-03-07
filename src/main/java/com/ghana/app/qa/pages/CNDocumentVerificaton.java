@@ -26,6 +26,7 @@ public class CNDocumentVerificaton extends TestBase {
 
 	@FindBy(xpath = "//button[text()='Approve']")
 	WebElement approve;
+	
 	@FindBy(xpath = "//div[@id='acceptModel']//h4[@class='modal-title'][contains(text(),'Confirmation')]")
 	WebElement acceptConfirmationPop;
 	
@@ -112,7 +113,17 @@ public class CNDocumentVerificaton extends TestBase {
 
 	@FindBy(xpath = "//button[@type='button'][contains(text(),'Close')]")
 	List<WebElement> closeButtonToCloseWindow;
+	
+	@FindBy(xpath = "//h1[@class='card-title']")
+	WebElement documentVerificationText;
+	
+	
 
+	public String getTextDocumentVerification() {
+		return documentVerificationText.getText();
+
+	}
+	
 	public void crossButtonToCloseWindow1() {
 		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(0), 60);
 		WebElement crossCloseButton = crossButtonToCloseWindow.get(0);
@@ -314,12 +325,14 @@ public class CNDocumentVerificaton extends TestBase {
 	}
 	
 	public void clickOnReject() {
-		reject.click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		TestUtil.actionClassMethod(reject);
 
 	}
 
 	public boolean selectAllCheckBoxes() {
 		selectAllCheckBox.click();
+		System.out.println("selectAllCheckBox.isSelected();==>" +selectAllCheckBox.isSelected());
 		return selectAllCheckBox.isSelected();
 
 	}
@@ -352,8 +365,8 @@ public class CNDocumentVerificaton extends TestBase {
 	}
 
 	public String textFromRejectConfirmationPop() {
+		TestUtil.waitForElementToVisible(rejectConfirmationPop, 60);
 		return rejectConfirmationPop.getText();
-
 	}
 
 	public void clickOnAcceptConfirmationPop() {
