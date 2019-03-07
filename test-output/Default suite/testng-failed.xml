@@ -6,11 +6,7 @@
       <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
         <methods>
           <include name="setUp"/>
-<<<<<<< Updated upstream
-          <include name="clickOnContinueBtnTest"/>
-=======
-          <include name="clickOnApprove"/>
->>>>>>> Stashed changes
+          <include name="clickOnRejectAndVerifyPopText"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
     </classes>

@@ -6,12 +6,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.ghana.app.qa.base.DriverInit;
 
 public class ConsulatePageTest extends DriverInit {
+	SoftAssert softAssertion = new SoftAssert();
 
 	public ConsulatePageTest() throws IOException, InterruptedException {
 		super();
@@ -27,183 +29,226 @@ public class ConsulatePageTest extends DriverInit {
 
 	@Test(priority = 1)
 	public void verifyTitleOfConsulateTitle() {
-		Assert.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
-
+		softAssertion.assertAll();
 	}
 
 	@Test(priority = 2)
 	public void clickOnNewApplication() {
 		consulatedashBoardPage.clickOnNewApplication();
-		Assert.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
 				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
-
+		softAssertion.assertAll();
 	}
 
-	@Test(priority = 3)
+	/*@Test(priority = 3)
 	public void verfiyTitleOfCNAddressInfoPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnAddressInfor();
-		Assert.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
+		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
 				"We are not navigate to CN Address Info page upon clicking on Address Information from Applicant Dashboard");
-
+		softAssertion.assertAll();
 	}
 
-	@Test(priority = 4)
-	public void verfiyTitleOfCNTravelInfoPage() throws InterruptedException {
-		applicantDashBoardPage.clickOnTravelInfor();
-		Assert.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
-				"We are not navigate to Travel Information page upon clicking on Travel Information from Applicant Dashboard");
 
-	}
+	 * @Test(priority = 4) public void verfiyTitleOfCNTravelInfoPage() throws
+	 * InterruptedException { applicantDashBoardPage.clickOnTravelInfor();
+	 * softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(),
+	 * "Travel Information",
+	 * "We are not navigate to Travel Information page upon clicking on Travel Information from Applicant Dashboard"
+	 * ); softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 5) public void verfiyTitleOfCNDocumentVerificatonPage()
+	 * throws InterruptedException {
+	 * applicantDashBoardPage.clickOnDocumentVeri();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfCNDocumentVerificatonPage(), "Document Verification",
+	 * "We are not navigate to Document Verification page upon clicking on Document Verification from Applicant Dashboard"
+	 * ); softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 6) public void clickOnCheckBoxes() {
+	 * driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 * cNDocumentVerificaton.selectAllCheckBoxes(); System.out.println(
+	 * "value  ==>>" + cNDocumentVerificaton.selectAllCheckBoxes());
+	 * softAssertion.assertTrue(cNDocumentVerificaton.selectAllCheckBoxes(),
+	 * "Check Boxes is not selected upon clicking on [Select All Check] from Document Verification page"
+	 * ); softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 7) public void passComment() {
+	 * applicantDashBoardPage.passComment("Verifying your Application");
+	 * applicantDashBoardPage.addCooment();
+	 * applicantDashBoardPage.getTextFromAddedComment();
+	 * softAssertion.assertEquals(applicantDashBoardPage.getTextFromAddedComment
+	 * (), "Verifying your Application",
+	 * "Latest passed comment is not matched after getting text from comment section"
+	 * ); softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 8) public void clickOnConfirmedAirTicketWindow() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnConfirmAirTicket();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfConfirmedAirTicketWindow(), "Confirmed air ticket",
+	 * "Confirmed air ticket window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Confirmed air ticket)"
+	 * ); Thread.sleep(2000); cNDocumentVerificaton.closeButtonToCloseWindow1();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 9) public void clickOnYellowFevervaccination() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnYellowFevervaccination();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow
+	 * (), "Yellow fever vaccination",
+	 * "Yellow fever vaccination window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Yellow fever vaccination)"
+	 * ); cNDocumentVerificaton.closeButtonToCloseWindow3();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 10) public void clickOnOnPhoto() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnPhoto();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow
+	 * (), "Recent passport size photo",
+	 * "Recent passport size photo window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Recent passport size photo)"
+	 * ); cNDocumentVerificaton.closeButtonToCloseWindow2();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 11) public void clickOnCoveringLetter() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnCoveringLetter();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfCoveringLetterWindow(), "Covering letter",
+	 * "Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)"
+	 * ); cNDocumentVerificaton.closeButtonToCloseWindow4();
+	 * softAssertion.assertAll();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 12) public void clickOnPhotoOfDraft() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnPhotoOfDraft();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
+	 * "Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)"
+	 * ); Thread.sleep(2000); cNDocumentVerificaton.closeButtonToCloseWindow5();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 13) public void clickOnIdProofReference() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnIdProofReference();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfIDProofOfReferenceWindow(), "ID proof of reference",
+	 * "ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)"
+	 * ); Thread.sleep(2000); cNDocumentVerificaton.closeButtonToCloseWindow6();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 14) public void clickOnOriginalInvitationLetter() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnOriginalInvitationLetter();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfOriginalInvitationLetterWindow(), "Original invitation letter",
+	 * "Original invitation letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Original invitation letter)"
+	 * ); cNDocumentVerificaton.closeButtonToCloseWindow7();
+	 * softAssertion.assertAll(); }
+	 * 
+	 * @Test(priority = 15) public void clickOnProofOfTransitVisa() throws
+	 * InterruptedException { Thread.sleep(2000);
+	 * cNDocumentVerificaton.clickOnProofOfTransitVisa();
+	 * softAssertion.assertEquals(cNDocumentVerificaton.
+	 * titleOfProofOfTransitValidVisaWindow(), "Proof of transit valid visa",
+	 * "Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)"
+	 * ); cNDocumentVerificaton.closeButtonToCloseWindow8();
+	 * softAssertion.assertAll(); }
+	 */
 
-	@Test(priority = 5)
-	public void verfiyTitleOfCNDocumentVerificatonPage() throws InterruptedException {
-		applicantDashBoardPage.clickOnDocumentVeri();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
-				"We are not navigate to Document Verification page upon clicking on Document Verification from Applicant Dashboard");
-
-	}
-
-	@Test(priority = 6)
-	public void clickOnCheckBoxes() {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		cNDocumentVerificaton.selectAllCheckBoxes();
-		System.out.println("value  ==>>" +cNDocumentVerificaton.selectAllCheckBoxes());
-		Assert.assertTrue(cNDocumentVerificaton.selectAllCheckBoxes(), "Check Boxes is not selected upon clicking on [Select All Check] from Document Verification page" );
-
-	}
-
-	/*@Test(priority = 7)
-	public void passComment() {
-		applicantDashBoardPage.passComment("Verifying your Application");
-		applicantDashBoardPage.addCooment();
-		applicantDashBoardPage.getTextFromAddedComment();
-		Assert.assertEquals(applicantDashBoardPage.getTextFromAddedComment(), "Verifying your Application",
-				"Latest passed comment is not matched after getting text from comment section");
-
-	}
-
-	@Test(priority = 8)
-	public void clickOnConfirmedAirTicketWindow() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnConfirmAirTicket();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), "Confirmed air ticket",
-				"Confirmed air ticket window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Confirmed air ticket)");
-		Thread.sleep(2000);
-		cNDocumentVerificaton.closeButtonToCloseWindow1();
-
-	}
-
-	@Test(priority = 9)
-	public void clickOnYellowFevervaccination() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnYellowFevervaccination();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow(), "Yellow fever vaccination",
-				"Yellow fever vaccination window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Yellow fever vaccination)");
-		cNDocumentVerificaton.closeButtonToCloseWindow3();
-	
-	}
-
-	@Test(priority = 10)
-	public void clickOnOnPhoto() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnPhoto();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow(), "Recent passport size photo",
-				"Recent passport size photo window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Recent passport size photo)");
-		cNDocumentVerificaton.closeButtonToCloseWindow2();
-
-	}
-
-	@Test(priority = 11)
-	public void clickOnCoveringLetter() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnCoveringLetter();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfCoveringLetterWindow(), "Covering letter",
-				"Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)");
-		cNDocumentVerificaton.closeButtonToCloseWindow4();
-
-	}
-
-	@Test(priority = 12)
-	public void clickOnPhotoOfDraft() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnPhotoOfDraft();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
-				"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
-		Thread.sleep(2000);
-		cNDocumentVerificaton.closeButtonToCloseWindow5();
-
-	}
-
-	@Test(priority = 13)
-	public void clickOnIdProofReference() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnIdProofReference();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfIDProofOfReferenceWindow(), "ID proof of reference",
-				"ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)");
-		Thread.sleep(2000);
-		cNDocumentVerificaton.closeButtonToCloseWindow6();
-
-	}
-
-	@Test(priority = 14)
-	public void clickOnOriginalInvitationLetter() throws InterruptedException {
-		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfOriginalInvitationLetterWindow(), "Original invitation letter",
-				"Original invitation letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Original invitation letter)");
-		cNDocumentVerificaton.closeButtonToCloseWindow7();
-
-	}
-
-	@Test(priority = 15)
-	public void clickOnProofOfTransitVisa() throws InterruptedException {
-		cNDocumentVerificaton.clickOnProofOfTransitVisa();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfProofOfTransitValidVisaWindow(), "Proof of transit valid visa",
-				"Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)");
-		cNDocumentVerificaton.closeButtonToCloseWindow8();
-
-	}*/
 	@Test(priority = 16)
 	public void clickOnApplicantInfor() throws InterruptedException {
+		Thread.sleep(2000);
 		applicantDashBoardPage.clickOnApplicantInfor();
-		Assert.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
 				"We are not navigate to Applicant Dashboard page upon clicking on Applicant Information from Document Verifcation");
-
+		softAssertion.assertAll();
 
 	}
+
 	@Test(priority = 17)
 	public void clickOnNextButtonAndVerifyTitleAddressInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		Assert.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
+		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
 				"We are not navigate to CN Address Info page upon clicking on Next Button from Applicant Dashboard");
-
+		softAssertion.assertAll();
 	}
 
 	@Test(priority = 18)
 	public void clickOnNextButtonAndVerifyTitleTravelInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		Assert.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
+		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
 				"We are not navigate to Travel Information page upon clicking on Next Button from Address Information");
-
-
+		softAssertion.assertAll();
 	}
 
 	@Test(priority = 19)
 	public void clickOnNextButtonAndVerifyTitleDocumentVerification() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		Assert.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
 				"We are not navigate to Document Verification page upon clicking on Next Button from Travel Information");
-
+		softAssertion.assertAll();
 	}
-	@Test(priority = 20)
-	public void clickOnApprove() throws InterruptedException {
+
+	@Test(priority = 20, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
-		Assert.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
 				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
 		cNDocumentVerificaton.clickOnCancelFromApprove();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+				"Document Verification page is not displayed upon clicking on Cancel button from Confirmation popup");
+		softAssertion.assertAll();
+	}
+
+	@Test(priority = 21, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	public void clickOnApproveAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnApprove();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
+		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnCloseApprove();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
+		softAssertion.assertAll();
 	}
-	
+	@Test(priority = 22, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	public void clickOnRejectAndVerifyPopText() throws InterruptedException {
+		Thread.sleep(3000);
+		cNDocumentVerificaton.clickOnReject();
+		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), "Confirmation",
+				"Confirmation popup is not displayed upon clicking on Reject from Document Verification");
+		cNDocumentVerificaton.clickOnCancelFromRejectPop();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+				"Document Verification page is not displayed upon clicking on Cancel button from Confirmation popup");
+		softAssertion.assertAll();
+	}
+
+	@Test(priority = 23, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	public void clickOnRejectAndVerifyPopText1() throws InterruptedException {
+		Thread.sleep(3000);
+		cNDocumentVerificaton.clickOnReject();
+		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), "Confirmation",
+				"Confirmation popup is not displayed upon clicking on Reject from Document Verification");
+		Thread.sleep(3000);
+		cNDocumentVerificaton.clickOnCloseFromRejectConfir();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
+		softAssertion.assertAll();
+	}
+	@Test(priority = 23, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	public void clickOnBackButtonAndVerifyTitleTravelInformation() throws InterruptedException {
+		Thread.sleep(3000);
+		applicantDashBoardPage.clickOnBackButton();
+		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), "Confirmation",
+				"Confirmation popup is not displayed upon clicking on Reject from Document Verification");
+		Thread.sleep(3000);
+		cNDocumentVerificaton.clickOnCloseFromRejectConfir();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
+		softAssertion.assertAll();
+	}
 }

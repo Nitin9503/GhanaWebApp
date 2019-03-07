@@ -128,7 +128,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromSecondaryCity(), secondaryCity, "Provided and Get secondaryCity are not matched");
 	
     softAssertion.assertEquals(reviewApplicationPage.getTextFromSecondaryState(), secondaryState, "Provided and Get secondaryState are not matched");
-	
+    
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromSecondaryCountry(), secondaryCountry, "Provided and Get secondaryCountry are not matched");
 	
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromSecondaryRefrencePhoneNo(), secondaryRefrencePhoneNo, "Provided and Get secondaryRefrencePhoneNo are not matched");
