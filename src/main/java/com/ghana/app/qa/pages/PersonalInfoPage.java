@@ -68,6 +68,7 @@ public class PersonalInfoPage extends TestBase {
 	}
 
 	public void SelectvisaLocation() {
+		
 		TestUtil.actionClassMethod(visaLocation);
 		clickVisaLocation.click();
 	}

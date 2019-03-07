@@ -5,6 +5,8 @@ public class ConstantVariable {
 	public static String applicationID= "";
 	
 	
+	//signUp Page
+	public static String passPortType = "Passport Type";
 	
 	// **Review Application page **
 	//Personal info

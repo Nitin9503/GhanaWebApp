@@ -16,7 +16,8 @@ public class AddressInfoPage extends TestBase {
 	}
 
 	// elements from address information page
-
+	@FindBy(xpath = "//h5[contains(text(),'Address Information')]")
+	WebElement addressInfoPageTitle;
 	@FindBy(xpath = "//span[text()='Former Nationality']")
 	WebElement FormerNationality;
 	@FindBy(xpath = "//input[@id='former_nationality_search']")
@@ -58,6 +59,10 @@ public class AddressInfoPage extends TestBase {
 	@FindBy(xpath = "//input[@id='emergency_lastname']")
 	WebElement emergency_lastname;
 
+	public String getTextAddressInfoPageTitle(){
+		return addressInfoPageTitle.getText();
+		
+	}
 	public void selectFormerNaitonality() throws InterruptedException {
 		TestUtil.actionClassMethod(FormerNationality);
 		//former_nationality_search.sendKeys("India");

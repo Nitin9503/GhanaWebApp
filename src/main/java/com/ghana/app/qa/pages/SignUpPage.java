@@ -2,7 +2,7 @@ package com.ghana.app.qa.pages;
 
 import java.io.IOException;
 import java.util.List;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

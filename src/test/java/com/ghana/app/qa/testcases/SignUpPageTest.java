@@ -57,7 +57,7 @@ public class SignUpPageTest extends DriverInit {
 	public void enterCaptchaFieldTest() throws InterruptedException,
 			IOException {
 		signUpPage.enterCaptchaField("AUX125P");
-		signUpPage.continueBtn();
+		//signUpPage.continueBtn();
 		//signUpPage.cancelBtn();
 	}
 	@Test(priority = 11)

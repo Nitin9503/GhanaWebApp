@@ -1,12 +1,16 @@
 package com.ghana.app.qa.testcases;
 
 import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.ghana.app.qa.base.DriverInit;
 import com.ghana.app.qa.util.TestUtil;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+import static org.testng.Assert.assertEquals;
 
 public class ApplicationFormFilling extends DriverInit {
 
@@ -160,7 +164,9 @@ public class ApplicationFormFilling extends DriverInit {
 	// ----------------------Address Info page
 	// Test----------------------------------//
 	@Test(priority = 26)
+	
 	public void selectFormerNationalityTest() throws InterruptedException, IOException {
+		assertEquals(addressInfoPage.getTextAddressInfoPageTitle(), "Address Information", "after compairing both text not match   ");;
 		addressInfoPage.selectFormerNaitonality();
 
 	}
