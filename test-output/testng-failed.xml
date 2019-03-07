@@ -7,10 +7,16 @@
         <methods>
           <include name="selectPassPortType"/>
           <include name="setUp"/>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
           <include name="clickOnRejectAndVerifyPopText"/>
 >>>>>>> 6bf66fcfbdcfee09e1f8787ba5e79b5ddca776ae
+=======
+          <include name="clickOnBackButtonAndVerifyTitleTravelInformation"/>
+          <include name="clickOnOnPhoto"/>
+          <include name="clickOnConfirmedAirTicketWindow"/>
+>>>>>>> Stashed changes
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
     </classes>

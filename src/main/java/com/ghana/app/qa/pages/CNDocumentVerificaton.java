@@ -330,9 +330,11 @@ public class CNDocumentVerificaton extends TestBase {
 
 	}
 
-	public boolean selectAllCheckBoxes() {
+	public boolean selectAllCheckBoxes() throws InterruptedException {
 		selectAllCheckBox.click();
+		Thread.sleep(2000);
 		System.out.println("selectAllCheckBox.isSelected();==>" +selectAllCheckBox.isSelected());
+		Thread.sleep(2000);
 		return selectAllCheckBox.isSelected();
 
 	}
@@ -340,7 +342,6 @@ public class CNDocumentVerificaton extends TestBase {
 	public void clickOnApprove() {
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	TestUtil.actionClassMethod(approve);
-		//approve.click();
 
 	}
 
