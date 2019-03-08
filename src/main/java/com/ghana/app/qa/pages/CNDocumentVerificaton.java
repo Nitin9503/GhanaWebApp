@@ -3,18 +3,15 @@ package com.ghana.app.qa.pages;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
-
 import static com.ghana.app.qa.testdata.ConstantVariable.applicationID;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.selectedBox;
 public class CNDocumentVerificaton extends TestBase {
 
 	public CNDocumentVerificaton() throws IOException, InterruptedException {
@@ -221,54 +218,44 @@ public class CNDocumentVerificaton extends TestBase {
 		TestUtil.actionClassMethod(closeButton);
 	}
 
-	public void clickOnConfirmAirTicket() throws InterruptedException {
-		Thread.sleep(5000);
-		TestUtil.waitForElemenToClick(confirmAirTicket, 60);
-		TestUtil.actionClassMethod(confirmAirTicket);
-		TestUtil.scrollUpAtEndOFPage();
+	public void clickOnConfirmAirTicket() throws InterruptedException {	
+		TestUtil.clickOnElement(confirmAirTicket);
+		
 	}
 
 	public void clickOnYellowFevervaccination() throws InterruptedException {
-		
-		TestUtil.waitForElemenToClick(yellowFeverVaccination, 60);
-		TestUtil.actionClassMethod(yellowFeverVaccination);
-		TestUtil.scrollUpAtEndOFPage();
+		TestUtil.clickOnElement(yellowFeverVaccination);
+
 	}
 
 	public void clickOnCoveringLetter() throws InterruptedException {
-		TestUtil.waitForElemenToClick(coveringLetter, 60);
-		TestUtil.actionClassMethod(coveringLetter);
-		TestUtil.scrollUpAtEndOFPage();
+		TestUtil.clickOnElement(coveringLetter);
+
 	}
 
 	public void clickOnPhotoOfDraft() {
-		TestUtil.waitForElemenToClick(photoCopyOfDraft, 60);
-		TestUtil.actionClassMethod(photoCopyOfDraft);
+		TestUtil.clickOnElement(photoCopyOfDraft);
 
 	}
 
 	public void clickOnIdProofReference() {
-		TestUtil.waitForElemenToClick(idProofOfReference, 60);
-		TestUtil.actionClassMethod(idProofOfReference);
-
+		TestUtil.clickOnElement(idProofOfReference);
+	
 	}
 
-	public void clickOnOriginalInvitationLetter() {
-		TestUtil.waitForElemenToClick(originalInvitationLetter, 60);
-		TestUtil.actionClassMethod(originalInvitationLetter);
-
+	public void clickOnOriginalInvitationLetter() {	
+		TestUtil.clickOnElement(originalInvitationLetter);
+	
 	}
 
 	public void clickOnProofOfTransitVisa() {
-		TestUtil.waitForElemenToClick(proofOfTransitValidVisa, 60);
-		TestUtil.actionClassMethod(proofOfTransitValidVisa);
-
+		TestUtil.clickOnElement(proofOfTransitValidVisa);
+		
 	}
 
 	public void clickOnPhoto() {
-		TestUtil.waitForElemenToClick(clickOnPhoto, 60);
-		TestUtil.actionClassMethod(clickOnPhoto);
-
+		TestUtil.clickOnElement(clickOnPhoto);
+		
 	}
 
 	public String titleOfConfirmedAirTicketWindow() throws InterruptedException {
@@ -330,19 +317,19 @@ public class CNDocumentVerificaton extends TestBase {
 
 	}
 
-	public boolean selectAllCheckBoxes() throws InterruptedException {
+	public void selectAllCheckBoxes() throws InterruptedException {
 		selectAllCheckBox.click();
 		Thread.sleep(2000);
-		System.out.println("selectAllCheckBox.isSelected();==>" +selectAllCheckBox.isSelected());
-		Thread.sleep(2000);
-		return selectAllCheckBox.isSelected();
+		 selectedBox = selectAllCheckBox.isSelected();
+		 System.out.println("selectedBox==>" +selectedBox);
+	
 
 	}
 
 	public void clickOnApprove() {
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	TestUtil.actionClassMethod(approve);
-
+	/*driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	TestUtil.actionClassMethod(approve);*/
+	TestUtil.clickOnElement(approve);
 	}
 
 	public void clickOnFlagPassport() {
@@ -396,7 +383,6 @@ public class CNDocumentVerificaton extends TestBase {
 	}
 
 	public String titleOfCNDocumentVerificatonPage() {
-
 		return driver.getTitle();
 
 	}

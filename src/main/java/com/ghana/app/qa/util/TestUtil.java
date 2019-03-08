@@ -110,7 +110,10 @@ public class TestUtil extends TestBase  {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript(command);
 	}
-
+	public static void clickOnElement(WebElement element) {	
+		JavascriptExecutor js = (JavascriptExecutor) driver;	
+		js.executeScript("arguments[0].click()", element);
+	}
 	public static void uploadfile(WebElement element, String path) {
 		element.sendKeys(path);
 	}
@@ -134,6 +137,17 @@ public class TestUtil extends TestBase  {
 		((JavascriptExecutor)driver).executeScript ("document.getElementById(element).removeAttribute('readonly',0);"); // Enables the from date box	
 		
 	}
+
+	
+	public static void passDateInField(String element){
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("document.getElementById('"+element+"').removeAttribute('readonly',0);");
+		
+	}
+	
+	
+	
 	public static void fluentWait(WebElement element) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 			    .withTimeout(30, TimeUnit.SECONDS)

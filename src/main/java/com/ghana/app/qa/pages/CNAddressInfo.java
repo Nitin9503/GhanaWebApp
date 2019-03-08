@@ -14,34 +14,73 @@ public class CNAddressInfo extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Indian']")
+	@FindBy(id = "formarnationality")
 	WebElement farmerNationality;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Indian']")
+	@FindBy(id = "nationality")
 	WebElement nationality;
 		
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='vikas@namet.com']")
+	@FindBy(id = "emailID")
 	WebElement emailID;
 		
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='+91-9850290120']")
+	@FindBy(id = "phoneNumber")
 	WebElement phoneNumber;
 		
-	@FindBy(xpath = "//textarea[@id='exampleInputEmail2' and text()='ganesh chawl ,New Delhi']")
+	@FindBy(id = "addressText")
 	WebElement address;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Mumbai,424004']")
+	@FindBy(id = "landmarkText")
+	WebElement landmark;
+	
+	@FindBy(id = "zipCode")
 	WebElement cityAndPinCode;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Maharastra']")
+	@FindBy(id = "state")
 	WebElement state;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='India']")
+	@FindBy(id = "country")
 	WebElement country;
 	
 
-	public String titleOfCNAddressInfoPage(){
-		
+	public String titleOfCNAddressInfoPage(){	
 		return driver.getTitle();
+		
+	}
+	
+	public String getTextFromFormarNationality(){	
+		return farmerNationality.getAttribute("value");
+	}
+	
+	public String getTextFromNationality(){	
+		return nationality.getAttribute("value");
+		
+	}
+	public String getTextFromEmailID(){	
+		return emailID.getAttribute("value");
+		
+	}
+	public String getTextFromPhoneNumber(){	
+		return phoneNumber.getAttribute("value");
+		
+	}
+	
+	public String getTextlandmark(){
+		return landmark.getAttribute("value");
+	}
+	public String getTextFromAddress(){	
+		return address.getAttribute("value");
+		
+	}
+	public String getTextFromCityAndPinCode(){	
+		return cityAndPinCode.getAttribute("value");
+		
+	}
+	public String getTextFromState(){	
+		return state.getAttribute("value");
+		
+	}
+	public String getTextFromCountry(){	
+		return country.getAttribute("value");
 		
 	}
 }

@@ -14,55 +14,121 @@ public class CNTravelInfo extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='HGD76332']")
+	@FindBy(id = "ticketnumber")
 	WebElement ticketNumber;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='AirIndia']")
+	@FindBy(id = "travellingby")
 	WebElement travelBy;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value=' visit Familly']")
+	@FindBy(id = "purposeofjourney")
 	WebElement purposeOfVisit;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Yaw Kwakye']")
+	@FindBy(id = "refName1")
 	WebElement referenceName1;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Yaw Kwakye']")
+	@FindBy(id = "refName2")
 	WebElement referenceName2;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='+233-24 222 3344']")
+	@FindBy(id = "refContact1")
 	WebElement referenceContact1;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='+233-24 222 3344']")
+	@FindBy(id = "refContact2")
 	WebElement referenceContact2;
 
-	@FindBy(xpath = "//textarea[@id='exampleInputEmail2' and text()='1301 Summer Lee DR Accra.,Acrea,South Ghana,Ghana,GA188']")
+	@FindBy(id = "refAddress1")
 	WebElement referenceAddress1;
 
-	@FindBy(xpath = "//textarea[@id='exampleInputEmail2' and text()='1301 Summer Lee DR Accra.,Acrea,South Ghana,Ghana,GA188']")
+	@FindBy(id = "refAddress2")
 	WebElement referenceAddress2;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='nashik,422236")
+	@FindBy(id = "refZipcode1")
 	WebElement referenceCity1;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='nashik,422236")
+	@FindBy(id = "refCity2")
 	WebElement referenceCity2;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Maharashtra']")
+	@FindBy(id = "refState1")
 	WebElement referenceState1;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Maharashtra']")
+	@FindBy(id = "refState2")
 	WebElement referenceState2;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='India']")
+	@FindBy(id = "refCountry1")
 	WebElement referenceCountry1;
 
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='India']")
+	@FindBy(id = "refCountry2")
 	WebElement referenceCountry2;
 
-	public String titleOfCNTravelInfoPage() {
-
+	public String titleOfCNTravelInfoPage(){
+		return driver.getTitle();
+	}
+	
+	public String getTextticketNumber() {
 		return driver.getTitle();
 
 	}
 
+	public String getTextzticketNumber() {
+		return ticketNumber.getAttribute("value");
+
+	}
+	public String getTextTravelBy() {
+		return travelBy.getAttribute("value");
+
+	}
+	public String getTextPurposeOfVisit() {
+		return purposeOfVisit.getAttribute("value");
+
+	}
+	public String getTextReferenceName1() {
+		return referenceName1.getAttribute("value");
+
+	}
+	public String getTextReferenceContact1() {
+		return referenceContact1.getAttribute("value");
+
+	}
+	
+	public String getTextReferenceName2() {
+		return referenceName2.getAttribute("value");
+
+	}
+
+	public String getTextReferenceContact2() {
+		return referenceContact2.getAttribute("value");
+
+	}
+	public String getTextReferenceAddress1() {
+		return referenceAddress1.getAttribute("value");
+
+	}
+	public String getTextReferenceAddress2() {
+		return referenceAddress2.getAttribute("value");
+
+	}
+	public String getTextReferenceCity1() {
+		return referenceCity1.getAttribute("value");
+
+	}
+	public String getTextReferenceCity2() {
+		return referenceCity2.getAttribute("value");
+
+	}
+	public String getTextReferenceState1() {
+		return referenceState1.getAttribute("value");
+
+	}
+	public String getTextReferenceState2() {
+		return referenceState2.getAttribute("value");
+
+	}
+	public String getTextReferenceCountry1() {
+		return referenceCountry1.getAttribute("value");
+
+	}
+	public String getTextReferenceCountry2() {
+		return referenceCountry2.getAttribute("value");
+
+	}
+	
 }

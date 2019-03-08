@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
 
 public class ApplicantDashBoardPage extends TestBase {
 
@@ -28,28 +29,38 @@ public class ApplicantDashBoardPage extends TestBase {
 	@FindBy(xpath = "//span[text()='Schedule Interview']")
 	WebElement scheduleInterviewClick;
 	
-	@FindBy(xpath = "//input[@id='applicantID']")
+	@FindBy(id = "applicantID")
 	WebElement applicationId ;
 	
 	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Employment']")
 	WebElement yettoconfirm ;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Transit Multiple Visa â¹6500']")
+	@FindBy(xpath = "	//div[@class='col-sm-6']//input[@id='exampleInputEmail2']")
+	WebElement visaType ;
+
+	@FindBy(id = "visafee")
 	WebElement visaFees ;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Akashay Khanna']")
+	@FindBy(id = "firstlastname")
 	WebElement fullName ;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='AK7897GH']")
+	@FindBy(id = "passportnumber")
 	WebElement passportNumber ;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='28/04/1992']")
+	@FindBy(id = "dateofbirth")
 	WebElement dateOfBirth ;
-		
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='02/12/2017']")
+	
+	@FindBy(id = "passportexpirydate")
+	WebElement passportExpiryDate;
+	
+	@FindBy(id = "passportdateofissue")
 	WebElement dateOfPassportIssue;
 	
-	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='New Delhi']")
+	@FindBy(id = "landmarkText")
+	WebElement landmark;
+	
+	
+	@FindBy(id = "placeofbirth")
 	WebElement birthPlace;
 	
 	@FindBy(xpath = "//button[text()='Back']")
@@ -68,6 +79,39 @@ public class ApplicantDashBoardPage extends TestBase {
 	WebElement textFromPassComment;
 		
 
+	public String getTextapplicationId(){
+		return applicationId.getAttribute("value");
+	}
+	
+	public String getTextVisaFees(){
+		return visaFees.getAttribute("value");
+	}
+	public String getTextFullName() throws InterruptedException{
+		
+		return fullName.getAttribute("value");
+	}
+	
+	public String getTextPassportNumber(){
+		return passportNumber.getAttribute("value");
+	}
+	public String getTextDateOfBirth(){
+		return dateOfBirth.getAttribute("value");
+	}
+	public String getTextPassportExpiryDate(){
+		return passportExpiryDate.getAttribute("value");
+	}
+	public String getTextDateOfPassportIssue(){
+		return dateOfPassportIssue.getAttribute("value");
+	}
+	
+	public String getTextBirthPlace(){
+		return birthPlace.getAttribute("value");
+	}
+	public String getTextlandmark(){
+		return landmark.getAttribute("value");
+	}
+	
+	
 	public void clickOnNextButton(){
 		nextButton.click();
 	}
@@ -88,7 +132,8 @@ public class ApplicantDashBoardPage extends TestBase {
 	}
 	
 	public void clickOnScheduleInterview(){
-		scheduleInterviewClick.click();
+		TestUtil.clickOnElement(scheduleInterviewClick);
+		
 	}
 	
 	public void clickOnAddressInfor(){

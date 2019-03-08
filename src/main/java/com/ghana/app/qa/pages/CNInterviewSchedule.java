@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
 
 public class CNInterviewSchedule extends TestBase {
 
@@ -23,7 +24,7 @@ public class CNInterviewSchedule extends TestBase {
 	@FindBy(xpath = "//input[@id='r2']")
 	WebElement radioButtonOffline;
 
-	@FindBy(xpath = "//div[@class='md-form']//button[@type='button' and text()='Cancel']")
+	@FindBy(xpath = "//button[contains(text(),'Cancel')]")
 	WebElement cancelButtonFromInterviewConfirpop;
 
 	@FindBy(xpath = "//button[contains(text(),'Confirm')]")
@@ -38,20 +39,21 @@ public class CNInterviewSchedule extends TestBase {
 	@FindBy(id = "date2")
 	WebElement dateTwo;
 
-	@FindBy(id = "date13")
+	@FindBy(id = "date3")
 	WebElement dateThree;
 
 	@FindBy(id = "time1")
 	WebElement timeOne;
 
-	@FindBy(id = "time1")
+	@FindBy(id = "time2")
 	WebElement timeTwo;
 
-	@FindBy(id = "time1")
+	@FindBy(id = "time3")
 	WebElement timeThree;
 
 
 	public String getTextFromConfrmationPopTitleFromInterview() {
+		TestUtil.waitForElementToVisible(confrmationPopTitleFromInterview, 60);
 		return confrmationPopTitleFromInterview.getText();
 
 	}
@@ -64,47 +66,50 @@ public class CNInterviewSchedule extends TestBase {
 
 	}
 	public void cancelButtonFromInterviewConfirpop() {
+		TestUtil.waitForElemenToClick(cancelButtonFromInterviewConfirpop, 60);
 		cancelButtonFromInterviewConfirpop.click();
 
 	}
 	public void confirmButtonFromInterviewConfirpop() {
-		confirmButtonFromInterviewConfirpop.click();
-
+		TestUtil.clickOnElement(confirmButtonFromInterviewConfirpop);
+	
 	}
 	
 	public void closeButtonFromInterviewConfirpop() {
+		TestUtil.waitForElemenToClick(closeButtonFromInterviewConfirpop, 60);
 		closeButtonFromInterviewConfirpop.click();
 
 	}
 
 	
-	public void passDate1(String Date1) {
-		dateOne.sendKeys(Date1);
+	public void passDate1(String Date) {
+		TestUtil.passDateInField("date1");
+		dateOne.sendKeys(Date);
 
 	}
 
-	public void passDate2(String Date2) {
-
-		dateTwo.sendKeys(Date2);
+	public void passDate2(String Date) {
+		TestUtil.passDateInField("date2");
+		dateTwo.sendKeys(Date);
 	}
 
-	public void passDate3(String Date3) {
-
-		dateThree.sendKeys(Date3);
+	public void passDate3(String Date) {
+		TestUtil.passDateInField("date3");
+		dateThree.sendKeys(Date);
 	}
 
-	public void passTime1(String time1) {
-
-		timeOne.sendKeys(time1);
+	public void passTime1(String time) {
+		TestUtil.passDateInField("time1");
+		timeOne.sendKeys(time);
 	}
 
-	public void passTime2(String time2) {
-
-		timeTwo.sendKeys(time2);
+	public void passTime2(String time) {
+		TestUtil.passDateInField("time2");
+		timeTwo.sendKeys(time);
 	}
-	public void passTime3(String time3) {
-
-		timeThree.sendKeys(time3);
+	public void passTime3(String time) {
+		TestUtil.passDateInField("time3");
+		timeThree.sendKeys(time);
 	}
 
 }

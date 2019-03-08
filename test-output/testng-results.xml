@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results skipped="0" failed="2" ignored="0" total="20" passed="18">
   <reporter-output>
   </reporter-output>
@@ -238,6 +239,153 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- passPlaceOfBirthTest -->
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="33" passed="33">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="114138" started-at="2019-03-08T11:52:33Z" finished-at="2019-03-08T11:54:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="114138" started-at="2019-03-08T11:52:33Z" finished-at="2019-03-08T11:54:27Z">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="setUp" is-config="true" duration-ms="11017" started-at="2019-03-08T11:52:33Z" finished-at="2019-03-08T11:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginIntoConsulate()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="loginIntoConsulate" duration-ms="1369" started-at="2019-03-08T11:52:44Z" finished-at="2019-03-08T11:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoConsulate -->
+        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verifyTitleOfConsulateTitle" duration-ms="41" started-at="2019-03-08T11:52:45Z" finished-at="2019-03-08T11:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfConsulateTitle -->
+        <test-method status="PASS" signature="clickOnNewApplication()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNewApplication" duration-ms="1817" started-at="2019-03-08T11:52:45Z" finished-at="2019-03-08T11:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewApplication -->
+        <test-method status="PASS" signature="verfiyTitleOfCNAddressInfoPage()[pri:3, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNAddressInfoPage" duration-ms="538" started-at="2019-03-08T11:52:47Z" finished-at="2019-03-08T11:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNAddressInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNTravelInfoPage()[pri:4, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNTravelInfoPage" duration-ms="534" started-at="2019-03-08T11:52:48Z" finished-at="2019-03-08T11:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNTravelInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNDocumentVerificatonPage()[pri:5, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNDocumentVerificatonPage" duration-ms="549" started-at="2019-03-08T11:52:48Z" finished-at="2019-03-08T11:52:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNDocumentVerificatonPage -->
+        <test-method status="PASS" signature="passComment()[pri:6, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="passComment" duration-ms="1047" started-at="2019-03-08T11:52:49Z" finished-at="2019-03-08T11:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passComment -->
+        <test-method status="PASS" signature="clickOnConfirmedAirTicketWindow()[pri:7, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnConfirmedAirTicketWindow" duration-ms="6891" started-at="2019-03-08T11:52:50Z" description="click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page  " finished-at="2019-03-08T11:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnConfirmedAirTicketWindow -->
+        <test-method status="PASS" signature="clickOnYellowFevervaccination()[pri:8, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnYellowFevervaccination" duration-ms="2949" started-at="2019-03-08T11:52:57Z" description="click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnYellowFevervaccination -->
+        <test-method status="PASS" signature="clickOnOnPhoto()[pri:9, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnOnPhoto" duration-ms="2843" started-at="2019-03-08T11:53:00Z" description="click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOnPhoto -->
+        <test-method status="PASS" signature="clickOnCoveringLetter()[pri:10, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnCoveringLetter" duration-ms="2900" started-at="2019-03-08T11:53:03Z" description="click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCoveringLetter -->
+        <test-method status="PASS" signature="clickOnPhotoOfDraft()[pri:11, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnPhotoOfDraft" duration-ms="4832" started-at="2019-03-08T11:53:05Z" description="click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPhotoOfDraft -->
+        <test-method status="PASS" signature="clickOnIdProofReference()[pri:12, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnIdProofReference" duration-ms="4845" started-at="2019-03-08T11:53:10Z" description="click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnIdProofReference -->
+        <test-method status="PASS" signature="clickOnOriginalInvitationLetter()[pri:13, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnOriginalInvitationLetter" duration-ms="2922" started-at="2019-03-08T11:53:15Z" description="click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOriginalInvitationLetter -->
+        <test-method status="PASS" signature="clickOnProofOfTransitVisa()[pri:14, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnProofOfTransitVisa" duration-ms="2952" started-at="2019-03-08T11:53:18Z" description="click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-08T11:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnProofOfTransitVisa -->
+        <test-method status="PASS" signature="clickOnApplicantInfor()[pri:15, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApplicantInfor" duration-ms="2585" started-at="2019-03-08T11:53:21Z" finished-at="2019-03-08T11:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicantInfor -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleAddressInformation()[pri:16, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleAddressInformation" duration-ms="527" started-at="2019-03-08T11:53:24Z" finished-at="2019-03-08T11:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleTravelInformation()[pri:17, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleTravelInformation" duration-ms="502" started-at="2019-03-08T11:53:24Z" finished-at="2019-03-08T11:53:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleDocumentVerification()[pri:18, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleDocumentVerification" duration-ms="511" started-at="2019-03-08T11:53:25Z" finished-at="2019-03-08T11:53:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleDocumentVerification -->
+        <test-method status="PASS" signature="clickOnCheckBoxes()[pri:19, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnCheckBoxes" duration-ms="2158" started-at="2019-03-08T11:53:25Z" finished-at="2019-03-08T11:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckBoxes -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText()[pri:20, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApproveAndVerifyPopText" duration-ms="754" started-at="2019-03-08T11:53:27Z" description="Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-08T11:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText1()[pri:21, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApproveAndVerifyPopText1" duration-ms="6711" started-at="2019-03-08T11:53:28Z" description="Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-08T11:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText1 -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText()[pri:22, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnRejectAndVerifyPopText" duration-ms="3771" started-at="2019-03-08T11:53:35Z" description="Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-08T11:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText1()[pri:23, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnRejectAndVerifyPopText1" duration-ms="6742" started-at="2019-03-08T11:53:39Z" description="Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-08T11:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText1 -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleTravelInformation()[pri:24, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnBackButtonAndVerifyTitleTravelInformation" duration-ms="3510" started-at="2019-03-08T11:53:45Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-08T11:53:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleAddressInformation()[pri:25, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnBackButtonAndVerifyTitleAddressInformation" duration-ms="3483" started-at="2019-03-08T11:53:49Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-08T11:53:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleApplicantInformation()[pri:26, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnBackButtonAndVerifyTitleApplicantInformation" duration-ms="3768" started-at="2019-03-08T11:53:52Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-08T11:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleApplicantInformation -->
+        <test-method status="PASS" signature="clickOnInterviewScheduleAndcancel()[pri:27, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnInterviewScheduleAndcancel" duration-ms="9474" started-at="2019-03-08T11:53:56Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel" finished-at="2019-03-08T11:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInterviewScheduleAndcancel -->
+        <test-method status="PASS" signature="clickOnInterviewScheduleAndClose()[pri:28, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnInterviewScheduleAndClose" duration-ms="9275" started-at="2019-03-08T11:54:06Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Close" finished-at="2019-03-08T11:54:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInterviewScheduleAndClose -->
+        <test-method status="PASS" signature="passDateAndTimeInFiled()[pri:29, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="passDateAndTimeInFiled" duration-ms="10173" started-at="2019-03-08T11:54:15Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time" finished-at="2019-03-08T11:54:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passDateAndTimeInFiled -->
+        <test-method status="PASS" signature="getTextFromApplicantInformation()[pri:30, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="getTextFromApplicantInformation" duration-ms="643" started-at="2019-03-08T11:54:25Z" description="Here we are getting text from Applicant Information and comparing with Applicant filed data" finished-at="2019-03-08T11:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromApplicantInformation -->
+        <test-method status="PASS" signature="getTextFromAddressInformation()[pri:31, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="getTextFromAddressInformation" duration-ms="653" started-at="2019-03-08T11:54:26Z" description="Here we are getting text from Address Information and comparing with Applicant filed data" finished-at="2019-03-08T11:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromAddressInformation -->
+        <test-method status="PASS" signature="getTextFromTravelInformation()[pri:31, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="getTextFromTravelInformation" duration-ms="766" started-at="2019-03-08T11:54:26Z" description="Here we are getting text from Travel Information and comparing with Applicant filed data" finished-at="2019-03-08T11:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromTravelInformation -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+>>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
