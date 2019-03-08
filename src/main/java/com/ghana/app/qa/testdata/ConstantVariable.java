@@ -10,6 +10,9 @@ public class ConstantVariable {
 	
 	// **Review Application page **
 	//Personal info
+	public static String visaFees= "Single entry(3 months) visa Rs.8500.0";
+	public static String VisaLocations= "Mumbai";
+	public static String selectFormerNationlity= "None";
 	public static String firstName= "Arjun";
 	public static String lastName= "Thawkar";
 	public static String birthDate= "04/02/1991";	
@@ -17,9 +20,11 @@ public class ConstantVariable {
 	public static String passportNumber= "A12345BA";
 	public static String passportIssuedDate= "04/29/2018";
 	public static String passportExpiryDate= "04/29/2020";
+	public static String selectAddressType= "Permanent Address";
 	
 	
-	//Address Infoi
+	//Address Info
+
 	public static String FlatNo= "Flat No. 302 Lambodhar Classic";
 	public static String StreetName= "Serene Medows, Gangapur Raod";
 	public static String Landmark= "Near Media House.";
@@ -32,6 +37,7 @@ public class ConstantVariable {
 	public static String formerNationality= "India";
 	public static String emailId= "arjunthaokar9@gmail.com";
 	public static String phoneNumber= "9503152126";
+
 	
 	//Emergency contact 
 	public static String emerContactName= "Sachin";

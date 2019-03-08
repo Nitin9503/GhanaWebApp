@@ -270,10 +270,12 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-		//driver.get(prop.getProperty("GhanaWebURL"));	
-		driver.get(prop.getProperty("HCDLoginURL"));	
+
+		driver.get(prop.getProperty("GhanaWebURL"));	
+		//driver.get(prop.getProperty("HCDLoginURL"));	
 		
 		
+
 	}
 
 }

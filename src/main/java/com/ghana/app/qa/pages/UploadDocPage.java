@@ -21,6 +21,8 @@ public class UploadDocPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//h5[contains(text(),'Upload Documents')]")
+	WebElement uploadDocPageTitle;
 	@FindBy(xpath="//input[@id='uploadBtn1']")
 	WebElement attachFileBtn1;
 	@FindBy(xpath="//input[@id='uploadBtn2']")
@@ -40,7 +42,10 @@ public class UploadDocPage extends TestBase {
 	@FindBy(id="applicant_upload_document_form_btn")
 	WebElement saveAndComtinueBtn;
 	
-	
+	public String getTextUploadDocPageTitle(){
+		return uploadDocPageTitle.getText();
+		
+	}
 	public void getUploadDoc(){
 		
 		driverPath = System.getProperty("user.dir");

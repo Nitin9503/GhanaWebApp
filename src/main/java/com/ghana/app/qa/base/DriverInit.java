@@ -41,6 +41,7 @@ public class DriverInit extends TestBase {
 	public static TravelInfoPage travelInfoPage;
 	public static ReviewApplicationPage reviewApplicationPage;
 	public static VisaPaymentPage visaPaymentPage;
+	
 
 	// Consulate and HighCommission side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;

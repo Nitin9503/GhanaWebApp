@@ -16,6 +16,9 @@ public class TravelInfoPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//h5[contains(text(),'Travel Information')]")
+	WebElement travelInfoPageTitle;
+	
 	@FindBy(xpath = "//input[@id='departure_date']")
 	WebElement departureDate ;
 	
@@ -115,6 +118,9 @@ public class TravelInfoPage extends TestBase{
 	@FindBy(xpath = "//form[@name='applicant_travel_information_form']//input[@value='Previous']")
 	WebElement previous ;
 	
+	public String getTextTravelInfoPagetitle(){
+		return travelInfoPageTitle.getText();
+	}
 	
 	public void passDateOfDeparture(String date){
 		departureDate.sendKeys(date);

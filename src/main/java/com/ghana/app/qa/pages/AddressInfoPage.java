@@ -1,11 +1,15 @@
 package com.ghana.app.qa.pages;
 
+import static com.ghana.app.qa.testdata.ConstantVariable.visaFees;
+
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.Select;
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
 
@@ -66,8 +70,10 @@ public class AddressInfoPage extends TestBase {
 	public void selectFormerNaitonality() throws InterruptedException {
 		TestUtil.actionClassMethod(FormerNationality);
 		//former_nationality_search.sendKeys("India");
-		//Thread.sleep(2000);
-		former_nationality_click.click();
+		//Thread.sleep(2000);sel_formar
+		//former_nationality_click.click();
+		Select oSelect = new Select(driver.findElement(By.id("sel_formar")));
+		oSelect.selectByVisibleText(selectFormerNationlity);
 
 	}
 
@@ -81,8 +87,11 @@ public class AddressInfoPage extends TestBase {
 		city.sendKeys(Cityname);
 		state.sendKeys(State);
 		mailing_country.sendKeys(CountryName);
+		
 		TestUtil.actionClassMethod(AddressType);
-		PresentAddress.click();
+		//PresentAddress.click();
+		Select oSelect = new Select(driver.findElement(By.id("sel_addresstype")));
+		oSelect.selectByVisibleText(selectAddressType);
 
 	}
    public void clickSaveAndContinuebtn(){
