@@ -56,10 +56,6 @@ public class ApplicantDashBoardPage extends TestBase {
 	@FindBy(id = "passportdateofissue")
 	WebElement dateOfPassportIssue;
 	
-	@FindBy(id = "landmarkText")
-	WebElement landmark;
-	
-	
 	@FindBy(id = "placeofbirth")
 	WebElement birthPlace;
 	
@@ -107,9 +103,7 @@ public class ApplicantDashBoardPage extends TestBase {
 	public String getTextBirthPlace(){
 		return birthPlace.getAttribute("value");
 	}
-	public String getTextlandmark(){
-		return landmark.getAttribute("value");
-	}
+
 	
 	
 	public void clickOnNextButton(){

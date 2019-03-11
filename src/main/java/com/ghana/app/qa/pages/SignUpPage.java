@@ -82,13 +82,12 @@ public class SignUpPage extends TestBase {
 
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement Continue;
-	
+
 	@FindBy(xpath = "//div[@class ='custom-control custom-checkbox']")
 	List<WebElement> checkBoxesClick;
 
 	@FindBy(xpath = "//div[@class ='custom-control custom-radio custom-control-inline']")
 	List<WebElement> selectRadioButton;
-	
 
 	public String validateSignUpPageTitle() {
 
@@ -102,29 +101,30 @@ public class SignUpPage extends TestBase {
 
 	public void selectNationality() throws InterruptedException {
 		TestUtil.actionClassMethod(Nationality);
-	nationalitySearchField.sendKeys("India");
+		nationalitySearchField.sendKeys("India");
 		Thread.sleep(2000);
 		selectNationality.click();
-	
+
 	}
 
 	public void selectPortOfArrival() {
 		TestUtil.actionClassMethod(PortofArrival);
 		selectPortofArrival.click();
-		
+
 	}
 
 	public void passPhoneNo(String phoneNo) {
 		PhoneNumber.sendKeys(phoneNo);
 	}
-	
+
 	public void selectDateOfBirth(String birthDate) throws InterruptedException {
-	((JavascriptExecutor)driver).executeScript ("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
-    dateofbirth.sendKeys(birthDate); //Enter date in required format
-	 }
-	
+		((JavascriptExecutor) driver)
+				.executeScript("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
+		dateofbirth.sendKeys(birthDate); // Enter date in required format
+	}
+
 	public void passEmailId(String EmailId) {
-		emailId.sendKeys(EmailId);//nitinthaokar9@gmail.com
+		emailId.sendKeys(EmailId);// nitinthaokar9@gmail.com
 	}
 
 	public void passReEmailId(String EmailId) {
@@ -150,37 +150,42 @@ public class SignUpPage extends TestBase {
 	public void termsCheckboxselect() {
 		termsCheckkbox.click();
 	}
-	
-	public void clickOnCheckBoxes(){
-		
-		try{
-			for (WebElement we : checkBoxesClick){
-				System.out.println("checkBoxesClick==>" +checkBoxesClick.size());
-				TestUtil.actionClassMethod(we);					
+
+	public void clickOnCheckBoxes() {
+
+		try {
+			for (WebElement we : checkBoxesClick) {
+				System.out.println("checkBoxesClick==>" + checkBoxesClick.size());
+				TestUtil.actionClassMethod(we);
 			}
-			
-		}catch(Exception e){
+
+		} catch (Exception e) {
 			System.out.println("all check boxes click done");
-			
+
 		}
-	
-		
-	}
-	public void selectRadioButton(){
-		
-		try{
-			for (WebElement we : selectRadioButton){
-				TestUtil.actionClassMethod(we);					
-			}
-			
-		}catch(Exception e){
-			System.out.println("all check boxes click done");
-			
-		}
-	
-		
 	}
 
-	
-	
+	public boolean verifyCheckBoxIsSelected() {
+		int j = checkBoxesClick.size();
+		for (int i = 0; i <= j; i++) {
+			boolean selectedBox = checkBoxesClick.get(i).isSelected();	
+			}
+		return selectedBox;
+		
+		}
+
+	public void selectRadioButton() {
+
+		try {
+			for (WebElement we : selectRadioButton) {
+				TestUtil.actionClassMethod(we);
+			}
+
+		} catch (Exception e) {
+			System.out.println("all check boxes click done");
+
+		}
+
+	}
+
 }

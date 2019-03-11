@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results skipped="0" failed="0" ignored="0" total="45" passed="45">
   <reporter-output>
   </reporter-output>
@@ -192,6 +193,45 @@
           </reporter-output>
         </test-method> <!-- clicksaveAndContiBtnTest -->
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14050" started-at="2019-03-09T09:09:18Z" finished-at="2019-03-09T09:09:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14050" started-at="2019-03-09T09:09:18Z" finished-at="2019-03-09T09:09:32Z">
+      <class name="com.ghana.app.qa.testcases.CNLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="setUp" is-config="true" duration-ms="10589" started-at="2019-03-09T09:09:18Z" finished-at="2019-03-09T09:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginfunctionaltyTest1()[pri:0, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest1" duration-ms="1850" started-at="2019-03-09T09:09:29Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest1 -->
+        <test-method status="PASS" signature="loginfunctionaltyTest2()[pri:1, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest2" duration-ms="367" started-at="2019-03-09T09:09:31Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest2 -->
+        <test-method status="PASS" signature="loginfunctionaltyTest3()[pri:2, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest3" duration-ms="236" started-at="2019-03-09T09:09:31Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest3 -->
+        <test-method status="PASS" signature="loginfunctionaltyTest4()[pri:2, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest4" duration-ms="263" started-at="2019-03-09T09:09:31Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest4 -->
+        <test-method status="PASS" signature="loginfunctionaltyTest5()[pri:2, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest5" duration-ms="294" started-at="2019-03-09T09:09:32Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest5 -->
+        <test-method status="PASS" signature="loginfunctionaltyTest6()[pri:2, instance:com.ghana.app.qa.testcases.CNLoginTest@78ac1102]" name="loginfunctionaltyTest6" duration-ms="394" started-at="2019-03-09T09:09:32Z" description="This test will verify login functinality with pass invalid creadentials and click on Login button" finished-at="2019-03-09T09:09:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfunctionaltyTest6 -->
+      </class> <!-- com.ghana.app.qa.testcases.CNLoginTest -->
+>>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

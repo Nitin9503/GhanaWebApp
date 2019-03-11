@@ -1,6 +1,12 @@
 package com.ghana.app.qa.testdata;
 
 public class ConstantVariable {
+	
+	
+	// Login To Consulate Side 
+	public static String username;
+	public static String password;
+	
 	//Consulate Side 
 	public static String applicationID= "";
 	public static boolean selectedBox;

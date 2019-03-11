@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.poi.hslf.model.Sheet;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -24,14 +23,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
-
 import com.ghana.app.qa.base.TestBase;
 import com.google.common.base.Function;
-
-
-
 
 public class TestUtil extends TestBase  {
 
@@ -44,19 +37,19 @@ public class TestUtil extends TestBase  {
 	public static Properties prop;
 	public static String driverPath;	
 	public static String OSName = "";
-
+	
 	public static long PAGE_LOAD_TIMEOUT = 120;
 	public static long IMPLICIT_WAIT = 120;
 	public static String title = "";
 	public static String screenshotName = "";
 	
 	// Static variable for Launch activety of browser
-	
 
 	public static String hubURL = "http://192.168.1.39:5568/wd/hub";	
 	public static final String USERNAME = "sachin1";
 	public static final String ACCESS_KEY = "0576f84d-89b5-4a1e-8eee-f19e4bb26729";
 	public static final String SauceLabURL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";	
+
 
 	// Static methods
 	public static void scrollUpByPixel(int pixel) {
@@ -65,6 +58,7 @@ public class TestUtil extends TestBase  {
 
 	}
 
+	
 	public static void scrollUpAtEndOFPage() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");

@@ -42,7 +42,7 @@ public class CNDocumentVerificaton extends TestBase {
 	@FindBy(xpath = "//div[@id='rejectModel']//button[@class='close' and @type='button']")
 	WebElement closeFromRejectConfir;
 
-	@FindBy(xpath = "	//input[@value='Cancel']")
+	@FindBy(xpath = "//input[@value='Cancel']")
 	WebElement cancelFromApprove;
 
 	@FindBy(xpath = "//input[@value='Confirm']")
@@ -105,8 +105,8 @@ public class CNDocumentVerificaton extends TestBase {
 	@FindBy(xpath = "//h4[contains(text(),'Proof of transit valid visa')]")
 	WebElement titleOfProofOfTransitValidVisaWindow;
 
-	@FindBy(xpath = "//button[@type='button'][contains(text(),'×')]")
-	List<WebElement> crossButtonToCloseWindow;
+	@FindBy(xpath = "//div[@class='modal fade show']//button[@type='button'][contains(text(),'×')]")
+	WebElement crossButtonToCloseWindow;
 
 	@FindBy(xpath = "//button[@type='button'][contains(text(),'Close')]")
 	List<WebElement> closeButtonToCloseWindow;
@@ -120,55 +120,15 @@ public class CNDocumentVerificaton extends TestBase {
 		return documentVerificationText.getText();
 
 	}
+	public void crossButtonToCloseWindow() throws InterruptedException {
+		/*TestUtil.waitForElemenToClick(crossButtonToCloseWindow.get(0), 60);
+		System.out.println("crossButtonToCloseWindow.get(0)==>" +crossButtonToCloseWindow.get(0));*/
+		Thread.sleep(5000);
+		//WebElement crossCloseButton = crossButtonToCloseWindow.get(0);
+		TestUtil.clickOnElement(crossButtonToCloseWindow);
+
+	}
 	
-	public void crossButtonToCloseWindow1() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(0), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(0);
-		TestUtil.actionClassMethod(crossCloseButton);
-
-	}
-
-	public void crossButtonToCloseWindow2() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(1), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(1);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow3() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(2), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(2);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow4() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(3), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(3);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow5() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(4), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(4);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow6() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(5), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(5);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow7() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(6), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(6);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
-
-	public void crossButtonToCloseWindow8() {
-		TestUtil.waitForElementToVisible(crossButtonToCloseWindow.get(7), 60);
-		WebElement crossCloseButton = crossButtonToCloseWindow.get(7);
-		TestUtil.actionClassMethod(crossCloseButton);
-	}
 
 	public void closeButtonToCloseWindow1() {
 		TestUtil.waitForElemenToClick(closeButtonToCloseWindow.get(0), 60);
