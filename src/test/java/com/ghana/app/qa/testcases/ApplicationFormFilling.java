@@ -161,7 +161,7 @@ public class ApplicationFormFilling extends DriverInit {
 
 	}
 
-/*	@Test(priority = 21)
+@Test(priority = 21)
 	public void clickOnSaveAndContinueTest() throws InterruptedException, IOException {
 		personalInfoPage.clickOnSaveAndContinue();
 		addressInfoPage.getTextAddressInfoPageTitle();
@@ -196,11 +196,11 @@ public class ApplicationFormFilling extends DriverInit {
 		
         
 	
-	}*/
+	}
 	
 	// ----------------------Emergency contact page
 	// Test----------------------------------//
-	/*@Test(priority = 25)
+	@Test(priority = 25)
 	public void emergencyContactDetailsTest() throws InterruptedException, IOException {
 		emergencyContactPage.emergencyContactDetails(emerContactName, emerContactSurname, emerPhoneNumber);
 
@@ -231,7 +231,7 @@ public class ApplicationFormFilling extends DriverInit {
 	@Test(priority = 29)
 	public void clickOnIsApplicantPossessionRoundTicketTest() throws InterruptedException, IOException {
 		travelInfoPage.clickOnIsApplicantPossessionRoundTicket();
-		travelInfoPage.clickOnYes();
+		
 
 	}
 
@@ -250,7 +250,7 @@ public class ApplicationFormFilling extends DriverInit {
 	@Test(priority = 32)
 	public void clickOnTravelByTest() throws InterruptedException, IOException {
 		travelInfoPage.clickOnTravelBy();
-		travelInfoPage.clickOnTravelByAir();
+		
 
 	}
 
@@ -339,5 +339,5 @@ public class ApplicationFormFilling extends DriverInit {
 		softAssertion.assertEquals(visaPaymentPage.getTextPaymentPageTitle(), "Visa Payment", "here visa Payment title not match hence it is not navigated to this page");
         
 	}
-*/
+
 }

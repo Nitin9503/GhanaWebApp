@@ -1,14 +1,17 @@
 package com.ghana.app.qa.pages;
 
+import static com.ghana.app.qa.testdata.ConstantVariable.VisaLocations;
+
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 public class EmergencyContactPage extends TestBase {
 
 	public EmergencyContactPage() throws IOException, InterruptedException {
@@ -66,7 +69,8 @@ public class EmergencyContactPage extends TestBase {
 
 	public void selectRelation() {
 		TestUtil.actionClassMethod(Relationship);
-		Mother.click();
+		driver.findElement(By.xpath("//span[contains(text(),'" + selectRelationship + "')]"));
+		//Mother.click();
 	}
 
 	public void emergencyProfessionDetails(String empProfession,

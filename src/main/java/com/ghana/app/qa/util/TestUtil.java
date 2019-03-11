@@ -127,7 +127,12 @@ public class TestUtil extends TestBase  {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
+	public static void waitForElementToVisibleOnly(WebElement element, int maxTimeout) {
+		WebDriverWait wait = new WebDriverWait(driver, maxTimeout);
+		wait.until(ExpectedConditions.visibilityOf(element));
 
+	}
+	
 	public static void actionClassMethod(WebElement element) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).click().perform();

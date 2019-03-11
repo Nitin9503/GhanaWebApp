@@ -89,9 +89,9 @@ public class AddressInfoPage extends TestBase {
 		mailing_country.sendKeys(CountryName);
 		
 		TestUtil.actionClassMethod(AddressType);
-		//PresentAddress.click();
-		Select oSelect = new Select(driver.findElement(By.id("sel_addresstype")));
-		oSelect.selectByVisibleText(selectAddressType);
+		driver.findElement(
+				By.xpath("//span[contains(text(),'" + selectAddressType + "')]"))
+				.click();
 
 	}
    public void clickSaveAndContinuebtn(){

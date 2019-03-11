@@ -11,7 +11,8 @@ public class ConstantVariable {
 	// **Review Application page **
 	//Personal info
 	public static String visaFees= "Single entry(3 months) visa Rs.8500.0";
-	public static String VisaLocations= "Mumbai";
+	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
+	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
 	public static String firstName= "Arjun";
 	public static String lastName= "Thawkar";
@@ -20,7 +21,7 @@ public class ConstantVariable {
 	public static String passportNumber= "A12345BA";
 	public static String passportIssuedDate= "04/29/2018";
 	public static String passportExpiryDate= "04/29/2020";
-	public static String selectAddressType= "Permanent Address";
+	public static String selectAddressType= "Permanent Address"; //Present Address
 	
 	
 	//Address Info
@@ -42,7 +43,7 @@ public class ConstantVariable {
 	//Emergency contact 
 	public static String emerContactName= "Sachin";
 	public static String emerContactSurname= "Paratha";
-	public static String relationShip= "";
+	public static String selectRelationship= "Mother";
 	public static String emerPhoneNumber= "9552619866";
 	public static String profession= "Engineer";
 	public static String employer= "infosys";
@@ -57,8 +58,9 @@ public class ConstantVariable {
 	//Travel Info
 	public static String dateOfDeparture= "08/05/2019";
 	public static String ticketNumber= "AF123652";
-	public static String roundTicket= "";
-	public static String travellingBy= "";
+	public static String roundTicket= "Yes";     //No
+	public static String travellingBy= "Air";    //Air, Ship, Road, Train
+	public static String JourneyPurpose= "Visit Family";     //Medical, Education, Business, Tourism.
 	public static String reachBy= "";
 	
 	//Primary Reference

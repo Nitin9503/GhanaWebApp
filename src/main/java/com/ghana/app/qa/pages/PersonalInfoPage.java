@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
 
 public class PersonalInfoPage extends TestBase {
@@ -20,23 +21,27 @@ public class PersonalInfoPage extends TestBase {
 	}
 
 	// elements from personnel information page
-	
+
 	@FindBy(xpath = "//h5[contains(text(),'Personal Information')]")
 	WebElement personalInfoTitle;
 	@FindBy(xpath = ".//*[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
 	WebElement applicationId;
 	@FindBy(xpath = "//span[text()='Visa Fees']")
 	WebElement clickvisaFees;//
-	
-	//@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
+
+	@FindBy(id = "sel_visaFee")
+	WebElement select;//
+
+	// @FindBy(xpath =
+	// "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
 	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Single entry(3 months) visa Rs.8500.0']")
 	WebElement clickVisaFees;//
-	
+
 	@FindBy(xpath = "//span[text()='Select Visa Location']")
 	WebElement visaLocation;//
-	//@FindBy(xpath = "//ul[@id='img_category_options']//span[text()='Mumbai']")
+	// @FindBy(xpath =
+	// "//ul[@id='img_category_options']//span[text()='Mumbai']")
 	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Mumbai']")
-	
 	WebElement clickVisaLocation;//
 	@FindBy(xpath = "//input[@id='firstname']")
 	WebElement firstname;
@@ -59,39 +64,33 @@ public class PersonalInfoPage extends TestBase {
 	@FindBy(xpath = "//button[@id='applicant_personal_info_form_btn']")
 	WebElement saveAndContinue;
 
-	public String getTextPersonalInfoPageTitle(){
+	public String getTextPersonalInfoPageTitle() {
 		return personalInfoTitle.getText();
-		
+
 	}
+
 	public String getApplicantPageTitle() {
 		return driver.getTitle();
 	}
-	
-	
+
 	public String getApplicationId() {
 		return applicationId.getText().substring(16);
 	}
 
 	public void SelectvisaFees() throws InterruptedException {
-	
-		Thread.sleep(2000);
-		//TestUtil.actionClassMethod(clickvisaFees);
-		TestUtil.waitForElemenToClick(clickvisaFees, 60);
-		//clickVisaFees.click();
-		Select oSelect = new Select(driver.findElement(By.id("sel_visaFee")));
-		Thread.sleep(2000);
-		oSelect.selectByVisibleText(visaFees);
-		Thread.sleep(2000);
+		TestUtil.actionClassMethod(clickvisaFees);
+		driver.findElement(
+				By.xpath("//span[contains(text(),'" + visaFees + "')]"))
+				.click();
+
 	}
 
-	public void SelectvisaLocation() {
-		
-	//	TestUtil.actionClassMethod(visaLocation);
-		//clickVisaLocation.click();sel_location
-		TestUtil.waitForElemenToClick(visaLocation, 60);
-		Select oSelect = new Select(driver.findElement(By.id("sel_location")));//sel_location
-	
-		oSelect.selectByValue(VisaLocations);
+	public void SelectvisaLocation() throws InterruptedException {
+
+		TestUtil.actionClassMethod(visaLocation);
+		driver.findElement(
+				By.xpath("//span[contains(text(),'" + VisaLocations + "')]")).click();
+
 	}
 
 	public void passFirstName(String firstName) {
@@ -100,8 +99,8 @@ public class PersonalInfoPage extends TestBase {
 
 	public void passLastName(String lastName) {
 		lastname.sendKeys(lastName);
-		//return lastname.getText();
-		}
+		// return lastname.getText();
+	}
 
 	public void passPassportNumber(String passportNumber) {
 		passport_number.sendKeys(passportNumber);
@@ -133,5 +132,5 @@ public class PersonalInfoPage extends TestBase {
 	public void clickOnSaveAndContinue() {
 		saveAndContinue.click();
 	}
-	
+
 }
