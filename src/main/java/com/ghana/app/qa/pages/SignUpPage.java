@@ -83,7 +83,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement Continue;
 
-	@FindBy(xpath = "//div[@class ='custom-control custom-checkbox']")
+	@FindBy(xpath = "//input[@name='example1']")
 	List<WebElement> checkBoxesClick;
 
 	@FindBy(xpath = "//div[@class ='custom-control custom-radio custom-control-inline']")
@@ -152,27 +152,22 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void clickOnCheckBoxes() {
+		System.out.println("checkBoxesClick==>" + checkBoxesClick.size());
 
-		try {
-			for (WebElement we : checkBoxesClick) {
-				System.out.println("checkBoxesClick==>" + checkBoxesClick.size());
-				TestUtil.actionClassMethod(we);
+		for (WebElement we : checkBoxesClick) {
+			TestUtil.actionClassMethod(we);
+			int j = checkBoxesClick.size();
+			for (int i = 0; i < j; i++) {
+				WebElement check = checkBoxesClick.get(i);
+				selectedBoxOnSignUp = check.isSelected();
+				System.out.println("selectedBox==>" +selectedBoxOnSignUp);
 			}
-
-		} catch (Exception e) {
-			System.out.println("all check boxes click done");
-
 		}
 	}
 
-	public boolean verifyCheckBoxIsSelected() {
-		int j = checkBoxesClick.size();
-		for (int i = 0; i <= j; i++) {
-			boolean selectedBox = checkBoxesClick.get(i).isSelected();	
-			}
-		return selectedBox;
-		
-		}
+	public void verifyCheckBoxIsSelectedInSignUpPage() {
+
+	}
 
 	public void selectRadioButton() {
 

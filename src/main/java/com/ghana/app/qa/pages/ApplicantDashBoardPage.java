@@ -35,7 +35,7 @@ public class ApplicantDashBoardPage extends TestBase {
 	@FindBy(xpath = "//input[@id='exampleInputEmail2' and @value='Employment']")
 	WebElement yettoconfirm ;
 	
-	@FindBy(xpath = "	//div[@class='col-sm-6']//input[@id='exampleInputEmail2']")
+	@FindBy(xpath = "//div[@class='col-sm-6']//input[@id='exampleInputEmail2']")
 	WebElement visaType ;
 
 	@FindBy(id = "visafee")
@@ -85,6 +85,7 @@ public class ApplicantDashBoardPage extends TestBase {
 	public String getTextFullName() throws InterruptedException{
 		
 		return fullName.getAttribute("value");
+
 	}
 	
 	public String getTextPassportNumber(){

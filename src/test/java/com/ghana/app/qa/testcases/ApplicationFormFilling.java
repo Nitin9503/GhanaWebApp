@@ -3,6 +3,7 @@ package com.ghana.app.qa.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -26,16 +27,15 @@ public class ApplicationFormFilling extends DriverInit {
 
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
-        signUpPage.clickOnCheckBoxes();
-        System.out.println("= signUpPage. verifyCheckBoxIsSelected();=>" + signUpPage. verifyCheckBoxIsSelected());
-        
-        signUpPage. verifyCheckBoxIsSelected();
+		signUpPage.clickOnCheckBoxes();
+        System.out.println("selectedBoxOnSignUp==>" +selectedBoxOnSignUp);
+        softAssertion.assertTrue(selectedBoxOnSignUp, "Check boxes are not selected from SignUp page");
         signUpPage.selectRadioButton();
         signUpPage.SelectPassportType();
 		Thread.sleep(2000);
 	}
 
-	@Test(priority = 2)
+	/*@Test(priority = 2)
 	public void selectNationalityTest() throws InterruptedException, IOException {
 		signUpPage.selectNationality();
 		Thread.sleep(2000);
@@ -341,6 +341,6 @@ public class ApplicationFormFilling extends DriverInit {
 		uploadDocPage.clicksaveAndContiBtn();
 		softAssertion.assertEquals(visaPaymentPage.getTextPaymentPageTitle(), "Visa Payment", "here visa Payment title not match hence it is not navigated to this page");
         
-	}
+	}*/
 
 }

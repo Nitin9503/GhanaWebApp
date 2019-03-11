@@ -10,7 +10,8 @@ public class ConstantVariable {
 	//Consulate Side 
 	public static String applicationID= "";
 	public static boolean selectedBox;
-	
+	public static boolean selectedBoxOnSignUp;
+
 	//signUp Page
 	public static String passPortType = "Passport Type";
 	
