@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
 import static com.ghana.app.qa.testdata.ConstantVariable.applicationID;
-import static com.ghana.app.qa.testdata.ConstantVariable.selectedBox;
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 public class CNDocumentVerificaton extends TestBase {
 
 	public CNDocumentVerificaton() throws IOException, InterruptedException {
@@ -54,8 +54,11 @@ public class CNDocumentVerificaton extends TestBase {
 	@FindBy(xpath = "//input[@value='Flag And Reject']")
 	WebElement flagAndReject;
 
-	@FindBy(xpath = "//input[@type='checkbox' and @onclick='selectall(this)']")
-	WebElement selectAllCheckBox;
+	@FindBy(xpath = "//input[@name='chkBox']")
+	List<WebElement> checkBox;
+	
+	@FindBy(id = "selectAllCheck")
+	WebElement selectAllCheckBox;	
 
 	@FindBy(xpath = "//div[@class='form-group row']//div[1]//img[1]")
 	WebElement confirmAirTicket;
@@ -278,12 +281,41 @@ public class CNDocumentVerificaton extends TestBase {
 	}
 
 	public void selectAllCheckBoxes() throws InterruptedException {
-		selectAllCheckBox.click();
 		Thread.sleep(2000);
-		 selectedBox = selectAllCheckBox.isSelected();
-		 System.out.println("selectedBox==>" +selectedBox);
+		selectAllCheckBox.click();
+	}
 	
+	public void verifyAllCheckBox() throws InterruptedException{
+		Thread.sleep(2000);
+		selectedBoxDoc = selectAllCheckBox.isSelected();
+		 System.out.println("selectedBox==>" +selectedBoxDoc);
+		int size = checkBox.size();
+		System.out.println("size==>" +size);
+		for (int i=0; i<checkBox.size(); i++){
+			WebElement check = checkBox.get(i);
+			selectedCheckBoxOnDoc= check.isSelected();			
+		}
+	}
+	
+	public void selectOneByOneCheckBox() throws InterruptedException {
+		
+		int size = checkBox.size();
+		System.out.println("size==>" +size);
+		for (int i=0; i<checkBox.size(); i++){
+			WebElement check = checkBox.get(i);
+			TestUtil.actionClassMethod(check);
+		
+		}
 
+	}
+	public void verifyOneByOneCheckBox() throws InterruptedException {
+		
+		int size = checkBox.size();
+		System.out.println("size==>" +size);
+		for (int i=0; i<checkBox.size(); i++){
+			WebElement check = checkBox.get(i);
+			selectedCheckBoxOnDoc= check.isSelected();			
+		}
 	}
 
 	public void clickOnApprove() {

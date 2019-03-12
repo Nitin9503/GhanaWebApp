@@ -9,8 +9,12 @@ public class ConstantVariable {
 	
 	//Consulate Side 
 	public static String applicationID= "";
-	public static boolean selectedBox;
+	public static boolean selectedBoxDoc;
 	public static boolean selectedBoxOnSignUp;
+	public static boolean selectedCheckBoxOnDoc;
+	public static boolean unselectedBoxDoc;
+	
+	
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special

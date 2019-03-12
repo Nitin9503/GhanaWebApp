@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Updated upstream
       <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
         <methods>
           <include name="getTextAddressInfoTest"/>
@@ -11,6 +12,16 @@
           <include name="getTextTravelInfoTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
+=======
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <methods>
+          <include name="selectOneByOneCheckBoxAndVerify"/>
+          <include name="setUp"/>
+          <include name="unselectAndVerify"/>
+          <include name="unselectOneByOneAndVerify"/>
+        </methods>
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+>>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

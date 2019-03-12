@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <testng-results skipped="0" failed="3" ignored="0" total="51" passed="48">
   <reporter-output>
   </reporter-output>
@@ -214,6 +215,87 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+=======
+<testng-results skipped="0" failed="3" ignored="0" total="15" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35672" started-at="2019-03-12T08:16:34Z" finished-at="2019-03-12T08:17:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35672" started-at="2019-03-12T08:16:34Z" finished-at="2019-03-12T08:17:10Z">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="setUp" is-config="true" duration-ms="12529" started-at="2019-03-12T08:16:34Z" finished-at="2019-03-12T08:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginIntoConsulate()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="loginIntoConsulate" duration-ms="1303" started-at="2019-03-12T08:16:47Z" description="This test will verify login functinality with pass valid creadentials and click on Login button" finished-at="2019-03-12T08:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoConsulate -->
+        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verifyTitleOfConsulateTitle" duration-ms="25" started-at="2019-03-12T08:16:48Z" finished-at="2019-03-12T08:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfConsulateTitle -->
+        <test-method status="PASS" signature="clickOnNewApplication()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNewApplication" duration-ms="1823" started-at="2019-03-12T08:16:48Z" finished-at="2019-03-12T08:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewApplication -->
+        <test-method status="PASS" signature="verfiyTitleOfCNAddressInfoPage()[pri:3, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNAddressInfoPage" duration-ms="650" started-at="2019-03-12T08:16:50Z" finished-at="2019-03-12T08:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNAddressInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNTravelInfoPage()[pri:4, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNTravelInfoPage" duration-ms="601" started-at="2019-03-12T08:16:51Z" finished-at="2019-03-12T08:16:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNTravelInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNDocumentVerificatonPage()[pri:5, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="verfiyTitleOfCNDocumentVerificatonPage" duration-ms="639" started-at="2019-03-12T08:16:51Z" finished-at="2019-03-12T08:16:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNDocumentVerificatonPage -->
+        <test-method status="PASS" signature="passComment()[pri:6, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="passComment" duration-ms="1087" started-at="2019-03-12T08:16:52Z" finished-at="2019-03-12T08:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passComment -->
+        <test-method status="PASS" signature="clickOnApplicantInfor()[pri:23, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnApplicantInfor" duration-ms="2585" started-at="2019-03-12T08:16:53Z" finished-at="2019-03-12T08:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicantInfor -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleAddressInformation()[pri:24, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleAddressInformation" duration-ms="610" started-at="2019-03-12T08:16:56Z" finished-at="2019-03-12T08:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleTravelInformation()[pri:25, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleTravelInformation" duration-ms="620" started-at="2019-03-12T08:16:56Z" finished-at="2019-03-12T08:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleDocumentVerification()[pri:26, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="clickOnNextButtonAndVerifyTitleDocumentVerification" duration-ms="582" started-at="2019-03-12T08:16:57Z" finished-at="2019-03-12T08:16:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleDocumentVerification -->
+        <test-method status="PASS" signature="selectAllCheckBoxAndVerify()[pri:27, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="selectAllCheckBoxAndVerify" duration-ms="4663" started-at="2019-03-12T08:16:57Z" finished-at="2019-03-12T08:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAllCheckBoxAndVerify -->
+        <test-method status="FAIL" signature="unselectAndVerify()[pri:28, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="unselectAndVerify" duration-ms="4552" started-at="2019-03-12T08:17:02Z" finished-at="2019-03-12T08:17:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ConsulatePageTest.unselectAndVerify(ConsulatePageTest.java:350)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+>>>>>>> Stashed changes
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -236,6 +318,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
         </test-method> <!-- getTextAddressInfoTest -->
         <test-method status="FAIL" signature="getTextEmergencyContactTest()[pri:47, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@18bf3d14]" name="getTextEmergencyContactTest" duration-ms="40" started-at="2019-03-12T07:59:38Z" finished-at="2019-03-12T07:59:38Z">
           <exception class="java.lang.AssertionError">
@@ -256,6 +339,28 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+=======
+        </test-method> <!-- unselectAndVerify -->
+        <test-method status="FAIL" signature="selectOneByOneCheckBoxAndVerify()[pri:29, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="selectOneByOneCheckBoxAndVerify" duration-ms="1459" started-at="2019-03-12T08:17:07Z" finished-at="2019-03-12T08:17:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ConsulatePageTest.selectOneByOneCheckBoxAndVerify(ConsulatePageTest.java:362)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+>>>>>>> Stashed changes
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -278,6 +383,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
         </test-method> <!-- getTextEmergencyContactTest -->
         <test-method status="FAIL" signature="getTextTravelInfoTest()[pri:48, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@18bf3d14]" name="getTextTravelInfoTest" duration-ms="520" started-at="2019-03-12T07:59:38Z" finished-at="2019-03-12T07:59:38Z">
           <exception class="java.lang.AssertionError">
@@ -298,6 +404,30 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+=======
+        </test-method> <!-- selectOneByOneCheckBoxAndVerify -->
+        <test-method status="FAIL" signature="unselectOneByOneAndVerify()[pri:30, instance:com.ghana.app.qa.testcases.ConsulatePageTest@42607a4f]" name="unselectOneByOneAndVerify" duration-ms="1866" started-at="2019-03-12T08:17:08Z" finished-at="2019-03-12T08:17:10Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false],
+Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page expected [true] but found [false],
+Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ConsulatePageTest.unselectOneByOneAndVerify(ConsulatePageTest.java:374)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+>>>>>>> Stashed changes
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -320,6 +450,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< Updated upstream
         </test-method> <!-- getTextTravelInfoTest -->
         <test-method status="PASS" signature="clickOnContinueBtnTest()[pri:49, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@18bf3d14]" name="clickOnContinueBtnTest" duration-ms="119" started-at="2019-03-12T07:59:38Z" finished-at="2019-03-12T07:59:38Z">
           <reporter-output>
@@ -330,6 +461,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- verifyClickOnSubmitBtnTest -->
       </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
+=======
+        </test-method> <!-- unselectOneByOneAndVerify -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+>>>>>>> Stashed changes
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

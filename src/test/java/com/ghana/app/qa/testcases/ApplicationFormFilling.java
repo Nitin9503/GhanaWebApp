@@ -24,7 +24,6 @@ public class ApplicationFormFilling extends DriverInit {
 	// ---------------------SignUp page Test----------------------------------//
 	@Test(priority = 1)
 	public void selectPassPortType() throws InterruptedException, IOException {
-
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
 		signUpPage.clickOnCheckBoxes();

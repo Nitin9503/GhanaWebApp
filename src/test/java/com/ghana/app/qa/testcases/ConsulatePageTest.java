@@ -78,7 +78,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 7, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	/*@Test(priority = 7, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnConfirmedAirTicketWindowClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -284,7 +284,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
 				"Document Verification page is not displayed upon clicking on Close button from Proof of transit valid visa");
 		softAssertion.assertAll();
-	}
+	}*/
 
 	@Test(priority = 23)
 	public void clickOnApplicantInfor() throws InterruptedException {
@@ -321,15 +321,60 @@ public class ConsulatePageTest extends DriverInit {
 	}
 
 	@Test(priority = 27)
-	public void clickOnCheckBoxes() throws InterruptedException {
+	public void selectAllCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		
+		List<WebElement> element  = driver.findElements(By.xpath("//input[@name='chkBox']"));
+		WebElement ele = element.get(0);
+		boolean value =ele.isSelected();
+		System.out.println("value" +value);
 		cNDocumentVerificaton.selectAllCheckBoxes();
-		softAssertion.assertTrue(selectedBox,
-				"Check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
+		cNDocumentVerificaton.verifyAllCheckBox();
+		System.out.println("selectedBoxDoc" +selectedBoxDoc);
+		softAssertion.assertTrue(selectedBoxDoc,
+				"Check Boxes is not selected upon clicking on [Select All Check] only select all button from Document Verification page");		
+		softAssertion.assertTrue(selectedCheckBoxOnDoc,
+				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
+		softAssertion.assertAll();
+	}
+	@Test(priority = 28)
+	public void unselectAndVerify() throws InterruptedException {
+		cNDocumentVerificaton.selectAllCheckBoxes();
+		cNDocumentVerificaton.verifyAllCheckBox();
+		System.out.println("unselectedBoxDoc" +unselectedBoxDoc);
+		softAssertion.assertFalse(selectedBoxDoc,
+				"Check Boxes is not unselected upon clicking on [Select All Check] only select all button from Document Verification page");		
+		softAssertion.assertTrue(selectedCheckBoxOnDoc,
+				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
+		softAssertion.assertAll();
+	}
+	
+	@Test(priority = 29)
+	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		cNDocumentVerificaton.selectOneByOneCheckBox();
+		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
+		cNDocumentVerificaton.verifyOneByOneCheckBox();
+		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
+		softAssertion.assertTrue(selectedCheckBoxOnDoc,
+				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
+		softAssertion.assertAll();
+	}
+	@Test(priority = 30)
+	public void unselectOneByOneAndVerify() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		cNDocumentVerificaton.selectOneByOneCheckBox();
+		System.out.println("unselectedBoxDoc" +selectedCheckBoxOnDoc);
+		cNDocumentVerificaton.selectOneByOneCheckBox();
+		cNDocumentVerificaton.verifyOneByOneCheckBox();
+		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
+		softAssertion.assertFalse(selectedCheckBoxOnDoc,
+				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	/*@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
@@ -527,5 +572,5 @@ public class ConsulatePageTest extends DriverInit {
 				"Provided and Get Passport Expiry Date are not matched");
 		softAssertion.assertAll();
 		applicantDashBoardPage.clickOnNextButton();
-	}
+	}*/
 }
