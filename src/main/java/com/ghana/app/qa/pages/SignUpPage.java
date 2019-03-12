@@ -53,7 +53,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(id = "useremail")
 	WebElement emailId;
 
-	@FindBy(id = "renter_email")
+	@FindBy(id = "renter_email")  
 	WebElement reenterEmailId;
 
 	/*
@@ -83,7 +83,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//input[@value='Continue']")
 	WebElement Continue;
 
-	@FindBy(xpath = "//input[@name='example1']")
+	@FindBy(xpath = "//div[@class ='custom-control custom-checkbox']")
 	List<WebElement> checkBoxesClick;
 
 	@FindBy(xpath = "//div[@class ='custom-control custom-radio custom-control-inline']")
@@ -96,20 +96,25 @@ public class SignUpPage extends TestBase {
 
 	public void SelectPassportType() {
 		TestUtil.actionClassMethod(PassportType);
-		PassportTypeName.click();
+		driver.findElement(By.xpath("//li[@id='"+ passPortType +"']")).click();
+		//PassportTypeName.click();
 	}
 
 	public void selectNationality() throws InterruptedException {
 		TestUtil.actionClassMethod(Nationality);
-		nationalitySearchField.sendKeys("India");
-		Thread.sleep(2000);
-		selectNationality.click();
+		nationalitySearchField.sendKeys(nationalityName);
+		driver.findElement(By.xpath("//li[text()='"+ nationalityName +"']")).click();
+		
+		//Thread.sleep(2000);
+		//selectNationality.click();
 
 	}
 
 	public void selectPortOfArrival() {
 		TestUtil.actionClassMethod(PortofArrival);
-		selectPortofArrival.click();
+		driver.findElement(By.xpath("//li[text()='"+ portOfArrival +"']")).click();
+		//li[text()='Kotoka Accra Airport']
+		//selectPortofArrival.click();
 
 	}
 
@@ -152,22 +157,27 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void clickOnCheckBoxes() {
-		System.out.println("checkBoxesClick==>" + checkBoxesClick.size());
 
-		for (WebElement we : checkBoxesClick) {
-			TestUtil.actionClassMethod(we);
-			int j = checkBoxesClick.size();
-			for (int i = 0; i < j; i++) {
-				WebElement check = checkBoxesClick.get(i);
-				selectedBoxOnSignUp = check.isSelected();
-				System.out.println("selectedBox==>" +selectedBoxOnSignUp);
+		try {
+			for (WebElement we : checkBoxesClick) {
+				System.out.println("checkBoxesClick==>" + checkBoxesClick.size());
+				TestUtil.actionClassMethod(we);
 			}
+
+		} catch (Exception e) {
+			System.out.println("all check boxes click done");
+
 		}
 	}
 
-	public void verifyCheckBoxIsSelectedInSignUpPage() {
-
-	}
+	public boolean verifyCheckBoxIsSelected() {
+		int j = checkBoxesClick.size();
+		for (int i = 0; i <= j; i++) {
+			boolean selectedBox = checkBoxesClick.get(i).isSelected();	
+			}
+		return selectedBox;
+		
+		}
 
 	public void selectRadioButton() {
 

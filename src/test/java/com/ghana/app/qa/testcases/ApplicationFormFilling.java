@@ -35,7 +35,7 @@ public class ApplicationFormFilling extends DriverInit {
 		Thread.sleep(2000);
 	}
 
-	/*@Test(priority = 2)
+	@Test(priority = 2)
 	public void selectNationalityTest() throws InterruptedException, IOException {
 		signUpPage.selectNationality();
 		Thread.sleep(2000);
@@ -249,12 +249,11 @@ public class ApplicationFormFilling extends DriverInit {
 		travelInfoPage.passTicketNumber(ticketNumber);
 
 	}
-
+    
 	@Test(priority = 32)
 	public void clickOnTravelByTest() throws InterruptedException, IOException {
 		travelInfoPage.clickOnTravelBy();
 		
-
 	}
 
 	@Test(priority = 33)
@@ -341,6 +340,6 @@ public class ApplicationFormFilling extends DriverInit {
 		uploadDocPage.clicksaveAndContiBtn();
 		softAssertion.assertEquals(visaPaymentPage.getTextPaymentPageTitle(), "Visa Payment", "here visa Payment title not match hence it is not navigated to this page");
         
-	}*/
+	}
 
 }

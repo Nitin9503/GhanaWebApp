@@ -19,7 +19,7 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 		Thread.sleep(2000);
 		System.out.println("home page title   "
 				+ homePage.validateHomePageTitle());
-		Assert.assertEquals(homePage.validateHomePageTitle(), "Home1",
+		Assert.assertEquals(homePage.validateHomePageTitle(), "Home",
 				"given title not match nence it is not navigated to home page");
 	}
 

@@ -13,7 +13,10 @@ public class ConstantVariable {
 	public static boolean selectedBoxOnSignUp;
 
 	//signUp Page
-	public static String passPortType = "Passport Type";
+	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special
+	public static String nationalityName = "Algeria"; //India,
+	public static String portOfArrival = "Kotoka Accra Airport"; //Ghana Airport
+	//Personal info
 	
 	// **Review Application page **
 	//Personal info
@@ -21,7 +24,7 @@ public class ConstantVariable {
 	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
-	public static String firstName= "Arjun";
+	public static String firstName= "Pratik";
 	public static String lastName= "Thawkar";
 	public static String birthDate= "04/02/1991";	
 	public static String birthPlace= "Nagpur";
