@@ -1,6 +1,6 @@
 package com.ghana.app.qa.pages;
 
-import static com.ghana.app.qa.testdata.ConstantVariable.VisaLocations;
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 
 import java.io.IOException;
 
@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 public class EmergencyContactPage extends TestBase {
 
 	public EmergencyContactPage() throws IOException, InterruptedException {
@@ -22,7 +23,7 @@ public class EmergencyContactPage extends TestBase {
 
 	@FindBy(xpath = "//h5[contains(text(),'Emergency Contact')]")
 	WebElement emePageTitle;
-	@FindBy(xpath="//h5[contains(text(),'Travel Information')]")
+	@FindBy(xpath = "//h5[contains(text(),'Travel Information')]")
 	WebElement travelInfoPageTitle;
 	@FindBy(xpath = "//input[@id='emergency_firstname']")
 	WebElement emergency_firstname;
@@ -69,8 +70,9 @@ public class EmergencyContactPage extends TestBase {
 
 	public void selectRelation() {
 		TestUtil.actionClassMethod(Relationship);
-		driver.findElement(By.xpath("//span[contains(text(),'" + selectRelationship + "')]"));
-		//Mother.click();
+		driver.findElement(By.xpath("//span[contains(text(),'"
+				+ selectRelationship + "')]")).click();
+		// Mother.click();
 	}
 
 	public void emergencyProfessionDetails(String empProfession,
@@ -85,10 +87,10 @@ public class EmergencyContactPage extends TestBase {
 		emergency_state.sendKeys(eState);
 		emergency_country.sendKeys(eCountry);
 		emergency_employer_phone_number.sendKeys(eSchoolContactNo);
-		
 
 	}
-	public void clickEmeContinueBtn(){
+
+	public void clickEmeContinueBtn() {
 		emergencySaveAndContinuebtn.click();
 	}
 }

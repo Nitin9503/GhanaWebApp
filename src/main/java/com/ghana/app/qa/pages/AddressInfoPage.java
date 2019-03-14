@@ -69,11 +69,13 @@ public class AddressInfoPage extends TestBase {
 	}
 	public void selectFormerNaitonality() throws InterruptedException {
 		TestUtil.actionClassMethod(FormerNationality);
+		driver.findElement(By.xpath("//div[@id='nav-address']//span[text()='"+selectFormerNationlity+"']")).click();
 		//former_nationality_search.sendKeys("India");
 		//Thread.sleep(2000);sel_formar
 		//former_nationality_click.click();
-		Select oSelect = new Select(driver.findElement(By.id("sel_formar")));
-		oSelect.selectByVisibleText(selectFormerNationlity);
+		/*Select oSelect = new Select(driver.findElement(By.id("sel_formar")));
+		Thread.sleep(2000);
+		oSelect.selectByVisibleText(selectFormerNationlity);*/
 
 	}
 

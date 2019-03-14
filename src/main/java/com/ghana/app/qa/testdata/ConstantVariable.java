@@ -19,7 +19,7 @@ public class ConstantVariable {
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special
-	public static String nationalityName = "Algeria"; //India,
+	public static String nationalityName = "India"; //India,
 	public static String portOfArrival = "Kotoka Accra Airport"; //Ghana Airport
 	//Personal info
 	

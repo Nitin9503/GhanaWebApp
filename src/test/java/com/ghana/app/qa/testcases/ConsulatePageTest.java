@@ -454,7 +454,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 37, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
+	/*@Test(priority = 37, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
 	public void passDateAndTimeInFiled() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
@@ -470,7 +470,7 @@ public class ConsulatePageTest extends DriverInit {
 		Thread.sleep(3000);
 		cNInterviewSchedule.confirmButtonFromInterviewConfirpop();
 		softAssertion.assertAll();
-	}
+	}*/
 
 	@Test(priority = 38, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
 	public void getTextFromApplicantInformation() throws InterruptedException {
@@ -544,5 +544,5 @@ public class ConsulatePageTest extends DriverInit {
 				"Provided and Get Passport Expiry Date are not matched");
 		softAssertion.assertAll();
 		applicantDashBoardPage.clickOnNextButton();
-	}*/
+	}
 }
