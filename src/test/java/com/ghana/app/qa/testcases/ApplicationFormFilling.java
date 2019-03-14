@@ -26,8 +26,9 @@ public class ApplicationFormFilling extends DriverInit {
 	public void selectPassPortType() throws InterruptedException, IOException {
 		homePage.clickOnApplyVisa();
 		visaCategoriesPage.clickOnVisaType();
-		signUpPage.clickOnCheckBoxes();
-        System.out.println("selectedBoxOnSignUp==>" +selectedBoxOnSignUp);
+		signUpPage.clickOnCheckBoxes();	
+		signUpPage.verifyCheckBoxIsSelected();
+        System.out.println("selectedBoxOnSignUp2==>" +selectedBoxOnSignUp);
         softAssertion.assertTrue(selectedBoxOnSignUp, "Check boxes are not selected from SignUp page");
         signUpPage.selectRadioButton();
         signUpPage.SelectPassportType();

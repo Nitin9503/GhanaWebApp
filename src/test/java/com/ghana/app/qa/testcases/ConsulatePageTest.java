@@ -346,7 +346,7 @@ public class ConsulatePageTest extends DriverInit {
 	}
 	
 
-	/*@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",

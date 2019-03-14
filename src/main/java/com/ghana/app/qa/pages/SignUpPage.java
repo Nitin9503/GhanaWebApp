@@ -170,12 +170,14 @@ public class SignUpPage extends TestBase {
 		}
 	}
 
-	public boolean verifyCheckBoxIsSelected() {
+	public void verifyCheckBoxIsSelected() throws InterruptedException {
 		int j = checkBoxesClick.size();
-		for (int i = 0; i <= j; i++) {
-			boolean selectedBox = checkBoxesClick.get(i).isSelected();	
+		Thread.sleep(2000);
+		for (int i = 0; i < j; i++) {
+			
+			selectedBoxOnSignUp = checkBoxesClick.get(i).isSelected();	
 			}
-		return selectedBox;
+		System.out.println("selectedBoxOnSignUp1==>" +selectedBoxOnSignUp);
 		
 		}
 

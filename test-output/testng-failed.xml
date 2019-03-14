@@ -3,57 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+      <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
         <methods>
-          <include name="clickOnOriginalInvitationLetter"/>
-          <include name="clickOnPhotoOfDraft"/>
-          <include name="clickOnIdProofReferenceClose"/>
-          <include name="getTextFromTravelInformation"/>
-          <include name="clickOnYellowFevervaccination"/>
-          <include name="clickOnRejectAndVerifyPopText"/>
-          <include name="clickOnApproveAndVerifyPopText1"/>
-          <include name="clickOnOriginalInvitationLetterClose"/>
-          <include name="clickOnProofOfTransitVisa"/>
-          <include name="verfiyTitleOfCNAddressInfoPage"/>
-          <include name="clickOnCoveringLetter"/>
-          <include name="clickOnInterviewScheduleAndClose"/>
-          <include name="clickOnBackButtonAndVerifyTitleApplicantInformation"/>
-          <include name="clickOnProofOfTransitVisaClose"/>
-          <include name="getTextFromAddressInformation"/>
-          <include name="clickOnNextButtonAndVerifyTitleTravelInformation"/>
-          <include name="passComment"/>
-          <include name="clickOnApproveAndVerifyPopText"/>
-          <include name="clickOnCheckBoxes"/>
-          <include name="clickOnPhotoOfDraftClose"/>
-          <include name="clickOnApplicantInfor"/>
-          <include name="clickOnBackButtonAndVerifyTitleAddressInformation"/>
-          <include name="clickOnIdProofReference"/>
-          <include name="loginIntoConsulate"/>
-          <include name="clickOnRejectAndVerifyPopText1"/>
-          <include name="clickOnInterviewScheduleAndcancel"/>
-          <include name="clickOnConfirmedAirTicketWindow"/>
-          <include name="clickOnNewApplication"/>
-          <include name="clickOnOnPhotoClose"/>
-          <include name="clickOnNextButtonAndVerifyTitleAddressInformation"/>
-          <include name="verfiyTitleOfCNDocumentVerificatonPage"/>
-          <include name="clickOnNextButtonAndVerifyTitleDocumentVerification"/>
-          <include name="clickOnYellowFevervaccinationClose"/>
-          <include name="getTextFromApplicantInformation"/>
           <include name="setUp"/>
-<<<<<<< Updated upstream
-          <include name="getTextEmergencyContactTest"/>
           <include name="verifyClickOnSubmitBtnTest"/>
-          <include name="getTextTravelInfoTest"/>
-=======
-          <include name="clickOnBackButtonAndVerifyTitleTravelInformation"/>
-          <include name="clickOnConfirmedAirTicketWindowClose"/>
-          <include name="clickOnOnPhoto"/>
-          <include name="clickOnCoveringLetterClose"/>
-          <include name="verfiyTitleOfCNTravelInfoPage"/>
-          <include name="verifyTitleOfConsulateTitle"/>
->>>>>>> Stashed changes
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+      </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
