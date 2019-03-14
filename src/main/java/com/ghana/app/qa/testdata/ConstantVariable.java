@@ -9,10 +9,11 @@ public class ConstantVariable {
 	
 	//Consulate Side 
 	public static String applicationID= "";
-	public static boolean selectedBoxDoc;
 	public static boolean selectedBoxOnSignUp;
-	public static boolean selectedCheckBoxOnDoc;
 	public static boolean unselectedBoxDoc;
+	public static boolean selectedBoxDocAll;
+	public static boolean selectedCheckBoxOnDocSingle;
+
 	
 	
 

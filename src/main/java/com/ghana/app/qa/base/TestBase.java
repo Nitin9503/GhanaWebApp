@@ -98,9 +98,11 @@ public class TestBase {
 					option.addArguments("headless");
 					driver = new ChromeDriver(option);
 				} else {
-					System.out.println("Execution on Normal FF Browser");
-					WebDriverManager.chromedriver().setup();
-					//ChromeDriverManager.getInstance(CHROME).setup();
+					System.out.println("Execution on Normal chrome Browser");
+			
+		 System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");						 
+				 //driverPath+"/FileDriver/macchromedriver" );
+				//	WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();           
 				}
 			} else if (broweserName.equalsIgnoreCase("safari")) {
@@ -271,8 +273,8 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 
-		//driver.get(prop.getProperty("GhanaWebURL"));	
-		driver.get(prop.getProperty("HCDLoginURL"));	
+		driver.get(prop.getProperty("GhanaWebURL"));	
+		//driver.get(prop.getProperty("HCDLoginURL"));	
 		
 		
 

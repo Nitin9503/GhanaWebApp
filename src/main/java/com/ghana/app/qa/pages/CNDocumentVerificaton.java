@@ -19,7 +19,7 @@ public class CNDocumentVerificaton extends TestBase {
 	}
 
 	@FindBy(xpath = "//button[text()='Reject']")
-	WebElement reject;
+	 WebElement reject;
 
 	@FindBy(xpath = "//button[text()='Approve']")
 	WebElement approve;
@@ -58,25 +58,25 @@ public class CNDocumentVerificaton extends TestBase {
 	List<WebElement> checkBox;
 	
 	@FindBy(id = "selectAllCheck")
-	WebElement selectAllCheckBox;	
+	private WebElement selectAllCheckBox;	
 
 	@FindBy(xpath = "//div[@class='form-group row']//div[1]//img[1]")
-	WebElement confirmAirTicket;
+	private WebElement confirmAirTicket;
 
 	@FindBy(xpath = "//div[@class='col-sm-4 stretch-card']//div[2]//img[1]")
-	WebElement clickOnPhoto;
+	private WebElement clickOnPhoto;
 
 	@FindBy(xpath = "//div[3]//img[1]")
-	WebElement yellowFeverVaccination;
+	private WebElement yellowFeverVaccination;
 
 	@FindBy(xpath = "//div[4]//img[1]")
-	WebElement coveringLetter;
+	private WebElement coveringLetter;
 
 	@FindBy(xpath = "//div[5]//img[1]")
-	WebElement photoCopyOfDraft;
+	private WebElement photoCopyOfDraft;
 
 	@FindBy(xpath = "//div[6]//img[1]")
-	WebElement idProofOfReference;
+	private WebElement idProofOfReference;
 
 	@FindBy(xpath = "//div[7]//img[1]")
 	WebElement originalInvitationLetter;
@@ -287,13 +287,13 @@ public class CNDocumentVerificaton extends TestBase {
 	
 	public void verifyAllCheckBox() throws InterruptedException{
 		Thread.sleep(2000);
-		selectedBoxDoc = selectAllCheckBox.isSelected();
-		 System.out.println("selectedBox==>" +selectedBoxDoc);
+		selectedBoxDocAll = selectAllCheckBox.isSelected();
+		 System.out.println("selectedBox==>" +selectedBoxDocAll);
 		int size = checkBox.size();
 		System.out.println("size==>" +size);
 		for (int i=0; i<checkBox.size(); i++){
 			WebElement check = checkBox.get(i);
-			selectedCheckBoxOnDoc= check.isSelected();			
+			selectedCheckBoxOnDocSingle= check.isSelected();			
 		}
 	}
 	
@@ -314,7 +314,7 @@ public class CNDocumentVerificaton extends TestBase {
 		System.out.println("size==>" +size);
 		for (int i=0; i<checkBox.size(); i++){
 			WebElement check = checkBox.get(i);
-			selectedCheckBoxOnDoc= check.isSelected();			
+			selectedCheckBoxOnDocSingle= check.isSelected();			
 		}
 	}
 

@@ -131,5 +131,8 @@ public class CNLoginTest extends DriverInit {
 		softAssertion.assertEquals(applicantDashBoardPage.getTextFromAddedComment(), "Verifying your Application",
 				"Latest passed comment is not matched after getting text from comment section");
 		softAssertion.assertAll();
-	*/}
+		}
+	*/
+	
 }
+

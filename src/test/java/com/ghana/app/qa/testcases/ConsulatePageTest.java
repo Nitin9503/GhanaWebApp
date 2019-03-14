@@ -29,14 +29,14 @@ public class ConsulatePageTest extends DriverInit {
 		highAndConsulateLoginPage.clickOnLoginButton();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
 	public void verifyTitleOfConsulateTitle() {
 		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
-	}
+	}  
 
-	@Test(priority = 2)
+	@Test(priority = 2 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
 	public void clickOnNewApplication() {
 		consulatedashBoardPage.clickOnNewApplication();
 		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
@@ -78,7 +78,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	/*@Test(priority = 7, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 7, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnConfirmedAirTicketWindowClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -90,7 +90,7 @@ public class ConsulatePageTest extends DriverInit {
 				"Document Verification page is not displayed upon clicking on Close button from Confirmed Air Ticket Window");
 		softAssertion.assertAll();
 		System.out.println("1");
-	}
+	}	
 
 	@Test(priority = 8, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
 	public void clickOnConfirmedAirTicketWindow() throws InterruptedException {
@@ -284,7 +284,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
 				"Document Verification page is not displayed upon clicking on Close button from Proof of transit valid visa");
 		softAssertion.assertAll();
-	}*/
+	}
 
 	@Test(priority = 23)
 	public void clickOnApplicantInfor() throws InterruptedException {
@@ -322,57 +322,29 @@ public class ConsulatePageTest extends DriverInit {
 
 	@Test(priority = 27)
 	public void selectAllCheckBoxAndVerify() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		
-		List<WebElement> element  = driver.findElements(By.xpath("//input[@name='chkBox']"));
-		WebElement ele = element.get(0);
-		boolean value =ele.isSelected();
-		System.out.println("value" +value);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		cNDocumentVerificaton.selectAllCheckBoxes();
 		cNDocumentVerificaton.verifyAllCheckBox();
-		System.out.println("selectedBoxDoc" +selectedBoxDoc);
-		softAssertion.assertTrue(selectedBoxDoc,
+		System.out.println("selectedBoxDoc" +selectedBoxDocAll);
+		softAssertion.assertTrue(selectedBoxDocAll,
 				"Check Boxes is not selected upon clicking on [Select All Check] only select all button from Document Verification page");		
-		softAssertion.assertTrue(selectedCheckBoxOnDoc,
+		softAssertion.assertTrue(selectedCheckBoxOnDocSingle,
 				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
 	@Test(priority = 28)
-	public void unselectAndVerify() throws InterruptedException {
+	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		cNDocumentVerificaton.selectAllCheckBoxes();
-		cNDocumentVerificaton.verifyAllCheckBox();
-		System.out.println("unselectedBoxDoc" +unselectedBoxDoc);
-		softAssertion.assertFalse(selectedBoxDoc,
-				"Check Boxes is not unselected upon clicking on [Select All Check] only select all button from Document Verification page");		
-		softAssertion.assertTrue(selectedCheckBoxOnDoc,
-				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
+		cNDocumentVerificaton.selectOneByOneCheckBox();
+		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDocSingle);
+		cNDocumentVerificaton.verifyOneByOneCheckBox();
+		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDocSingle);
+		softAssertion.assertTrue(selectedCheckBoxOnDocSingle,
+				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
 	
-	@Test(priority = 29)
-	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		cNDocumentVerificaton.selectOneByOneCheckBox();
-		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
-		cNDocumentVerificaton.verifyOneByOneCheckBox();
-		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
-		softAssertion.assertTrue(selectedCheckBoxOnDoc,
-				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
-		softAssertion.assertAll();
-	}
-	@Test(priority = 30)
-	public void unselectOneByOneAndVerify() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		cNDocumentVerificaton.selectOneByOneCheckBox();
-		System.out.println("unselectedBoxDoc" +selectedCheckBoxOnDoc);
-		cNDocumentVerificaton.selectOneByOneCheckBox();
-		cNDocumentVerificaton.verifyOneByOneCheckBox();
-		System.out.println("selectedBoxDoc" +selectedCheckBoxOnDoc);
-		softAssertion.assertFalse(selectedCheckBoxOnDoc,
-				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
-		softAssertion.assertAll();
-	}
 
 	/*@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
