@@ -77,7 +77,7 @@ public class SendAttachmentInEmail {
 		             image = driverPath+"/Screenshot/"+ screenshotName +".jpeg";
 			          messageBodyPart1.setContent(image, "text/html"); 
 		         }
-		         else if(OSName.equalsIgnoreCase("Windows 7")||OSName.equalsIgnoreCase("Windows 10")){
+		         else if(OSName.equalsIgnoreCase("Windows")){
 		        	 
 			          image = driverPath+"\\Screenshot\\"+ screenshotName +".jpeg";
 			          messageBodyPart1.setContent(image, "text/html");	        	 
@@ -90,7 +90,7 @@ public class SendAttachmentInEmail {
 			    	  fds = new FileDataSource(driverPath+"/Screenshot/"+ screenshotName +".jpeg");
 			    	   messageBodyPart1.setDataHandler(new DataHandler(fds));
 		         }
-		         else if(OSName.equalsIgnoreCase("Windows 7")||OSName.equalsIgnoreCase("Windows 10")){
+		         else if(OSName.equalsIgnoreCase("Windows")){
 
 			    	  fds = new FileDataSource(driverPath+"\\Screenshot\\"+ screenshotName +".jpeg");
 			    	   messageBodyPart1.setDataHandler(new DataHandler(fds)); 
@@ -152,7 +152,7 @@ public class SendAttachmentInEmail {
 			    	   messageBodyPart.setDataHandler(new DataHandler(source));
 			    	     messageBodyPart.setFileName(filename);  
 		       }
-		       else if(OSName.equalsIgnoreCase("Windows 7")||OSName.equalsIgnoreCase("Windows 10")){
+		       else if(OSName.equalsIgnoreCase("Windows")){
 		    		filename = driverPath+"\\test-output\\TorenzoWebSiteReport.html"; 
 			    	   DataSource source = new FileDataSource(filename);
 			    	   messageBodyPart.setDataHandler(new DataHandler(source));
@@ -190,7 +190,7 @@ public class SendAttachmentInEmail {
 				 	    messageBodyPart2.setDataHandler(new DataHandler(source));
 				 	     messageBodyPart2.setFileName(filename2);   
 			       }
-			       else if(OSName.equalsIgnoreCase("Windows 7")||OSName.equalsIgnoreCase("Windows 10")){
+			       else if(OSName.equalsIgnoreCase("Windows")){
 			    	   filename2 = driverPath+"\\test-output\\emailable-report.html";
 				  	     DataSource source = new FileDataSource(filename2);
 				 	    messageBodyPart2.setDataHandler(new DataHandler(source));
