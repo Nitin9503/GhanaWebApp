@@ -68,15 +68,16 @@ public class TestBase {
 			FileInputStream fis = new FileInputStream(driverPath+"/src/main/java/com/ghana/app/qa/config/config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
-			break;
-		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
+
+		} else if (OSName.equalsIgnoreCase("Windows")) {
+
 			System.out.println(OSName);
 			prop = new Properties();
 			System.out.println(OSName);
 			FileInputStream fis = new FileInputStream(driverPath+"\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
-			break;
+		
 		}
 		}
 	}
@@ -117,8 +118,7 @@ public class TestBase {
 					option.addArguments("headless");
 					driver = new ChromeDriver(option);
 				} else {
-					System.out.println("Execution on Normal chrome Browser");
-			
+					System.out.println("Execution on Normal chrome Browser");	
 		 System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");						 
 				 //driverPath+"/FileDriver/macchromedriver" );
 				//	WebDriverManager.chromedriver().setup();
@@ -203,7 +203,7 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);				
 			}						
 		
-		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
+		} else if (OSName.equalsIgnoreCase("Windows")) {
 
 			if (broweserName.equals("FF")) {	
 				  System.setProperty("webdriver.gecko.driver", driverPath+"\\FileDriver\\geckodriver.exe");
@@ -213,8 +213,8 @@ public class TestBase {
 
 			}
 			else if (broweserName.equalsIgnoreCase("chrome")) {
-				 //System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\chromedriver.exe" );
-				WebDriverManager.chromedriver().setup();
+				System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\chromedriver.exe" );
+				//WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			}
 
@@ -292,8 +292,8 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
 
-		driver.get(prop.getProperty("GhanaWebURL"));	
-		//driver.get(prop.getProperty("HCDLoginURL"));	
+		//driver.get(prop.getProperty("GhanaWebURL"));	
+		driver.get(prop.getProperty("HCDLoginURL"));	
 		
 		
 

@@ -20,11 +20,11 @@ public class CNLoginTest extends DriverInit {
 	public static void xlsReaderMethod(){
 	if (OSName.equalsIgnoreCase("Mac OS X")) {
 		reader = new XlsReader(driverPath + "/src/main/java/com/ghana/app/qa/testdata/TorenzoWorkBook.xlsx");
-	} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
+	} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7") || OSName.equalsIgnoreCase("Windows 8.1"))
 		reader = new XlsReader(
 				driverPath + "\\src\\main\\java\\com\\ghana\\app\\qa\\testdata\\TorenzoWorkBook.xlsx");
 	}
-	}
+	
 	
 	@Test(priority = 0, description = "This test will verify login functinality with pass invalid creadentials and click on Login button")
 	public void loginfunctionaltyTest1() {
@@ -113,6 +113,22 @@ public class CNLoginTest extends DriverInit {
 		for (int rowNumb = 2; rowNumb <= rowCount; rowNumb++) {
 
 			if (rowNumb == 7) {
+				username = reader.getCellData("CNLoginPage", "UserName", rowNumb);
+				password = reader.getCellData("CNLoginPage", "Password", rowNumb);
+				break;
+			} 
+		}
+		highAndConsulateLoginPage.passUserName(username);
+		highAndConsulateLoginPage.passPassword(password);
+		highAndConsulateLoginPage.clickOnLoginButton();
+	}
+	@Test(priority = 6, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
+	public void loginfunctionaltyTest7() {
+		xlsReaderMethod();
+		int rowCount = reader.getRowCount("CNLoginPage");
+		for (int rowNumb = 2; rowNumb <= rowCount; rowNumb++) {
+
+			if (rowNumb == 8) {
 				username = reader.getCellData("CNLoginPage", "UserName", rowNumb);
 				password = reader.getCellData("CNLoginPage", "Password", rowNumb);
 				break;

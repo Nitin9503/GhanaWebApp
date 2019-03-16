@@ -64,7 +64,7 @@ public class UploadDocPage extends TestBase {
 			attachFileBtn7.sendKeys(driverPath+"/DocumentAttach/invitation letter.pdf");
 			attachFileBtn8.sendKeys(driverPath+"/DocumentAttach/proofofvisa.pdf");
 		 
-		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
+		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7") || OSName.equalsIgnoreCase("Windows 8.1")) {
 			System.out.println(OSName);
 			// enter the file path onto the file-selection input field
 			attachFileBtn1.sendKeys(driverPath+"\\DocumentAttach\\airticket.jpeg");
