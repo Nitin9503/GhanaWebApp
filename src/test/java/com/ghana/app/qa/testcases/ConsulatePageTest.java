@@ -27,10 +27,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 51, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
 	public void loginIntoConsulate() throws InterruptedException {
 		Thread.sleep(5000);
-		/*avascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.open()");
-		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-		driver.switchTo().window(tabs.get(1));*/
+		
 		TestUtil.toOpenNewTab();
 		TestUtil.toSwitchBetweenWindows(1);
 		driver.get(prop.getProperty("HCDLoginURL"));	

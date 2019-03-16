@@ -33,7 +33,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import com.ghana.app.qa.util.TestUtil;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -41,20 +41,34 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	// public static String hubURL1 = "http://192.168.1.32:5566/wd/hub";
 	//Logger log = Logger.getLogger(TestBase.class) ;	
+	//E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
 	public static WebDriver driver;
 	
-	//E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
 	public TestBase() throws IOException, InterruptedException {
 		driverPath = System.getProperty("user.dir");
 		System.out.println("path==>" +driverPath);
 		OSName = System.getProperty("os.name");
+		if (OSName.equalsIgnoreCase("Mac OS X")){
+			System.out.println("we are on ==>"+OSName);
+			
+		}else{
+			
+			OSName	=OSName.substring(0, 7);
+			System.out.println("substring value ==>"+OSName);
+		}
 		System.out.println(OSName);
-		if (OSName.equalsIgnoreCase("Mac OS X")) {
+		
+		
+		final String  osArray [] = {"Mac OS X" , "Windows 10", "Windows 7", "Windows 8.1", "Windows 8" , "Windows 7" ,"Windows Vista" , "Windows XP"};
+		for (int i = 0; i<osArray.length; i++){
+			
+		if (osArray[i].equalsIgnoreCase(OSName)) {
 			System.out.println(OSName);
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(driverPath+"/src/main/java/com/ghana/app/qa/config/config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
+			break;
 		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
 			System.out.println(OSName);
 			prop = new Properties();
@@ -62,6 +76,8 @@ public class TestBase {
 			FileInputStream fis = new FileInputStream(driverPath+"\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
+			break;
+		}
 		}
 	}
 
@@ -70,6 +86,9 @@ public class TestBase {
 		String headlessmode = prop.getProperty("headlessmode");
         String testOnCloud = prop.getProperty("cloud");    
    //     String cloudBrowser = prop.getProperty("browserOnCloud");  
+        
+        
+      
 		if (OSName.equalsIgnoreCase("Mac OS X")) {
 
 			if (broweserName.equalsIgnoreCase("FF")) {				
