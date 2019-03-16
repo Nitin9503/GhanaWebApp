@@ -1,229 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="51" passed="50">
+<testng-results skipped="0" failed="3" ignored="0" total="93" passed="90">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54519" started-at="2019-03-14T08:47:50Z" finished-at="2019-03-14T08:48:45Z">
+  <suite name="Default suite" duration-ms="236166" started-at="2019-03-15T08:57:04Z" finished-at="2019-03-15T09:01:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54519" started-at="2019-03-14T08:47:50Z" finished-at="2019-03-14T08:48:45Z">
-      <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="setUp" is-config="true" duration-ms="21050" started-at="2019-03-14T08:47:50Z" finished-at="2019-03-14T08:48:11Z">
+    <test name="Default test" duration-ms="236166" started-at="2019-03-15T08:57:04Z" finished-at="2019-03-15T09:01:00Z">
+      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="setUp" is-config="true" duration-ms="14868" started-at="2019-03-15T08:57:04Z" finished-at="2019-03-15T08:57:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectPassPortType()[pri:1, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectPassPortType" duration-ms="9351" started-at="2019-03-14T08:48:11Z" finished-at="2019-03-14T08:48:21Z">
+        <test-method status="PASS" signature="selectPassPortType()[pri:1, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectPassPortType" duration-ms="8193" started-at="2019-03-15T08:57:19Z" finished-at="2019-03-15T08:57:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassPortType -->
-        <test-method status="PASS" signature="selectNationalityTest()[pri:2, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectNationalityTest" duration-ms="2403" started-at="2019-03-14T08:48:21Z" finished-at="2019-03-14T08:48:23Z">
+        <test-method status="PASS" signature="selectNationalityTest()[pri:2, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectNationalityTest" duration-ms="2408" started-at="2019-03-15T08:57:27Z" finished-at="2019-03-15T08:57:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNationalityTest -->
-        <test-method status="PASS" signature="selectPortOfArrivalTest()[pri:3, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectPortOfArrivalTest" duration-ms="109" started-at="2019-03-14T08:48:23Z" finished-at="2019-03-14T08:48:23Z">
+        <test-method status="PASS" signature="selectPortOfArrivalTest()[pri:3, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectPortOfArrivalTest" duration-ms="119" started-at="2019-03-15T08:57:29Z" finished-at="2019-03-15T08:57:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPortOfArrivalTest -->
-        <test-method status="PASS" signature="passPhoneNoTest()[pri:4, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passPhoneNoTest" duration-ms="168" started-at="2019-03-14T08:48:23Z" finished-at="2019-03-14T08:48:23Z">
+        <test-method status="PASS" signature="passPhoneNoTest()[pri:4, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passPhoneNoTest" duration-ms="208" started-at="2019-03-15T08:57:29Z" finished-at="2019-03-15T08:57:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPhoneNoTest -->
-        <test-method status="PASS" signature="passEmailIdTest()[pri:5, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passEmailIdTest" duration-ms="571" started-at="2019-03-14T08:48:23Z" finished-at="2019-03-14T08:48:24Z">
+        <test-method status="PASS" signature="passEmailIdTest()[pri:5, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passEmailIdTest" duration-ms="390" started-at="2019-03-15T08:57:30Z" finished-at="2019-03-15T08:57:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passEmailIdTest -->
-        <test-method status="PASS" signature="passReEmailIdTest()[pri:6, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passReEmailIdTest" duration-ms="219" started-at="2019-03-14T08:48:24Z" finished-at="2019-03-14T08:48:24Z">
+        <test-method status="PASS" signature="passReEmailIdTest()[pri:6, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passReEmailIdTest" duration-ms="291" started-at="2019-03-15T08:57:30Z" finished-at="2019-03-15T08:57:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passReEmailIdTest -->
-        <test-method status="PASS" signature="enterCaptchaFieldTest()[pri:7, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="enterCaptchaFieldTest" duration-ms="121" started-at="2019-03-14T08:48:24Z" finished-at="2019-03-14T08:48:24Z">
+        <test-method status="PASS" signature="enterCaptchaFieldTest()[pri:7, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="enterCaptchaFieldTest" duration-ms="177" started-at="2019-03-15T08:57:30Z" finished-at="2019-03-15T08:57:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCaptchaFieldTest -->
-        <test-method status="PASS" signature="selectDateOfBirthTest()[pri:8, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectDateOfBirthTest" duration-ms="2585" started-at="2019-03-14T08:48:24Z" finished-at="2019-03-14T08:48:27Z">
+        <test-method status="PASS" signature="selectDateOfBirthTest()[pri:8, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectDateOfBirthTest" duration-ms="2120" started-at="2019-03-15T08:57:30Z" finished-at="2019-03-15T08:57:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDateOfBirthTest -->
-        <test-method status="PASS" signature="clickOnSaveAndContinueBtnTest()[pri:9, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnSaveAndContinueBtnTest" duration-ms="42" started-at="2019-03-14T08:48:27Z" finished-at="2019-03-14T08:48:27Z">
+        <test-method status="PASS" signature="clickOnSaveAndContinueBtnTest()[pri:9, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnSaveAndContinueBtnTest" duration-ms="62" started-at="2019-03-15T08:57:33Z" finished-at="2019-03-15T08:57:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveAndContinueBtnTest -->
-        <test-method status="PASS" signature="getApplicationPageTitleTest()[pri:10, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getApplicationPageTitleTest" duration-ms="2011" started-at="2019-03-14T08:48:27Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="getApplicationPageTitleTest()[pri:10, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getApplicationPageTitleTest" duration-ms="2012" started-at="2019-03-15T08:57:33Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getApplicationPageTitleTest -->
-        <test-method status="PASS" signature="getApplicationIdTest()[pri:11, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getApplicationIdTest" duration-ms="31" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="getApplicationIdTest()[pri:11, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getApplicationIdTest" duration-ms="33" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getApplicationIdTest -->
-        <test-method status="PASS" signature="selectVisaFeesTest()[pri:12, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectVisaFeesTest" duration-ms="134" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="selectVisaFeesTest()[pri:12, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectVisaFeesTest" duration-ms="173" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectVisaFeesTest -->
-        <test-method status="PASS" signature="selectVisaLocationTest()[pri:13, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectVisaLocationTest" duration-ms="137" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="selectVisaLocationTest()[pri:13, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectVisaLocationTest" duration-ms="140" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectVisaLocationTest -->
-        <test-method status="PASS" signature="passFirstNameTest()[pri:14, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passFirstNameTest" duration-ms="125" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="passFirstNameTest()[pri:14, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passFirstNameTest" duration-ms="140" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passFirstNameTest -->
-        <test-method status="PASS" signature="passLastNameTest()[pri:15, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passLastNameTest" duration-ms="148" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:29Z">
+        <test-method status="PASS" signature="passLastNameTest()[pri:15, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passLastNameTest" duration-ms="172" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passLastNameTest -->
-        <test-method status="PASS" signature="passPassportNumberTest()[pri:16, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passPassportNumberTest" duration-ms="172" started-at="2019-03-14T08:48:29Z" finished-at="2019-03-14T08:48:30Z">
+        <test-method status="PASS" signature="passPassportNumberTest()[pri:16, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passPassportNumberTest" duration-ms="187" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPassportNumberTest -->
-        <test-method status="PASS" signature="clickOnGenderTest()[pri:17, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnGenderTest" duration-ms="110" started-at="2019-03-14T08:48:30Z" finished-at="2019-03-14T08:48:30Z">
+        <test-method status="PASS" signature="clickOnGenderTest()[pri:17, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnGenderTest" duration-ms="78" started-at="2019-03-15T08:57:35Z" finished-at="2019-03-15T08:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnGenderTest -->
-        <test-method status="PASS" signature="selectPassIssueDateTest()[pri:18, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectPassIssueDateTest" duration-ms="328" started-at="2019-03-14T08:48:30Z" finished-at="2019-03-14T08:48:30Z">
+        <test-method status="PASS" signature="selectPassIssueDateTest()[pri:18, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectPassIssueDateTest" duration-ms="284" started-at="2019-03-15T08:57:36Z" finished-at="2019-03-15T08:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassIssueDateTest -->
-        <test-method status="PASS" signature="selectPassExpiryDateTest()[pri:19, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectPassExpiryDateTest" duration-ms="251" started-at="2019-03-14T08:48:30Z" finished-at="2019-03-14T08:48:30Z">
+        <test-method status="PASS" signature="selectPassExpiryDateTest()[pri:19, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectPassExpiryDateTest" duration-ms="352" started-at="2019-03-15T08:57:36Z" finished-at="2019-03-15T08:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectPassExpiryDateTest -->
-        <test-method status="PASS" signature="passPlaceOfBirthTest()[pri:20, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passPlaceOfBirthTest" duration-ms="145" started-at="2019-03-14T08:48:30Z" finished-at="2019-03-14T08:48:30Z">
+        <test-method status="PASS" signature="passPlaceOfBirthTest()[pri:20, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passPlaceOfBirthTest" duration-ms="152" started-at="2019-03-15T08:57:36Z" finished-at="2019-03-15T08:57:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPlaceOfBirthTest -->
-        <test-method status="PASS" signature="clickOnSaveAndContinueTest()[pri:21, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnSaveAndContinueTest" duration-ms="350" started-at="2019-03-14T08:48:30Z" finished-at="2019-03-14T08:48:31Z">
+        <test-method status="PASS" signature="clickOnSaveAndContinueTest()[pri:21, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnSaveAndContinueTest" duration-ms="229" started-at="2019-03-15T08:57:36Z" finished-at="2019-03-15T08:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveAndContinueTest -->
-        <test-method status="PASS" signature="selectFormerNationalityTest()[pri:22, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectFormerNationalityTest" duration-ms="178" started-at="2019-03-14T08:48:31Z" finished-at="2019-03-14T08:48:31Z">
+        <test-method status="PASS" signature="selectFormerNationalityTest()[pri:22, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectFormerNationalityTest" duration-ms="195" started-at="2019-03-15T08:57:37Z" finished-at="2019-03-15T08:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFormerNationalityTest -->
-        <test-method status="PASS" signature="filladdressInfoTest()[pri:23, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="filladdressInfoTest" duration-ms="1753" started-at="2019-03-14T08:48:31Z" finished-at="2019-03-14T08:48:33Z">
+        <test-method status="PASS" signature="filladdressInfoTest()[pri:23, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="filladdressInfoTest" duration-ms="1797" started-at="2019-03-15T08:57:37Z" finished-at="2019-03-15T08:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filladdressInfoTest -->
-        <test-method status="PASS" signature="clickSaveAndContinuebtnTest()[pri:24, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickSaveAndContinuebtnTest" duration-ms="252" started-at="2019-03-14T08:48:33Z" finished-at="2019-03-14T08:48:33Z">
+        <test-method status="PASS" signature="clickSaveAndContinuebtnTest()[pri:24, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickSaveAndContinuebtnTest" duration-ms="230" started-at="2019-03-15T08:57:39Z" finished-at="2019-03-15T08:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSaveAndContinuebtnTest -->
-        <test-method status="PASS" signature="emergencyContactDetailsTest()[pri:25, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="emergencyContactDetailsTest" duration-ms="366" started-at="2019-03-14T08:48:33Z" finished-at="2019-03-14T08:48:33Z">
+        <test-method status="PASS" signature="emergencyContactDetailsTest()[pri:25, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="emergencyContactDetailsTest" duration-ms="411" started-at="2019-03-15T08:57:39Z" finished-at="2019-03-15T08:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emergencyContactDetailsTest -->
-        <test-method status="PASS" signature="selectRelationTest()[pri:26, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="selectRelationTest" duration-ms="150" started-at="2019-03-14T08:48:33Z" finished-at="2019-03-14T08:48:34Z">
+        <test-method status="PASS" signature="selectRelationTest()[pri:26, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectRelationTest" duration-ms="166" started-at="2019-03-15T08:57:39Z" finished-at="2019-03-15T08:57:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectRelationTest -->
-        <test-method status="PASS" signature="emergencyProfessionDetailsTest()[pri:27, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="emergencyProfessionDetailsTest" duration-ms="1121" started-at="2019-03-14T08:48:34Z" finished-at="2019-03-14T08:48:35Z">
+        <test-method status="PASS" signature="emergencyProfessionDetailsTest()[pri:27, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="emergencyProfessionDetailsTest" duration-ms="1374" started-at="2019-03-15T08:57:39Z" finished-at="2019-03-15T08:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emergencyProfessionDetailsTest -->
-        <test-method status="PASS" signature="clickOnCintinueBtnTest()[pri:28, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnCintinueBtnTest" duration-ms="253" started-at="2019-03-14T08:48:35Z" finished-at="2019-03-14T08:48:35Z">
+        <test-method status="PASS" signature="clickOnCintinueBtnTest()[pri:28, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnCintinueBtnTest" duration-ms="206" started-at="2019-03-15T08:57:41Z" finished-at="2019-03-15T08:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnCintinueBtnTest -->
-        <test-method status="PASS" signature="clickOnIsApplicantPossessionRoundTicketTest()[pri:29, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnIsApplicantPossessionRoundTicketTest" duration-ms="117" started-at="2019-03-14T08:48:35Z" finished-at="2019-03-14T08:48:35Z">
+        <test-method status="PASS" signature="clickOnIsApplicantPossessionRoundTicketTest()[pri:29, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnIsApplicantPossessionRoundTicketTest" duration-ms="128" started-at="2019-03-15T08:57:41Z" finished-at="2019-03-15T08:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnIsApplicantPossessionRoundTicketTest -->
-        <test-method status="PASS" signature="passDateOfDepartureTest()[pri:30, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passDateOfDepartureTest" duration-ms="400" started-at="2019-03-14T08:48:35Z" finished-at="2019-03-14T08:48:35Z">
+        <test-method status="PASS" signature="passDateOfDepartureTest()[pri:30, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passDateOfDepartureTest" duration-ms="393" started-at="2019-03-15T08:57:41Z" finished-at="2019-03-15T08:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passDateOfDepartureTest -->
-        <test-method status="PASS" signature="passTicketNumberTest()[pri:31, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passTicketNumberTest" duration-ms="218" started-at="2019-03-14T08:48:35Z" finished-at="2019-03-14T08:48:36Z">
+        <test-method status="PASS" signature="passTicketNumberTest()[pri:31, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passTicketNumberTest" duration-ms="280" started-at="2019-03-15T08:57:41Z" finished-at="2019-03-15T08:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passTicketNumberTest -->
-        <test-method status="PASS" signature="clickOnTravelByTest()[pri:32, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnTravelByTest" duration-ms="188" started-at="2019-03-14T08:48:36Z" finished-at="2019-03-14T08:48:36Z">
+        <test-method status="PASS" signature="clickOnTravelByTest()[pri:32, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnTravelByTest" duration-ms="184" started-at="2019-03-15T08:57:42Z" finished-at="2019-03-15T08:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnTravelByTest -->
-        <test-method status="PASS" signature="clickPurpose_of_journeyTest()[pri:33, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickPurpose_of_journeyTest" duration-ms="139" started-at="2019-03-14T08:48:36Z" finished-at="2019-03-14T08:48:36Z">
+        <test-method status="PASS" signature="clickPurpose_of_journeyTest()[pri:33, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickPurpose_of_journeyTest" duration-ms="221" started-at="2019-03-15T08:57:42Z" finished-at="2019-03-15T08:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickPurpose_of_journeyTest -->
-        <test-method status="PASS" signature="passPrimaryRefFirstnameTest()[pri:34, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passPrimaryRefFirstnameTest" duration-ms="121" started-at="2019-03-14T08:48:36Z" finished-at="2019-03-14T08:48:36Z">
+        <test-method status="PASS" signature="passPrimaryRefFirstnameTest()[pri:34, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passPrimaryRefFirstnameTest" duration-ms="123" started-at="2019-03-15T08:57:42Z" finished-at="2019-03-15T08:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPrimaryRefFirstnameTest -->
-        <test-method status="PASS" signature="passPrimaryRefLastnameTest()[pri:35, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="passPrimaryRefLastnameTest" duration-ms="162" started-at="2019-03-14T08:48:36Z" finished-at="2019-03-14T08:48:36Z">
+        <test-method status="PASS" signature="passPrimaryRefLastnameTest()[pri:35, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passPrimaryRefLastnameTest" duration-ms="174" started-at="2019-03-15T08:57:42Z" finished-at="2019-03-15T08:57:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passPrimaryRefLastnameTest -->
-        <test-method status="PASS" signature="pass_Primary_ref_addressTest()[pri:36, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_Primary_ref_addressTest" duration-ms="318" started-at="2019-03-14T08:48:36Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_Primary_ref_addressTest()[pri:36, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_Primary_ref_addressTest" duration-ms="381" started-at="2019-03-15T08:57:42Z" finished-at="2019-03-15T08:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_Primary_ref_addressTest -->
-        <test-method status="PASS" signature="pass_primary_ref_pincodeTest()[pri:37, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_primary_ref_pincodeTest" duration-ms="108" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_primary_ref_pincodeTest()[pri:37, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_primary_ref_pincodeTest" duration-ms="128" started-at="2019-03-15T08:57:43Z" finished-at="2019-03-15T08:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_pincodeTest -->
-        <test-method status="PASS" signature="pass_primary_ref_cityTest()[pri:38, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_primary_ref_cityTest" duration-ms="220" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_primary_ref_cityTest()[pri:38, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_primary_ref_cityTest" duration-ms="253" started-at="2019-03-15T08:57:43Z" finished-at="2019-03-15T08:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_cityTest -->
-        <test-method status="PASS" signature="pass_primary_ref_stateTest()[pri:39, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_primary_ref_stateTest" duration-ms="193" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_primary_ref_stateTest()[pri:39, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_primary_ref_stateTest" duration-ms="231" started-at="2019-03-15T08:57:43Z" finished-at="2019-03-15T08:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_stateTest -->
-        <test-method status="PASS" signature="pass_primary_ref_countryTest()[pri:40, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_primary_ref_countryTest" duration-ms="113" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_primary_ref_countryTest()[pri:40, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_primary_ref_countryTest" duration-ms="147" started-at="2019-03-15T08:57:43Z" finished-at="2019-03-15T08:57:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_countryTest -->
-        <test-method status="PASS" signature="pass_primary_ref_phone_numberTest()[pri:41, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="pass_primary_ref_phone_numberTest" duration-ms="159" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:37Z">
+        <test-method status="PASS" signature="pass_primary_ref_phone_numberTest()[pri:41, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="pass_primary_ref_phone_numberTest" duration-ms="198" started-at="2019-03-15T08:57:44Z" finished-at="2019-03-15T08:57:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pass_primary_ref_phone_numberTest -->
-        <test-method status="PASS" signature="PassSecondaryRefDetailsTest()[pri:42, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="PassSecondaryRefDetailsTest" duration-ms="1293" started-at="2019-03-14T08:48:37Z" finished-at="2019-03-14T08:48:39Z">
+        <test-method status="PASS" signature="PassSecondaryRefDetailsTest()[pri:42, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="PassSecondaryRefDetailsTest" duration-ms="1515" started-at="2019-03-15T08:57:44Z" finished-at="2019-03-15T08:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PassSecondaryRefDetailsTest -->
-        <test-method status="PASS" signature="clickOnContinuebuttonTest()[pri:43, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnContinuebuttonTest" duration-ms="163" started-at="2019-03-14T08:48:39Z" finished-at="2019-03-14T08:48:39Z">
+        <test-method status="PASS" signature="clickOnContinuebuttonTest()[pri:43, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnContinuebuttonTest" duration-ms="412" started-at="2019-03-15T08:57:45Z" finished-at="2019-03-15T08:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnContinuebuttonTest -->
-        <test-method status="PASS" signature="getUploadDocTest()[pri:44, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getUploadDocTest" duration-ms="352" started-at="2019-03-14T08:48:39Z" finished-at="2019-03-14T08:48:39Z">
+        <test-method status="PASS" signature="getUploadDocTest()[pri:44, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getUploadDocTest" duration-ms="361" started-at="2019-03-15T08:57:46Z" finished-at="2019-03-15T08:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUploadDocTest -->
-        <test-method status="PASS" signature="clicksaveAndContiBtnTest()[pri:45, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clicksaveAndContiBtnTest" duration-ms="132" started-at="2019-03-14T08:48:39Z" finished-at="2019-03-14T08:48:39Z">
+        <test-method status="PASS" signature="clicksaveAndContiBtnTest()[pri:45, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clicksaveAndContiBtnTest" duration-ms="142" started-at="2019-03-15T08:57:46Z" finished-at="2019-03-15T08:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clicksaveAndContiBtnTest -->
-        <test-method status="PASS" signature="getTextPersonalInfoTest()[pri:45, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getTextPersonalInfoTest" duration-ms="179" started-at="2019-03-14T08:48:39Z" finished-at="2019-03-14T08:48:40Z">
+        <test-method status="PASS" signature="getTextPersonalInfoTest()[pri:45, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextPersonalInfoTest" duration-ms="238" started-at="2019-03-15T08:57:46Z" finished-at="2019-03-15T08:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTextPersonalInfoTest -->
-        <test-method status="PASS" signature="getTextAddressInfoTest()[pri:46, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getTextAddressInfoTest" duration-ms="244" started-at="2019-03-14T08:48:40Z" finished-at="2019-03-14T08:48:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTextAddressInfoTest -->
-        <test-method status="PASS" signature="getTextEmergencyContactTest()[pri:47, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getTextEmergencyContactTest" duration-ms="295" started-at="2019-03-14T08:48:40Z" finished-at="2019-03-14T08:48:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTextEmergencyContactTest -->
-        <test-method status="PASS" signature="getTextTravelInfoTest()[pri:48, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="getTextTravelInfoTest" duration-ms="470" started-at="2019-03-14T08:48:40Z" finished-at="2019-03-14T08:48:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTextTravelInfoTest -->
-        <test-method status="PASS" signature="clickOnContinueBtnTest()[pri:49, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="clickOnContinueBtnTest" duration-ms="87" started-at="2019-03-14T08:48:41Z" finished-at="2019-03-14T08:48:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnContinueBtnTest -->
-        <test-method status="FAIL" signature="verifyClickOnSubmitBtnTest()[pri:50, instance:com.ghana.app.qa.testcases.VisaPaymentPageTest@1990a65e]" name="verifyClickOnSubmitBtnTest" duration-ms="4048" started-at="2019-03-14T08:48:41Z" description="Here verifying confirmation message and click on ok btn " finished-at="2019-03-14T08:48:45Z">
+        <test-method status="FAIL" signature="getTextAddressInfoTest()[pri:46, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextAddressInfoTest" duration-ms="244" started-at="2019-03-15T08:57:46Z" finished-at="2019-03-15T08:57:47Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[given title not match nence it is not navigated to home page expected [Home] but found [Applicant Form]]]>
+              <![CDATA[The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: given title not match nence it is not navigated to home page expected [Home] but found [Applicant Form]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.ghana.app.qa.testcases.VisaPaymentPageTest.verifyClickOnSubmitBtnTest(VisaPaymentPageTest.java:22)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextAddressInfoTest(ReviewApplicationPageTest.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -254,8 +236,268 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- getTextAddressInfoTest -->
+        <test-method status="FAIL" signature="getTextEmergencyContactTest()[pri:47, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextEmergencyContactTest" duration-ms="39" started-at="2019-03-15T08:57:47Z" finished-at="2019-03-15T08:57:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextEmergencyContactTest(ReviewApplicationPageTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextEmergencyContactTest -->
+        <test-method status="FAIL" signature="getTextTravelInfoTest()[pri:48, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextTravelInfoTest" duration-ms="510" started-at="2019-03-15T08:57:47Z" finished-at="2019-03-15T08:57:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Provided and Get nationality are not matched expected [India] but found [India]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextTravelInfoTest(ReviewApplicationPageTest.java:167)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextTravelInfoTest -->
+        <test-method status="PASS" signature="clickOnContinueBtnTest()[pri:49, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnContinueBtnTest" duration-ms="93" started-at="2019-03-15T08:57:47Z" finished-at="2019-03-15T08:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContinueBtnTest -->
+        <test-method status="PASS" signature="verifyClickOnSubmitBtnTest()[pri:50, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="verifyClickOnSubmitBtnTest" duration-ms="6686" started-at="2019-03-15T08:57:47Z" description="Here verifying confirmation message and click on ok btn " finished-at="2019-03-15T08:57:54Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyClickOnSubmitBtnTest -->
-      </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
+        <test-method status="PASS" signature="loginIntoConsulate()[pri:51, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="loginIntoConsulate" duration-ms="6441" started-at="2019-03-15T08:57:54Z" description="This test will verify login functinality with pass valid creadentials and click on Login button" finished-at="2019-03-15T08:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoConsulate -->
+        <test-method status="PASS" signature="verifyTitleOfConsulateTitle()[pri:51, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="verifyTitleOfConsulateTitle" duration-ms="23" started-at="2019-03-15T08:58:01Z" description="This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" finished-at="2019-03-15T08:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleOfConsulateTitle -->
+        <test-method status="PASS" signature="clickOnNewApplication()[pri:52, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnNewApplication" duration-ms="1803" started-at="2019-03-15T08:58:01Z" description="This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" finished-at="2019-03-15T08:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewApplication -->
+        <test-method status="PASS" signature="verfiyTitleOfCNAddressInfoPage()[pri:52, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="verfiyTitleOfCNAddressInfoPage" duration-ms="570" started-at="2019-03-15T08:58:02Z" finished-at="2019-03-15T08:58:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNAddressInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNTravelInfoPage()[pri:53, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="verfiyTitleOfCNTravelInfoPage" duration-ms="728" started-at="2019-03-15T08:58:03Z" finished-at="2019-03-15T08:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNTravelInfoPage -->
+        <test-method status="PASS" signature="verfiyTitleOfCNDocumentVerificatonPage()[pri:54, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="verfiyTitleOfCNDocumentVerificatonPage" duration-ms="1057" started-at="2019-03-15T08:58:04Z" finished-at="2019-03-15T08:58:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyTitleOfCNDocumentVerificatonPage -->
+        <test-method status="PASS" signature="passComment()[pri:55, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passComment" duration-ms="934" started-at="2019-03-15T08:58:05Z" finished-at="2019-03-15T08:58:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passComment -->
+        <test-method status="PASS" signature="clickOnConfirmedAirTicketWindowClose()[pri:56, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnConfirmedAirTicketWindowClose" duration-ms="6440" started-at="2019-03-15T08:58:06Z" description="click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnConfirmedAirTicketWindowClose -->
+        <test-method status="PASS" signature="clickOnConfirmedAirTicketWindow()[pri:58, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnConfirmedAirTicketWindow" duration-ms="11178" started-at="2019-03-15T08:58:12Z" description="click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  " finished-at="2019-03-15T08:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnConfirmedAirTicketWindow -->
+        <test-method status="PASS" signature="clickOnOnPhotoClose()[pri:59, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnOnPhotoClose" duration-ms="2846" started-at="2019-03-15T08:58:23Z" description="click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:58:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOnPhotoClose -->
+        <test-method status="PASS" signature="clickOnOnPhoto()[pri:60, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnOnPhoto" duration-ms="7690" started-at="2019-03-15T08:58:26Z" description="click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOnPhoto -->
+        <test-method status="PASS" signature="clickOnYellowFevervaccinationClose()[pri:61, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnYellowFevervaccinationClose" duration-ms="2877" started-at="2019-03-15T08:58:34Z" description="click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:58:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnYellowFevervaccinationClose -->
+        <test-method status="PASS" signature="clickOnYellowFevervaccination()[pri:62, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnYellowFevervaccination" duration-ms="7755" started-at="2019-03-15T08:58:37Z" description="click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:58:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnYellowFevervaccination -->
+        <test-method status="PASS" signature="clickOnCoveringLetterClose()[pri:63, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnCoveringLetterClose" duration-ms="2868" started-at="2019-03-15T08:58:44Z" description="click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:58:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCoveringLetterClose -->
+        <test-method status="PASS" signature="clickOnCoveringLetter()[pri:64, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnCoveringLetter" duration-ms="7692" started-at="2019-03-15T08:58:47Z" description="click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCoveringLetter -->
+        <test-method status="PASS" signature="clickOnPhotoOfDraftClose()[pri:65, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnPhotoOfDraftClose" duration-ms="4830" started-at="2019-03-15T08:58:55Z" description="click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:59:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPhotoOfDraftClose -->
+        <test-method status="PASS" signature="clickOnPhotoOfDraft()[pri:66, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnPhotoOfDraft" duration-ms="9708" started-at="2019-03-15T08:59:00Z" description="click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:59:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPhotoOfDraft -->
+        <test-method status="PASS" signature="clickOnIdProofReferenceClose()[pri:67, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnIdProofReferenceClose" duration-ms="4841" started-at="2019-03-15T08:59:10Z" description="click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:59:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnIdProofReferenceClose -->
+        <test-method status="PASS" signature="clickOnIdProofReference()[pri:68, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnIdProofReference" duration-ms="9680" started-at="2019-03-15T08:59:14Z" description="click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnIdProofReference -->
+        <test-method status="PASS" signature="clickOnOriginalInvitationLetterClose()[pri:69, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnOriginalInvitationLetterClose" duration-ms="2872" started-at="2019-03-15T08:59:24Z" description="click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOriginalInvitationLetterClose -->
+        <test-method status="PASS" signature="clickOnOriginalInvitationLetter()[pri:70, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnOriginalInvitationLetter" duration-ms="7710" started-at="2019-03-15T08:59:27Z" description="click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnOriginalInvitationLetter -->
+        <test-method status="PASS" signature="clickOnProofOfTransitVisaClose()[pri:71, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnProofOfTransitVisaClose" duration-ms="2942" started-at="2019-03-15T08:59:35Z" description="click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page" finished-at="2019-03-15T08:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnProofOfTransitVisaClose -->
+        <test-method status="PASS" signature="clickOnProofOfTransitVisa()[pri:72, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnProofOfTransitVisa" duration-ms="7750" started-at="2019-03-15T08:59:38Z" description="click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page" finished-at="2019-03-15T08:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnProofOfTransitVisa -->
+        <test-method status="PASS" signature="clickOnApplicantInfor()[pri:73, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnApplicantInfor" duration-ms="3823" started-at="2019-03-15T08:59:45Z" finished-at="2019-03-15T08:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApplicantInfor -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleAddressInformation()[pri:74, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnNextButtonAndVerifyTitleAddressInformation" duration-ms="710" started-at="2019-03-15T08:59:49Z" finished-at="2019-03-15T08:59:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleTravelInformation()[pri:75, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnNextButtonAndVerifyTitleTravelInformation" duration-ms="603" started-at="2019-03-15T08:59:50Z" finished-at="2019-03-15T08:59:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnNextButtonAndVerifyTitleDocumentVerification()[pri:76, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnNextButtonAndVerifyTitleDocumentVerification" duration-ms="580" started-at="2019-03-15T08:59:50Z" finished-at="2019-03-15T08:59:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNextButtonAndVerifyTitleDocumentVerification -->
+        <test-method status="PASS" signature="selectAllCheckBoxAndVerify()[pri:77, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectAllCheckBoxAndVerify" duration-ms="4574" started-at="2019-03-15T08:59:51Z" finished-at="2019-03-15T08:59:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAllCheckBoxAndVerify -->
+        <test-method status="PASS" signature="selectOneByOneCheckBoxAndVerify()[pri:78, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="selectOneByOneCheckBoxAndVerify" duration-ms="3384" started-at="2019-03-15T08:59:56Z" finished-at="2019-03-15T08:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOneByOneCheckBoxAndVerify -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText()[pri:79, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnApproveAndVerifyPopText" duration-ms="785" started-at="2019-03-15T08:59:59Z" description="Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-15T09:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnApproveAndVerifyPopText1()[pri:80, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnApproveAndVerifyPopText1" duration-ms="6717" started-at="2019-03-15T09:00:00Z" description="Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-15T09:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnApproveAndVerifyPopText1 -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText()[pri:81, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnRejectAndVerifyPopText" duration-ms="3776" started-at="2019-03-15T09:00:07Z" description="Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated" finished-at="2019-03-15T09:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText -->
+        <test-method status="PASS" signature="clickOnRejectAndVerifyPopText1()[pri:82, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnRejectAndVerifyPopText1" duration-ms="6742" started-at="2019-03-15T09:00:10Z" description="Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated" finished-at="2019-03-15T09:00:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRejectAndVerifyPopText1 -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleTravelInformation()[pri:83, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnBackButtonAndVerifyTitleTravelInformation" duration-ms="3758" started-at="2019-03-15T09:00:17Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-15T09:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleTravelInformation -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleAddressInformation()[pri:84, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnBackButtonAndVerifyTitleAddressInformation" duration-ms="3655" started-at="2019-03-15T09:00:21Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-15T09:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleAddressInformation -->
+        <test-method status="PASS" signature="clickOnBackButtonAndVerifyTitleApplicantInformation()[pri:85, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnBackButtonAndVerifyTitleApplicantInformation" duration-ms="3580" started-at="2019-03-15T09:00:24Z" description="Click On Back Button From Document Verification Page And Verify Title of Travel Information" finished-at="2019-03-15T09:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBackButtonAndVerifyTitleApplicantInformation -->
+        <test-method status="PASS" signature="clickOnInterviewScheduleAndcancel()[pri:86, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnInterviewScheduleAndcancel" duration-ms="9483" started-at="2019-03-15T09:00:28Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel" finished-at="2019-03-15T09:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInterviewScheduleAndcancel -->
+        <test-method status="PASS" signature="clickOnInterviewScheduleAndClose()[pri:87, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="clickOnInterviewScheduleAndClose" duration-ms="9294" started-at="2019-03-15T09:00:38Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Close" finished-at="2019-03-15T09:00:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnInterviewScheduleAndClose -->
+        <test-method status="PASS" signature="passDateAndTimeInFiled()[pri:88, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="passDateAndTimeInFiled" duration-ms="10549" started-at="2019-03-15T09:00:47Z" description="Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time" finished-at="2019-03-15T09:00:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passDateAndTimeInFiled -->
+        <test-method status="PASS" signature="getTextFromApplicantInformation()[pri:89, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextFromApplicantInformation" duration-ms="756" started-at="2019-03-15T09:00:57Z" description="Here we are getting text from Applicant Information and comparing with Applicant filed data" finished-at="2019-03-15T09:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromApplicantInformation -->
+        <test-method status="PASS" signature="getTextFromAddressInformation()[pri:90, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextFromAddressInformation" duration-ms="758" started-at="2019-03-15T09:00:58Z" description="Here we are getting text from Address Information and comparing with Applicant filed data" finished-at="2019-03-15T09:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromAddressInformation -->
+        <test-method status="PASS" signature="getTextFromTravelInformation()[pri:91, instance:com.ghana.app.qa.testcases.ConsulatePageTest@64485a47]" name="getTextFromTravelInformation" duration-ms="986" started-at="2019-03-15T09:00:59Z" description="Here we are getting text from Travel Information and comparing with Applicant filed data" finished-at="2019-03-15T09:01:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTextFromTravelInformation -->
+      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -53,7 +53,7 @@ public class SignUpPage extends TestBase {
 	@FindBy(id = "useremail")
 	WebElement emailId;
 
-	@FindBy(id = "renter_email")  
+	@FindBy(id = "renter_email")
 	WebElement reenterEmailId;
 
 	/*
@@ -96,25 +96,25 @@ public class SignUpPage extends TestBase {
 
 	public void SelectPassportType() {
 		TestUtil.actionClassMethod(PassportType);
-		driver.findElement(By.xpath("//li[@id='"+ passPortType +"']")).click();
-		//PassportTypeName.click();
+		driver.findElement(By.xpath("//li[@id='" + passPortType + "']")).click();
+		// PassportTypeName.click();
 	}
 
 	public void selectNationality() throws InterruptedException {
 		TestUtil.actionClassMethod(Nationality);
 		nationalitySearchField.sendKeys(nationalityName);
-		driver.findElement(By.xpath("//li[text()='"+ nationalityName +"']")).click();
-		
-		//Thread.sleep(2000);
-		//selectNationality.click();
+		driver.findElement(By.xpath("//li[text()='" + nationalityName + "']")).click();
+
+		// Thread.sleep(2000);
+		// selectNationality.click();
 
 	}
 
 	public void selectPortOfArrival() {
 		TestUtil.actionClassMethod(PortofArrival);
-		driver.findElement(By.xpath("//li[text()='"+ portOfArrival +"']")).click();
-		//li[text()='Kotoka Accra Airport']
-		//selectPortofArrival.click();
+		driver.findElement(By.xpath("//li[text()='" + portOfArrival + "']")).click();
+		// li[text()='Kotoka Accra Airport']
+		// selectPortofArrival.click();
 
 	}
 
@@ -174,12 +174,12 @@ public class SignUpPage extends TestBase {
 		int j = checkBoxesClick.size();
 		Thread.sleep(2000);
 		for (int i = 0; i < j; i++) {
-			
-			selectedBoxOnSignUp = checkBoxesClick.get(i).isSelected();	
-			}
-		System.out.println("selectedBoxOnSignUp1==>" +selectedBoxOnSignUp);
-		
+
+			selectedBoxOnSignUp = checkBoxesClick.get(i).isSelected();
 		}
+		System.out.println("selectedBoxOnSignUp1==>" + selectedBoxOnSignUp);
+
+	}
 
 	public void selectRadioButton() {
 

@@ -14,13 +14,14 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 	
 	@Test(priority=50, description="Here verifying confirmation message and click on ok btn ")
 	public void verifyClickOnSubmitBtnTest() throws InterruptedException{
-		//visaPaymentPage.clickOnSubmitBtn();
+		visaPaymentPage.clickOnSubmitBtn();
 		visaPaymentPage.verifyConfirmationPop();
 		Thread.sleep(2000);
 		System.out.println("home page title   "
 				+ homePage.validateHomePageTitle());
 		Assert.assertEquals(homePage.validateHomePageTitle(), "Home",
 				"given title not match nence it is not navigated to home page");
+		
 	}
 
 }

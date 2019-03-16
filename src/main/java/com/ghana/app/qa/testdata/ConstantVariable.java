@@ -35,9 +35,9 @@ public class ConstantVariable {
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
 	public static String firstName= "Pratik";
-	public static String lastName= "Thawkar";
-	public static String birthDate= "04/02/1991";	
-	public static String birthPlace= "Nagpur";
+	public static String lastName= "Shirsath";
+	public static String birthDate= "05/12/1993";	
+	public static String birthPlace= "Nashik";
 	public static String passportNumber= "A12345BA";
 	public static String passportIssuedDate= "04/29/2018";
 	public static String passportExpiryDate= "04/29/2020";
@@ -54,7 +54,7 @@ public class ConstantVariable {
 	public static String stateName= "Maharashtra";
 	public static String countryName= "India";
 	public static String addressType= "Present Address";
-	public static String nationality= "India";
+	public static String nationality= "	India";
 	public static String formerNationality= "India";
 	public static String emailId= "arjunthaokar9@gmail.com";
 	public static String phoneNumber= "9503152126";

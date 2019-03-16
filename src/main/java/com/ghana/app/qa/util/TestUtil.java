@@ -3,6 +3,7 @@ package com.ghana.app.qa.util;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.poi.hslf.model.Sheet;
@@ -57,7 +58,18 @@ public class TestUtil extends TestBase  {
 		js.executeScript("window.scrollBy(0, 'pixel')");
 
 	}
+	public static void toOpenNewTab() {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.open()");
 
+	}
+	public static void toSwitchBetweenWindows(int i){
+		
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(i));
+		
+	}
 	
 	public static void scrollUpAtEndOFPage() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
