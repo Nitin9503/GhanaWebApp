@@ -115,9 +115,9 @@ public class TestBase {
 				} else {
 					System.out.println("Execution on Normal chrome Browser");
 
-					System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");
+				//	System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");
 					// driverPath+"/FileDriver/macchromedriver" );
-					// WebDriverManager.chromedriver().setup();
+					 WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 				}
 			} else if (broweserName.equalsIgnoreCase("safari")) {
@@ -283,6 +283,7 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
 			}
 		}
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
