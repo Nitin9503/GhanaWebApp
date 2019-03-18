@@ -21,6 +21,7 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 				+ homePage.validateHomePageTitle());
 		Assert.assertEquals(homePage.validateHomePageTitle(), "Home",
 				"given title not match nence it is not navigated to home page");
+		
 	}
 
 }

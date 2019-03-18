@@ -33,46 +33,59 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import com.ghana.app.qa.util.TestUtil;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
 public class TestBase {
 	// public static String hubURL1 = "http://192.168.1.32:5566/wd/hub";
-	//Logger log = Logger.getLogger(TestBase.class) ;	
+	// Logger log = Logger.getLogger(TestBase.class) ;
+	// E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
 	public static WebDriver driver;
-	
-	//E:\SeleniumWorkSpace\torenzowebsite\TorenzoWebSite\FileDriver\chromedriver.exe
+
 	public TestBase() throws IOException, InterruptedException {
 		driverPath = System.getProperty("user.dir");
-		System.out.println("path==>" +driverPath);
+		System.out.println("path==>" + driverPath);
 		OSName = System.getProperty("os.name");
-		System.out.println(OSName);
 		if (OSName.equalsIgnoreCase("Mac OS X")) {
-			System.out.println(OSName);
-			prop = new Properties();
-			FileInputStream fis = new FileInputStream(driverPath+"/src/main/java/com/ghana/app/qa/config/config.properties");
-			prop.load(fis);
-			System.out.println(OSName);
-		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
-			System.out.println(OSName);
-			prop = new Properties();
-			System.out.println(OSName);
-			FileInputStream fis = new FileInputStream(driverPath+"\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
-			prop.load(fis);
-			System.out.println(OSName);
-		}
-	}
+			System.out.println("we are on ==>" + OSName);
 
+		} else {
+
+			OSName = OSName.substring(0, 7);
+			System.out.println("substring value ==>" + OSName);
+		}
+		System.out.println(OSName);
+
+//		final String osArray[] = { "Mac OS X", "Windows 10", "Windows 7", "Windows 8.1", "Windows 8", "Windows 7","Windows Vista", "Windows XP" };
+	//	for (int i = 0; i < osArray.length; i++) {
+			if (OSName.equalsIgnoreCase("Mac OS X")) {
+				System.out.println(OSName);
+				prop = new Properties();
+				FileInputStream fis = new FileInputStream(
+						driverPath + "/src/main/java/com/ghana/app/qa/config/config.properties");
+				prop.load(fis);
+				System.out.println(OSName);
+			} else if (OSName.equalsIgnoreCase("Windows")) {
+				System.out.println(OSName);
+				prop = new Properties();
+				System.out.println(OSName);
+				FileInputStream fis = new FileInputStream(
+						driverPath + "\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
+				prop.load(fis);
+				System.out.println(OSName);		
+			}
+		}
+	
 	public static void initialization() throws InterruptedException, MalformedURLException {
 		String broweserName = prop.getProperty("browser");
 		String headlessmode = prop.getProperty("headlessmode");
-        String testOnCloud = prop.getProperty("cloud");    
-   //     String cloudBrowser = prop.getProperty("browserOnCloud");  
+		String testOnCloud = prop.getProperty("cloud");
+		// String cloudBrowser = prop.getProperty("browserOnCloud");
+
 		if (OSName.equalsIgnoreCase("Mac OS X")) {
 
-			if (broweserName.equalsIgnoreCase("FF")) {				
+			if (broweserName.equalsIgnoreCase("FF")) {
 				if (headlessmode.equalsIgnoreCase("headless")) {
 					System.out.println("Execution on HeadLess FF Browser");
 					FirefoxBinary binary = new FirefoxBinary();
@@ -81,14 +94,16 @@ public class TestBase {
 					FirefoxOptions option = new FirefoxOptions();
 					option.setBinary(binary);
 					driver = new FirefoxDriver(option);
-				} else {	
+				} else {
 					System.out.println("Execution on Normal FF Browser");
-					 // System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
-					//  System.setProperty("webdriver.firefox.marionette", "false");			
+					// System.setProperty("webdriver.gecko.driver",
+					// "/usr/local/bin/geckodriver");
+					// System.setProperty("webdriver.firefox.marionette",
+					// "false");
 					WebDriverManager.firefoxdriver().setup();
-					driver = new FirefoxDriver();					
+					driver = new FirefoxDriver();
 				}
-				
+
 			} else if (broweserName.equalsIgnoreCase("chrome")) {
 				if (headlessmode.equalsIgnoreCase("headless")) {
 					System.out.println("Execution on HeadLess Chrome Browser");
@@ -99,18 +114,18 @@ public class TestBase {
 					driver = new ChromeDriver(option);
 				} else {
 					System.out.println("Execution on Normal chrome Browser");
-			
-		 System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");						 
-				 //driverPath+"/FileDriver/macchromedriver" );
-				//	WebDriverManager.chromedriver().setup();
-					driver = new ChromeDriver();           
+
+					System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");
+					// driverPath+"/FileDriver/macchromedriver" );
+					// WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver();
 				}
 			} else if (broweserName.equalsIgnoreCase("safari")) {
 
 				driver = new SafariDriver();
-			}
-			else if (broweserName.equalsIgnoreCase("IE")) {
-				// System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Documents/browser/chromedriver");
+			} else if (broweserName.equalsIgnoreCase("IE")) {
+				// System.setProperty("webdriver.chrome.driver",
+				// "/Users/rahul.kardel/Documents/browser/chromedriver");
 				WebDriverManager.iedriver().setup();
 				driver = new ChromeDriver();
 			} else if (broweserName.equalsIgnoreCase("safari")) {
@@ -119,10 +134,10 @@ public class TestBase {
 				driver = new SafariDriver();
 			}
 
-			else if (testOnCloud.equalsIgnoreCase("SauceLab")){
-				System.out.println("Testing Sauce Lab Cloud");				
-				switch (prop.getProperty("browserOnCloud")){		
-				
+			else if (testOnCloud.equalsIgnoreCase("SauceLab")) {
+				System.out.println("Testing Sauce Lab Cloud");
+				switch (prop.getProperty("browserOnCloud")) {
+
 				case "firefox-win-saucelab":
 					caps = DesiredCapabilities.firefox();
 					caps.setCapability("platform", "Windows 8.1");
@@ -168,45 +183,45 @@ public class TestBase {
 				case "safari-ipad-saucelab":
 					caps = DesiredCapabilities.iphone();
 					caps.setCapability("appiumVersion", "1.9.1");
-					caps.setCapability("deviceName","iPad Pro (10.5 inch) Simulator");
+					caps.setCapability("deviceName", "iPad Pro (10.5 inch) Simulator");
 					caps.setCapability("deviceOrientation", "portrait");
-					caps.setCapability("platformVersion","12.0");
+					caps.setCapability("platformVersion", "12.0");
 					caps.setCapability("platformName", "iOS");
 					caps.setCapability("browserName", "Safari");
 					caps.setCapability("name", "Testing on Safari ipad");
 					break;
-		
-					
-					default :
-						System.out.println("Browser provide is not matched");				
-				
-				}
-				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);				
-			}						
-		
-		} else if (OSName.equalsIgnoreCase("Windows 10") || OSName.equalsIgnoreCase("Windows 7")) {
 
-			if (broweserName.equals("FF")) {	
-				  System.setProperty("webdriver.gecko.driver", driverPath+"\\FileDriver\\geckodriver.exe");
-				  System.setProperty("webdriver.firefox.marionette", "false");
-			//	WebDriverManager.firefoxdriver().setup();
+				default:
+					System.out.println("Browser provide is not matched");
+
+				}
+				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
+			}
+
+		} else if (OSName.equalsIgnoreCase("Windows")) {
+
+			if (broweserName.equals("FF")) {
+				System.setProperty("webdriver.gecko.driver", driverPath + "\\FileDriver\\geckodriver.exe");
+				System.setProperty("webdriver.firefox.marionette", "false");
+				// WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 
-			}
-			else if (broweserName.equalsIgnoreCase("chrome")) {
-				 System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\windowchromedriver.exe" );
-				//WebDriverManager.chromedriver().setup();
+
+			} else if (broweserName.equalsIgnoreCase("chrome")) {
+				// System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\chromedriver.exe"
+				// );
+				WebDriverManager.chromedriver().setup();
+
 				driver = new ChromeDriver();
 			}
 
 			else if (broweserName.equalsIgnoreCase("IE")) {
-				 System.setProperty("webdriver.ie.driver",driverPath+"\\FileDriver\\IEDriverServer.exe" );
+				System.setProperty("webdriver.ie.driver", driverPath + "\\FileDriver\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
-			}
-			else if (testOnCloud.equalsIgnoreCase("SauceLab")){
-				System.out.println("Testing Sauce Lab Cloud");				
-				switch (prop.getProperty("browserOnCloud")){		
-				
+			} else if (testOnCloud.equalsIgnoreCase("SauceLab")) {
+				System.out.println("Testing Sauce Lab Cloud");
+				switch (prop.getProperty("browserOnCloud")) {
+
 				case "firefox-win-saucelab":
 					caps = DesiredCapabilities.firefox();
 					caps.setCapability("platform", "Windows 10");
@@ -252,31 +267,29 @@ public class TestBase {
 				case "safari-ipad-saucelab":
 					caps = DesiredCapabilities.iphone();
 					caps.setCapability("appiumVersion", "1.9.1");
-					caps.setCapability("deviceName","iPad Pro (10.5 inch) Simulator");
+					caps.setCapability("deviceName", "iPad Pro (10.5 inch) Simulator");
 					caps.setCapability("deviceOrientation", "portrait");
-					caps.setCapability("platformVersion","12.0");
+					caps.setCapability("platformVersion", "12.0");
 					caps.setCapability("platformName", "iOS");
 					caps.setCapability("browserName", "Safari");
 					caps.setCapability("name", "Testing on Safari ipad");
 					break;
 				case "52":
-					
-					default :
-						System.out.println("Browser provide is not matched");				
-				
+
+				default:
+					System.out.println("Browser provide is not matched");
+
 				}
-				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);				
-			}						
+				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
+			}
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
-		driver.get(prop.getProperty("GhanaWebURL"));	
-		//driver.get(prop.getProperty("HCDLoginURL"));	
-		
-		
+		driver.get(prop.getProperty("GhanaWebURL"));
+		// driver.get(prop.getProperty("HCDLoginURL"));
 
 	}
 

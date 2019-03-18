@@ -1,20 +1,22 @@
 package com.ghana.app.qa.testcases;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.ghana.app.qa.base.DriverInit;
 import com.ghana.app.qa.pages.CNAddressInfo;
-
+import static com.ghana.app.qa.util.TestUtil.prop;
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import com.ghana.app.qa.util.TestUtil;
 
-public class ConsulatePageTest extends DriverInit {
+public class ConsulatePageTest extends VisaPaymentPageTest {
 	SoftAssert softAssertion = new SoftAssert();
 
 	public ConsulatePageTest() throws IOException, InterruptedException {
@@ -22,21 +24,26 @@ public class ConsulatePageTest extends DriverInit {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test(priority = 0, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
-	public void loginIntoConsulate() {
+	@Test(priority = 51, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
+	public void loginIntoConsulate() throws InterruptedException {
+		Thread.sleep(5000);
+		
+		TestUtil.toOpenNewTab();
+		TestUtil.toSwitchBetweenWindows(1);
+		driver.get(prop.getProperty("HCDLoginURL"));	
 		highAndConsulateLoginPage.passUserName("CN1234");
 		highAndConsulateLoginPage.passPassword("1234");
 		highAndConsulateLoginPage.clickOnLoginButton();
 	}
 
-	@Test(priority = 1 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
+	@Test(priority = 51 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
 	public void verifyTitleOfConsulateTitle() {
 		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
 	}  
 
-	@Test(priority = 2 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
+	@Test(priority = 52 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
 	public void clickOnNewApplication() {
 		consulatedashBoardPage.clickOnNewApplication();
 		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
@@ -44,7 +51,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 52)
 	public void verfiyTitleOfCNAddressInfoPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnAddressInfor();
 		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
@@ -52,7 +59,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 53)
 	public void verfiyTitleOfCNTravelInfoPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnTravelInfor();
 		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
@@ -60,7 +67,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 54)
 	public void verfiyTitleOfCNDocumentVerificatonPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnDocumentVeri();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
@@ -68,7 +75,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 6)
+	@Test(priority =55)
 	public void passComment() {
 		applicantDashBoardPage.passComment("Verifying your Application");
 		applicantDashBoardPage.addCooment();
@@ -78,7 +85,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 7, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 56, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnConfirmedAirTicketWindowClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -92,7 +99,7 @@ public class ConsulatePageTest extends DriverInit {
 		System.out.println("1");
 	}	
 
-	@Test(priority = 8, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
+	@Test(priority = 58, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
 	public void clickOnConfirmedAirTicketWindow() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -106,7 +113,7 @@ public class ConsulatePageTest extends DriverInit {
 		System.out.println("2");
 	}
 
-	@Test(priority = 9, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 59, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOnPhotoClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
@@ -119,7 +126,7 @@ public class ConsulatePageTest extends DriverInit {
 		System.out.println("4");
 	}
 
-	@Test(priority = 10, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 60, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOnPhoto() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
@@ -132,7 +139,7 @@ public class ConsulatePageTest extends DriverInit {
 		System.out.println("3");
 	}
 
-	@Test(priority = 11, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 61, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccinationClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
@@ -144,7 +151,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 12, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 62, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccination() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
@@ -156,7 +163,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 13, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 63, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnCoveringLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
@@ -169,7 +176,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 14, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 64, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnCoveringLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
@@ -182,7 +189,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 15, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 65, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraftClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhotoOfDraft();
@@ -195,7 +202,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 16, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 66, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraft() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhotoOfDraft();
@@ -208,7 +215,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 17, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 67, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnIdProofReferenceClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
@@ -221,7 +228,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 18, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 68, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnIdProofReference() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
@@ -234,7 +241,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 19, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 69, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
@@ -247,7 +254,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 20, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 70, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
@@ -260,7 +267,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 21, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 71, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisaClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
@@ -273,7 +280,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 22, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 72, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisa() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
@@ -286,7 +293,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 73)
 	public void clickOnApplicantInfor() throws InterruptedException {
 		Thread.sleep(2000);
 		applicantDashBoardPage.clickOnApplicantInfor();
@@ -296,7 +303,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 74)
 	public void clickOnNextButtonAndVerifyTitleAddressInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
@@ -304,7 +311,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 75)
 	public void clickOnNextButtonAndVerifyTitleTravelInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
@@ -312,7 +319,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 76)
 	public void clickOnNextButtonAndVerifyTitleDocumentVerification() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
@@ -320,7 +327,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 77)
 	public void selectAllCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		cNDocumentVerificaton.selectAllCheckBoxes();
@@ -332,7 +339,7 @@ public class ConsulatePageTest extends DriverInit {
 				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 28)
+	@Test(priority = 78)
 	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		cNDocumentVerificaton.selectAllCheckBoxes();
@@ -346,7 +353,7 @@ public class ConsulatePageTest extends DriverInit {
 	}
 	
 
-	@Test(priority = 28, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 79, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
@@ -357,7 +364,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 29, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority = 80, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnApprove();
@@ -370,7 +377,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 30, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 81, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
@@ -382,7 +389,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 31, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority =82, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
@@ -395,7 +402,7 @@ public class ConsulatePageTest extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 32, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 83, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleTravelInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -405,7 +412,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 33, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 84, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleAddressInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -415,7 +422,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 34, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 85, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleApplicantInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -425,7 +432,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 35, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
+	@Test(priority = 86, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
 	public void clickOnInterviewScheduleAndcancel() throws InterruptedException {
 		applicantDashBoardPage.clickOnScheduleInterview();
 		Thread.sleep(9000);
@@ -441,7 +448,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	@Test(priority = 36, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
+	@Test(priority = 87, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
 	public void clickOnInterviewScheduleAndClose() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
@@ -454,7 +461,7 @@ public class ConsulatePageTest extends DriverInit {
 
 	}
 
-	/*@Test(priority = 37, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
+	@Test(priority = 88, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
 	public void passDateAndTimeInFiled() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
@@ -470,9 +477,9 @@ public class ConsulatePageTest extends DriverInit {
 		Thread.sleep(3000);
 		cNInterviewSchedule.confirmButtonFromInterviewConfirpop();
 		softAssertion.assertAll();
-	}*/
+	}
 
-	@Test(priority = 38, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
+	@Test(priority = 89, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
 	public void getTextFromApplicantInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(applicantDashBoardPage.getTextFullName(), (firstName + " " + lastName),
@@ -491,7 +498,7 @@ public class ConsulatePageTest extends DriverInit {
 		applicantDashBoardPage.clickOnNextButton();
 	}
 
-	@Test(priority = 39, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
+	@Test(priority = 90, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
 	public void getTextFromAddressInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(cNAddressInfo.getTextFromEmailID(), (emailId),
@@ -512,7 +519,7 @@ public class ConsulatePageTest extends DriverInit {
 		applicantDashBoardPage.clickOnNextButton();
 	}
 
-	@Test(priority = 40, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
+	@Test(priority = 91, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
 	public void getTextFromTravelInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(cNTravelInfo.getTextReferenceName1(), (priFirstName + " " + priLastName),
@@ -544,5 +551,6 @@ public class ConsulatePageTest extends DriverInit {
 				"Provided and Get Passport Expiry Date are not matched");
 		softAssertion.assertAll();
 		applicantDashBoardPage.clickOnNextButton();
+		TestUtil.toSwitchBetweenWindows(0);
 	}
 }

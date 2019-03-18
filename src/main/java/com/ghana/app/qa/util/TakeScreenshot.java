@@ -17,34 +17,31 @@ import org.testng.ITestResult;
 import static com.ghana.app.qa.util.TestUtil.screenshotName;
 import com.ghana.app.qa.base.TestBase;
 
-public class TakeScreenshot extends TestBase{
+public class TakeScreenshot extends TestBase {
 
 	public TakeScreenshot() throws IOException, InterruptedException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void takeScreenshot() throws IOException
-		{
+	public static void takeScreenshot() throws IOException {
 
-	SimpleDateFormat sdf = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-	Date date = new Date();
-	screenshotName = sdf.format(date);
-    TakesScreenshot screenshot = (TakesScreenshot) driver;
-    File src=screenshot.getScreenshotAs(OutputType.FILE);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		Date date = new Date();
+		screenshotName = sdf.format(date);
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		File src = screenshot.getScreenshotAs(OutputType.FILE);
 
-    if(OSName.equalsIgnoreCase("Windows 7") || OSName.equalsIgnoreCase("Windows 10")  ){
-		 FileUtils.copyFile(src, new File(".\\Screenshot\\"+screenshotName+".jpeg"));
-		
-	 }
-	 else if(OSName.equalsIgnoreCase("Mac OS X")){
-		 
-		 FileUtils.copyFile(src, new File("./Screenshot/"+screenshotName+".jpeg"));
+		if (OSName.equalsIgnoreCase("Windows")) {
+			FileUtils.copyFile(src, new File(".\\Screenshot\\" + screenshotName + ".jpeg"));
+
+		} else if (OSName.equalsIgnoreCase("Mac OS X")) {
+
+			FileUtils.copyFile(src, new File("./Screenshot/" + screenshotName + ".jpeg"));
 		}
-	 
-	System.out.println("screenshot name is==>"+screenshotName);
 
+		System.out.println("screenshot name is==>" + screenshotName);
 
-}
-	
+	}
+
 }
