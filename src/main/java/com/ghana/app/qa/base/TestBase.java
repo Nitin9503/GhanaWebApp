@@ -17,6 +17,7 @@ import static com.ghana.app.qa.util.TestUtil.caps;
 import static com.ghana.app.qa.util.TestUtil.OSName;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -290,6 +291,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("GhanaWebURL"));
+	
 		// driver.get(prop.getProperty("HCDLoginURL"));
 
 	}
