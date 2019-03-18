@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
 
 public class TravelInfoPage extends TestBase {
@@ -113,16 +114,25 @@ public class TravelInfoPage extends TestBase {
 
 	@FindBy(id = "by_text_message_checkbox")
 	WebElement by_text_message_checkbox;
+	
+	@FindBy(name = "other_way_checkbox")
+	WebElement otherwaycheckbox;
 
+	@FindBy(id = "txtReach")
+	WebElement txtReach;
+	
 	@FindBy(id = "applicant_travel_information_form_btn")
 	WebElement applicant_travel_information_form_btn;
 
 	@FindBy(xpath = "//form[@name='applicant_travel_information_form']//input[@value='Previous']")
 	WebElement previous;
 
-	public String getTextTravelInfoPagetitle() {
+	public String getTextTravelInfoPagetitle() throws InterruptedException {
+		Thread.sleep(2000);
+		TestUtil.waitForElementToVisible(travelInfoPageTitle, 60);
 		return travelInfoPageTitle.getText();
 	}
+
 
 	public void passDateOfDeparture(String date) {
 		departureDate.sendKeys(date);
@@ -276,6 +286,48 @@ public class TravelInfoPage extends TestBase {
 		secondary_ref_country.sendKeys(sec_country);
 		secondary_ref_phone_number.sendKeys(sec_phoneNo);
 	}
+
+
+	
+	public void clickOnByPhoneCheckbox() {
+		TestUtil.actionClassMethod(by_phone_checkbox);
+
+	}
+	public boolean verifyByPhoneCheckbox() {
+		return by_phone_checkbox.isSelected();
+
+	}
+	public void clickOnByEmailCheckbox() {
+		TestUtil.actionClassMethod(by_email_checkbox);
+
+	}
+	public boolean verifyByEmailCheckbox() {
+		return by_email_checkbox.isSelected();
+
+	}
+	public void clickOnByTextMessageCheckbox() {
+		TestUtil.actionClassMethod(by_text_message_checkbox);
+		
+
+	}
+	public boolean verifyByTextMessageCheckbox() {
+		return  by_text_message_checkbox.isSelected();
+
+	}
+	public void clickOnOtherWayCheckbox() throws InterruptedException {
+		Thread.sleep(2000);
+		TestUtil.actionClassMethod(otherwaycheckbox);
+
+	}
+	public boolean verifyOnOtherWayCheckbox() {
+		return otherwaycheckbox.isSelected();
+
+	}
+	public void passOtherWayToReach(String passWay ) {
+		txtReach.sendKeys(passWay);
+
+	}
+	
 
 	public void clickOnContinuebutton() {
 		applicant_travel_information_form_btn.click();

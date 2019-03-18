@@ -18,9 +18,9 @@ public class ConstantVariable {
 	
 	//SignUp page 
 	public static boolean selectedBoxOnSignUp;
-
+	public static boolean selectedRadioButtonOnSignUp;
 	
-	
+	public static boolean genderRadioButton;
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special

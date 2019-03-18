@@ -5,8 +5,8 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
         <methods>
+          <include name="clickOnContinuebuttonTest1"/>
           <include name="setUp"/>
-          <include name="verifyClickOnSubmitBtnTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
     </classes>

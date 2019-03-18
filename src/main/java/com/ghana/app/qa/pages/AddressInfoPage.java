@@ -9,7 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 import com.ghana.app.qa.base.TestBase;
 import com.ghana.app.qa.util.TestUtil;
 
@@ -63,7 +65,8 @@ public class AddressInfoPage extends TestBase {
 	@FindBy(xpath = "//input[@id='emergency_lastname']")
 	WebElement emergency_lastname;
 
-	public String getTextAddressInfoPageTitle(){
+	public String getTextAddressInfoPageTitle() throws InterruptedException{
+		Thread.sleep(2000);
 		return addressInfoPageTitle.getText();
 		
 	}

@@ -194,8 +194,8 @@ public class TestBase {
 
 			}
 			else if (broweserName.equalsIgnoreCase("chrome")) {
-				 //System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\chromedriver.exe" );
-				WebDriverManager.chromedriver().setup();
+				 System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\windowchromedriver.exe" );
+				//WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			}
 

@@ -24,6 +24,7 @@ public class PersonalInfoPage extends TestBase {
 
 	@FindBy(xpath = "//h5[contains(text(),'Personal Information')]")
 	WebElement personalInfoTitle;
+
 	@FindBy(xpath = ".//*[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
 	WebElement applicationId;
 	@FindBy(xpath = "//span[text()='Visa Fees']")
@@ -64,7 +65,8 @@ public class PersonalInfoPage extends TestBase {
 	@FindBy(xpath = "//button[@id='applicant_personal_info_form_btn']")
 	WebElement saveAndContinue;
 
-	public String getTextPersonalInfoPageTitle() {
+	public String getTextPersonalInfoPageTitle() throws InterruptedException {
+		Thread.sleep(2000);
 		return personalInfoTitle.getText();
 
 	}
@@ -109,6 +111,13 @@ public class PersonalInfoPage extends TestBase {
 	public void clickOnGender() {
 		TestUtil.actionClassMethod(gender);
 	}
+	
+	public void verifiedGenderSelected() throws InterruptedException {
+		Thread.sleep(2000);
+		genderRadioButton =	gender.isSelected();
+		System.out.println("genderRadioButton==>"  +genderRadioButton);
+	}
+	
 
 	public void selectPassIssueDate(String PassIssueDate)
 			throws InterruptedException {
