@@ -12,7 +12,7 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Test(priority=50, description="Here verifying confirmation message and click on ok btn ")
+	@Test(priority=56, description="Here verifying confirmation message and click on ok btn ")
 	public void verifyClickOnSubmitBtnTest() throws InterruptedException{
 		visaPaymentPage.clickOnSubmitBtn();
 		visaPaymentPage.verifyConfirmationPop();

@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
+      <class name="com.ghana.app.qa.testcases.ReviewApplicationPageTest">
         <methods>
-          <include name="clickOnContinuebuttonTest1"/>
+          <include name="getTextAddressInfoTest"/>
           <include name="setUp"/>
+          <include name="getTextEmergencyContactTest"/>
+          <include name="getTextTravelInfoTest"/>
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
+      </class> <!-- com.ghana.app.qa.testcases.ReviewApplicationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

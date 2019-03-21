@@ -40,5 +40,6 @@ public class HighAndConsulateLoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
+	
 
 }

@@ -178,6 +178,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	}
 
+
 	@Test(priority = 26)
 	public void clickOnSaveAndContinueTest() throws InterruptedException,
 			IOException {

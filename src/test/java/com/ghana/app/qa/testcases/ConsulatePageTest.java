@@ -24,7 +24,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test(priority = 51, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
+	@Test(priority = 57, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
 	public void loginIntoConsulate() throws InterruptedException {
 		Thread.sleep(5000);
 		
@@ -36,7 +36,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		highAndConsulateLoginPage.clickOnLoginButton();
 	}
 
-	@Test(priority = 51 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
+	@Test(priority = 58 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
 	public void verifyTitleOfConsulateTitle() {
 		System.out.println("HI1");
 		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
@@ -44,7 +44,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}  
 
-	@Test(priority = 52 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
+	@Test(priority = 59 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
 	public void a() {
 		System.out.println("HI2");
 		consulatedashBoardPage.clickOnNewApplication();
@@ -53,7 +53,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 52)
+	@Test(priority = 60)
 	public void b() throws InterruptedException {
 		System.out.println("HI3");
 		applicantDashBoardPage.clickOnAddressInfor();
@@ -62,7 +62,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 53)
+	@Test(priority = 61)
 	public void verfiyTitleOfCNTravelInfoPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnTravelInfor();
 		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
@@ -70,7 +70,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 54)
+	@Test(priority = 62)
 	public void verfiyTitleOfCNDocumentVerificatonPage() throws InterruptedException {
 		applicantDashBoardPage.clickOnDocumentVeri();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
@@ -78,7 +78,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority =55)
+	@Test(priority =63)
 	public void passComment() {
 		applicantDashBoardPage.passComment("Verifying your Application");
 		applicantDashBoardPage.addCooment();
@@ -88,7 +88,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 56, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 64, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnConfirmedAirTicketWindowClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -102,7 +102,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		System.out.println("1");
 	}	
 
-	@Test(priority = 58, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
+	@Test(priority = 65, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
 	public void clickOnConfirmedAirTicketWindow() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
@@ -116,7 +116,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		System.out.println("2");
 	}
 
-	@Test(priority = 59, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 66, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOnPhotoClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
@@ -129,7 +129,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		System.out.println("4");
 	}
 
-	@Test(priority = 60, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 67, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOnPhoto() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
@@ -142,7 +142,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		System.out.println("3");
 	}
 
-	@Test(priority = 61, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 68, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccinationClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
@@ -154,7 +154,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 62, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 69, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccination() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
@@ -166,7 +166,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 63, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 70, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnCoveringLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
@@ -179,7 +179,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 64, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 71, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnCoveringLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
@@ -192,7 +192,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 65, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 72, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraftClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhotoOfDraft();
@@ -205,7 +205,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 66, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 73, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraft() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhotoOfDraft();
@@ -218,7 +218,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 67, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 74, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnIdProofReferenceClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
@@ -231,7 +231,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 68, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 75, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnIdProofReference() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
@@ -244,7 +244,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 69, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 76, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
@@ -257,7 +257,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 70, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 78, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
@@ -270,7 +270,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 71, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 79, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisaClose() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
@@ -283,7 +283,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 72, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 80, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisa() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
@@ -296,7 +296,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 73)
+	@Test(priority = 81)
 	public void clickOnApplicantInfor() throws InterruptedException {
 		Thread.sleep(2000);
 		applicantDashBoardPage.clickOnApplicantInfor();
@@ -306,7 +306,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 74)
+	@Test(priority = 82)
 	public void clickOnNextButtonAndVerifyTitleAddressInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
@@ -314,7 +314,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 75)
+	@Test(priority = 83)
 	public void clickOnNextButtonAndVerifyTitleTravelInformation() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
@@ -322,7 +322,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 76)
+	@Test(priority = 84)
 	public void clickOnNextButtonAndVerifyTitleDocumentVerification() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
@@ -330,7 +330,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 77)
+	@Test(priority = 85)
 	public void selectAllCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		cNDocumentVerificaton.selectAllCheckBoxes();
@@ -342,7 +342,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 78)
+	@Test(priority = 86)
 	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		cNDocumentVerificaton.selectAllCheckBoxes();
@@ -356,7 +356,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	}
 	
 
-	@Test(priority = 79, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 87, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
@@ -367,7 +367,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 80, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority = 88, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnApprove();
@@ -380,7 +380,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 81, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 89, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
@@ -392,7 +392,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority =82, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority =90, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
@@ -405,7 +405,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 83, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 91, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleTravelInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -415,7 +415,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 84, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 92, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleAddressInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -425,7 +425,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 85, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
+	@Test(priority = 93, description = "Click On Back Button From Document Verification Page And Verify Title of Travel Information")
 	public void clickOnBackButtonAndVerifyTitleApplicantInformation() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
@@ -435,7 +435,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 86, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
+	@Test(priority = 94, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
 	public void clickOnInterviewScheduleAndcancel() throws InterruptedException {
 		applicantDashBoardPage.clickOnScheduleInterview();
 		Thread.sleep(9000);
@@ -451,7 +451,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 87, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
+	@Test(priority = 95, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
 	public void clickOnInterviewScheduleAndClose() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
@@ -464,7 +464,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	}
 
-	@Test(priority = 88, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
+	@Test(priority = 96, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
 	public void passDateAndTimeInFiled() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
@@ -482,7 +482,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 89, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
+	@Test(priority = 97, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
 	public void getTextFromApplicantInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(applicantDashBoardPage.getTextFullName(), (firstName + " " + lastName),
@@ -501,7 +501,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		applicantDashBoardPage.clickOnNextButton();
 	}
 
-	@Test(priority = 90, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
+	@Test(priority = 98, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
 	public void getTextFromAddressInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(cNAddressInfo.getTextFromEmailID(), (emailId),
@@ -522,7 +522,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		applicantDashBoardPage.clickOnNextButton();
 	}
 
-	@Test(priority = 91, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
+	@Test(priority = 99, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
 	public void getTextFromTravelInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(cNTravelInfo.getTextReferenceName1(), (priFirstName + " " + priLastName),
@@ -556,7 +556,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		applicantDashBoardPage.clickOnNextButton();
 		TestUtil.toSwitchBetweenWindows(0);
 	}
-	@Test(priority = 92)
+	@Test(priority = 100)
 	public void clickOnNextButton() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
@@ -565,7 +565,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		softAssertion.assertAll();
 	}
 	
-	@Test(priority = 93, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 101, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApprove() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
 		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",

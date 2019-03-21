@@ -55,7 +55,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	}
 
 	
-	@Test(priority = 94, description = "This test will verify login functinality of HighCommission with valid creadentials and click on Login button")
+	@Test(priority = 102, description = "This test will verify login functinality of HighCommission with valid creadentials and click on Login button")
 	public void loginIntoHighCommission() throws InterruptedException {
 		Thread.sleep(5000);
 		
@@ -68,21 +68,21 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 
 	}
 	
-	@Test(priority=95, description = "This test will verify the title of HighCommission page after login" )
+	@Test(priority=103, description = "This test will verify the title of HighCommission page after login" )
 	public void verifHighCommissionPageTitle(){
 		softAssertion.assertEquals(		
 				hCDDashboardPage.titleofHCDDashBoard(), "Welcome To Ghana Embassy",
 				"We are not navigate to High Commission dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 96 ,description = "This test will verify we navigated to HCDGeneral Verification page upon cliclking on New Application" )
+	@Test(priority = 104 ,description = "This test will verify we navigated to HCDGeneral Verification page upon cliclking on New Application" )
 	public void clickOnNewApplication() {
 		hCDDashboardPage.clickOnNewApplication();
 		softAssertion.assertEquals(hCDDashboardPage.titleofHCDDashBoard(), "HCDGeneral Verification",
 				"We are not navigate to HCDGeneral Verification page upon clicking on New Application from HCD Dashboard");
 		softAssertion.assertAll();
 	}
-	@Test(priority =97)
+	@Test(priority =105)
 	public void passComment() {
 		hCDDocumentVerificationPage.passComment("Verifying your Application");
 		hCDDocumentVerificationPage.addCooment();
@@ -92,7 +92,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 98, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 106, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnConfirmedAirTicketWindowClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnConfirmAirTicket();
@@ -106,7 +106,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		System.out.println("1");
 	}	
 
-	@Test(priority = 99, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
+	@Test(priority = 107, description = "click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  ")
 	public void clickOnConfirmedAirTicketWindow() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnConfirmAirTicket();
@@ -120,7 +120,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		System.out.println("2");
 	}
 
-	@Test(priority = 100, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 108, description = "click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOnPhotoClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhoto();
@@ -133,7 +133,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		System.out.println("4");
 	}
 
-	@Test(priority = 101, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 109, description = "click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOnPhoto() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhoto();
@@ -146,7 +146,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		System.out.println("3");
 	}
 
-	@Test(priority = 102, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 110, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccinationClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnYellowFevervaccination();
@@ -158,7 +158,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 103, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 111, description = "click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnYellowFevervaccination() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnYellowFevervaccination();
@@ -170,7 +170,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 104, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 112, description = "click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnCoveringLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnCoveringLetter();
@@ -183,7 +183,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 
 	}
 
-	@Test(priority = 105, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 113, description = "click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnCoveringLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnCoveringLetter();
@@ -196,7 +196,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 
 	}
 
-	@Test(priority = 106, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 114, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraftClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhotoOfDraft();
@@ -209,7 +209,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 107, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 115, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnPhotoOfDraft() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhotoOfDraft();
@@ -222,7 +222,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 108, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 116, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnIdProofReferenceClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnIdProofReference();
@@ -235,7 +235,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 109, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 117, description = "click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnIdProofReference() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnIdProofReference();
@@ -248,7 +248,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 110, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 118, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnOriginalInvitationLetter();
@@ -261,7 +261,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 111, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 119, description = "click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnOriginalInvitationLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnOriginalInvitationLetter();
@@ -274,7 +274,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 112, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+	@Test(priority = 120, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisaClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnProofOfTransitVisa();
@@ -287,7 +287,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 113, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+	@Test(priority = 121, description = "click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
 	public void clickOnProofOfTransitVisa() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnProofOfTransitVisa();
@@ -299,7 +299,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 				"Document Verification page is not displayed upon clicking on Close button from Proof of transit valid visa");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 114)
+	@Test(priority = 122)
 	public void verfiyTitleOfCNDocumentVerificatonPage() throws InterruptedException {
 		hCDGeneralVerificationPage.clickOnDocumentVeri();
 		softAssertion.assertEquals(hCDGeneralVerificationPage.titleOfCNDocumentVerificatonPage(), "HCD Doccument Verification",
@@ -307,7 +307,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 	
-	@Test(priority = 115)
+	@Test(priority = 123)
 	public void selectAllCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		hCDDocumentVerificationPage.selectAllCheckBoxes();
@@ -319,7 +319,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 				"All check Boxes is not selected upon clicking on [Select All Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 116)
+	@Test(priority = 124)
 	public void selectOneByOneCheckBoxAndVerify() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		hCDDocumentVerificationPage.selectAllCheckBoxes();
@@ -331,7 +331,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 				"Check Boxes is not selected upon clicking on [One By One Check] from Document Verification page");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 117, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 125, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText() throws InterruptedException {
 		hCDDocumentVerificationPage.clickOnApprove();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextFromAcceptConfirmationPop(), "Confirmation",
@@ -342,7 +342,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 118, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority = 126, description = "Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		hCDDocumentVerificationPage.clickOnApprove();
@@ -352,13 +352,11 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		hCDDocumentVerificationPage.clickOnCloseApprove();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextDocumentVerification(), "Document Verification",
 				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
-		
-		
-		
+	
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 119, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	@Test(priority = 127, description = "Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText() throws InterruptedException {
 		Thread.sleep(3000);
 		hCDDocumentVerificationPage.clickOnReject();
@@ -370,7 +368,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 
-	@Test(priority =120, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
+	@Test(priority =128, description = "Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated")
 	public void clickOnRejectAndVerifyPopText1() throws InterruptedException {
 		Thread.sleep(3000);
 		hCDDocumentVerificationPage.clickOnReject();
@@ -382,7 +380,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 121, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
+	@Test(priority = 129, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel")
 	public void clickOnInterviewScheduleAndcancel() throws InterruptedException {
 		hCDGeneralVerificationPage.clickOnScheduleInterview();
 		Thread.sleep(9000);
@@ -398,7 +396,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 
 	}
 
-	@Test(priority = 122, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
+	@Test(priority = 130, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Close")
 	public void clickOnInterviewScheduleAndClose() throws InterruptedException {
 		Thread.sleep(3000);
 		hCDGeneralVerificationPage.clickOnScheduleInterview();
@@ -411,7 +409,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 
 	}
 
-	@Test(priority = 123, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
+	@Test(priority = 131, description = "Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time")
 	public void passDateAndTimeInFiled() throws InterruptedException {
 		Thread.sleep(3000);
 		hCDGeneralVerificationPage.clickOnScheduleInterview();
@@ -428,14 +426,14 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		hCDInterviewSchedule.confirmButtonFromInterviewConfirpop();
 		softAssertion.assertAll();
 	}
-	@Test(priority = 124)
+	@Test(priority = 132)
 	public void clickOnPreviousButtonAndVerifyTitleApplicantInformation() throws InterruptedException {
 		hCDDocumentVerificationPage.previousButtonFromDocument();
 		softAssertion.assertEquals(hCDDashboardPage.titleofHCDDashBoard(), "HCDGeneral Verification",
 				"We are not navigate to HCDGeneral Verification page upon clicking on Previous Button from Applicant Information");
 		softAssertion.assertAll();
 	}
-	@Test(priority = 125)
+	@Test(priority = 133)
 	public void clickOnNextButtonAndVerifyTitleDocumentVerifi() throws InterruptedException {
 		hCDGeneralVerificationPage.clickOnnNxtButton();
 		softAssertion.assertEquals(hCDGeneralVerificationPage.titleOfCNDocumentVerificatonPage(), "HCD Doccument Verification",
@@ -444,7 +442,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	
 	}
 	
-	@Test(priority = 126, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
+	@Test(priority = 134, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
 	public void getTextFromApplicantInformation() throws InterruptedException {
 		hCDGeneralVerificationPage.clickOnApplicantInfor();
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextFullName(), (firstName + " " + lastName),
@@ -463,7 +461,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	
 	}
 
-	@Test(priority = 127, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
+	@Test(priority = 135, description = "Here we are getting text from Address Information and comparing with Applicant filed data")
 	public void getTextFromAddressInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextEmailIdHCD(), (emailId),
@@ -484,7 +482,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	
 	}
 
-	@Test(priority = 128, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
+	@Test(priority = 136, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
 	public void getTextFromTravelInformation() throws InterruptedException {
 
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextRefName1HCD(), (priFirstName + " " + priLastName),

@@ -17,7 +17,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		// TODO Auto-generated constructor stub
 	    }
 	
-	@Test(priority = 45)
+	@Test(priority = 51)
 	public void getTextPersonalInfoTest() throws InterruptedException, IOException {
 		
 		//------Personal info
@@ -38,7 +38,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		
 		
 	}
-	@Test(priority = 46)
+	@Test(priority = 52)
 		public void getTextAddressInfoTest() throws InterruptedException, IOException {
 		//Address Info
 		softAssertion.assertEquals(reviewApplicationPage.getTextFromAddress(), (FlatNo+", "+StreetName+", "+Landmark), "Provided and Get address are not matched");
@@ -65,7 +65,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		
 	
 	}
-	@Test(priority = 47)
+	@Test(priority = 53)
 	public void getTextEmergencyContactTest() throws InterruptedException, IOException {
 	//Emergency contact 
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromEmerContactName(), (emerContactName+" "+emerContactSurname), "Provided and Get address are not matched");
@@ -124,7 +124,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
     softAssertion.assertAll();
 	
 }
-	@Test(priority = 48)
+	@Test(priority = 54)
 	public void getTextTravelInfoTest() throws InterruptedException, IOException {
 	//Travel Info
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromDateOfDeparture(), dateOfDeparture, "Provided and Get dateOfDeparture are not matched");
@@ -167,7 +167,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
     softAssertion.assertAll();
 
 }
-	@Test(priority = 49)
+	@Test(priority = 55)
 	public void clickOnContinueBtnTest() throws InterruptedException, IOException {
 		reviewApplicationPage.clickOnContinuebutton();
 	}

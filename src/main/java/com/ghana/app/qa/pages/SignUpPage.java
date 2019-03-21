@@ -133,6 +133,7 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void passReEmailId(String EmailId) {
+       TestUtil.actionClassMethod(reenterEmailId); 
 		reenterEmailId.sendKeys(EmailId);
 	}
 
