@@ -292,7 +292,7 @@ public class TestBase {
 
 		driver.get(prop.getProperty("GhanaWebURL"));
 	
-		// driver.get(prop.getProperty("HCDLoginURL"));
+	   // driver.get(prop.getProperty("HCDLoginURL"));
 
 	}
 

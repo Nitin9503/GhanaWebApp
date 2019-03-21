@@ -24,6 +24,11 @@ import com.ghana.app.qa.pages.TravelInfoPage;
 import com.ghana.app.qa.pages.UploadDocPage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
 import com.ghana.app.qa.pages.VisaPaymentPage;
+import com.ghana.app.qa.xl.pages.AddressInfoXlPage;
+import com.ghana.app.qa.xl.pages.EmergencyContactXlPage;
+import com.ghana.app.qa.xl.pages.PersonalInfoXlPage;
+import com.ghana.app.qa.xl.pages.SignUpXlPage;
+import com.ghana.app.qa.xl.pages.TravelInfoXlPage;
 
 public class DriverInit extends TestBase {
 
@@ -35,10 +40,15 @@ public class DriverInit extends TestBase {
 	public static HomePage homePage;
 	public static VisaCategoriesPage visaCategoriesPage;
 	public static SignUpPage signUpPage;
+	public static SignUpXlPage signUpXlPage;
 	public static PersonalInfoPage personalInfoPage;
+	public static PersonalInfoXlPage personalInfoXlPage;
 	public static AddressInfoPage addressInfoPage;
+	public static AddressInfoXlPage addressInfoXlPage;
 	public static EmergencyContactPage emergencyContactPage;
+	public static EmergencyContactXlPage emergencyContactXlPage;
 	public static TravelInfoPage travelInfoPage;
+	public static TravelInfoXlPage travelInfoXlPage;
 	public static ReviewApplicationPage reviewApplicationPage;
 	public static VisaPaymentPage visaPaymentPage;
 	
@@ -61,11 +71,16 @@ public class DriverInit extends TestBase {
 		homePage = new HomePage();
 		visaCategoriesPage = new VisaCategoriesPage();
 		signUpPage = new SignUpPage();
+		signUpXlPage = new SignUpXlPage();
 		personalInfoPage = new PersonalInfoPage();
+		personalInfoXlPage = new PersonalInfoXlPage();
         highAndConsulateLoginPage =new HighAndConsulateLoginPage();
 		addressInfoPage = new AddressInfoPage();
+		addressInfoXlPage = new AddressInfoXlPage();
 		emergencyContactPage = new EmergencyContactPage();
+		emergencyContactXlPage = new EmergencyContactXlPage();
 		travelInfoPage =new TravelInfoPage();
+		travelInfoXlPage =new TravelInfoXlPage();
 		uploadDocPage = new UploadDocPage();
 		reviewApplicationPage = new ReviewApplicationPage();
 		visaPaymentPage = new VisaPaymentPage();

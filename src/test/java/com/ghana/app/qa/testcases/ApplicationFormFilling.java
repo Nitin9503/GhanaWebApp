@@ -18,7 +18,7 @@ import com.ghana.app.qa.util.TestUtil;
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import static org.testng.Assert.assertEquals;
 
-public class ApplicationFormFilling extends DriverInit {
+public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	SoftAssert softAssertion = new SoftAssert();
 
 	public ApplicationFormFilling() throws IOException, InterruptedException {
@@ -27,10 +27,10 @@ public class ApplicationFormFilling extends DriverInit {
 	
 
 	// ---------------------SignUp page Test----------------------------------//
-	@Test(priority = 1)
+	@Test(priority = 6)
 	public void selectPassPortType() throws InterruptedException, IOException {
-		homePage.clickOnApplyVisa();
-		visaCategoriesPage.clickOnVisaType();
+		/*homePage.clickOnApplyVisa();
+		visaCategoriesPage.clickOnVisaType();*/
 		signUpPage.clickOnCheckBoxes();
 		signUpPage.verifyCheckBoxIsSelected();
 		System.out.println("selectedBoxOnSignUp2==>" + selectedBoxOnSignUp);
@@ -45,36 +45,36 @@ public class ApplicationFormFilling extends DriverInit {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 7)
 	public void selectNationalityTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectNationality();
 		Thread.sleep(2000);
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 8)
 	public void selectPortOfArrivalTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectPortOfArrival();
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 9)
 	public void passPhoneNoTest() throws InterruptedException, IOException {
 		signUpPage.passPhoneNo("9503152126");
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 10)
 	public void passEmailIdTest() throws InterruptedException, IOException {
 		signUpPage.passEmailId("arjunthaokar9@gmail.com");
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 11)
 	public void passReEmailIdTest() throws InterruptedException, IOException {
 		signUpPage.passReEmailId("arjunthaokar9@gmail.com");
 	}
-
-	@Test(priority = 7)
+	
+	@Test(priority = 12)
 	public void enterCaptchaFieldTest() throws InterruptedException,
 			IOException {
 		signUpPage.enterCaptchaField("AUX125P");
@@ -82,7 +82,7 @@ public class ApplicationFormFilling extends DriverInit {
 		// signUpPage.cancelBtn();
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 14)
 	public void clickOnSaveAndContinueBtnTest() throws InterruptedException,
 			IOException {
 		// signUpPage.continueBtn();
@@ -93,7 +93,7 @@ public class ApplicationFormFilling extends DriverInit {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 13)
 	public void selectDateOfBirthTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectDateOfBirth(birthDate);
@@ -177,7 +177,7 @@ public class ApplicationFormFilling extends DriverInit {
 		personalInfoPage.passPlaceOfBirth(birthPlace);
 
 	}
-
+	/*
 	@Test(priority = 21)
 	public void clickOnSaveAndContinueTest() throws InterruptedException,
 			IOException {
@@ -401,5 +401,5 @@ public class ApplicationFormFilling extends DriverInit {
 						"here visa Payment title not match hence it is not navigated to this page");
 		softAssertion.assertAll();  
 	}
-
+*/
 }

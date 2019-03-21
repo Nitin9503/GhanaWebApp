@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.ConsulatePageTest">
+      <class name="com.ghana.app.qa.pages.SignupXlPageTest">
         <methods>
-          <include name="getTextAddressInfoTest"/>
           <include name="setUp"/>
-          <include name="getTextEmergencyContactTest"/>
-          <include name="getTextTravelInfoTest"/>
+          <include name="selectPassPortType"/>
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.ConsulatePageTest -->
+      </class> <!-- com.ghana.app.qa.pages.SignupXlPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

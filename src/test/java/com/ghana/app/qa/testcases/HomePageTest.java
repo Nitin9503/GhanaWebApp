@@ -39,6 +39,7 @@ public class HomePageTest extends DriverInit {
 		System.out.println("visa category heading title "+visaCategoriesPage.visaCategorisText());
 		visaCategoriesPage.visaCategorisText();
 		Assert.assertEquals(visaCategoriesPage.visaCategorisText(), "VISA CATEGORIES");
+		Assert.assertEquals(visaCategoriesPage.validateVisaTypeTitle(), "Visa Types", "Visa category page title not match");
 
 	}
 

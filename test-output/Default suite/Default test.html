@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>90/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 18 16:22:33 IST 2019</td>
+<td>Started on:</td><td>Wed Mar 20 18:25:43 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>236 seconds (236099 ms)</td>
+<tr><td>Total time:</td><td>233 seconds (233418 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextAddressInfoTest()'><b>getTextAddressInfoTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextAddressInfoTest(ReviewApplicationPageTest.java:64)
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.selectPassPortType()'><b>selectPassPortType</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NAMET5&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49559}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.75, webStorageEnabled: true}
+Session ID: a23a6a8f972c6fff937e401f47c7e522
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.ghana.app.qa.xl.pages.AddressInfoXlPage.selectFormerNaitonality(AddressInfoXlPage.java:75)
+	at com.ghana.app.qa.pages.SignupXlPageTest.selectPassPortType(SignupXlPageTest.java:125)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -105,83 +126,40 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1119371910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1119371910'><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextAddressInfoTest(ReviewApplicationPageTest.java:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1689723487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689723487'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NAMET5&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\NIKHIL~1.SON\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49559}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.75, webStorageEnabled: true}
+Session ID: a23a6a8f972c6fff937e401f47c7e522
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.ghana.app.qa.xl.pages.AddressInfoXlPage.selectFormerNaitonality(AddressInfoXlPage.java:75)
+	at com.ghana.app.qa.pages.SignupXlPageTest.selectPassPortType(SignupXlPageTest.java:125)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextEmergencyContactTest()'><b>getTextEmergencyContactTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextEmergencyContactTest(ReviewApplicationPageTest.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1983948209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1983948209'><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextEmergencyContactTest(ReviewApplicationPageTest.java:73)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -200,72 +178,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextTravelInfoTest()'><b>getTextTravelInfoTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextTravelInfoTest(ReviewApplicationPageTest.java:167)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace932118570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace932118570'><pre>java.lang.AssertionError: The following asserts failed:
-	Provided and Get nationality are not matched expected [	India] but found [India]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextTravelInfoTest(ReviewApplicationPageTest.java:167)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>195</td>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -275,455 +189,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.PassSecondaryRefDetailsTest()'><b>PassSecondaryRefDetailsTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnApplicantInfor()'><b>clickOnApplicantInfor</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.clickOnVisaTypeTest()'><b>clickOnVisaTypeTest</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnApproveAndVerifyPopText()'><b>clickOnApproveAndVerifyPopText</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnApproveAndVerifyPopText1()'><b>clickOnApproveAndVerifyPopText1</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Approve And Verify Pop Text and then click on Cross, Verify that on which page navigated</td>
-<td></td>
-<td>6</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnBackButtonAndVerifyTitleAddressInformation()'><b>clickOnBackButtonAndVerifyTitleAddressInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Back Button From Document Verification Page And Verify Title of Travel Information</td>
-<td></td>
-<td>3</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnBackButtonAndVerifyTitleApplicantInformation()'><b>clickOnBackButtonAndVerifyTitleApplicantInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Back Button From Document Verification Page And Verify Title of Travel Information</td>
-<td></td>
-<td>3</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnBackButtonAndVerifyTitleTravelInformation()'><b>clickOnBackButtonAndVerifyTitleTravelInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Back Button From Document Verification Page And Verify Title of Travel Information</td>
-<td></td>
-<td>3</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnCintinueBtnTest()'><b>clickOnCintinueBtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnConfirmedAirTicketWindow()'><b>clickOnConfirmedAirTicketWindow</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Confirm Air Ticket and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page  </td>
-<td></td>
-<td>11</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnConfirmedAirTicketWindowClose()'><b>clickOnConfirmedAirTicketWindowClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Confirm Air Ticket and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
-<td></td>
-<td>6</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnContinueBtnTest()'><b>clickOnContinueBtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnContinuebuttonTest()'><b>clickOnContinuebuttonTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnCoveringLetter()'><b>clickOnCoveringLetter</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Covering Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>7</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnCoveringLetterClose()'><b>clickOnCoveringLetterClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Covering Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.getVisaCategoriesText()'><b>getVisaCategoriesText</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnGenderTest()'><b>clickOnGenderTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnIdProofReference()'><b>clickOnIdProofReference</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Id Proof Reference and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>9</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnIdProofReferenceClose()'><b>clickOnIdProofReferenceClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
-<td></td>
-<td>4</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnInterviewScheduleAndClose()'><b>clickOnInterviewScheduleAndClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Schedule Interview And Verify Title of Set Invterview pop window and Close</td>
-<td></td>
-<td>9</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnInterviewScheduleAndcancel()'><b>clickOnInterviewScheduleAndcancel</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Schedule Interview And Verify Title of Set Invterview pop window and Cancel</td>
-<td></td>
-<td>9</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnIsApplicantPossessionRoundTicketTest()'><b>clickOnIsApplicantPossessionRoundTicketTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnNewApplication()'><b>clickOnNewApplication</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button</td>
-<td></td>
-<td>1</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnNextButtonAndVerifyTitleAddressInformation()'><b>clickOnNextButtonAndVerifyTitleAddressInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnNextButtonAndVerifyTitleDocumentVerification()'><b>clickOnNextButtonAndVerifyTitleDocumentVerification</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnNextButtonAndVerifyTitleTravelInformation()'><b>clickOnNextButtonAndVerifyTitleTravelInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnOnPhoto()'><b>clickOnOnPhoto</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Photo and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>7</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnOnPhotoClose()'><b>clickOnOnPhotoClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Photo and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.validateHomePageTitle()'><b>validateHomePageTitle</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnOriginalInvitationLetter()'><b>clickOnOriginalInvitationLetter</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Original Invitation Letter and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>7</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnOriginalInvitationLetterClose()'><b>clickOnOriginalInvitationLetterClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Original Invitation Letter and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.verifyApplyVisaClickTest()'><b>verifyApplyVisaClickTest</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 <tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnPhotoOfDraft()'><b>clickOnPhotoOfDraft</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
+<td title='com.ghana.app.qa.pages.SignupXlPageTest.verifycheckboxes()'><b>verifycheckboxes</b><br>Test class: com.ghana.app.qa.pages.SignupXlPageTest<br>Test method: here vrifying select and unselct checkboxes wheather it is select and unselect or not </td>
 <td></td>
-<td>9</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnPhotoOfDraftClose()'><b>clickOnPhotoOfDraftClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
-<td></td>
-<td>4</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnProofOfTransitVisa()'><b>clickOnProofOfTransitVisa</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Proof Of Transit Visa and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>7</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnProofOfTransitVisaClose()'><b>clickOnProofOfTransitVisaClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Proof Of Transit Visa and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
-<td></td>
-<td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnRejectAndVerifyPopText()'><b>clickOnRejectAndVerifyPopText</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Reject And Verify Pop Text and then click on Cancel, Verify that on which page navigated</td>
-<td></td>
-<td>3</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnRejectAndVerifyPopText1()'><b>clickOnRejectAndVerifyPopText1</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Reject And Verify Pop Text and then click on Cross, Verify that on which page navigated</td>
-<td></td>
-<td>6</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnSaveAndContinueBtnTest()'><b>clickOnSaveAndContinueBtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnSaveAndContinueTest()'><b>clickOnSaveAndContinueTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnTravelByTest()'><b>clickOnTravelByTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnYellowFevervaccination()'><b>clickOnYellowFevervaccination</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Yellow Fever vaccination and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page</td>
-<td></td>
-<td>7</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickOnYellowFevervaccinationClose()'><b>clickOnYellowFevervaccinationClose</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: click On Yellow Fever vaccination and verified window is opened or Not and then close window using close button and navigate to Document Verification page</td>
-<td></td>
-<td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickPurpose_of_journeyTest()'><b>clickPurpose_of_journeyTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clickSaveAndContinuebtnTest()'><b>clickSaveAndContinuebtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.clicksaveAndContiBtnTest()'><b>clicksaveAndContiBtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.emergencyContactDetailsTest()'><b>emergencyContactDetailsTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.emergencyProfessionDetailsTest()'><b>emergencyProfessionDetailsTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.enterCaptchaFieldTest()'><b>enterCaptchaFieldTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.filladdressInfoTest()'><b>filladdressInfoTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getApplicationIdTest()'><b>getApplicationIdTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getApplicationPageTitleTest()'><b>getApplicationPageTitleTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextFromAddressInformation()'><b>getTextFromAddressInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Here we are getting text from Address Information and comparing with Applicant filed data</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextFromApplicantInformation()'><b>getTextFromApplicantInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Here we are getting text from Applicant Information and comparing with Applicant filed data</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextFromTravelInformation()'><b>getTextFromTravelInformation</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Here we are getting text from Travel Information and comparing with Applicant filed data</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getTextPersonalInfoTest()'><b>getTextPersonalInfoTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.getUploadDocTest()'><b>getUploadDocTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.loginIntoConsulate()'><b>loginIntoConsulate</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: This test will verify login functinality with pass valid creadentials and click on Login button</td>
-<td></td>
-<td>6</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passComment()'><b>passComment</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passDateAndTimeInFiled()'><b>passDateAndTimeInFiled</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Click On Schedule Interview And Verify Title of Set Invterview pop window and Pass Date And Time</td>
-<td></td>
-<td>10</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passDateOfDepartureTest()'><b>passDateOfDepartureTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passEmailIdTest()'><b>passEmailIdTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passFirstNameTest()'><b>passFirstNameTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passLastNameTest()'><b>passLastNameTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passPassportNumberTest()'><b>passPassportNumberTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passPhoneNoTest()'><b>passPhoneNoTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passPlaceOfBirthTest()'><b>passPlaceOfBirthTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passPrimaryRefFirstnameTest()'><b>passPrimaryRefFirstnameTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passPrimaryRefLastnameTest()'><b>passPrimaryRefLastnameTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passReEmailIdTest()'><b>passReEmailIdTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.passTicketNumberTest()'><b>passTicketNumberTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_Primary_ref_addressTest()'><b>pass_Primary_ref_addressTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_primary_ref_cityTest()'><b>pass_primary_ref_cityTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_primary_ref_countryTest()'><b>pass_primary_ref_countryTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_primary_ref_phone_numberTest()'><b>pass_primary_ref_phone_numberTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_primary_ref_pincodeTest()'><b>pass_primary_ref_pincodeTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.pass_primary_ref_stateTest()'><b>pass_primary_ref_stateTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectAllCheckBoxAndVerify()'><b>selectAllCheckBoxAndVerify</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>4</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectDateOfBirthTest()'><b>selectDateOfBirthTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectFormerNationalityTest()'><b>selectFormerNationalityTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectNationalityTest()'><b>selectNationalityTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>2</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectOneByOneCheckBoxAndVerify()'><b>selectOneByOneCheckBoxAndVerify</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>3</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectPassExpiryDateTest()'><b>selectPassExpiryDateTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectPassIssueDateTest()'><b>selectPassIssueDateTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectPassPortType()'><b>selectPassPortType</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>9</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectPortOfArrivalTest()'><b>selectPortOfArrivalTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectRelationTest()'><b>selectRelationTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectVisaFeesTest()'><b>selectVisaFeesTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.selectVisaLocationTest()'><b>selectVisaLocationTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.verfiyTitleOfCNAddressInfoPage()'><b>verfiyTitleOfCNAddressInfoPage</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.verfiyTitleOfCNDocumentVerificatonPage()'><b>verfiyTitleOfCNDocumentVerificatonPage</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.verfiyTitleOfCNTravelInfoPage()'><b>verfiyTitleOfCNTravelInfoPage</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.verifyClickOnSubmitBtnTest()'><b>verifyClickOnSubmitBtnTest</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: Here verifying confirmation message and click on ok btn </td>
-<td></td>
-<td>6</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
-<tr>
-<td title='com.ghana.app.qa.testcases.ConsulatePageTest.verifyTitleOfConsulateTitle()'><b>verifyTitleOfConsulateTitle</b><br>Test class: com.ghana.app.qa.testcases.ConsulatePageTest<br>Test method: This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button</td>
-<td></td>
-<td>0</td>
-<td>com.ghana.app.qa.testcases.ConsulatePageTest@2de8284b</td></tr>
+<td>8</td>
+<td>com.ghana.app.qa.pages.SignupXlPageTest@289d1c02</td></tr>
 </table><p>
 </body>
 </html>
