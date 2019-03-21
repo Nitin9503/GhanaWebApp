@@ -29,8 +29,8 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	// ---------------------SignUp page Test----------------------------------//
 	@Test(priority = 6)
 	public void selectPassPortType() throws InterruptedException, IOException {
-		/*homePage.clickOnApplyVisa();
-		visaCategoriesPage.clickOnVisaType();*/
+		//homePage.clickOnApplyVisa();
+		//visaCategoriesPage.clickOnVisaType();
 		signUpPage.clickOnCheckBoxes();
 		signUpPage.verifyCheckBoxIsSelected();
 		System.out.println("selectedBoxOnSignUp2==>" + selectedBoxOnSignUp);
@@ -81,7 +81,13 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		// signUpPage.continueBtn();
 		// signUpPage.cancelBtn();
 	}
+	@Test(priority = 13)
+	public void selectDateOfBirthTest() throws InterruptedException,
+			IOException {
+		signUpPage.selectDateOfBirth(birthDate);
+		signUpPage.continueBtn();
 
+	}
 	@Test(priority = 14)
 	public void clickOnSaveAndContinueBtnTest() throws InterruptedException,
 			IOException {
@@ -93,17 +99,11 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		softAssertion.assertAll();
 	}
 
-	@Test(priority = 13)
-	public void selectDateOfBirthTest() throws InterruptedException,
-			IOException {
-		signUpPage.selectDateOfBirth(birthDate);
-		signUpPage.continueBtn();
 
-	}
 
 	// ----------------------Personal info page
 	// Test----------------------------------//
-	@Test(priority = 10)
+	@Test(priority = 15)
 	public void getApplicationPageTitleTest() throws InterruptedException {
 		Thread.sleep(2000);
 		Assert.assertEquals(personalInfoPage.getApplicantPageTitle(),
@@ -111,45 +111,45 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		softAssertion.assertAll();  
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 16)
 	public void getApplicationIdTest() throws InterruptedException {
 		String st = personalInfoPage.getApplicationId();
 		System.out.println(st);
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 17)
 	public void selectVisaFeesTest() throws InterruptedException, IOException {
 		personalInfoPage.SelectvisaFees();
 
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 18)
 	public void selectVisaLocationTest() throws InterruptedException,
 			IOException {
 		personalInfoPage.SelectvisaLocation();
 
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 19)
 	public void passFirstNameTest() throws InterruptedException, IOException {
 		personalInfoPage.passFirstName(firstName);
 
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 20)
 	public void passLastNameTest() throws InterruptedException, IOException {
 		personalInfoPage.passLastName(lastName);
 
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 21)
 	public void passPassportNumberTest() throws InterruptedException,
 			IOException {
 		personalInfoPage.passPassportNumber(passportNumber);
 
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 22)
 	public void clickOnGenderTest() throws InterruptedException, IOException {
 		personalInfoPage.clickOnGender();
 		personalInfoPage.verifiedGenderSelected();
@@ -158,27 +158,27 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		softAssertion.assertAll();  
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 23)
 	public void selectPassIssueDateTest() throws InterruptedException,
 			IOException {
 		personalInfoPage.selectPassIssueDate(passportIssuedDate);
 
 	}
 
-	@Test(priority = 19)
+	@Test(priority = 24)
 	public void selectPassExpiryDateTest() throws InterruptedException,
 			IOException {
 		personalInfoPage.selectPassExpiryDate(passportExpiryDate);
 
 	}
 
-	@Test(priority = 20)
+	@Test(priority = 25)
 	public void passPlaceOfBirthTest() throws InterruptedException, IOException {
 		personalInfoPage.passPlaceOfBirth(birthPlace);
 
 	}
-	/*
-	@Test(priority = 21)
+
+	@Test(priority = 26)
 	public void clickOnSaveAndContinueTest() throws InterruptedException,
 			IOException {
 		personalInfoPage.clickOnSaveAndContinue();
@@ -193,7 +193,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	// ----------------------Address Info page
 	// Test----------------------------------//
-	@Test(priority = 22)
+	@Test(priority = 27)
 	public void selectFormerNationalityTest() throws InterruptedException,
 			IOException {
 		assertEquals(addressInfoPage.getTextAddressInfoPageTitle(),
@@ -204,14 +204,14 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		softAssertion.assertAll();  
 	}
 
-	@Test(priority = 23)
+	@Test(priority = 28)
 	public void filladdressInfoTest() throws InterruptedException, IOException {
 		addressInfoPage.PassAddressInfofield(FlatNo, StreetName, Landmark,
 				pinCode, cityName, stateName, countryName);
 
 	}
 
-	@Test(priority = 24)
+	@Test(priority = 29)
 	public void clickSaveAndContinuebtnTest() throws InterruptedException,
 			IOException {
 		addressInfoPage.clickSaveAndContinuebtn();
@@ -224,7 +224,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	// ----------------------Emergency contact page
 	// Test----------------------------------//
-	@Test(priority = 25)
+	@Test(priority = 30)
 	public void emergencyContactDetailsTest() throws InterruptedException,
 			IOException {
 		emergencyContactPage.emergencyContactDetails(emerContactName,
@@ -232,13 +232,13 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	}
 
-	@Test(priority = 26)
+	@Test(priority = 31)
 	public void selectRelationTest() throws InterruptedException, IOException {
 		emergencyContactPage.selectRelation();
 
 	}
 
-	@Test(priority = 27)
+	@Test(priority = 32)
 	public void emergencyProfessionDetailsTest() throws InterruptedException,
 			IOException {
 		emergencyContactPage.emergencyProfessionDetails(profession, employer,
@@ -247,7 +247,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	}
 
-	@Test(priority = 28)
+	@Test(priority = 33)
 	public void clickOnCintinueBtnTest() throws InterruptedException,
 			IOException {
 		emergencyContactPage.clickEmeContinueBtn();
@@ -259,89 +259,89 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	// ----------------------Travel Info page
 	// Test----------------------------------//
-	@Test(priority = 29)
+	@Test(priority = 34)
 	public void clickOnIsApplicantPossessionRoundTicketTest()
 			throws InterruptedException, IOException {
 		travelInfoPage.clickOnIsApplicantPossessionRoundTicket();
 
 	}
 
-	@Test(priority = 30)
+	@Test(priority = 35)
 	public void passDateOfDepartureTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.passDateOfDeparture(dateOfDeparture);
 		travelInfoPage.clickOnContinuebutton();
 	}
 
-	@Test(priority = 31)
+	@Test(priority = 36)
 	public void passTicketNumberTest() throws InterruptedException, IOException {
 		travelInfoPage.passTicketNumber(ticketNumber);
 
 	}
 
-	@Test(priority = 32)
+	@Test(priority = 37)
 	public void clickOnTravelByTest() throws InterruptedException, IOException {
 		travelInfoPage.clickOnTravelBy();
 
 	}
 
-	@Test(priority = 33)
+	@Test(priority = 38)
 	public void clickPurpose_of_journeyTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.clickPurpose_of_journey();
 
 	}
 
-	@Test(priority = 34)
+	@Test(priority = 39)
 	public void passPrimaryRefFirstnameTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.passPrimaryRefFirstname(priFirstName);
 
 	}
 
-	@Test(priority = 35)
+	@Test(priority = 40)
 	public void passPrimaryRefLastnameTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.passPrimaryRefLastname(priLastName);
 
 	}
 
-	@Test(priority = 36)
+	@Test(priority = 41)
 	public void pass_Primary_ref_addressTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.pass_Primary_ref_address(primaryAddress);
 
 	}
 
-	@Test(priority = 37)
+	@Test(priority = 42)
 	public void pass_primary_ref_pincodeTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.pass_primary_ref_pincode(primaryPinCode);
 
 	}
 
-	@Test(priority = 38)
+	@Test(priority = 43)
 	public void pass_primary_ref_cityTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.pass_primary_ref_city(primaryCity);
 
 	}
 
-	@Test(priority = 39)
+	@Test(priority = 44)
 	public void pass_primary_ref_stateTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.pass_primary_ref_state(primaryState);
 
 	}
 
-	@Test(priority = 40)
+	@Test(priority = 45)
 	public void pass_primary_ref_countryTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.pass_primary_ref_country(primaryCountry);
 
 	}
 
-	@Test(priority = 41)
+	@Test(priority = 46)
 	public void pass_primary_ref_phone_numberTest()
 			throws InterruptedException, IOException {
 
@@ -349,7 +349,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	}
 
-	@Test(priority = 42)
+	@Test(priority = 47)
 	public void PassSecondaryRefDetailsTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.PassSecondaryRefDetails(secFirstName, secLastName,
@@ -358,7 +358,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	}
 
-	@Test(priority = 43)
+	@Test(priority = 48)
 	public void clickOnContinuebuttonTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.clickOnByPhoneCheckbox();
@@ -384,14 +384,14 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	// ----------------------Upload Doc page
 	// Test----------------------------------//
-	@Test(priority = 44)
+	@Test(priority = 49)
 	public void getUploadDocTest() throws InterruptedException, IOException {
 
 		uploadDocPage.getUploadDoc();
 
 	}
 
-	@Test(priority = 45)
+	@Test(priority = 50)
 		public void clickOnContinuebuttonTest1() throws	IOException {
 
 		uploadDocPage.clicksaveAndContiBtn();
@@ -401,5 +401,5 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 						"here visa Payment title not match hence it is not navigated to this page");
 		softAssertion.assertAll();  
 	}
-*/
+
 }

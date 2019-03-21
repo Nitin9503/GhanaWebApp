@@ -30,14 +30,14 @@ public class VisaCategoriesPageTest extends HomePageTest {
 	}*/
 	@Test(priority=4)
 	public void getVisaCategoriesText() throws IOException, InterruptedException{
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		System.out.println("visa Page Title is  "+visaCategoriesPage.visaCategorisText());
 		Assert.assertEquals(visaCategoriesPage.visaCategorisText(), "VISA CATEGORIES", "Visa category text title not match");
 		
 	}
 	@Test(priority=5)
 	public void clickOnVisaTypeTest() throws IOException, InterruptedException{
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		//TestUtil.scrollUpAtEndOFPage();
 		visaCategoriesPage.clickOnVisaType();
 		

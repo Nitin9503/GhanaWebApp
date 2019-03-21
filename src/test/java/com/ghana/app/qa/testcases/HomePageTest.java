@@ -35,7 +35,7 @@ public class HomePageTest extends DriverInit {
 	public void verifyApplyVisaClickTest() throws IOException,
 			InterruptedException {
 		homePage.clickOnApplyVisa();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		System.out.println("visa category heading title "+visaCategoriesPage.visaCategorisText());
 		visaCategoriesPage.visaCategorisText();
 		Assert.assertEquals(visaCategoriesPage.visaCategorisText(), "VISA CATEGORIES");
