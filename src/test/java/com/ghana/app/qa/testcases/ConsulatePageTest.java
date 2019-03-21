@@ -31,20 +31,22 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		TestUtil.toOpenNewTab();
 		TestUtil.toSwitchBetweenWindows(1);
 		driver.get(prop.getProperty("HCDLoginURL"));	
-		highAndConsulateLoginPage.passUserName("CN1234");
+		highAndConsulateLoginPage.passUserName("AM1234");
 		highAndConsulateLoginPage.passPassword("1234");
 		highAndConsulateLoginPage.clickOnLoginButton();
 	}
 
 	@Test(priority = 51 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
 	public void verifyTitleOfConsulateTitle() {
+		System.out.println("HI1");
 		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
 	}  
 
 	@Test(priority = 52 ,description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button" )
-	public void clickOnNewApplication() {
+	public void a() {
+		System.out.println("HI2");
 		consulatedashBoardPage.clickOnNewApplication();
 		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
 				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
@@ -52,7 +54,8 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	}
 
 	@Test(priority = 52)
-	public void verfiyTitleOfCNAddressInfoPage() throws InterruptedException {
+	public void b() throws InterruptedException {
+		System.out.println("HI3");
 		applicantDashBoardPage.clickOnAddressInfor();
 		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
 				"We are not navigate to CN Address Info page upon clicking on Address Information from Applicant Dashboard");
@@ -553,4 +556,24 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		applicantDashBoardPage.clickOnNextButton();
 		TestUtil.toSwitchBetweenWindows(0);
 	}
+	@Test(priority = 92)
+	public void clickOnNextButton() throws InterruptedException {
+		applicantDashBoardPage.clickOnNextButton();
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
+				"We are not navigate to Document Verification page upon clicking on Next Button from Travel Information");
+		cNDocumentVerificaton.selectAllCheckBoxes();
+		softAssertion.assertAll();
+	}
+	
+	@Test(priority = 93, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	public void clickOnApprove() throws InterruptedException {
+		cNDocumentVerificaton.clickOnApprove();
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
+		cNDocumentVerificaton.clickOnConfirmFromApprove();
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		softAssertion.assertAll();
+	}
+	
 }

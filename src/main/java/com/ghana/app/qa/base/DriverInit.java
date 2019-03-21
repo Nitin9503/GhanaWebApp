@@ -8,6 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import com.ghana.app.qa.pages.EmergencyContactPage;
+import com.ghana.app.qa.pages.HCDApplicantInfoPage;
+import com.ghana.app.qa.pages.HCDDashboardPage;
+import com.ghana.app.qa.pages.HCDDocumentVerificationPage;
+import com.ghana.app.qa.pages.HCDGeneralVerificationPage;
+import com.ghana.app.qa.pages.HCDInterviewSchedule;
 import com.ghana.app.qa.pages.ConsulatedashBoardPage;
 import com.ghana.app.qa.pages.HighAndConsulateLoginPage;
 import com.ghana.app.qa.pages.AddressInfoPage;
@@ -51,9 +56,9 @@ public class DriverInit extends TestBase {
 	public static TravelInfoXlPage travelInfoXlPage;
 	public static ReviewApplicationPage reviewApplicationPage;
 	public static VisaPaymentPage visaPaymentPage;
-	
+	public static UploadDocPage uploadDocPage;
 
-	// Consulate and HighCommission side
+	// Consulate side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
 	public static ConsulatedashBoardPage consulatedashBoardPage;
 	public static ApplicantDashBoardPage applicantDashBoardPage;
@@ -61,7 +66,15 @@ public class DriverInit extends TestBase {
 	public static CNTravelInfo cNTravelInfo;
 	public static CNDocumentVerificaton cNDocumentVerificaton;
 	public static CNInterviewSchedule cNInterviewSchedule;
-	public static UploadDocPage uploadDocPage;
+
+	//HighCommission side
+	public static HCDDashboardPage hCDDashboardPage;	
+	public static HCDGeneralVerificationPage hCDGeneralVerificationPage;
+	public static HCDApplicantInfoPage hCDApplicantInfoPage;
+	public static HCDDocumentVerificationPage hCDDocumentVerificationPage;
+	public static HCDInterviewSchedule hCDInterviewSchedule;
+	
+	
 
 
 	@BeforeClass
@@ -92,8 +105,14 @@ public class DriverInit extends TestBase {
 		cNTravelInfo = new CNTravelInfo();
 		cNDocumentVerificaton = new CNDocumentVerificaton();
 		cNInterviewSchedule = new CNInterviewSchedule();
-
 		
+		//High Commission
+		hCDDashboardPage = new HCDDashboardPage();
+		hCDGeneralVerificationPage =new HCDGeneralVerificationPage();
+		
+		hCDApplicantInfoPage = new HCDApplicantInfoPage();
+		hCDDocumentVerificationPage = new HCDDocumentVerificationPage();
+		hCDInterviewSchedule = new HCDInterviewSchedule(); 
 	}
 	
 
