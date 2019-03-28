@@ -93,16 +93,16 @@ public class HCDDocumentVerificationPage extends TestBase {
 	@FindBy(xpath = "//h4[contains(text(),'Covering letter')]")
 	WebElement titleOfCoveringLetterWindow;
 
-	@FindBy(xpath = "//h4[contains(text(),'One photocopy of draft')]")
+	@FindBy(xpath = "//h4[contains(text(),'Photocopy of draft')]")
 	WebElement titleOfPhotocopyOfDraftWindow;
 
-	@FindBy(xpath = "//h4[contains(text(),'ID proof of reference in Ghana')]")
+	@FindBy(xpath = "//h4[contains(text(),'ID proof of reference')]")
 	WebElement titleOfIDProofOfReferenceWindow;
 
 	@FindBy(xpath = "//h4[contains(text(),'Original invitation letter')]")
 	WebElement titleOfOriginalInvitationLetterWindow;
 
-	@FindBy(xpath = "//h4[contains(text(),'Proof of transit valid visa for subsequent destina')]")
+	@FindBy(xpath = "//h4[contains(text(),'Proof of transit valid visa')]")
 	WebElement titleOfProofOfTransitValidVisaWindow;
 
 	@FindBy(xpath = "//div[@class='modal fade show']//button[@type='button'][contains(text(),'×')]")
@@ -390,8 +390,10 @@ public class HCDDocumentVerificationPage extends TestBase {
 
 	}
 
-	public void clickOnConfirmFromApprove() {
-		confirmFromApprove.click();
+	public void clickOnConfirmFromApprove() throws InterruptedException {
+		Thread.sleep(3000);
+		TestUtil.clickOnElement(confirmFromApprove);
+	
 
 	}
 

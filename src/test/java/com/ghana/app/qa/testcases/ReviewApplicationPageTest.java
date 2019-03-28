@@ -19,7 +19,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 	
 	@Test(priority = 51)
 	public void getTextPersonalInfoTest() throws InterruptedException, IOException {
-		
+		System.out.println( "applicationID==>Revie1" +applicationID);
 		//------Personal info
         softAssertion.assertEquals(reviewApplicationPage.getTextFromfirstLastName(), (firstName+" "+lastName), "Provided and Get firstName are not matched");
 		//System.out.println(reviewApplicationPage.getTextFromfirstLastName() +" = "+(firstName+" "+lastName));
@@ -170,6 +170,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 	@Test(priority = 55)
 	public void clickOnContinueBtnTest() throws InterruptedException, IOException {
 		reviewApplicationPage.clickOnContinuebutton();
+		System.out.println( "applicationID==>Revie2" +applicationID);
 	}
 	
 }

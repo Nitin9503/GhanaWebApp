@@ -61,17 +61,17 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	@Test(priority = 9)
 	public void passPhoneNoTest() throws InterruptedException, IOException {
-		signUpPage.passPhoneNo("9503152126");
+		signUpPage.passPhoneNo(phoneNumber);
 	}
 
 	@Test(priority = 10)
 	public void passEmailIdTest() throws InterruptedException, IOException {
-		signUpPage.passEmailId("arjunthaokar9@gmail.com");
+		signUpPage.passEmailId(emailId);
 	}
 
 	@Test(priority = 11)
 	public void passReEmailIdTest() throws InterruptedException, IOException {
-		signUpPage.passReEmailId("arjunthaokar9@gmail.com");
+		signUpPage.passReEmailId(emailId);
 	}
 	
 	@Test(priority = 12)
@@ -113,8 +113,8 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 
 	@Test(priority = 16)
 	public void getApplicationIdTest() throws InterruptedException {
-		String st = personalInfoPage.getApplicationId();
-		System.out.println(st);
+		applicationID = personalInfoPage.getApplicationId();
+		System.out.println(applicationID);
 	}
 
 	@Test(priority = 17)
@@ -401,6 +401,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 						"Review Application",
 						"here visa Payment title not match hence it is not navigated to this page");
 		softAssertion.assertAll();  
+		System.out.println( "applicationID==>Applicationform filling" +applicationID);
 	}
 
 }

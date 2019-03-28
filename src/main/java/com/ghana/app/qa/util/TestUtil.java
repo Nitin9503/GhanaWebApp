@@ -23,7 +23,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import com.ghana.app.qa.base.TestBase;
 import com.google.common.base.Function;
 
@@ -64,10 +64,17 @@ public class TestUtil extends TestBase  {
 		js.executeScript("window.open()");
 
 	}
+	public static void toCloseNewTab() {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.close()");
+
+	}
 	public static void toSwitchBetweenWindows(int i){
 		
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(i));
+
 		
 	}
 	
@@ -102,6 +109,21 @@ public class TestUtil extends TestBase  {
 		element.clear();
 		element.sendKeys(value);
 	}
+	public static void clickOnElement() throws InterruptedException{
+		System.out.println( "applicationID==>" +applicationID);
+		Thread.sleep(5000);
+		WebElement ele = driver.findElement(By.xpath("//strong[contains(text(),'" +applicationID+ "')]"));
+		System.out.println( ele.getText());
+		ele.click(); // what ever  the action needed .
+	}
+	public static String getTextFromApplicationID() throws InterruptedException{
+		System.out.println( "applicationID==>" +applicationID);
+		Thread.sleep(5000);
+		WebElement ele = driver.findElement(By.xpath("//strong[contains(text(),'" +applicationID+ "')]"));
+		return ele.getText();
+
+	}
+	
 
 	public static void selectValuefromDropDown(WebElement element, int value) {
 		Select sel = new Select(element);

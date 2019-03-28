@@ -1,38 +1,5 @@
 package com.ghana.app.qa.testcases;
-import static com.ghana.app.qa.testdata.ConstantVariable.FlatNo;
-import static com.ghana.app.qa.testdata.ConstantVariable.Landmark;
-import static com.ghana.app.qa.testdata.ConstantVariable.StreetName;
-import static com.ghana.app.qa.testdata.ConstantVariable.birthDate;
-import static com.ghana.app.qa.testdata.ConstantVariable.birthPlace;
-import static com.ghana.app.qa.testdata.ConstantVariable.cityName;
-import static com.ghana.app.qa.testdata.ConstantVariable.countryName;
-import static com.ghana.app.qa.testdata.ConstantVariable.emailId;
-import static com.ghana.app.qa.testdata.ConstantVariable.firstName;
-import static com.ghana.app.qa.testdata.ConstantVariable.lastName;
-import static com.ghana.app.qa.testdata.ConstantVariable.passportExpiryDate;
-import static com.ghana.app.qa.testdata.ConstantVariable.passportIssuedDate;
-import static com.ghana.app.qa.testdata.ConstantVariable.passportNumber;
-import static com.ghana.app.qa.testdata.ConstantVariable.phoneNumber;
-import static com.ghana.app.qa.testdata.ConstantVariable.pinCode;
-import static com.ghana.app.qa.testdata.ConstantVariable.priFirstName;
-import static com.ghana.app.qa.testdata.ConstantVariable.priLastName;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryAddress;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryCity;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryCountry;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryPinCode;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryRefrencePhoneNo;
-import static com.ghana.app.qa.testdata.ConstantVariable.primaryState;
-import static com.ghana.app.qa.testdata.ConstantVariable.secFirstName;
-import static com.ghana.app.qa.testdata.ConstantVariable.secLastName;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryAddress;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryCity;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryCountry;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryPinCode;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryRefrencePhoneNo;
-import static com.ghana.app.qa.testdata.ConstantVariable.secondaryState;
-import static com.ghana.app.qa.testdata.ConstantVariable.selectedBoxDocAll;
-import static com.ghana.app.qa.testdata.ConstantVariable.selectedCheckBoxOnDocSingle;
-import static com.ghana.app.qa.testdata.ConstantVariable.stateName;
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
 import static com.ghana.app.qa.util.TestUtil.prop;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -60,7 +27,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		Thread.sleep(5000);
 		
 		TestUtil.toOpenNewTab();
-		TestUtil.toSwitchBetweenWindows(2);	
+		TestUtil.toSwitchBetweenWindows(1);	
 		driver.get(prop.getProperty("HCDLoginURL"));
 		highAndConsulateLoginPage.passUserName("HCD1234");
 		highAndConsulateLoginPage.passPassword("1234");
@@ -76,18 +43,19 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertAll();
 	}
 	@Test(priority = 104 ,description = "This test will verify we navigated to HCDGeneral Verification page upon cliclking on New Application" )
-	public void clickOnNewApplication() {
-		hCDDashboardPage.clickOnNewApplication();
+	public void clickOnNewApplication() throws InterruptedException {
+		//hCDDashboardPage.clickOnNewApplication();
+		TestUtil.clickOnElement();
 		softAssertion.assertEquals(hCDDashboardPage.titleofHCDDashBoard(), "HCDGeneral Verification",
 				"We are not navigate to HCDGeneral Verification page upon clicking on New Application from HCD Dashboard");
 		softAssertion.assertAll();
 	}
 	@Test(priority =105)
 	public void passComment() {
-		hCDDocumentVerificationPage.passComment("Verifying your Application");
+		hCDDocumentVerificationPage.passComment("Application is verified and Approved by HCD");
 		hCDDocumentVerificationPage.addCooment();
 		hCDDocumentVerificationPage.getTextFromAddedComment();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextFromAddedComment(), "Verifying your Application",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextFromAddedComment(), "Application is verified and Approved by HCD",
 				"Latest passed comment is not matched after getting text from comment section");
 		softAssertion.assertAll();
 	}
@@ -174,7 +142,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnCoveringLetterClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnCoveringLetter();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfCoveringLetterWindow(), "Covering letter/introduction Letter",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfCoveringLetterWindow(), "Covering letter",
 				"Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)");
 		hCDDocumentVerificationPage.closeButtonToCloseWindow4();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextDocumentVerification(), "Applicant Information",
@@ -187,7 +155,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnCoveringLetter() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnCoveringLetter();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfCoveringLetterWindow(), "Covering letter/introduction Letter",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfCoveringLetterWindow(), "Covering letter",
 				"Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)");
 		hCDDocumentVerificationPage.crossButtonToCloseWindow();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextDocumentVerification(), "Applicant Information",
@@ -200,7 +168,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnPhotoOfDraftClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhotoOfDraft();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfPhotocopyOfDraftWindow(), "One photocopy of draft",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
 				"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.closeButtonToCloseWindow5();
@@ -213,7 +181,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnPhotoOfDraft() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnPhotoOfDraft();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfPhotocopyOfDraftWindow(), "One photocopy of draft",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
 				"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.crossButtonToCloseWindow();
@@ -226,7 +194,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnIdProofReferenceClose() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnIdProofReference();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfIDProofOfReferenceWindow(), "ID proof of reference in Ghana",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfIDProofOfReferenceWindow(), "ID proof of reference",
 				"ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)");
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.closeButtonToCloseWindow6();
@@ -239,7 +207,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	public void clickOnIdProofReference() throws InterruptedException {
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnIdProofReference();
-		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfIDProofOfReferenceWindow(), "ID proof of reference in Ghana",
+		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfIDProofOfReferenceWindow(), "ID proof of reference",
 				"ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)");
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.crossButtonToCloseWindow();
@@ -279,7 +247,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnProofOfTransitVisa();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfProofOfTransitValidVisaWindow(),
-				"Proof of transit valid visa for subsequent destination",
+				"Proof of transit valid visa",
 				"Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)");
 		hCDDocumentVerificationPage.closeButtonToCloseWindow8();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextDocumentVerification(), "Applicant Information",
@@ -292,7 +260,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		Thread.sleep(2000);
 		hCDDocumentVerificationPage.clickOnProofOfTransitVisa();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.titleOfProofOfTransitValidVisaWindow(),
-				"Proof of transit valid visa for subsequent destination",
+				"Proof of transit valid visa",
 				"Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)");
 		hCDDocumentVerificationPage.crossButtonToCloseWindow();
 		softAssertion.assertEquals(hCDDocumentVerificationPage.getTextDocumentVerification(), "Applicant Information",
@@ -444,8 +412,13 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	
 	@Test(priority = 134, description = "Here we are getting text from Applicant Information and comparing with Applicant filed data")
 	public void getTextFromApplicantInformation() throws InterruptedException {
-		hCDGeneralVerificationPage.clickOnApplicantInfor();
-		softAssertion.assertEquals(hCDApplicantInfoPage.getTextFullName(), (firstName + " " + lastName),
+		Thread.sleep(2000);
+		hCDDocumentVerificationPage.previousButtonFromDocument();
+		String value  = hCDApplicantInfoPage.getTextFullName().trim();
+	System.out.println("valuevaluevalue=>" +value);
+		System.out.println("Text from HCD==>"  +hCDApplicantInfoPage.getTextFullName());
+		System.out.println("Text From Applicant++" +firstName + " " +lastName);
+		softAssertion.assertEquals(value, (firstName + " " +lastName),
 				"Provided and Get firstName are not matched");
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextPassportNumberHCD(), (passportNumber),
 				"Provided and Get Passport Number are not matched");
@@ -485,10 +458,14 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	@Test(priority = 136, description = "Here we are getting text from Travel Information and comparing with Applicant filed data")
 	public void getTextFromTravelInformation() throws InterruptedException {
 
-		softAssertion.assertEquals(hCDApplicantInfoPage.getTextRefName1HCD(), (priFirstName + " " + priLastName),
+		softAssertion.assertEquals(hCDApplicantInfoPage.getTextRefName1HCD(), (priFirstName + " " +priLastName),
 				"Provided and Get firstName are not matched");
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextRefContact1HCD(), (primaryRefrencePhoneNo),
 				"Provided and Get Passport Number are not matched");
+		System.out.println("Text from HCD==>"  +hCDApplicantInfoPage.getTextRefAddress1HCD());
+		System.out.println("Text From Applicant++" +primaryAddress + "," + primaryCity + "," + primaryState + "," + primaryCountry + "," + primaryPinCode);
+		
+		
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextRefAddress1HCD(),
 				(primaryAddress + "," + primaryCity + "," + primaryState + "," + primaryCountry + "," + primaryPinCode),
 				"Provided and Get Landmark are not matched 1");
@@ -513,12 +490,52 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextrefCountry2HCD(), (secondaryCountry),
 				"Provided and Get Passport Expiry Date are not matched");
 		softAssertion.assertAll();
-		TestUtil.toSwitchBetweenWindows(0);
+		
+	}
+	@Test(priority = 137, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
+	public void approveApplication() throws InterruptedException {
+		hCDGeneralVerificationPage.clickOnnNxtButton();
+		hCDDocumentVerificationPage.selectAllCheckBoxes();	
+		System.out.println("approveApplication");
+		hCDDocumentVerificationPage.clickOnApprove();
+		hCDDocumentVerificationPage.clickOnConfirmFromApprove();
+		System.out.println("approveApplication1");
+		softAssertion.assertEquals(		
+				hCDDashboardPage.titleofHCDDashBoard(), "Welcome To Ghana Embassy",
+				"We are not navigate to High Commission dashboard page after enetering valid creadentials");
+		softAssertion.assertAll();
+		
+		
+	}
+	@Test(priority = 137, description = "This test will verify Approved application by HCD Whether it is in Approved Bucket in HCD")
+	public void verifyApprovedApplicaIsInApproveBucketHCD() throws InterruptedException {
+		Thread.sleep(3000);	
+		softAssertion.assertEquals(TestUtil.getTextFromApplicationID(), applicationID,
+				"Application is not matched with each other so it did not click on Application");
+		TestUtil.clickOnElement();
+		softAssertion.assertAll();
+	;
+		TestUtil.toCloseNewTab();
+	}
+	@Test(priority = 138, description = "This test will verify whether application is in Approve bucket of CN after got approve from HCD")
+	public void verifyApplicationInApproveBucketInCN() throws InterruptedException {
+		System.out.println("Last");
+		Thread.sleep(3000);	
+		TestUtil.toOpenNewTab();
+		TestUtil.toSwitchBetweenWindows(1);	
+		driver.get(prop.getProperty("HCDLoginURL"));
+		highAndConsulateLoginPage.passUserName("CN1234");
+		highAndConsulateLoginPage.passPassword("1234");
+		highAndConsulateLoginPage.clickOnLoginButton();
+		Thread.sleep(3000);	
+		softAssertion.assertEquals(TestUtil.getTextFromApplicationID(), applicationID,
+				"Application is not matched with each other so it did not click on Application");
+		TestUtil.clickOnElement();
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
+		softAssertion.assertAll();
 	}
 	
 }
 
-/*hCDDashboardPage
-hCDGeneralVerificationPage
-hCDApplicantInfoPage
-hCDDocumentVerificationPage*/
+

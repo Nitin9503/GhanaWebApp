@@ -10,10 +10,14 @@ public class ConstantVariable {
 	public static String password;
 	
 	//Consulate Side 
-	public static String applicationID= "";
+	public static String applicationID="";
 	public static boolean unselectedBoxDoc;
 	public static boolean selectedBoxDocAll;
 	public static boolean selectedCheckBoxOnDocSingle;
+	
+	//Buckets title
+	public static String newApplication="";
+	public static String getTextFromApproveButtonFromCN="";
 	
 	
 	
@@ -26,7 +30,7 @@ public class ConstantVariable {
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special
-	public static String nationalityName = "India"; //India,
+	public static String nationalityName = "Algeria"; //India,
 	public static String portOfArrival = "Kotoka Accra Airport"; //Ghana Airport
 	//Personal info
 	
@@ -36,11 +40,11 @@ public class ConstantVariable {
 	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
-	public static String firstName= "Pratik";
-	public static String lastName= "Shirsath";
-	public static String birthDate= "05/12/1993";	
-	public static String birthPlace= "Nashik";
-	public static String passportNumber= "A12345BA";
+	public static String firstName= "Vikas";
+	public static String lastName= "Dighe";
+	public static String birthDate= "01/18/2019";	
+	public static String birthPlace= "Sangamner";
+	public static String passportNumber= "A12345BA00";
 	public static String passportIssuedDate= "04/29/2018";
 	public static String passportExpiryDate= "04/29/2020";
 	public static String selectAddressType= "Permanent Address"; //Present Address
@@ -56,9 +60,11 @@ public class ConstantVariable {
 	public static String stateName= "Maharashtra";
 	public static String countryName= "India";
 	public static String addressType= "Present Address";
+
 	public static String nationality= "India";
 	public static String formerNationality= "India";
 	public static String emailId= "arjunthawkar84@gmail.com";
+
 	public static String phoneNumber= "9503152126";
 
 	

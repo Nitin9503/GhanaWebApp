@@ -32,7 +32,7 @@ public class PersonalInfoPage extends TestBase {
 
 	@FindBy(id = "sel_visaFee")
 	WebElement select;//
-
+	
 	// @FindBy(xpath =
 	// "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
 	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Single entry(3 months) visa Rs.8500.0']")
@@ -84,7 +84,7 @@ public class PersonalInfoPage extends TestBase {
 		driver.findElement(
 				By.xpath("//span[contains(text(),'" + visaFees + "')]"))
 				.click();
-
+		
 	}
 
 	public void SelectvisaLocation() throws InterruptedException {

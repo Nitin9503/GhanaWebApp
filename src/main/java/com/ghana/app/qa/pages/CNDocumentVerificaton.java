@@ -363,6 +363,10 @@ public class CNDocumentVerificaton extends TestBase {
 		confirmFromApprove.click();
 
 	}
+	public void getTextFromApproveButtonFromCN() {
+		String value = confirmFromApprove.getText();
+		getTextFromApproveButtonFromCN = value.replaceAll(value, "HCG Application");
+	}
 
 	public void clickOnFlagAndReject() {
 		flagAndReject.click();
