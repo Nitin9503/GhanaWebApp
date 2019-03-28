@@ -139,12 +139,13 @@ public class TravelInfoXlPage extends TestBase {
 
 	}
 
-	public void clickOnIsApplicantPossessionRoundTicket() {
+	public void clickOnIsApplicantPossessionRoundTicket(String RoundTicket) {
 		TestUtil.actionClassMethod(isApplicantPossessionRoundTicket);
 		driver.findElement(
-				By.xpath("//span[contains(text(),'" + roundTicket + "')]"))
+				By.xpath("//span[contains(text(),'" + RoundTicket + "')]"))
 				.click();
-
+	
+		    
 	}
 
 	public void clickOnYes() {
@@ -157,10 +158,10 @@ public class TravelInfoXlPage extends TestBase {
 
 	}
 
-	public void clickOnTravelBy() {
+	public void clickOnTravelBy(String TravelBY) {
 		TestUtil.actionClassMethod(travelingBy);
 		driver.findElement(
-				By.xpath("//span[contains(text(),'" + travellingBy + "')]"))
+				By.xpath("//span[contains(text(),'" + TravelBY + "')]"))
 				.click();
 
 	}
@@ -185,14 +186,24 @@ public class TravelInfoXlPage extends TestBase {
 
 	}
 
-	public void clickPurpose_of_journey() throws InterruptedException {
+	public void clickPurpose_of_journey(String journeyPurpose) throws InterruptedException {
 		TestUtil.actionClassMethod(purpose_of_journey);
 		driver.findElement(
-				By.xpath("//span[contains(text(),'" + JourneyPurpose + "')]"))
+				By.xpath("//span[contains(text(),'" + journeyPurpose + "')]"))
 				.click();
 
 	}
-
+  public void passPrimaryReferenceDetails(String fnameR1, String lnameR1, String addressR1, String pincodeR1, String cityR1, String stateR1, String countryR1, String phoneNoR1){
+	  primaryRefFirstname.sendKeys(fnameR1);
+	  primary_ref_lastname.sendKeys(lnameR1);
+	  primary_ref_address.sendKeys(addressR1);
+	  primary_ref_pincode.sendKeys(pincodeR1);
+	  primary_ref_city.sendKeys(cityR1);
+	  primary_ref_state.sendKeys(stateR1);
+	  primary_ref_country.sendKeys(countryR1);
+	  primary_ref_phone_number.sendKeys(phoneNoR1);
+	  
+  }
 	public void passPrimaryRefFirstname(String firstname) {
 		primaryRefFirstname.sendKeys(firstname);
 

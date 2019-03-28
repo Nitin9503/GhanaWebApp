@@ -56,9 +56,9 @@ public class ConstantVariable {
 	public static String stateName= "Maharashtra";
 	public static String countryName= "India";
 	public static String addressType= "Present Address";
-	public static String nationality= "	India";
+	public static String nationality= "India";
 	public static String formerNationality= "India";
-	public static String emailId= "arjunthaokar9@gmail.com";
+	public static String emailId= "arjunthawkar84@gmail.com";
 	public static String phoneNumber= "9503152126";
 
 	

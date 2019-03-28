@@ -1,4 +1,4 @@
-package com.ghana.app.qa.pages;
+package com.ghana.app.qa.xl.pages;
 
 import static com.ghana.app.qa.util.TestUtil.OSName;
 import static com.ghana.app.qa.util.TestUtil.driverPath;
@@ -14,10 +14,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
 
-public class UploadDocPage extends TestBase {
+public class UploadDocXlPage extends TestBase {
 
 	
-	public UploadDocPage() throws Exception, InterruptedException{
+	public UploadDocXlPage() throws Exception, InterruptedException{
 		PageFactory.initElements(driver, this);
 	}
 	

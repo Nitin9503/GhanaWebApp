@@ -34,6 +34,7 @@ import com.ghana.app.qa.xl.pages.EmergencyContactXlPage;
 import com.ghana.app.qa.xl.pages.PersonalInfoXlPage;
 import com.ghana.app.qa.xl.pages.SignUpXlPage;
 import com.ghana.app.qa.xl.pages.TravelInfoXlPage;
+import com.ghana.app.qa.xl.pages.UploadDocXlPage;
 
 public class DriverInit extends TestBase {
 
@@ -57,6 +58,7 @@ public class DriverInit extends TestBase {
 	public static ReviewApplicationPage reviewApplicationPage;
 	public static VisaPaymentPage visaPaymentPage;
 	public static UploadDocPage uploadDocPage;
+	public static UploadDocXlPage uploadDocXlPage;
 
 	// Consulate side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
@@ -95,6 +97,7 @@ public class DriverInit extends TestBase {
 		travelInfoPage =new TravelInfoPage();
 		travelInfoXlPage =new TravelInfoXlPage();
 		uploadDocPage = new UploadDocPage();
+		uploadDocXlPage = new UploadDocXlPage();
 		reviewApplicationPage = new ReviewApplicationPage();
 		visaPaymentPage = new VisaPaymentPage();
 		

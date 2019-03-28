@@ -70,10 +70,10 @@ public class EmergencyContactXlPage extends TestBase {
 		emergency_phone_number.sendKeys(eContactNo);
 	}
 
-	public void selectRelation() {
+	public void selectRelation(String relationShip) {
 		TestUtil.actionClassMethod(Relationship);
 		driver.findElement(By.xpath("//span[contains(text(),'"
-				+ selectRelationship + "')]")).click();
+				+ relationShip + "')]")).click();
 		// Mother.click();
 	}
 

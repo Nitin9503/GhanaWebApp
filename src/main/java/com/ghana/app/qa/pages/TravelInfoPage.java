@@ -133,8 +133,7 @@ public class TravelInfoPage extends TestBase {
 		return travelInfoPageTitle.getText();
 	}
 
-
-	public void passDateOfDeparture(String date) {
+    public void passDateOfDeparture(String date) {
 		departureDate.sendKeys(date);
 
 	}
