@@ -18,6 +18,7 @@ public class ConstantVariable {
 	//Buckets title
 	public static String newApplication="";
 	public static String getTextFromApproveButtonFromCN="";
+	public static String getTextFromApproveFromHCD="";
 	
 	
 	
@@ -61,7 +62,7 @@ public class ConstantVariable {
 	public static String countryName= "India";
 	public static String addressType= "Present Address";
 
-	public static String nationality= "India";
+//	public static String nationality= "India";
 	public static String formerNationality= "India";
 	public static String emailId= "arjunthawkar84@gmail.com";
 

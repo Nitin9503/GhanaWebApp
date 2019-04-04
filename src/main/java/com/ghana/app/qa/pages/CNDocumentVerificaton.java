@@ -364,7 +364,7 @@ public class CNDocumentVerificaton extends TestBase {
 
 	}
 	public void getTextFromApproveButtonFromCN() {
-		String value = confirmFromApprove.getText();
+		String value = confirmFromApprove.getAttribute("value");
 		getTextFromApproveButtonFromCN = value.replaceAll(value, "HCG Application");
 	}
 

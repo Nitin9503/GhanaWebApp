@@ -528,6 +528,11 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		highAndConsulateLoginPage.passPassword("1234");
 		highAndConsulateLoginPage.clickOnLoginButton();
 		Thread.sleep(3000);	
+		hCDDocumentVerificationPage.getTextFromApprovePopButton();
+		System.out.println("getTextFromApproveFromHCD==>" +getTextFromApproveFromHCD);
+		System.out.println("consulatedashBoardPage.textApprovedApplicationsBucket()==>" +consulatedashBoardPage.textApprovedApplicationsBucket());
+		softAssertion.assertEquals(consulatedashBoardPage.textApprovedApplicationsBucket(), getTextFromApproveFromHCD,
+				"Application is not present in Approved Application from HCD ");
 		softAssertion.assertEquals(TestUtil.getTextFromApplicationID(), applicationID,
 				"Application is not matched with each other so it did not click on Application");
 		TestUtil.clickOnElement();

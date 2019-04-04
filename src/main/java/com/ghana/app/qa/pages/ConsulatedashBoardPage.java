@@ -56,7 +56,7 @@ public class ConsulatedashBoardPage extends TestBase {
 	@FindBy(xpath = "//div[@id='myModal1']//input[@class='btn btn-success mr-2']")
 	WebElement openButton1;
 
-	@FindBy(xpath = "//label[contains(text(),'This application is already sent to High Commsion ')]")
+	@FindBy(xpath = "//label[contains(text(),'This application is already sent to High Commsion')]")
 	WebElement textFromPop1;
 
 	@FindBy(xpath = "//div[@id='myModal2']//h4[@class='modal-title'][contains(text(),'Confirmation')]")

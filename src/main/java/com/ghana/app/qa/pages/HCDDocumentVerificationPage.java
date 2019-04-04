@@ -140,6 +140,17 @@ public class HCDDocumentVerificationPage extends TestBase {
 		addComment.click();
 		
 	}
+	public void getTextFromApprovePopButton(){		
+		
+		String value = confirmFromApprove.getAttribute("value");
+		getTextFromApproveFromHCD	= value.replaceAll(value, "Approve Application");
+		
+	}
+	
+	
+	
+	
+	
 	public String getTextFromAddedComment(){		
 		String str = textFromPassComment.getText();
 		String properString =str.substring(0, str.length()-21);

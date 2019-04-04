@@ -53,7 +53,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		
 		//softAssertion.assertEquals(reviewApplicationPage.getTextFromAddressType(), addressType, "Provided and Get addressType are not matched");
 		
-	    softAssertion.assertEquals(reviewApplicationPage.getTextFromNationality(), nationality, "Provided and Get nationality are not matched");
+	    softAssertion.assertEquals(reviewApplicationPage.getTextFromNationality(), nationalityName, "Provided and Get nationality are not matched");
 		
 		//softAssertion.assertEquals(reviewApplicationPage.getTextFromFormerNationality(), formerNationality, "Provided and Get formerNationality are not matched");
 		

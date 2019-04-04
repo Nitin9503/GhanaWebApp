@@ -3,12 +3,111 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Updated upstream
       <class name="com.ghana.app.qa.testcases.ApplicationFormFilling">
         <methods>
           <include name="clickOnSaveAndContinueBtnTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.ApplicationFormFilling -->
+=======
+      <class name="com.ghana.app.qa.testcases.HighCommissionPageTest">
+        <methods>
+          <include name="clickOnPhotoOfDraftClose"/>
+          <include name="clickOnContinuebuttonTest1"/>
+          <include name="getUploadDocTest"/>
+          <include name="clickOnRejectAndVerifyPopText1"/>
+          <include name="verifyApprovedApplicaIsInApproveBucketHCD"/>
+          <include name="loginIntoHighCommission"/>
+          <include name="getApplicationIdTest"/>
+          <include name="clickOnConfirmedAirTicketWindowClose"/>
+          <include name="verifyClickOnSubmitBtnTest"/>
+          <include name="clickOnInterviewScheduleAndcancel"/>
+          <include name="clickOnNewApplication"/>
+          <include name="passDateAndTimeInFiled"/>
+          <include name="pass_primary_ref_stateTest"/>
+          <include name="verifyCanceAndCrossButton"/>
+          <include name="selectRelationTest"/>
+          <include name="approveApplication"/>
+          <include name="verifyApplicaInHCGApplicationBucket"/>
+          <include name="getTextFromApplicantInformation"/>
+          <include name="PassSecondaryRefDetailsTest"/>
+          <include name="passPrimaryRefLastnameTest"/>
+          <include name="clickOnCoveringLetterClose"/>
+          <include name="clickOnIsApplicantPossessionRoundTicketTest"/>
+          <include name="selectVisaFeesTest"/>
+          <include name="clickOnTravelByTest"/>
+          <include name="clickPurpose_of_journeyTest"/>
+          <include name="selectPassIssueDateTest"/>
+          <include name="clickOnSaveAndContinueBtnTest"/>
+          <include name="clickOnNextButtonAndVerifyTitleDocumentVerifi"/>
+          <include name="pass_primary_ref_cityTest"/>
+          <include name="clickOnOriginalInvitationLetter"/>
+          <include name="pass_primary_ref_countryTest"/>
+          <include name="pass_primary_ref_pincodeTest"/>
+          <include name="getTextEmergencyContactTest"/>
+          <include name="clickOnYellowFevervaccination"/>
+          <include name="getTextTravelInfoTest"/>
+          <include name="selectVisaLocationTest"/>
+          <include name="emergencyContactDetailsTest"/>
+          <include name="pass_Primary_ref_addressTest"/>
+          <include name="clickOnOriginalInvitationLetterClose"/>
+          <include name="passFirstNameTest"/>
+          <include name="clickOnProofOfTransitVisa"/>
+          <include name="getTextAddressInfoTest"/>
+          <include name="passDateOfDepartureTest"/>
+          <include name="getTextPersonalInfoTest"/>
+          <include name="selectPassExpiryDateTest"/>
+          <include name="setUp"/>
+          <include name="passTicketNumberTest"/>
+          <include name="clickOnCoveringLetter"/>
+          <include name="passComment"/>
+          <include name="clickOnApproveCN"/>
+          <include name="verfiyTitleOfCNTravelInfoPageCN"/>
+          <include name="verifyApplicationInApproveBucketInCN"/>
+          <include name="getTextFromAddressInformation"/>
+          <include name="clickOnApproveAndVerifyPopText"/>
+          <include name="verifyApplicationSentOpens"/>
+          <include name="clickOnIdProofReference"/>
+          <include name="pass_primary_ref_phone_numberTest"/>
+          <include name="clickOnCintinueBtnTest"/>
+          <include name="clickOnConfirmedAirTicketWindow"/>
+          <include name="clickOnContinueBtnTest"/>
+          <include name="clickOnNewApplicationCN"/>
+          <include name="clickOnOnPhotoClose"/>
+          <include name="clickOnPreviousButtonAndVerifyTitleApplicantInformation"/>
+          <include name="verfiyTitleOfCNDocumentVerificatonPage"/>
+          <include name="selectFormerNationalityTest"/>
+          <include name="verifHighCommissionPageTitle"/>
+          <include name="clickOnYellowFevervaccinationClose"/>
+          <include name="filladdressInfoTest"/>
+          <include name="clickOnOnPhoto"/>
+          <include name="passPrimaryRefFirstnameTest"/>
+          <include name="clickOnGenderTest"/>
+          <include name="clickOnContinuebuttonTest"/>
+          <include name="selectOneByOneCheckBoxAndVerify"/>
+          <include name="clickSaveAndContinuebtnTest"/>
+          <include name="loginIntoConsulate"/>
+          <include name="clickOnPhotoOfDraft"/>
+          <include name="getApplicationPageTitleTest"/>
+          <include name="clickOnIdProofReferenceClose"/>
+          <include name="selectAllCheckBoxAndVerify"/>
+          <include name="getTextFromTravelInformation"/>
+          <include name="passPassportNumberTest"/>
+          <include name="clickOnRejectAndVerifyPopText"/>
+          <include name="clickOnSaveAndContinueTest"/>
+          <include name="passLastNameTest"/>
+          <include name="clickOnApproveAndVerifyPopText1"/>
+          <include name="verfiyTitleOfCNDocumentVerificatonPageCN"/>
+          <include name="emergencyProfessionDetailsTest"/>
+          <include name="clickOnAddressInforCN"/>
+          <include name="clickOnProofOfTransitVisaClose"/>
+          <include name="clickOnInterviewScheduleAndClose"/>
+          <include name="verifyTitleOfConsulateTitle"/>
+          <include name="passPlaceOfBirthTest"/>
+        </methods>
+      </class> <!-- com.ghana.app.qa.testcases.HighCommissionPageTest -->
+>>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
