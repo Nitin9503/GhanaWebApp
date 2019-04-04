@@ -84,14 +84,14 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	@Test(priority = 13)
 	public void selectDateOfBirthTest() throws InterruptedException,
 			IOException {
-		signUpPage.selectDateOfBirth(birthDate);
-		signUpPage.continueBtn();
+		signUpPage.selectDateOfBirth("22112010");
+		//signUpPage.continueBtn();
 
 	}
 	@Test(priority = 14)
 	public void clickOnSaveAndContinueBtnTest() throws InterruptedException,
 			IOException {
-		// signUpPage.continueBtn();
+		 signUpPage.continueBtn();
 		softAssertion
 				.assertEquals(personalInfoPage.getTextPersonalInfoPageTitle(),
 						"Personal Information",

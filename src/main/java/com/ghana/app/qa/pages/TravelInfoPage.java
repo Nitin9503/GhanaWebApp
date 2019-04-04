@@ -134,6 +134,7 @@ public class TravelInfoPage extends TestBase {
 	}
 
     public void passDateOfDeparture(String date) {
+    	TestUtil.actionClassMethod(departureDate);
 		departureDate.sendKeys(date);
 
 	}

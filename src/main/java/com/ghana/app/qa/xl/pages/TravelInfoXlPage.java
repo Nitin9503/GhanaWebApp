@@ -139,8 +139,9 @@ public class TravelInfoXlPage extends TestBase {
 
 	}
 
-	public void clickOnIsApplicantPossessionRoundTicket(String RoundTicket) {
+	public void clickOnIsApplicantPossessionRoundTicket(String RoundTicket) throws InterruptedException {
 		TestUtil.actionClassMethod(isApplicantPossessionRoundTicket);
+		Thread.sleep(1000);
 		driver.findElement(
 				By.xpath("//span[contains(text(),'" + RoundTicket + "')]"))
 				.click();
@@ -188,6 +189,7 @@ public class TravelInfoXlPage extends TestBase {
 
 	public void clickPurpose_of_journey(String journeyPurpose) throws InterruptedException {
 		TestUtil.actionClassMethod(purpose_of_journey);
+		Thread.sleep(1000);
 		driver.findElement(
 				By.xpath("//span[contains(text(),'" + journeyPurpose + "')]"))
 				.click();

@@ -2,7 +2,9 @@ package com.ghana.app.qa.pages;
 
 import java.io.IOException;
 import java.util.List;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -68,9 +70,11 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//input[@id='customRadio3']")
 	WebElement visaTypeCheckBox;
 
-	@FindBy(xpath = "//input[@id='usercaptchacode']")
+	@FindBy(xpath = "//input[@id='usercaptchacode']")//input[@id='usercaptchacode']
 	WebElement usercaptchacode;
-
+	@FindBy(id = "text_captcha")
+	WebElement usercaptatext;
+	
 	@FindBy(xpath = "//input[@id='customCheck3' and @type='checkbox']")
 	WebElement basicDoccheckbox;
 
@@ -80,8 +84,8 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//button[text()='Cancel']")
 	WebElement Cancel;
 
-	@FindBy(xpath = "//input[@value='Continue']")
-	WebElement Continue;
+	@FindBy(xpath = "//input[@value='Sign Up']")
+	WebElement SignUp;
 
 	@FindBy(xpath = "//div[@class ='custom-control custom-checkbox']")
 	List<WebElement> checkBoxesClick;
@@ -123,11 +127,11 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void selectDateOfBirth(String birthDate) throws InterruptedException {
-		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
-		dateofbirth.sendKeys(birthDate); // Enter date in required format
+	
+	        TestUtil.actionClassMethod(dateofbirth);
+	        dateofbirth.sendKeys(birthDate);
+	        
 	}
-
 	public void passEmailId(String EmailId) {
 		emailId.sendKeys(EmailId);// nitinthaokar9@gmail.com
 	}
@@ -141,8 +145,12 @@ public class SignUpPage extends TestBase {
 		visaTypeCheckBox.click();
 	}
 
-	public void enterCaptchaField(String captchacode) {
-		usercaptchacode.sendKeys(captchacode);
+	public void enterCaptchaField(String captchacode) throws InterruptedException {
+		Thread.sleep(2000);
+		String st= usercaptatext.getText();
+		Thread.sleep(2000);
+		System.out.println(st);
+		usercaptchacode.sendKeys(st);
 	}
 
 	public void cancelBtn() {
@@ -150,7 +158,7 @@ public class SignUpPage extends TestBase {
 	}
 
 	public void continueBtn() {
-		Continue.click();
+		SignUp.click();
 	}
 
 	public void termsCheckboxselect() {

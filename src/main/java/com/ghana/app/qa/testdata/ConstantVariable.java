@@ -30,7 +30,7 @@ public class ConstantVariable {
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special
-	public static String nationalityName = "Algeria"; //India,
+	public static String nationalityName = "India"; //India,
 	public static String portOfArrival = "Kotoka Accra Airport"; //Ghana Airport
 	//Personal info
 	
@@ -42,11 +42,11 @@ public class ConstantVariable {
 	public static String selectFormerNationlity= "None";
 	public static String firstName= "Vikas";
 	public static String lastName= "Dighe";
-	public static String birthDate= "01/18/2019";	
+	public static String birthDate= "22102009";	
 	public static String birthPlace= "Sangamner";
 	public static String passportNumber= "A12345BA00";
-	public static String passportIssuedDate= "04/29/2018";
-	public static String passportExpiryDate= "04/29/2020";
+	public static String passportIssuedDate= "29102018";
+	public static String passportExpiryDate= "29102020";
 	public static String selectAddressType= "Permanent Address"; //Present Address
 	
 	
@@ -84,7 +84,7 @@ public class ConstantVariable {
 	public static String emerEmployerPhoneNumber= "9856231254";
 	
 	//Travel Info
-	public static String dateOfDeparture= "08/05/2019";
+	public static String dateOfDeparture= "08112019";
 	public static String ticketNumber= "AF123652";
 	public static String roundTicket= "Yes";     //No
 	public static String travellingBy= "Air";    //Air, Ship, Road, Train

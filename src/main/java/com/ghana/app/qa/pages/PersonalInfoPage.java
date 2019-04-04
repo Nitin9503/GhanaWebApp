@@ -121,15 +121,17 @@ public class PersonalInfoPage extends TestBase {
 
 	public void selectPassIssueDate(String PassIssueDate)
 			throws InterruptedException {
-		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('date_of_issued').removeAttribute('readonly',0);");
+		/*((JavascriptExecutor) driver)
+				.executeScript("document.getElementById('date_of_issued').removeAttribute('readonly',0);");*/
+		TestUtil.actionClassMethod(date_of_issued);
 		date_of_issued.sendKeys(PassIssueDate); // Enter date in required format
 	}
 
 	public void selectPassExpiryDate(String PassExpiryDate)
 			throws InterruptedException {
-		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('passport_expiry').removeAttribute('readonly',0);");
+		/*((JavascriptExecutor) driver)
+				.executeScript("document.getElementById('passport_expiry').removeAttribute('readonly',0);");*/
+		TestUtil.actionClassMethod(date_of_expiry);
 		date_of_expiry.sendKeys(PassExpiryDate); // Enter date in required
 													// format
 	}
