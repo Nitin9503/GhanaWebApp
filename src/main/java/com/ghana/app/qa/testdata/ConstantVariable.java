@@ -42,9 +42,11 @@ public class ConstantVariable {
 	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
-	public static String firstName= "Vikas";
-	public static String lastName= "Dighe";
-	public static String birthDate= "22102009";
+
+	public static String firstName= "Rahul";
+	public static String lastName= "Patil";
+	public static String birthDate= "22102009";	
+
 	public static String birthPlace= "Sangamner";
 	public static String passportNumber= "A12345BA00";
 	public static String passportIssuedDate= "29102018";

@@ -41,6 +41,7 @@ public class TakeScreenshot extends TestBase {
 		}
 
 		System.out.println("screenshot name is==>" + screenshotName);
+		
 
 	}
 
