@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.poi.hslf.model.Sheet;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -23,7 +24,9 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 import com.ghana.app.qa.base.TestBase;
 import com.google.common.base.Function;
 
@@ -43,6 +46,7 @@ public class TestUtil extends TestBase  {
 	public static long IMPLICIT_WAIT = 120;
 	public static String title = "";
 	public static String screenshotName = "";
+	public static String providedDate = " "; 
 	
 	// Static variable for Launch activety of browser
 
@@ -179,7 +183,10 @@ public class TestUtil extends TestBase  {
 		
 	}
 	
-	
+	public static void dateAlter(String dateChange){
+		String str = new StringBuffer(dateChange).insert(dateChange.length()-6, "/").toString();
+		providedDate = new StringBuffer(str).insert(str.length()-4, "/").toString();
+	}
 	
 	public static void fluentWait(WebElement element) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)

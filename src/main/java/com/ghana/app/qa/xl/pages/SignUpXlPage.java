@@ -112,9 +112,12 @@ public class SignUpXlPage extends TestBase {
 	}
 
 	public void selectDateOfBirth(String birthDate) throws InterruptedException {
-		((JavascriptExecutor) driver)
+		/*((JavascriptExecutor) driver)
 				.executeScript("document.getElementById('dateofbirth').removeAttribute('readonly',0);");
 		dateofbirth.sendKeys(birthDate); // Enter date in required format
+*/	     TestUtil.actionClassMethod(dateofbirth);
+	        dateofbirth.sendKeys(birthDate);
+	        
 	}
 
 	public void passEmailIdAndPhoneNo(String EmailId, String PhoneNo) {

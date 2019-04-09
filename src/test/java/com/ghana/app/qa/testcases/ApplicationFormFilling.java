@@ -84,7 +84,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	@Test(priority = 13)
 	public void selectDateOfBirthTest() throws InterruptedException,
 			IOException {
-		signUpPage.selectDateOfBirth("22112010");
+		signUpPage.selectDateOfBirth(birthDate);
 		//signUpPage.continueBtn();
 
 	}

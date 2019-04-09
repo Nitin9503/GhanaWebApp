@@ -1,4 +1,4 @@
-package com.ghana.app.qa.pages;
+package com.ghana.app.qa.xl.pages;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ghana.app.qa.base.TestBase;
 
-public class ReviewApplicationPage extends TestBase {
+public class ReviewApplicationXlPage extends TestBase {
 
-	public ReviewApplicationPage() throws IOException, InterruptedException {
+	public ReviewApplicationXlPage() throws IOException, InterruptedException {
 		PageFactory.initElements(driver, this);
 	}
 
