@@ -24,6 +24,7 @@ public class PersonalInfoPage extends TestBase {
 
 	@FindBy(xpath = "//h5[contains(text(),'Personal Information')]")
 	WebElement personalInfoTitle;
+
 	@FindBy(xpath = ".//*[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
 	WebElement applicationId;
 	@FindBy(xpath = "//span[text()='Visa Fees']")
@@ -31,7 +32,7 @@ public class PersonalInfoPage extends TestBase {
 
 	@FindBy(id = "sel_visaFee")
 	WebElement select;//
-
+	
 	// @FindBy(xpath =
 	// "//ul[@id='img_category_options']//li[text()='Single entry(3 months) visa Rs.8500.0']")
 	@FindBy(xpath = "//form[@id='applicant_personal_info_form']//span[text()='Single entry(3 months) visa Rs.8500.0']")
@@ -64,7 +65,8 @@ public class PersonalInfoPage extends TestBase {
 	@FindBy(xpath = "//button[@id='applicant_personal_info_form_btn']")
 	WebElement saveAndContinue;
 
-	public String getTextPersonalInfoPageTitle() {
+	public String getTextPersonalInfoPageTitle() throws InterruptedException {
+		Thread.sleep(2000);
 		return personalInfoTitle.getText();
 
 	}
@@ -82,7 +84,7 @@ public class PersonalInfoPage extends TestBase {
 		driver.findElement(
 				By.xpath("//span[contains(text(),'" + visaFees + "')]"))
 				.click();
-
+		
 	}
 
 	public void SelectvisaLocation() throws InterruptedException {
@@ -109,18 +111,27 @@ public class PersonalInfoPage extends TestBase {
 	public void clickOnGender() {
 		TestUtil.actionClassMethod(gender);
 	}
+	
+	public void verifiedGenderSelected() throws InterruptedException {
+		Thread.sleep(2000);
+		genderRadioButton =	gender.isSelected();
+		System.out.println("genderRadioButton==>"  +genderRadioButton);
+	}
+	
 
 	public void selectPassIssueDate(String PassIssueDate)
 			throws InterruptedException {
-		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('date_of_issued').removeAttribute('readonly',0);");
+		/*((JavascriptExecutor) driver)
+				.executeScript("document.getElementById('date_of_issued').removeAttribute('readonly',0);");*/
+		TestUtil.actionClassMethod(date_of_issued);
 		date_of_issued.sendKeys(PassIssueDate); // Enter date in required format
 	}
 
 	public void selectPassExpiryDate(String PassExpiryDate)
 			throws InterruptedException {
-		((JavascriptExecutor) driver)
-				.executeScript("document.getElementById('passport_expiry').removeAttribute('readonly',0);");
+		/*((JavascriptExecutor) driver)
+				.executeScript("document.getElementById('passport_expiry').removeAttribute('readonly',0);");*/
+		TestUtil.actionClassMethod(date_of_expiry);
 		date_of_expiry.sendKeys(PassExpiryDate); // Enter date in required
 													// format
 	}

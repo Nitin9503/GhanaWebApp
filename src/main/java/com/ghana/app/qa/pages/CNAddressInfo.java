@@ -55,7 +55,8 @@ public class CNAddressInfo extends TestBase {
 		return nationality.getAttribute("value");
 		
 	}
-	public String getTextFromEmailID(){	
+	public String getTextFromEmailID() throws InterruptedException{	
+		Thread.sleep(3000);
 		return emailID.getAttribute("value");
 		
 	}

@@ -7,9 +7,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
 
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
-
+import static com.ghana.app.qa.util.TestUtil.*;
 public class ReviewApplicationPageTest extends ApplicationFormFilling {
 	SoftAssert softAssertion= new SoftAssert();
 	public ReviewApplicationPageTest() throws IOException, InterruptedException {
@@ -17,28 +18,31 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		// TODO Auto-generated constructor stub
 	    }
 	
-	@Test(priority = 45)
+	@Test(priority = 51)
 	public void getTextPersonalInfoTest() throws InterruptedException, IOException {
-		
+		System.out.println( "applicationID==>Revie1" +applicationID);
 		//------Personal info
         softAssertion.assertEquals(reviewApplicationPage.getTextFromfirstLastName(), (firstName+" "+lastName), "Provided and Get firstName are not matched");
 		//System.out.println(reviewApplicationPage.getTextFromfirstLastName() +" = "+(firstName+" "+lastName));
 		
-		softAssertion.assertEquals(reviewApplicationPage.getTextBirthDate(), birthDate, "Provided and Get Birthdate are not matched");
+		TestUtil.dateAlter(birthDate);		
+		softAssertion.assertEquals(reviewApplicationPage.getTextBirthDate(), providedDate, "Provided and Get Birthdate are not matched");
 		
 		softAssertion.assertEquals(reviewApplicationPage.getTextFromBirthPlace(), birthPlace, "Provided and Get birthPlace are not matched");
 		
 		softAssertion.assertEquals(reviewApplicationPage.getTextFromPassportNumber(), passportNumber, "Provided and Get passportNumber are not matched");
 		
-		softAssertion.assertEquals(reviewApplicationPage.getTextFromPassportIssuedDate(), passportIssuedDate, "Provided and Get passportIssuedDate are not matched");
+		TestUtil.dateAlter(passportIssuedDate);	
+		softAssertion.assertEquals(reviewApplicationPage.getTextFromPassportIssuedDate(), providedDate, "Provided and Get passportIssuedDate are not matched");
 		
-		softAssertion.assertEquals(reviewApplicationPage.getTextFromPassportExpiryDate(), passportExpiryDate, "Provided and Get passportExpiryDate are not matched");
+		TestUtil.dateAlter(passportExpiryDate);	
+		softAssertion.assertEquals(reviewApplicationPage.getTextFromPassportExpiryDate(), providedDate, "Provided and Get passportExpiryDate are not matched");
 
 		softAssertion.assertAll();
 		
 		
 	}
-	@Test(priority = 46)
+	@Test(priority = 52)
 		public void getTextAddressInfoTest() throws InterruptedException, IOException {
 		//Address Info
 		softAssertion.assertEquals(reviewApplicationPage.getTextFromAddress(), (FlatNo+", "+StreetName+", "+Landmark), "Provided and Get address are not matched");
@@ -53,7 +57,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		
 		//softAssertion.assertEquals(reviewApplicationPage.getTextFromAddressType(), addressType, "Provided and Get addressType are not matched");
 		
-	    softAssertion.assertEquals(reviewApplicationPage.getTextFromNationality(), nationality, "Provided and Get nationality are not matched");
+	    softAssertion.assertEquals(reviewApplicationPage.getTextFromNationality(), nationalityName, "Provided and Get nationality are not matched");
 		
 		//softAssertion.assertEquals(reviewApplicationPage.getTextFromFormerNationality(), formerNationality, "Provided and Get formerNationality are not matched");
 		
@@ -65,7 +69,7 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
 		
 	
 	}
-	@Test(priority = 47)
+	@Test(priority = 53)
 	public void getTextEmergencyContactTest() throws InterruptedException, IOException {
 	//Emergency contact 
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromEmerContactName(), (emerContactName+" "+emerContactSurname), "Provided and Get address are not matched");
@@ -124,10 +128,11 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
     softAssertion.assertAll();
 	
 }
-	@Test(priority = 48)
+	@Test(priority = 54)
 	public void getTextTravelInfoTest() throws InterruptedException, IOException {
 	//Travel Info
-	softAssertion.assertEquals(reviewApplicationPage.getTextFromDateOfDeparture(), dateOfDeparture, "Provided and Get dateOfDeparture are not matched");
+		TestUtil.dateAlter(dateOfDeparture);	
+	softAssertion.assertEquals(reviewApplicationPage.getTextFromDateOfDeparture(), providedDate, "Provided and Get dateOfDeparture are not matched");
 
 	softAssertion.assertEquals(reviewApplicationPage.getTextFromtTicketNumber(), ticketNumber, "Provided and Get emerPhoneNumber are not matched");
 	
@@ -167,9 +172,10 @@ public class ReviewApplicationPageTest extends ApplicationFormFilling {
     softAssertion.assertAll();
 
 }
-	@Test(priority = 49)
+	@Test(priority = 55)
 	public void clickOnContinueBtnTest() throws InterruptedException, IOException {
 		reviewApplicationPage.clickOnContinuebutton();
+		System.out.println( "applicationID==>Revie2" +applicationID);
 	}
 	
 }

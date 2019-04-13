@@ -17,6 +17,7 @@ import static com.ghana.app.qa.util.TestUtil.caps;
 import static com.ghana.app.qa.util.TestUtil.OSName;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -140,11 +141,6 @@ public class TestBase {
 					driver = new ChromeDriver(option);
 				} else {
 
-					System.out.println("Execution on Normal chrome Browser");	
-		 System.setProperty("webdriver.chrome.driver", "/Users/rahul.kardel/Downloads/macchromedriver");						 
-				 //driverPath+"/FileDriver/macchromedriver" );
-				//	WebDriverManager.chromedriver().setup();
-					driver = new ChromeDriver();           
 
 				}
 			} else if (broweserName.equalsIgnoreCase("safari")) {
@@ -237,10 +233,12 @@ public class TestBase {
 				driver = new FirefoxDriver();
 
 
+
 			}
 			else if (broweserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",driverPath+"\\FileDriver\\chromedriver.exe" );
 				//WebDriverManager.chromedriver().setup();
+
 				driver = new ChromeDriver();
 			}
 
@@ -311,15 +309,16 @@ public class TestBase {
 				}
 				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
 			}
+
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
-
+		driver.get(prop.getProperty("GhanaWebLocalURL"));    //---localhost
 		//driver.get(prop.getProperty("GhanaWebURL"));	
-		driver.get(prop.getProperty("HCDLoginURL"));	
+		//driver.get(prop.getProperty("HCDLoginURL"));	
 		
 		
 

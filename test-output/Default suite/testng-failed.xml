@@ -3,19 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ghana.app.qa.testcases.SignUpPageTest">
+      <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
         <methods>
-          <include name="passReEmailIdTest"/>
-          <include name="selectDateOfBirthTest"/>
-          <include name="selectPassPortType"/>
-          <include name="passPhoneNoTest"/>
-          <include name="enterCaptchaFieldTest"/>
-          <include name="selectPortOfArrivalTest"/>
           <include name="setUp"/>
-          <include name="passEmailIdTest"/>
-          <include name="selectNationalityTest"/>
+          <include name="getTextEmergencyContactTest"/>
+          <include name="verifyClickOnSubmitBtnTest"/>
+          <include name="getTextTravelInfoTest"/>
         </methods>
-      </class> <!-- com.ghana.app.qa.testcases.SignUpPageTest -->
+      </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

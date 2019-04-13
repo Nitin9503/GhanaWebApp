@@ -48,9 +48,8 @@ public class UploadDocPage extends TestBase {
 	}
 	public void getUploadDoc(){
 		
-		driverPath = System.getProperty("user.dir");
+	driverPath = System.getProperty("user.dir");
 		System.out.println("path==>" +driverPath);
-		OSName = System.getProperty("os.name");
 		System.out.println(OSName);
 		if (OSName.equalsIgnoreCase("Mac OS X")) {
 			System.out.println(OSName);
@@ -69,6 +68,7 @@ public class UploadDocPage extends TestBase {
 
 			System.out.println(OSName);
 			// enter the file path onto the file-selection input field
+			System.out.println("hello");
 			attachFileBtn1.sendKeys(driverPath+"\\DocumentAttach\\airticket.jpeg");
 			attachFileBtn2.sendKeys(driverPath+"\\DocumentAttach\\Passport-size-photo.jpg");
 			attachFileBtn3.sendKeys(driverPath+"\\DocumentAttach\\YellowFeverVaccination.pdf");
@@ -77,11 +77,11 @@ public class UploadDocPage extends TestBase {
 			attachFileBtn6.sendKeys(driverPath+"\\DocumentAttach\\IDcard_Ghana.jpg");
 			attachFileBtn7.sendKeys(driverPath+"\\DocumentAttach\\invitation letter.pdf");
 			attachFileBtn8.sendKeys(driverPath+"\\DocumentAttach\\proofofvisa.pdf");
-		 
+			System.out.println("bolloo");
 		}
 		
-	 
 	}
+	
 	public void clicksaveAndContiBtn(){
 		saveAndComtinueBtn.click();
 	}

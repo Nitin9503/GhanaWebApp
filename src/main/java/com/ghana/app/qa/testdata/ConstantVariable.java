@@ -10,19 +10,24 @@ public class ConstantVariable {
 	public static String password;
 	
 	//Consulate Side 
-	public static String applicationID= "";
+	public static String applicationID="";
 	public static boolean unselectedBoxDoc;
 	public static boolean selectedBoxDocAll;
 	public static boolean selectedCheckBoxOnDocSingle;
+	
+	//Buckets title
+	public static String newApplication="";
+	public static String getTextFromApproveButtonFromCN="";
+	public static String getTextFromApproveFromHCD="";
 	
 	
 	
 	
 	//SignUp page 
 	public static boolean selectedBoxOnSignUp;
-
+	public static boolean selectedRadioButtonOnSignUp;
 	
-	
+	public static boolean genderRadioButton;
 
 	//signUp Page
 	public static String passPortType = "Diplomatic"; //Ordinary, Official, Diplomatic, Service, Special
@@ -31,18 +36,21 @@ public class ConstantVariable {
 	//Personal info
 	
 	// **Review Application page **
+
 	//Personal info
 	public static String visaFees= "Single entry(3 months) visa Rs.8500.0";
 	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
-	public static String firstName= "Pratik";
-	public static String lastName= "Shirsath";
-	public static String birthDate= "05/12/1993";	
-	public static String birthPlace= "Nashik";
-	public static String passportNumber= "A12345BA";
-	public static String passportIssuedDate= "04/29/2018";
-	public static String passportExpiryDate= "04/29/2020";
+
+	public static String firstName= "Rahul";
+	public static String lastName= "Patil";
+	public static String birthDate= "22102009";	
+
+	public static String birthPlace= "Sangamner";
+	public static String passportNumber= "A12345BA00";
+	public static String passportIssuedDate= "29102018";
+	public static String passportExpiryDate= "29102020";
 	public static String selectAddressType= "Permanent Address"; //Present Address
 	
 	
@@ -56,11 +64,15 @@ public class ConstantVariable {
 	public static String stateName= "Maharashtra";
 	public static String countryName= "India";
 	public static String addressType= "Present Address";
-	public static String nationality= "	India";
+
+//	public static String nationality= "India";
 	public static String formerNationality= "India";
-	public static String emailId= "arjunthaokar9@gmail.com";
+	public static String emailId= "arjunthawkar84@gmail.com";
+
 	public static String phoneNumber= "9503152126";
 
+	public static String month= "Dec (12)";
+	public static String year= "2020";
 	
 	//Emergency contact 
 	public static String emerContactName= "Sachin";
@@ -78,7 +90,7 @@ public class ConstantVariable {
 	public static String emerEmployerPhoneNumber= "9856231254";
 	
 	//Travel Info
-	public static String dateOfDeparture= "08/05/2019";
+	public static String dateOfDeparture= "08112019";
 	public static String ticketNumber= "AF123652";
 	public static String roundTicket= "Yes";     //No
 	public static String travellingBy= "Air";    //Air, Ship, Road, Train

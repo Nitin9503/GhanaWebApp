@@ -83,7 +83,7 @@ public class ApplicantDashBoardPage extends TestBase {
 		return visaFees.getAttribute("value");
 	}
 	public String getTextFullName() throws InterruptedException{
-		
+		Thread.sleep(3000);
 		return fullName.getAttribute("value");
 
 	}

@@ -63,8 +63,10 @@ public class SignUpPageTest extends DriverInit {
 	@Test(priority = 11)
 	public void selectDateOfBirthTest() throws InterruptedException,
 			IOException {
-		signUpPage.selectDateOfBirth("8-Dec-2014");
-		signUpPage.continueBtn();
+		Thread.sleep(3000);
+		signUpPage.selectDateOfBirth("822014");
+		Thread.sleep(3000);
+		//signUpPage.continueBtn();
 		
 	}
 }

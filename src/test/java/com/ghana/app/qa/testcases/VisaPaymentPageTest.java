@@ -1,9 +1,16 @@
 package com.ghana.app.qa.testcases;
 
+import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.ghana.app.qa.util.TestUtil;
 
 public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 
@@ -12,15 +19,26 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Test(priority=50, description="Here verifying confirmation message and click on ok btn ")
+	@Test(priority=56, description="Here verifying confirmation message and click on ok btn ")
 	public void verifyClickOnSubmitBtnTest() throws InterruptedException{
-		visaPaymentPage.clickOnSubmitBtn();
+		//visaPaymentPage.getTextsubmitBtn();	
+		visaPaymentPage.clickOnCheckoutBtn();
+		visaPaymentPage.passCardNo();
+		TestUtil.selectValuefromDropDown(visaPaymentPage.selectExpiryDateMonth(), month);
+		TestUtil.selectValuefromDropDown(visaPaymentPage.selectExpiryDateYear(), year);
+		visaPaymentPage.passCvvNo();
+		visaPaymentPage.clickOnMakePaymentBtn();
+		visaPaymentPage.clickOnOKtbtn();
+		visaPaymentPage.clickOnDonetbtn();
+		
+		
 		visaPaymentPage.verifyConfirmationPop();
 		Thread.sleep(2000);
 		System.out.println("home page title   "
 				+ homePage.validateHomePageTitle());
 		Assert.assertEquals(homePage.validateHomePageTitle(), "Home",
 				"given title not match nence it is not navigated to home page");
+		System.out.println( "applicationID==>visa" +applicationID);
 		
 	}
 
