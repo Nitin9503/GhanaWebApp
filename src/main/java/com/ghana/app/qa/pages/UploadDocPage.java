@@ -63,7 +63,9 @@ public class UploadDocPage extends TestBase {
 			attachFileBtn7.sendKeys(driverPath+"/DocumentAttach/invitation letter.pdf");
 			attachFileBtn8.sendKeys(driverPath+"/DocumentAttach/proofofvisa.pdf");
 		 
+
 		} else if (OSName.equalsIgnoreCase("Windows")) {
+
 			System.out.println(OSName);
 			// enter the file path onto the file-selection input field
 			System.out.println("hello");

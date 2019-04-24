@@ -4,8 +4,13 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import static com.ghana.app.qa.testdata.ConstantVariable.*;
+
 import com.ghana.app.qa.base.TestBase;
+import com.ghana.app.qa.util.TestUtil;
+
+import freemarker.core.ReturnInstruction.Return;
 
 public class VisaPaymentPage extends TestBase {
 
@@ -21,6 +26,7 @@ public class VisaPaymentPage extends TestBase {
 
 	@FindBy(id = "btn_submit_to_consulate")
 	WebElement submitBtn;
+
 	@FindBy(xpath = "//input[@value='Checkout']")
 	WebElement chekoutBtn;
 	
@@ -40,16 +46,18 @@ public class VisaPaymentPage extends TestBase {
 	
 	@FindBy(xpath = "//input[@id='CVVNumberCreditCard']")
 	WebElement cvvNofield;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'Done')]")
 	WebElement DoneBtn;
 	
+
 	@FindBy(xpath = "//div[@id='nav-payment']//input[@value='Previous']")
 	WebElement previousBtn;
 
 	@FindBy(xpath = "//input[@value='OK']")
 	WebElement okBtn;
 
+	
 	@FindBy(xpath = "//div[@class='modal-footer']//button[@type='button'][contains(text(),'Cancel')]")
 	WebElement cancelBtn;
 
@@ -85,6 +93,7 @@ public class VisaPaymentPage extends TestBase {
 	public void clickOnDonetbtn() {
 		DoneBtn.click();
 		}
+
 	public void getTextsubmitBtn() throws InterruptedException {
 		Thread.sleep(3000);
 		String value   = submitBtn.getAttribute("value");
@@ -105,6 +114,7 @@ public class VisaPaymentPage extends TestBase {
 	public WebElement selectExpiryDateYear() {
 		return yearId;
 	}
+
 	public void verifyConfirmationPop() throws InterruptedException {
 		Thread.sleep(2000);
 		try {
