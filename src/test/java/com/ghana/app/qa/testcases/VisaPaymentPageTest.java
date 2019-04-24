@@ -22,25 +22,6 @@ public class VisaPaymentPageTest extends ReviewApplicationPageTest {
 	@Test(priority=56, description="Here verifying confirmation message and click on ok btn ")
 	public void verifyClickOnSubmitBtnTest() throws InterruptedException{
 
-		/*visaPaymentPage.getTextsubmitBtn();	
-		visaPaymentPage.clickOnSubmitBtn();
-=======
-		//visaPaymentPage.getTextsubmitBtn();	
-		visaPaymentPage.clickOnCheckoutBtn();
-		visaPaymentPage.passCardNo();
-		TestUtil.selectValuefromDropDown(visaPaymentPage.selectExpiryDateMonth(), month);
-		TestUtil.selectValuefromDropDown(visaPaymentPage.selectExpiryDateYear(), year);
-		visaPaymentPage.passCvvNo();
-		visaPaymentPage.clickOnMakePaymentBtn();
-		visaPaymentPage.clickOnOKtbtn();
-		visaPaymentPage.clickOnDonetbtn();
-		
-		
->>>>>>> d838d399f3031e0448d3e76141ee80c80da2f3bc
-		visaPaymentPage.verifyConfirmationPop();
-		Thread.sleep(2000);
-		System.out.println("home page title   "
-				+ homePage.validateHomePageTitle());*/
 		visaPaymentPage.clickOnCheckoutBtn();
 		visaPaymentPage.passCardNo();
 		TestUtil.selectValuefromDropDown(visaPaymentPage.selectExpiryDateMonth(), month);

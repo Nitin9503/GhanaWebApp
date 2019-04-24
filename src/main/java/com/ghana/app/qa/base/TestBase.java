@@ -48,63 +48,21 @@ public class TestBase {
 		driverPath = System.getProperty("user.dir");
 		System.out.println("path==>" + driverPath);
 		OSName = System.getProperty("os.name");
-		if (OSName.equalsIgnoreCase("Mac OS X")) {
-			System.out.println("we are on ==>" + OSName);
-
-		} else {
-
-			OSName = OSName.substring(0, 7);
-			System.out.println("substring value ==>" + OSName);
-		}
+		OSName = OSName.substring(0, 3);
+	
 		System.out.println(OSName);
 
-		final String osArray[] = { "Mac OS X", "Windows 10", "Windows 7",
-				"Windows 8.1", "Windows 8", "Windows 7", "Windows Vista",
-				"Windows XP" };
-		for (int i = 0; i < osArray.length; i++) {
-
-			if (osArray[i].equalsIgnoreCase(OSName)) {
-				System.out.println(OSName);
-				prop = new Properties();
-				FileInputStream fis = new FileInputStream(
-						driverPath
-								+ "/src/main/java/com/ghana/app/qa/config/config.properties");
-				prop.load(fis);
-				System.out.println(OSName);
-
-			} else if (OSName.equalsIgnoreCase("Windows")) {
-
-				System.out.println(OSName);
-				prop = new Properties();
-				System.out.println(OSName);
-				FileInputStream fis = new FileInputStream(
-						driverPath
-								+ "\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
-				prop.load(fis);
-				System.out.println(OSName);
-
-			}
-		}
-
-		// final String osArray[] = { "Mac OS X", "Windows 10", "Windows 7",
-		// "Windows 8.1", "Windows 8", "Windows 7","Windows Vista", "Windows XP"
-		// };
-		// for (int i = 0; i < osArray.length; i++) {
-		if (OSName.equalsIgnoreCase("Mac OS X")) {
-			System.out.println(OSName);
+		if (OSName.equalsIgnoreCase("Mac")) {
+			System.out.println("Hello in mac");
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(
-					driverPath
-							+ "/src/main/java/com/ghana/app/qa/config/config.properties");
+			FileInputStream fis = new FileInputStream("./src/main/java/com/ghana/app/qa/config/config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
-		} else if (OSName.equalsIgnoreCase("Windows")) {
-			System.out.println(OSName);
+		} else if (OSName.equalsIgnoreCase("Win")) {
+			System.out.println("Hello in Win");
 			prop = new Properties();
 			System.out.println(OSName);
-			FileInputStream fis = new FileInputStream(
-					driverPath
-							+ "\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(".\\src\\main\\java\\com\\ghana\\app\\qa\\config\\config.properties");
 			prop.load(fis);
 			System.out.println(OSName);
 		}
@@ -117,7 +75,7 @@ public class TestBase {
 		String testOnCloud = prop.getProperty("cloud");
 		// String cloudBrowser = prop.getProperty("browserOnCloud");
 
-		if (OSName.equalsIgnoreCase("Mac OS X")) {
+		if (OSName.equalsIgnoreCase("Mac")) {
 
 			if (broweserName.equalsIgnoreCase("FF")) {
 				if (headlessmode.equalsIgnoreCase("headless")) {
@@ -147,7 +105,8 @@ public class TestBase {
 					option.addArguments("headless");
 					driver = new ChromeDriver(option);
 				} else {
-
+                    WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver();
 				}
 			} else if (broweserName.equalsIgnoreCase("safari")) {
 
@@ -230,7 +189,7 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
 			}
 
-		} else if (OSName.equalsIgnoreCase("Windows")) {
+		} else if (OSName.equalsIgnoreCase("Win")) {
 
 			if (broweserName.equals("FF")) {
 				System.setProperty("webdriver.gecko.driver", driverPath
@@ -318,20 +277,21 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(SauceLabURL), caps);
 			}
 
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage()
-					.timeouts()
-					.pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,
-							TimeUnit.SECONDS);
-			driver.manage().timeouts()
-					.implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-			// driver.get(prop.getProperty("HCDLoginURL"));
-
-			driver.get(prop.getProperty("GhanaGlobalWebURL")); // ---localhost
-			// driver.get(prop.getProperty("GhanaWebURL"));
-			// driver.get(prop.getProperty("HCDLoginURL"));
+			
 
 		}
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage()
+				.timeouts()
+				.pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,
+						TimeUnit.SECONDS);
+		driver.manage().timeouts()
+				.implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		// driver.get(prop.getProperty("HCDLoginURL"));
+
+		driver.get(prop.getProperty("GhanaGlobalWebURL")); // ---localhost
+		// driver.get(prop.getProperty("GhanaWebURL"));
+		// driver.get(prop.getProperty("HCDLoginURL"));
 	}
 }

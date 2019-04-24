@@ -51,7 +51,7 @@ public class UploadDocPage extends TestBase {
 	driverPath = System.getProperty("user.dir");
 		System.out.println("path==>" +driverPath);
 		System.out.println(OSName);
-		if (OSName.equalsIgnoreCase("Mac OS X")) {
+		if (OSName.equalsIgnoreCase("Mac")) {
 			System.out.println(OSName);
 			// enter the file path onto the file-selection input field
 			attachFileBtn1.sendKeys(driverPath+"/DocumentAttach/airticket.jpeg");
@@ -64,7 +64,7 @@ public class UploadDocPage extends TestBase {
 			attachFileBtn8.sendKeys(driverPath+"/DocumentAttach/proofofvisa.pdf");
 		 
 
-		} else if (OSName.equalsIgnoreCase("Windows")) {
+		} else if (OSName.equalsIgnoreCase("Win")) {
 
 			System.out.println(OSName);
 			// enter the file path onto the file-selection input field
