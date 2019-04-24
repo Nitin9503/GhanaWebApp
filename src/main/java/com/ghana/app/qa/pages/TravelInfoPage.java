@@ -25,7 +25,8 @@ public class TravelInfoPage extends TestBase {
 	@FindBy(xpath = "//input[@id='departure_date']")
 	WebElement departureDate;
 
-	@FindBy(xpath = "//span[text()='Is Applicant in Possession of Round Ticket?']")
+	@FindBy(xpath = "//span[text()='Do you have a round trip ticket?']")  //Global
+	//@FindBy(xpath = "//span[text()='Is Applicant in Possession of Round Ticket? (Do you have a round trip ticket)']")// Local
 	WebElement isApplicantPossessionRoundTicket;
 
 	@FindBy(xpath = "//span[text()='Yes']")

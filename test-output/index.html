@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\nikhil.sonawane\AppData\Local\Temp\testng-eclipse-519878903\testng-customsuite.xml</span>
+                    <span>C:\Users\nikhil.sonawane\AppData\Local\Temp\testng-eclipse-184007581\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">54 methods, 2 failed,   52 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ghana.app.qa.testcases.ReviewApplicationPageTest" hash-for-method="getTextEmergencyContactTest">getTextEmergencyContactTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ghana.app.qa.testcases.ReviewApplicationPageTest" hash-for-method="getTextTravelInfoTest">getTextTravelInfoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">54 methods,   54 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -221,7 +202,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ghana.app.qa.testcases.ReviewApplicationPageTest" hash-for-method="getTextEmergencyContactTest">getTextEmergencyContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ghana.app.qa.testcases.ReviewApplicationPageTest" hash-for-method="getTextPersonalInfoTest">getTextPersonalInfoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ghana.app.qa.testcases.ReviewApplicationPageTest" hash-for-method="getTextTravelInfoTest">getTextTravelInfoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -391,90 +382,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ghana.app.qa.testcases.ReviewApplicationPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTextEmergencyContactTest">
-                  </a> <!-- getTextEmergencyContactTest -->
-                  <span class="method-name">getTextEmergencyContactTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Provided and Get emerCountry are not matched expected [India] but found [NaN]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextEmergencyContactTest(ReviewApplicationPageTest.java:128)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTextTravelInfoTest">
-                  </a> <!-- getTextTravelInfoTest -->
-                  <span class="method-name">getTextTravelInfoTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Provided and Get emerCountry are not matched expected [India] but found [NaN]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.ghana.app.qa.testcases.ReviewApplicationPageTest.getTextTravelInfoTest(ReviewApplicationPageTest.java:172)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -623,9 +530,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="getTextEmergencyContactTest">
+                  </a> <!-- getTextEmergencyContactTest -->
+                  <span class="method-name">getTextEmergencyContactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="getTextPersonalInfoTest">
                   </a> <!-- getTextPersonalInfoTest -->
                   <span class="method-name">getTextPersonalInfoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTextTravelInfoTest">
+                  </a> <!-- getTextTravelInfoTest -->
+                  <span class="method-name">getTextTravelInfoTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -850,7 +771,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nikhil.sonawane\AppData\Local\Temp\testng-eclipse-519878903\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nikhil.sonawane\AppData\Local\Temp\testng-eclipse-184007581\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -901,226 +822,226 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(54);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectPassPortType')
+data.setCell(0, 1, 'clickOnSaveAndContinueBtnTest')
 data.setCell(0, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(0, 3, 5372);
+data.setCell(0, 3, 7207);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickOnCintinueBtnTest')
+data.setCell(1, 1, 'selectPassPortType')
 data.setCell(1, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(1, 3, 4421);
+data.setCell(1, 3, 5594);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'clickOnSaveAndContinueTest')
 data.setCell(2, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(2, 3, 4190);
+data.setCell(2, 3, 4829);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'enterCaptchaFieldTest')
+data.setCell(3, 1, 'clickOnCintinueBtnTest')
 data.setCell(3, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(3, 3, 4169);
+data.setCell(3, 3, 4780);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickOnSaveAndContinueBtnTest')
+data.setCell(4, 1, 'enterCaptchaFieldTest')
 data.setCell(4, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(4, 3, 2963);
+data.setCell(4, 3, 4170);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectNationalityTest')
+data.setCell(5, 1, 'clickOnVisaTypeTest')
 data.setCell(5, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(5, 3, 2285);
+data.setCell(5, 3, 3054);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'selectFormerNationalityTest')
+data.setCell(6, 1, 'selectNationalityTest')
 data.setCell(6, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(6, 3, 2199);
+data.setCell(6, 3, 2298);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'clickOnGenderTest')
+data.setCell(7, 1, 'selectFormerNationalityTest')
 data.setCell(7, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(7, 3, 2087);
+data.setCell(7, 3, 2226);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getApplicationPageTitleTest')
+data.setCell(8, 1, 'clickOnGenderTest')
 data.setCell(8, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(8, 3, 2009);
+data.setCell(8, 3, 2132);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'filladdressInfoTest')
+data.setCell(9, 1, 'getApplicationPageTitleTest')
 data.setCell(9, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(9, 3, 1318);
+data.setCell(9, 3, 2008);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'PassSecondaryRefDetailsTest')
+data.setCell(10, 1, 'filladdressInfoTest')
 data.setCell(10, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(10, 3, 1111);
+data.setCell(10, 3, 1449);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'emergencyProfessionDetailsTest')
+data.setCell(11, 1, 'verifyApplyVisaClickTest')
 data.setCell(11, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(11, 3, 1003);
+data.setCell(11, 3, 1289);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'clickOnVisaTypeTest')
+data.setCell(12, 1, 'PassSecondaryRefDetailsTest')
 data.setCell(12, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(12, 3, 573);
+data.setCell(12, 3, 1252);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'clickOnContinuebuttonTest')
 data.setCell(13, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(13, 3, 484);
+data.setCell(13, 3, 1246);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'getTextTravelInfoTest')
+data.setCell(14, 1, 'emergencyProfessionDetailsTest')
 data.setCell(14, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(14, 3, 445);
+data.setCell(14, 3, 1033);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyApplyVisaClickTest')
+data.setCell(15, 1, 'clickSaveAndContinuebtnTest')
 data.setCell(15, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(15, 3, 346);
+data.setCell(15, 3, 866);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'emergencyContactDetailsTest')
+data.setCell(16, 1, 'getUploadDocTest')
 data.setCell(16, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(16, 3, 340);
+data.setCell(16, 3, 513);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'getUploadDocTest')
+data.setCell(17, 1, 'emergencyContactDetailsTest')
 data.setCell(17, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(17, 3, 322);
+data.setCell(17, 3, 504);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'pass_primary_ref_stateTest')
+data.setCell(18, 1, 'clickOnContinueBtnTest')
 data.setCell(18, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(18, 3, 268);
+data.setCell(18, 3, 461);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'getTextEmergencyContactTest')
+data.setCell(19, 1, 'getTextTravelInfoTest')
 data.setCell(19, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(19, 3, 261);
+data.setCell(19, 3, 443);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'pass_primary_ref_cityTest')
+data.setCell(20, 1, 'passReEmailIdTest')
 data.setCell(20, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(20, 3, 259);
+data.setCell(20, 3, 397);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'passReEmailIdTest')
+data.setCell(21, 1, 'getTextEmergencyContactTest')
 data.setCell(21, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(21, 3, 244);
+data.setCell(21, 3, 299);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'pass_Primary_ref_addressTest')
 data.setCell(22, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(22, 3, 237);
+data.setCell(22, 3, 261);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'selectPassIssueDateTest')
+data.setCell(23, 1, 'pass_primary_ref_cityTest')
 data.setCell(23, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(23, 3, 232);
+data.setCell(23, 3, 260);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'clickOnContinuebuttonTest1')
+data.setCell(24, 1, 'passEmailIdTest')
 data.setCell(24, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(24, 3, 229);
+data.setCell(24, 3, 242);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'passEmailIdTest')
+data.setCell(25, 1, 'passFirstNameTest')
 data.setCell(25, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(25, 3, 216);
+data.setCell(25, 3, 241);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'passDateOfDepartureTest')
+data.setCell(26, 1, 'getTextAddressInfoTest')
 data.setCell(26, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(26, 3, 211);
+data.setCell(26, 3, 218);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'getTextAddressInfoTest')
+data.setCell(27, 1, 'pass_primary_ref_stateTest')
 data.setCell(27, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(27, 3, 205);
+data.setCell(27, 3, 198);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'getTextPersonalInfoTest')
+data.setCell(28, 1, 'selectPortOfArrivalTest')
 data.setCell(28, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(28, 3, 176);
+data.setCell(28, 3, 191);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'clickOnIsApplicantPossessionRoundTicketTest')
+data.setCell(29, 1, 'selectPassIssueDateTest')
 data.setCell(29, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(29, 3, 153);
+data.setCell(29, 3, 180);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'clickSaveAndContinuebtnTest')
+data.setCell(30, 1, 'selectPassExpiryDateTest')
 data.setCell(30, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(30, 3, 151);
+data.setCell(30, 3, 178);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'clickOnTravelByTest')
+data.setCell(31, 1, 'getTextPersonalInfoTest')
 data.setCell(31, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(31, 3, 144);
+data.setCell(31, 3, 171);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'selectVisaFeesTest')
+data.setCell(32, 1, 'selectVisaLocationTest')
 data.setCell(32, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(32, 3, 141);
+data.setCell(32, 3, 157);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'selectDateOfBirthTest')
+data.setCell(33, 1, 'clickOnIsApplicantPossessionRoundTicketTest')
 data.setCell(33, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(33, 3, 137);
+data.setCell(33, 3, 157);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'passPassportNumberTest')
+data.setCell(34, 1, 'selectVisaFeesTest')
 data.setCell(34, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(34, 3, 137);
+data.setCell(34, 3, 153);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'selectPortOfArrivalTest')
+data.setCell(35, 1, 'passPhoneNoTest')
 data.setCell(35, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(35, 3, 136);
+data.setCell(35, 3, 149);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'passTicketNumberTest')
+data.setCell(36, 1, 'selectRelationTest')
 data.setCell(36, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(36, 3, 132);
+data.setCell(36, 3, 148);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'selectVisaLocationTest')
+data.setCell(37, 1, 'pass_primary_ref_phone_numberTest')
 data.setCell(37, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(37, 3, 131);
+data.setCell(37, 3, 147);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'pass_primary_ref_phone_numberTest')
+data.setCell(38, 1, 'passDateOfDepartureTest')
 data.setCell(38, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(38, 3, 130);
+data.setCell(38, 3, 145);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'selectPassExpiryDateTest')
+data.setCell(39, 1, 'clickOnTravelByTest')
 data.setCell(39, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(39, 3, 126);
+data.setCell(39, 3, 144);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'passPhoneNoTest')
+data.setCell(40, 1, 'selectDateOfBirthTest')
 data.setCell(40, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(40, 3, 125);
+data.setCell(40, 3, 139);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'selectRelationTest')
+data.setCell(41, 1, 'clickOnContinuebuttonTest1')
 data.setCell(41, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(41, 3, 120);
+data.setCell(41, 3, 137);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'passPlaceOfBirthTest')
+data.setCell(42, 1, 'passTicketNumberTest')
 data.setCell(42, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(42, 3, 114);
+data.setCell(42, 3, 123);
 data.setCell(43, 0, 43)
 data.setCell(43, 1, 'passPrimaryRefLastnameTest')
 data.setCell(43, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(43, 3, 113);
+data.setCell(43, 3, 122);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'clickPurpose_of_journeyTest')
 data.setCell(44, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(44, 3, 112);
+data.setCell(44, 3, 119);
 data.setCell(45, 0, 45)
 data.setCell(45, 1, 'pass_primary_ref_pincodeTest')
 data.setCell(45, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(45, 3, 103);
+data.setCell(45, 3, 114);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'passLastNameTest')
+data.setCell(46, 1, 'passPassportNumberTest')
 data.setCell(46, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(46, 3, 100);
+data.setCell(46, 3, 112);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'passFirstNameTest')
+data.setCell(47, 1, 'passPlaceOfBirthTest')
 data.setCell(47, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(47, 3, 93);
+data.setCell(47, 3, 106);
 data.setCell(48, 0, 48)
 data.setCell(48, 1, 'pass_primary_ref_countryTest')
 data.setCell(48, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(48, 3, 93);
+data.setCell(48, 3, 102);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'passPrimaryRefFirstnameTest')
+data.setCell(49, 1, 'passLastNameTest')
 data.setCell(49, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(49, 3, 89);
+data.setCell(49, 3, 100);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'clickOnContinueBtnTest')
+data.setCell(50, 1, 'passPrimaryRefFirstnameTest')
 data.setCell(50, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(50, 3, 74);
+data.setCell(50, 3, 95);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'getVisaCategoriesText')
+data.setCell(51, 1, 'getApplicationIdTest')
 data.setCell(51, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(51, 3, 51);
+data.setCell(51, 3, 43);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'getApplicationIdTest')
+data.setCell(52, 1, 'getVisaCategoriesText')
 data.setCell(52, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(52, 3, 48);
+data.setCell(52, 3, 40);
 data.setCell(53, 0, 53)
 data.setCell(53, 1, 'validateHomePageTitle')
 data.setCell(53, 2, 'com.ghana.app.qa.testcases.ReviewApplicationPageTest')
-data.setCell(53, 3, 22);
+data.setCell(53, 3, 27);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 52 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -1153,223 +1074,219 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateHomePageTitle</span>
-                <span class="method-start">8605 ms</span>
+                <span class="method-start">25276 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyApplyVisaClickTest</span>
-                <span class="method-start">8630 ms</span>
+                <span class="method-start">25306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getVisaCategoriesText</span>
-                <span class="method-start">8979 ms</span>
+                <span class="method-start">26597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnVisaTypeTest</span>
-                <span class="method-start">9032 ms</span>
+                <span class="method-start">26638 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPassPortType</span>
-                <span class="method-start">9608 ms</span>
+                <span class="method-start">29695 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectNationalityTest</span>
-                <span class="method-start">14981 ms</span>
+                <span class="method-start">35290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPortOfArrivalTest</span>
-                <span class="method-start">17267 ms</span>
+                <span class="method-start">37589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passPhoneNoTest</span>
-                <span class="method-start">17404 ms</span>
+                <span class="method-start">37782 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passEmailIdTest</span>
-                <span class="method-start">17531 ms</span>
+                <span class="method-start">37933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passReEmailIdTest</span>
-                <span class="method-start">17749 ms</span>
+                <span class="method-start">38177 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterCaptchaFieldTest</span>
-                <span class="method-start">17994 ms</span>
+                <span class="method-start">38576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectDateOfBirthTest</span>
-                <span class="method-start">22166 ms</span>
+                <span class="method-start">42747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnSaveAndContinueBtnTest</span>
-                <span class="method-start">22304 ms</span>
+                <span class="method-start">42887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getApplicationPageTitleTest</span>
-                <span class="method-start">25269 ms</span>
+                <span class="method-start">50095 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getApplicationIdTest</span>
-                <span class="method-start">27279 ms</span>
+                <span class="method-start">52104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectVisaFeesTest</span>
-                <span class="method-start">27328 ms</span>
+                <span class="method-start">52148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectVisaLocationTest</span>
-                <span class="method-start">27471 ms</span>
+                <span class="method-start">52303 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passFirstNameTest</span>
-                <span class="method-start">27603 ms</span>
+                <span class="method-start">52461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passLastNameTest</span>
-                <span class="method-start">27698 ms</span>
+                <span class="method-start">52703 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passPassportNumberTest</span>
-                <span class="method-start">27800 ms</span>
+                <span class="method-start">52804 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnGenderTest</span>
-                <span class="method-start">27939 ms</span>
+                <span class="method-start">52917 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPassIssueDateTest</span>
-                <span class="method-start">30028 ms</span>
+                <span class="method-start">55050 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectPassExpiryDateTest</span>
-                <span class="method-start">30261 ms</span>
+                <span class="method-start">55231 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passPlaceOfBirthTest</span>
-                <span class="method-start">30388 ms</span>
+                <span class="method-start">55410 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnSaveAndContinueTest</span>
-                <span class="method-start">30503 ms</span>
+                <span class="method-start">55518 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectFormerNationalityTest</span>
-                <span class="method-start">34694 ms</span>
+                <span class="method-start">60348 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">filladdressInfoTest</span>
-                <span class="method-start">36894 ms</span>
+                <span class="method-start">62575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSaveAndContinuebtnTest</span>
-                <span class="method-start">38213 ms</span>
+                <span class="method-start">64025 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">emergencyContactDetailsTest</span>
-                <span class="method-start">38365 ms</span>
+                <span class="method-start">64892 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectRelationTest</span>
-                <span class="method-start">38710 ms</span>
+                <span class="method-start">65397 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">emergencyProfessionDetailsTest</span>
-                <span class="method-start">38831 ms</span>
+                <span class="method-start">65545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnCintinueBtnTest</span>
-                <span class="method-start">39835 ms</span>
+                <span class="method-start">66579 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnIsApplicantPossessionRoundTicketTest</span>
-                <span class="method-start">44257 ms</span>
+                <span class="method-start">71361 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passDateOfDepartureTest</span>
-                <span class="method-start">44411 ms</span>
+                <span class="method-start">71518 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passTicketNumberTest</span>
-                <span class="method-start">44623 ms</span>
+                <span class="method-start">71664 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnTravelByTest</span>
-                <span class="method-start">44756 ms</span>
+                <span class="method-start">71788 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickPurpose_of_journeyTest</span>
-                <span class="method-start">44901 ms</span>
+                <span class="method-start">71933 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passPrimaryRefFirstnameTest</span>
-                <span class="method-start">45014 ms</span>
+                <span class="method-start">72053 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passPrimaryRefLastnameTest</span>
-                <span class="method-start">45104 ms</span>
+                <span class="method-start">72148 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_Primary_ref_addressTest</span>
-                <span class="method-start">45218 ms</span>
+                <span class="method-start">72271 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_primary_ref_pincodeTest</span>
-                <span class="method-start">45456 ms</span>
+                <span class="method-start">72533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_primary_ref_cityTest</span>
-                <span class="method-start">45561 ms</span>
+                <span class="method-start">72647 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_primary_ref_stateTest</span>
-                <span class="method-start">45822 ms</span>
+                <span class="method-start">72909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_primary_ref_countryTest</span>
-                <span class="method-start">46091 ms</span>
+                <span class="method-start">73108 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pass_primary_ref_phone_numberTest</span>
-                <span class="method-start">46185 ms</span>
+                <span class="method-start">73210 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PassSecondaryRefDetailsTest</span>
-                <span class="method-start">46317 ms</span>
+                <span class="method-start">73358 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnContinuebuttonTest</span>
-                <span class="method-start">47429 ms</span>
+                <span class="method-start">74611 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getUploadDocTest</span>
-                <span class="method-start">47913 ms</span>
+                <span class="method-start">75858 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnContinuebuttonTest1</span>
-                <span class="method-start">48235 ms</span>
+                <span class="method-start">76372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getTextPersonalInfoTest</span>
-                <span class="method-start">48465 ms</span>
+                <span class="method-start">76511 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getTextAddressInfoTest</span>
-                <span class="method-start">48642 ms</span>
+                <span class="method-start">76683 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getTextEmergencyContactTest</span>
-                <span class="method-start">48848 ms</span>
+                <span class="method-start">76903 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getTextTravelInfoTest</span>
-                <span class="method-start">49111 ms</span>
+                <span class="method-start">77203 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnContinueBtnTest</span>
-                <span class="method-start">49557 ms</span>
+                <span class="method-start">77647 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

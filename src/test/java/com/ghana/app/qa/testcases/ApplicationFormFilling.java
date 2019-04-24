@@ -133,7 +133,8 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	@Test(priority = 19)
 	public void passFirstNameTest() throws InterruptedException, IOException {
 		personalInfoPage.passFirstName(firstName);
-
+		personalInfoPage.passMiddleName(midleName);
+		
 	}
 
 	@Test(priority = 20)
@@ -271,7 +272,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	public void passDateOfDepartureTest() throws InterruptedException,
 			IOException {
 		travelInfoPage.passDateOfDeparture(dateOfDeparture);
-		travelInfoPage.clickOnContinuebutton();
+		//travelInfoPage.clickOnContinuebutton();
 	}
 
 	@Test(priority = 36)

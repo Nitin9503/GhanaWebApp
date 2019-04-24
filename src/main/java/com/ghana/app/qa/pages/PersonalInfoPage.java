@@ -27,7 +27,7 @@ public class PersonalInfoPage extends TestBase {
 
 	@FindBy(xpath = ".//*[@id='nav-personal']/div/div[2]/div[1]/div[2]/h6")
 	WebElement applicationId;
-	@FindBy(xpath = "//span[text()='Visa Fees']")
+	@FindBy(xpath = "//span[text()='Visa Type']")
 	WebElement clickvisaFees;//
 
 	@FindBy(id = "sel_visaFee")
@@ -46,6 +46,8 @@ public class PersonalInfoPage extends TestBase {
 	WebElement clickVisaLocation;//
 	@FindBy(xpath = "//input[@id='firstname']")
 	WebElement firstname;
+	@FindBy(xpath = "//input[@id='middlename']")
+	WebElement middlename;
 	@FindBy(xpath = "//input[@id='lastname']")
 	WebElement lastname;
 	@FindBy(xpath = "//input[@type='radio' and @value='Male']")
@@ -82,8 +84,11 @@ public class PersonalInfoPage extends TestBase {
 	public void SelectvisaFees() throws InterruptedException {
 		TestUtil.actionClassMethod(clickvisaFees);
 		driver.findElement(
-				By.xpath("//span[contains(text(),'" + visaFees + "')]"))
+				//By.xpath("//span[contains(text(),'" + visaFees + "')]"))
+				//By.xpath("//option[contains(text(),'" + visaFees + "')]"))
+				By.xpath("//span[contains(text(),'Single entry(3 months) visa INR.8500.0')]"))
 				.click();
+		
 		
 	}
 
@@ -92,13 +97,17 @@ public class PersonalInfoPage extends TestBase {
 		TestUtil.actionClassMethod(visaLocation);
 		driver.findElement(
 				By.xpath("//span[contains(text(),'" + VisaLocations + "')]")).click();
+		      // By.xpath("//option[contains(text(),'" + VisaLocations + "')]")).click();
 
 	}
 
 	public void passFirstName(String firstName) {
 		firstname.sendKeys(firstName);
 	}
-
+	
+	public void passMiddleName(String middleName) {
+		middlename.sendKeys(middleName);
+	}
 	public void passLastName(String lastName) {
 		lastname.sendKeys(lastName);
 		// return lastname.getText();

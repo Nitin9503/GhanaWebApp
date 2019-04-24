@@ -21,7 +21,29 @@ public class VisaPaymentPage extends TestBase {
 
 	@FindBy(id = "btn_submit_to_consulate")
 	WebElement submitBtn;
-
+	@FindBy(xpath = "//input[@value='Checkout']")
+	WebElement chekoutBtn;
+	
+	@FindBy(xpath = "//input[@name='creditCardNumber']")
+	WebElement cardNofield;
+	
+	@FindBy(xpath = "//select[@id='expiryMonthCreditCard']")
+	WebElement monthId;
+	@FindBy(xpath = "//select[@id='expiryYearCreditCard']")
+	WebElement yearId;
+	@FindBy(xpath = "//a[@id='SubmitBillShip']")
+	WebElement makePaymentbtn;
+	@FindBy(xpath = "//input[@value='Submit']")
+	WebElement submittbtn;
+	@FindBy(xpath = "//button[@class='btn btn-primary']")
+	WebElement OKtbtn;
+	
+	@FindBy(xpath = "//input[@id='CVVNumberCreditCard']")
+	WebElement cvvNofield;
+	
+	@FindBy(xpath = "//button[contains(text(),'Done')]")
+	WebElement DoneBtn;
+	
 	@FindBy(xpath = "//div[@id='nav-payment']//input[@value='Previous']")
 	WebElement previousBtn;
 
@@ -39,6 +61,30 @@ public class VisaPaymentPage extends TestBase {
 	public void clickOnSubmitBtn() {
 		submitBtn.click();
 	}
+	public void clickOnCheckoutBtn() {
+		chekoutBtn.click();
+	}
+	
+	public void passCardNo() {
+		cardNofield.sendKeys("4012001037141112");
+	}
+	public void passCvvNo() {
+		cvvNofield.sendKeys("123");;
+	}
+	public void clickOnMakePaymentBtn() {
+		makePaymentbtn.click();
+		
+	}
+	public void clickOnSubmitbtn() {
+		submittbtn.click();
+		
+	}
+	public void clickOnOKtbtn() {
+		OKtbtn.click();
+		}
+	public void clickOnDonetbtn() {
+		DoneBtn.click();
+		}
 	public void getTextsubmitBtn() throws InterruptedException {
 		Thread.sleep(3000);
 		String value   = submitBtn.getAttribute("value");
@@ -52,7 +98,13 @@ public class VisaPaymentPage extends TestBase {
 		previousBtn.click();
 
 	}
-
+	public WebElement selectExpiryDateMonth() {
+		return monthId;
+	}
+	
+	public WebElement selectExpiryDateYear() {
+		return yearId;
+	}
 	public void verifyConfirmationPop() throws InterruptedException {
 		Thread.sleep(2000);
 		try {

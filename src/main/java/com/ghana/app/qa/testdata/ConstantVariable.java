@@ -42,11 +42,12 @@ public class ConstantVariable {
 	//(Single entry(3 months) visa Rs.8500.0, Multiple entry(6 months) visa Rs.17000.0, Multiple entry(12 months) visa Rs.25500.0, Transit (single) visa Rs.4200.0, Transit (multiple) visa Rs.6500.0)
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
-	public static String firstName= "Vikas";
-	public static String lastName= "Dighe";
-	public static String birthDate= "22102009";
-	public static String birthPlace= "Sangamner";
-	public static String passportNumber= "A12345BA00";
+	public static String firstName="Rajendra";
+	public static String midleName="Shiva";
+	public static String lastName= "mulak";
+	public static String birthDate= "20091993";
+	public static String birthPlace= "Nashik";
+	public static String passportNumber= "123123";
 	public static String passportIssuedDate= "29102018";
 	public static String passportExpiryDate= "29102020";
 	public static String selectAddressType= "Permanent Address"; //Present Address
@@ -71,8 +72,8 @@ public class ConstantVariable {
 
 	
 	//Emergency contact 
-	public static String emerContactName= "Sachin";
-	public static String emerContactSurname= "Paratha";
+	public static String emerContactName= "Vishal";
+	public static String emerContactSurname= "Bavankar";
 	public static String selectRelationship= "Mother";
 	public static String emerPhoneNumber= "9552619866";
 	public static String profession= "Engineer";
@@ -113,6 +114,9 @@ public class ConstantVariable {
 	public static String secondaryCountry= "Ghana";
 	public static String secondaryRefrencePhoneNo= "2332422235";
 	
-
+//Payment page
+	public static String month= "Dec (12)";
+	public static String year= "2020";
+	
 
 }

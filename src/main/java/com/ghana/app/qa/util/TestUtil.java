@@ -128,7 +128,10 @@ public class TestUtil extends TestBase  {
 
 	}
 	
-
+	public static void selectValuefromDropDown(WebElement element, String  month) {
+		Select sel = new Select(element);
+		sel.selectByVisibleText(month);
+	}
 	public static void selectValuefromDropDown(WebElement element, int value) {
 		Select sel = new Select(element);
 		sel.selectByIndex(value);
