@@ -5,61 +5,8 @@
     <classes>
       <class name="com.ghana.app.qa.testcases.VisaPaymentPageTest">
         <methods>
-          <include name="clickOnContinuebuttonTest1"/>
-          <include name="passPhoneNoTest"/>
-          <include name="getApplicationIdTest"/>
-          <include name="verifyClickOnSubmitBtnTest"/>
-          <include name="pass_primary_ref_stateTest"/>
-          <include name="passReEmailIdTest"/>
-          <include name="selectRelationTest"/>
-          <include name="PassSecondaryRefDetailsTest"/>
-          <include name="selectPortOfArrivalTest"/>
-          <include name="passPrimaryRefLastnameTest"/>
-          <include name="clickOnIsApplicantPossessionRoundTicketTest"/>
-          <include name="selectVisaFeesTest"/>
-          <include name="clickOnTravelByTest"/>
-          <include name="clickPurpose_of_journeyTest"/>
-          <include name="selectDateOfBirthTest"/>
-          <include name="selectPassIssueDateTest"/>
-          <include name="getVisaCategoriesText"/>
-          <include name="validateHomePageTitle"/>
-          <include name="clickOnVisaTypeTest"/>
-          <include name="clickOnSaveAndContinueBtnTest"/>
-          <include name="pass_primary_ref_cityTest"/>
-          <include name="pass_primary_ref_countryTest"/>
-          <include name="pass_primary_ref_pincodeTest"/>
-          <include name="getTextEmergencyContactTest"/>
-          <include name="passEmailIdTest"/>
-          <include name="getTextTravelInfoTest"/>
-          <include name="enterCaptchaFieldTest"/>
-          <include name="selectVisaLocationTest"/>
-          <include name="emergencyContactDetailsTest"/>
-          <include name="pass_Primary_ref_addressTest"/>
-          <include name="passFirstNameTest"/>
-          <include name="getTextAddressInfoTest"/>
-          <include name="passDateOfDepartureTest"/>
-          <include name="getTextPersonalInfoTest"/>
-          <include name="selectPassExpiryDateTest"/>
           <include name="setUp"/>
-          <include name="passTicketNumberTest"/>
-          <include name="pass_primary_ref_phone_numberTest"/>
-          <include name="clickOnCintinueBtnTest"/>
-          <include name="selectNationalityTest"/>
-          <include name="clickOnContinueBtnTest"/>
-          <include name="selectFormerNationalityTest"/>
-          <include name="filladdressInfoTest"/>
-          <include name="passPrimaryRefFirstnameTest"/>
-          <include name="clickOnGenderTest"/>
-          <include name="clickOnContinuebuttonTest"/>
-          <include name="clickSaveAndContinuebtnTest"/>
-          <include name="getApplicationPageTitleTest"/>
-          <include name="passPassportNumberTest"/>
-          <include name="verifyApplyVisaClickTest"/>
-          <include name="clickOnSaveAndContinueTest"/>
-          <include name="passLastNameTest"/>
-          <include name="selectPassPortType"/>
-          <include name="emergencyProfessionDetailsTest"/>
-          <include name="passPlaceOfBirthTest"/>
+          <include name="verifyClickOnSubmitBtnTest"/>
         </methods>
       </class> <!-- com.ghana.app.qa.testcases.VisaPaymentPageTest -->
     </classes>

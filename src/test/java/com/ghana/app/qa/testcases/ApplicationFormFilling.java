@@ -56,7 +56,9 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 	public void selectPortOfArrivalTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectPortOfArrival();
-
+		//Thread.sleep(2000);
+		signUpPage.SelectvisaFees();
+		signUpPage.SelectvisaLocation();
 	}
 
 	@Test(priority = 9)
@@ -117,7 +119,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 		System.out.println(applicationID);
 	}
 
-	@Test(priority = 17)
+	/*@Test(priority = 17)
 	public void selectVisaFeesTest() throws InterruptedException, IOException {
 		personalInfoPage.SelectvisaFees();
 
@@ -128,7 +130,7 @@ public class ApplicationFormFilling extends VisaCategoriesPageTest {
 			IOException {
 		personalInfoPage.SelectvisaLocation();
 
-	}
+	}*/
 
 	@Test(priority = 19)
 	public void passFirstNameTest() throws InterruptedException, IOException {

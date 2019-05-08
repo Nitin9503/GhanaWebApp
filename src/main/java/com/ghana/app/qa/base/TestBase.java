@@ -199,9 +199,9 @@ public class TestBase {
 				driver = new FirefoxDriver();
 
 			} else if (broweserName.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", driverPath
-						+ "\\FileDriver\\chromedriver.exe");
-				// WebDriverManager.chromedriver().setup();
+			/*	System.setProperty("webdriver.chrome.driver", driverPath
+						+ "\\FileDriver\\chromedriver.exe");*/
+				 WebDriverManager.chromedriver().setup();
 
 				driver = new ChromeDriver();
 			}
@@ -290,7 +290,7 @@ public class TestBase {
 				.implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		// driver.get(prop.getProperty("HCDLoginURL"));
 
-		driver.get(prop.getProperty("GhanaGlobalWebURL")); // ---localhost
+		driver.get(prop.getProperty("GhanaLocalWebURL")); // ---localhost
 		// driver.get(prop.getProperty("GhanaWebURL"));
 		// driver.get(prop.getProperty("HCDLoginURL"));
 	}

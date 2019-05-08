@@ -35,7 +35,8 @@ public class SignUpPageTest extends DriverInit {
 	public void selectPortOfArrivalTest() throws InterruptedException,
 			IOException {
 		signUpPage.selectPortOfArrival();
-
+		signUpPage.SelectvisaFees();
+		signUpPage.SelectvisaLocation();
 	}
 
 	@Test(priority = 9)

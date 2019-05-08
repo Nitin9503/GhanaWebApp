@@ -43,6 +43,12 @@ public class SignUpPage extends TestBase {
 	@FindBy(xpath = "//span[text()='Port of Arrival']")
 	WebElement PortofArrival;
 
+	@FindBy(xpath = "//span[text()='Select Visa Type']")
+	WebElement clickvisaFees;
+	
+	@FindBy(xpath = "//span[text()='Select Visa Location']")
+	WebElement visaLocation;
+	
 	@FindBy(xpath = "//ul[@id='img_category_options']//li[text()='Ghana Airport']")
 	WebElement selectPortofArrival;
 
@@ -121,7 +127,24 @@ public class SignUpPage extends TestBase {
 		// selectPortofArrival.click();
 
 	}
+	public void SelectvisaFees() throws InterruptedException {
+		TestUtil.actionClassMethod(clickvisaFees);
+		driver.findElement(
+				//By.xpath("//span[contains(text(),'" + visaFees + "')]"))
+				//By.xpath("//option[contains(text(),'" + visaFees + "')]"))
+				By.xpath("//li[contains(text(),'Transit (multiple) visa INR.6500.0')]"))
+				.click();
+		
+		
+	}
+	public void SelectvisaLocation() throws InterruptedException {
 
+		TestUtil.actionClassMethod(visaLocation);
+		driver.findElement(
+				By.xpath("//li[contains(text(),'" + VisaLocations + "')]")).click();
+		      // By.xpath("//option[contains(text(),'" + VisaLocations + "')]")).click();
+
+	}
 	public void passPhoneNo(String phoneNo) {
 		PhoneNumber.sendKeys(phoneNo);
 	}
