@@ -43,7 +43,7 @@ public class ConstantVariable {
 	public static String VisaLocations= "Mumbai";//(New Delhi, Mumbai, Kolkata, )
 	public static String selectFormerNationlity= "None";
 
-	public static String firstName="Prakash";
+	public static String firstName="Pratiksha";
 	public static String midleName="shreekant";
 	public static String lastName= "Navale";
 	public static String birthDate= "25091990";

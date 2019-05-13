@@ -66,22 +66,22 @@ public class CNDocumentVerificaton extends TestBase {
 	@FindBy(xpath = "//div[@class='col-sm-4 stretch-card']//div[2]//img[1]")
 	private WebElement clickOnPhoto;
 
-	@FindBy(xpath = "//div[3]//img[1]")
+	@FindBy(xpath = "//div[3]//img[1]")   
 	private WebElement yellowFeverVaccination;
 
-	@FindBy(xpath = "//div[4]//img[1]")
+	@FindBy(xpath = "//div[@class='main-panel']//div[4]//img[1]")
 	private WebElement coveringLetter;
 
 	@FindBy(xpath = "//div[5]//img[1]")
 	private WebElement photoCopyOfDraft;
 
-	@FindBy(xpath = "//div[6]//img[1]")
+	@FindBy(xpath = "//div[5]//img[1]")
 	private WebElement idProofOfReference;
 
-	@FindBy(xpath = "//div[7]//img[1]")
+	@FindBy(xpath = "//div[6]//img[1]")
 	WebElement originalInvitationLetter;
 
-	@FindBy(xpath = "//div[8]//img[1]")
+	@FindBy(xpath = "//div[7]//img[1]")
 	WebElement proofOfTransitValidVisa;
 
 	@FindBy(xpath = "//h4[text()='Confirmed air ticket']")
@@ -175,11 +175,11 @@ public class CNDocumentVerificaton extends TestBase {
 		TestUtil.actionClassMethod(closeButton);
 	}
 
-	public void closeButtonToCloseWindow8() {
+	/*public void closeButtonToCloseWindow8() {
 		TestUtil.waitForElemenToClick(closeButtonToCloseWindow.get(7), 60);
 		WebElement closeButton = closeButtonToCloseWindow.get(7);
 		TestUtil.actionClassMethod(closeButton);
-	}
+	}*/
 
 	public void clickOnConfirmAirTicket() throws InterruptedException {	
 		TestUtil.clickOnElement(confirmAirTicket);

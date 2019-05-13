@@ -422,14 +422,12 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 				"Provided and Get firstName are not matched");
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextPassportNumberHCD(), (passportNumber),
 				"Provided and Get Passport Number are not matched");
-		softAssertion.assertEquals(hCDApplicantInfoPage.getTextDateOfBirthHCD(), (birthDate),
+		/*softAssertion.assertEquals(hCDApplicantInfoPage.getTextDateOfBirthHCD(), (birthDate),
 				"Provided and Get Birth Date  are not matched");
-		softAssertion.assertEquals(hCDApplicantInfoPage.getTextPlaceOfBirthHCD(), (birthPlace),
-				"Provided and Get Birth Place  are not matched");
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextPassportDateOfIssueHCD(), (passportIssuedDate),
 				"Provided and Get Passport Issued Date are not matched");
 		softAssertion.assertEquals(hCDApplicantInfoPage.getTextPassportExpiryDateHCD(), (passportExpiryDate),
-				"Provided and Get Passport Expiry Date are not matched");
+				"Provided and Get Passport Expiry Date are not matched");*/
 		softAssertion.assertAll();
 	
 	}
@@ -507,7 +505,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 		
 		
 	}
-	@Test(priority = 137, description = "This test will verify Approved application by HCD Whether it is in Approved Bucket in HCD")
+	@Test(priority = 138, description = "This test will verify Approved application by HCD Whether it is in Approved Bucket in HCD")
 	public void verifyApprovedApplicaIsInApproveBucketHCD() throws InterruptedException {
 		Thread.sleep(3000);	
 		softAssertion.assertEquals(TestUtil.getTextFromApplicationID(), applicationID,
@@ -517,7 +515,7 @@ public class HighCommissionPageTest extends ConsulatePageTest{
 	;
 		TestUtil.toCloseNewTab();
 	}
-	@Test(priority = 138, description = "This test will verify whether application is in Approve bucket of CN after got approve from HCD")
+	@Test(priority = 139, description = "This test will verify whether application is in Approve bucket of CN after got approve from HCD")
 	public void verifyApplicationInApproveBucketInCN() throws InterruptedException {
 		System.out.println("Last");
 		Thread.sleep(3000);	
