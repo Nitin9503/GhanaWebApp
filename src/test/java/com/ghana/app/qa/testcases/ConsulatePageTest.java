@@ -611,6 +611,63 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		TestUtil.toCloseNewTab();	
 	}	
 	
+	@Test(priority = 101, description = "This test will verify whether application is opens upon clicing on Open button and also clicking back button navigates to Bucket")
+	public void verifyCanceAndCrossButton() throws InterruptedException {
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);
+		consulatedashBoardPage.crossButton1PopApplicationSentToHCD();
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);		
+		consulatedashBoardPage.cancelButton1PopApplicationSentToHCD();	
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		System.out.println("2222");
+		softAssertion.assertAll();
+		System.out.println("Passed");	
+		TestUtil.toCloseNewTab();	
+	}	
+	@Test(priority = 101, description = "This test will verify whether application is opens upon clicing on Open button and also clicking back button navigates to Bucket")
+	public void verifyCanceAndCrossButton() throws InterruptedException {
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);
+		consulatedashBoardPage.crossButton1PopApplicationSentToHCD();
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);		
+		consulatedashBoardPage.cancelButton1PopApplicationSentToHCD();	
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		System.out.println("2222");
+		softAssertion.assertAll();
+		System.out.println("Passed");	
+		TestUtil.toCloseNewTab();	
+	}	
+	@Test(priority = 101, description = "This test will verify whether application is opens upon clicing on Open button and also clicking back button navigates to Bucket")
+	public void verifyCanceAndCrossButton() throws InterruptedException {
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);
+		consulatedashBoardPage.crossButton1PopApplicationSentToHCD();
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		Thread.sleep(3000);
+		TestUtil.clickOnElement();
+		Thread.sleep(3000);		
+		consulatedashBoardPage.cancelButton1PopApplicationSentToHCD();	
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+				"We are not navigate to consulate dashboard page after enetering valid creadentials");
+		System.out.println("2222");
+		softAssertion.assertAll();
+		System.out.println("Passed");	
+		TestUtil.toCloseNewTab();	
+	}	
 	
 	
 	
