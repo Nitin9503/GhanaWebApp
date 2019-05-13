@@ -47,7 +47,7 @@ public class TestUtil extends TestBase {
 	public static String title = "";
 	public static String screenshotName = "";
 
-	public static String providedDate = " "; 
+	public static String providedDate = ""; 
 	
 
 	// Static variable for Launch activety of browser
