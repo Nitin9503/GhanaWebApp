@@ -16,7 +16,6 @@ public class ConstantVariable {
 	public static boolean selectedCheckBoxOnDocSingle;
 	
 	//Buckets title
-	public static String newApplication="New Application";
 	public static String getTextFromApproveButtonFromCN="";
 	public static String getTextFromApproveFromHCD="";
 	

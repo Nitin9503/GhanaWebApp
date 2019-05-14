@@ -27,7 +27,6 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 
 	public ConsulatePageTest() throws IOException, InterruptedException {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Test(priority = 57, description = "This test will verify login functinality with pass valid creadentials and click on Login button")
@@ -36,8 +35,8 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		TestUtil.toOpenNewTab();
 		TestUtil.toSwitchBetweenWindows(1);
 		driver.get(prop.getProperty("HCDLoginURL"));	
-		highAndConsulateLoginPage.passUserName("CN1234");
-		highAndConsulateLoginPage.passPassword("1234");
+		highAndConsulateLoginPage.passUserName(prop.getProperty("UserNameCN"));
+		highAndConsulateLoginPage.passPassword(prop.getProperty("PassWordCN"));
 		highAndConsulateLoginPage.clickOnLoginButton();
 		System.out.println( "applicationIDCN==>" +applicationID);
 
@@ -46,7 +45,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 58 , description = "This test will verify we navigated to Welcome To Ghana Embassy page upon cliclking on Login button")
 	public void verifyTitleOfConsulateTitle() {
 		System.out.println("HI1");
-		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), prop.getProperty("titleOfBucketPage"),
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
 	}  
@@ -55,15 +54,15 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnNewApplicationCN() throws InterruptedException {
 		System.out.println("HI2");
 		Thread.sleep(3000);	
-		System.out.println("newApplication==>" +newApplication);
+		System.out.println("newApplication==>" +prop.getProperty("newApplicationBucket"));
 		System.out.println("consulatedashBoardPage.textNewApplicationBucket()==>" +consulatedashBoardPage.textNewApplicationBucket());
-		softAssertion.assertEquals(consulatedashBoardPage.textNewApplicationBucket(), newApplication,
+		softAssertion.assertEquals(consulatedashBoardPage.textNewApplicationBucket(), prop.getProperty("newApplicationBucket"),
 				"We are not in new Application bucket");
 		
 		softAssertion.assertEquals(TestUtil.getTextFromApplicationID(), applicationID,
 				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
 		TestUtil.clickOnElement();
-		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), prop.getProperty("applicantDashboardTitle"),
 				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
 		softAssertion.assertAll();
 	}
@@ -90,7 +89,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnAddressInforCN() throws InterruptedException {
 		System.out.println("HI3");
 		applicantDashBoardPage.clickOnAddressInfor();
-		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
+		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), prop.getProperty("addressInformationTitle"),
 				"We are not navigate to CN Address Info page upon clicking on Address Information from Applicant Dashboard");
 		softAssertion.assertAll();
 	}
@@ -118,7 +117,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 63)
 	public void verfiyTitleOfCNTravelInfoPageCN() throws InterruptedException {
 		applicantDashBoardPage.clickOnTravelInfor();
-		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
+		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), prop.getProperty("travelInformationTitle"),
 				"We are not navigate to Travel Information page upon clicking on Travel Information from Applicant Dashboard");
 		softAssertion.assertAll();
 	}
@@ -158,7 +157,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 65)
 	public void verfiyTitleOfCNDocumentVerificatonPageCN() throws InterruptedException {
 		applicantDashBoardPage.clickOnDocumentVeri();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), prop.getProperty("documentVerificationTitle"),
 				"We are not navigate to Document Verification page upon clicking on Document Verification from Applicant Dashboard");
 		softAssertion.assertAll();
 	}
@@ -167,7 +166,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnBackButtonAndVerifyTitleTravelInformationCN() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
-		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
+		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), prop.getProperty("travelInformationTitle"),
 				"We are not navigate to Travel Information page upon clicking on Back Button from Document Verification");
 		softAssertion.assertAll();
 
@@ -177,7 +176,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnBackButtonAndVerifyTitleAddressInformationCN() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
-		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
+		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), prop.getProperty("addressInformationTitle"),
 				"We are not navigate to Address Information page upon clicking on Back Button from Travel Information");
 		softAssertion.assertAll();
 
@@ -187,7 +186,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnBackButtonAndVerifyTitleApplicantInformationCN() throws InterruptedException {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnBackButton();
-		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(),  prop.getProperty("applicantDashboardTitle"),
 				"We are not navigate to Applicant Dashboard page upon clicking on Applicant Information from Document Verifcation");
 		softAssertion.assertAll();
 
@@ -196,7 +195,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 69)
 	public void clickOnNextButtonAndVerifyTitleAddressInformationCN() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), "Address Information",
+		softAssertion.assertEquals(cNAddressInfo.titleOfCNAddressInfoPage(), prop.getProperty("addressInformationTitle"),
 				"We are not navigate to CN Address Info page upon clicking on Next Button from Applicant Dashboard");
 		softAssertion.assertAll();
 	}
@@ -204,7 +203,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 70)
 	public void clickOnNextButtonAndVerifyTitleTravelInformationCN() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), "Travel Information",
+		softAssertion.assertEquals(cNTravelInfo.titleOfCNTravelInfoPage(), prop.getProperty("travelInformationTitle"),
 				"We are not navigate to Travel Information page upon clicking on Next Button from Address Information");
 		softAssertion.assertAll();
 	}
@@ -212,17 +211,17 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 71)
 	public void clickOnNextButtonAndVerifyTitleDocumentVerificationCN() throws InterruptedException {
 		applicantDashBoardPage.clickOnNextButton();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCNDocumentVerificatonPage(), prop.getProperty("documentVerificationTitle"),
 				"We are not navigate to Document Verification page upon clicking on Next Button from Travel Information");
 		softAssertion.assertAll();
 	}
 	
 	@Test(priority =72)
 	public void passCommentCN() {
-		applicantDashBoardPage.passComment("Verifying your Application");
+		applicantDashBoardPage.passComment(prop.getProperty("passCommentFromCN"));
 		applicantDashBoardPage.addCooment();
 		applicantDashBoardPage.getTextFromAddedComment();
-		softAssertion.assertEquals(applicantDashBoardPage.getTextFromAddedComment(), "Verifying your Application",
+		softAssertion.assertEquals(applicantDashBoardPage.getTextFromAddedComment(), prop.getProperty("passCommentFromCN"),
 				"Latest passed comment is not matched after getting text from comment section");
 		softAssertion.assertAll();
 	}
@@ -231,11 +230,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnConfirmedAirTicketWindowCloseCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), "Confirmed air ticket",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), prop.getProperty("confirmedairticketTitle"),
 				"Confirmed air ticket window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Confirmed air ticket)");
 		Thread.sleep(2000);
 		cNDocumentVerificaton.closeButtonToCloseWindow1();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Confirmed Air Ticket Window");
 		softAssertion.assertAll();
 		System.out.println("1");
@@ -245,11 +244,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnConfirmedAirTicketWindowCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnConfirmAirTicket();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), "Confirmed air ticket",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfConfirmedAirTicketWindow(), prop.getProperty("confirmedairticketTitle"),
 				"Confirmed air ticket window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Confirmed air ticket)");
 		Thread.sleep(2000);
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Confirmed Air Ticket Window");
 		softAssertion.assertAll();
 		System.out.println("2");
@@ -259,10 +258,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnOnPhotoCloseCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow(), "Recent passport size photo",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow(), prop.getProperty("RecentpassportsizephotoTitle"),
 				"Recent passport size photo window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Recent passport size photo)");
 		cNDocumentVerificaton.closeButtonToCloseWindow2();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Recent passport size photo");
 		softAssertion.assertAll();
 		System.out.println("4");
@@ -272,10 +271,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnOnPhotoCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnPhoto();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow(), "Recent passport size photo",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfRecentPhotoWindow(), prop.getProperty("RecentpassportsizephotoTitle"),
 				"Recent passport size photo window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Recent passport size photo)");
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Recent passport size photo");
 		softAssertion.assertAll();
 		System.out.println("3");
@@ -285,10 +284,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnYellowFevervaccinationCloseCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow(), "Yellow fever vaccination",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow(), prop.getProperty("yellowfevervaccinationTitle"),
 				"Yellow fever vaccination window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Yellow fever vaccination)");
 		cNDocumentVerificaton.closeButtonToCloseWindow3();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Yellow fever vaccination");
 		softAssertion.assertAll();
 	}
@@ -297,10 +296,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnYellowFevervaccinationCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnYellowFevervaccination();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow(), "Yellow fever vaccination",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfYellowFeverWindow(), prop.getProperty("yellowfevervaccinationTitle"),
 				"Yellow fever vaccination window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Yellow fever vaccination)");
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Yellow fever vaccination");
 		softAssertion.assertAll();
 	}
@@ -309,10 +308,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnCoveringLetterCloseCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCoveringLetterWindow(), "Covering letter",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCoveringLetterWindow(), prop.getProperty("coveringletterTitle"),
 				"Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)");
 		cNDocumentVerificaton.closeButtonToCloseWindow4();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Document Verification");
 		softAssertion.assertAll();
 
@@ -322,50 +321,24 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnCoveringLetterCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnCoveringLetter();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCoveringLetterWindow(), "Covering letter",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfCoveringLetterWindow(), prop.getProperty("coveringletterTitle"),
 				"Covering letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Covering letter)");
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Document Verification");
 		softAssertion.assertAll();
 
 	}
 
-	/*@Test(priority = 81, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
-	public void clickOnPhotoOfDraftCloseCN() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnPhotoOfDraft();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
-				"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
-		Thread.sleep(2000);
-		cNDocumentVerificaton.closeButtonToCloseWindow5();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
-				"Document Verification page is not displayed upon clicking on Close button from Photocopy of draft");
-		softAssertion.assertAll();
-	}
-
-	@Test(priority = 82, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
-	public void clickOnPhotoOfDraftCN() throws InterruptedException {
-		Thread.sleep(2000);
-		cNDocumentVerificaton.clickOnPhotoOfDraft();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
-				"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
-		Thread.sleep(2000);
-		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
-				"Document Verification page is not displayed upon clicking on Close button from Photocopy of draft");
-		softAssertion.assertAll();
-	}
-*/
 	@Test(priority = 83, description = "click On Id Proof Reference and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
 	public void clickOnIdProofReferenceCloseCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfIDProofOfReferenceWindow(), "ID proof of reference",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfIDProofOfReferenceWindow(), prop.getProperty("iDproofofreferenceTitle"),
 				"ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)");
 		Thread.sleep(2000);
 		cNDocumentVerificaton.closeButtonToCloseWindow5();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from ID proof of reference");
 		softAssertion.assertAll();
 	}
@@ -374,11 +347,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnIdProofReferenceCN() throws InterruptedException {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnIdProofReference();
-		softAssertion.assertEquals(cNDocumentVerificaton.titleOfIDProofOfReferenceWindow(), "ID proof of reference",
+		softAssertion.assertEquals(cNDocumentVerificaton.titleOfIDProofOfReferenceWindow(), prop.getProperty("iDproofofreferenceTitle"),
 				"ID proof of reference window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(ID proof of reference)");
 		Thread.sleep(2000);
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from ID proof of reference");
 		softAssertion.assertAll();
 	}
@@ -388,10 +361,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfOriginalInvitationLetterWindow(),
-				"Original invitation letter",
+				prop.getProperty("originalinvitationletterTitle"),
 				"Original invitation letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Original invitation letter)");
 		cNDocumentVerificaton.closeButtonToCloseWindow6();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Document Verification");
 		softAssertion.assertAll();
 	}
@@ -401,10 +374,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnOriginalInvitationLetter();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfOriginalInvitationLetterWindow(),
-				"Original invitation letter",
+				prop.getProperty("originalinvitationletterTitle"),
 				"Original invitation letter window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Original invitation letter)");
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Document Verification");
 		softAssertion.assertAll();
 	}
@@ -414,10 +387,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfProofOfTransitValidVisaWindow(),
-				"Proof of transit valid visa",
+				prop.getProperty("proofoftransitvalidvisaTitle"),
 				"Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)");
 		cNDocumentVerificaton.closeButtonToCloseWindow7();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Proof of transit valid visa");
 		softAssertion.assertAll();
 	}
@@ -427,10 +400,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(2000);
 		cNDocumentVerificaton.clickOnProofOfTransitVisa();
 		softAssertion.assertEquals(cNDocumentVerificaton.titleOfProofOfTransitValidVisaWindow(),
-				"Proof of transit valid visa",
+				prop.getProperty("proofoftransitvalidvisaTitle"),
 				"Proof of transit valid visa window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Proof of transit valid visa)");
 		cNDocumentVerificaton.crossButtonToCloseWindow();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Close button from Proof of transit valid visa");
 		softAssertion.assertAll();
 	}
@@ -467,7 +440,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(9000);
 		System.out.println("cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview()"
 				+ cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview());
-		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), "Confirmation",
+		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), prop.getProperty("confirmationFromInterviewScheduleTitle"),
 				"We are not navigate to Invterview schedule popup upon clicking on Schedule Interview FromDashBoard");
 		System.out.println("cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview()"
 				+ cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview());
@@ -482,7 +455,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
 		Thread.sleep(3000);
-		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), "Confirmation",
+		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), prop.getProperty("confirmationFromInterviewScheduleTitle"),
 				"We are not navigate to Invterview schedule popup upon clicking on Schedule Interview FromDashBoard");
 		Thread.sleep(3000);
 		cNInterviewSchedule.closeButtonFromInterviewConfirpop();
@@ -497,7 +470,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		Thread.sleep(3000);
 		applicantDashBoardPage.clickOnScheduleInterview();
 		Thread.sleep(3000);
-		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), "Confirmation",
+		softAssertion.assertEquals(cNInterviewSchedule.getTextFromConfrmationPopTitleFromInterview(), prop.getProperty("confirmationFromInterviewScheduleTitle"),
 				"We are not navigate to Invterview schedule popup upon clicking on Schedule Interview FromDashBoard");
 		cNInterviewSchedule.passDate1("04/23/2019");
 		cNInterviewSchedule.passDate2("04/23/2019");
@@ -514,10 +487,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnRejectAndVerifyPopTextCN() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
-		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Reject from Document Verification");
 		cNDocumentVerificaton.clickOnCancelFromRejectPop();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Cancel button from Confirmation popup");
 		softAssertion.assertAll();
 	}
@@ -526,11 +499,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnRejectAndVerifyPopText1CN() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnReject();
-		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.textFromRejectConfirmationPop(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Reject from Document Verification");
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnCloseFromRejectConfir();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
 		softAssertion.assertAll();
 	}
@@ -538,10 +511,10 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 96, description = "Click On Approve And Verify Pop Text and then click on Cancel, Verify that on which page navigated")
 	public void clickOnApproveAndVerifyPopTextCN() throws InterruptedException {
 		cNDocumentVerificaton.clickOnApprove();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
 		cNDocumentVerificaton.clickOnCancelFromApprove();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Cancel button from Confirmation popup");
 		softAssertion.assertAll();
 	}
@@ -550,11 +523,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	public void clickOnApproveAndVerifyPopText1CN() throws InterruptedException {
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnApprove();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnCloseApprove();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), prop.getProperty("documentVerificationTitle"),
 				"Document Verification page is not displayed upon clicking on Cross button from Confirmation popup");
 		softAssertion.assertAll();
 	}
@@ -563,11 +536,11 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		//cNDocumentVerificaton.selectAllCheckBoxes();
 		Thread.sleep(3000);
 		cNDocumentVerificaton.clickOnApprove();
-		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), "Confirmation",
+		softAssertion.assertEquals(cNDocumentVerificaton.getTextFromAcceptConfirmationPop(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Approve from Document Verification");
 		cNDocumentVerificaton.getTextFromApproveButtonFromCN();
 		cNDocumentVerificaton.clickOnConfirmFromApprove();
-		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), prop.getProperty("titleOfBucketPage"),
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		softAssertion.assertAll();
 	}
@@ -580,7 +553,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		TestUtil.clickOnElement();
 		consulatedashBoardPage.confirmationPopApplicationSentToHCD();
 		System.out.println("consulatedashBoardPage.confirmationPopApplicationSentToHCD();;==>" +consulatedashBoardPage.confirmationPopApplicationSentToHCD());
-		softAssertion.assertEquals(consulatedashBoardPage.confirmationPopApplicationSentToHCD(), "Confirmation",
+		softAssertion.assertEquals(consulatedashBoardPage.confirmationPopApplicationSentToHCD(), prop.getProperty("confirmationFromRejectAndApprovePopup"),
 				"Confirmation popup is not displayed upon clicking on Application which is sent to HCD side");
 		System.out.println("consulatedashBoardPage.textFromPop1PopApplicationSentToHCD();==>" +consulatedashBoardPage.textFromPop1PopApplicationSentToHCD());
 		//softAssertion.assertEquals(consulatedashBoardPage.textFromPop1PopApplicationSentToHCD(), "This application is already sent to High Commsion for"
@@ -592,7 +565,7 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	@Test(priority = 100, description = "This test will verify whether application is opens upon clicing on Open button and also clicking back button navigates to Bucket")
 	public void verifyApplicationSentOpens() throws InterruptedException {
 		consulatedashBoardPage.openButton1PopApplicationSentToHCD();
-		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), "Applicant Dashboard",
+		softAssertion.assertEquals(applicantDashBoardPage.titleOfApplicationDetailsPage(), prop.getProperty("applicantDashboardTitle"),
 				"We are not navigate to Applicant Dashboard page upon clicking on New Application from Applicant Dashboard");
 		applicantDashBoardPage.clickOnBackButton();
 		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
@@ -606,13 +579,13 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 		TestUtil.clickOnElement();
 		Thread.sleep(3000);
 		consulatedashBoardPage.crossButton1PopApplicationSentToHCD();
-		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), prop.getProperty("titleOfBucketPage"),
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		Thread.sleep(3000);
 		TestUtil.clickOnElement();
 		Thread.sleep(3000);		
 		consulatedashBoardPage.cancelButton1PopApplicationSentToHCD();	
-		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), "Welcome To Ghana Embassy",
+		softAssertion.assertEquals(highAndConsulateLoginPage.getTitleOfConsulate(), prop.getProperty("titleOfBucketPage"),
 				"We are not navigate to consulate dashboard page after enetering valid creadentials");
 		System.out.println("2222");
 		softAssertion.assertAll();
@@ -621,11 +594,34 @@ public class ConsulatePageTest extends VisaPaymentPageTest {
 	}	
 	
 	
-	
-
-	
-	
-	
-	
-	
 }
+
+
+
+
+/*@Test(priority = 81, description = "click On Photo Of Draft and verified window is opened or Not and then close window using close button and navigate to Document Verification page")
+public void clickOnPhotoOfDraftCloseCN() throws InterruptedException {
+	Thread.sleep(2000);
+	cNDocumentVerificaton.clickOnPhotoOfDraft();
+	softAssertion.assertEquals(cNDocumentVerificaton.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
+			"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
+	Thread.sleep(2000);
+	cNDocumentVerificaton.closeButtonToCloseWindow5();
+	softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+			"Document Verification page is not displayed upon clicking on Close button from Photocopy of draft");
+	softAssertion.assertAll();
+}
+
+@Test(priority = 82, description = "click On Photo Of Draft and verified window is opened or Not and then close window using (X) button and navigate to Document Verification page")
+public void clickOnPhotoOfDraftCN() throws InterruptedException {
+	Thread.sleep(2000);
+	cNDocumentVerificaton.clickOnPhotoOfDraft();
+	softAssertion.assertEquals(cNDocumentVerificaton.titleOfPhotocopyOfDraftWindow(), "Photocopy of draft",
+			"Photocopy of draft window is displayed upon clikcing on Confirmed air ticket tab from Attached Docuement section(Photocopy of draft)");
+	Thread.sleep(2000);
+	cNDocumentVerificaton.crossButtonToCloseWindow();
+	softAssertion.assertEquals(cNDocumentVerificaton.getTextDocumentVerification(), "Document Verification",
+			"Document Verification page is not displayed upon clicking on Close button from Photocopy of draft");
+	softAssertion.assertAll();
+}
+*/
