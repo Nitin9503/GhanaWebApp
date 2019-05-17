@@ -72,13 +72,13 @@ public class HCDDocumentVerificationPage extends TestBase {
 	@FindBy(xpath = "//div[5]//img[1]")
 	private WebElement photoCopyOfDraft;
 
-	@FindBy(xpath = "//div[6]//img[1]")
+	@FindBy(xpath = "//div[@class='main-panel']//div[5]//img[1]")
 	private WebElement idProofOfReference;
 
-	@FindBy(xpath = "//div[7]//img[1]")
+	@FindBy(xpath = "//div[6]//img[1]")
 	WebElement originalInvitationLetter;
 
-	@FindBy(xpath = "//div[8]//img[1]")
+	@FindBy(xpath = "//div[7]//img[1]")
 	WebElement proofOfTransitValidVisa;
 
 	@FindBy(xpath = "//h4[text()='Confirmed air ticket']")
@@ -142,8 +142,8 @@ public class HCDDocumentVerificationPage extends TestBase {
 	}
 	public void getTextFromApprovePopButton(){		
 		
-		String value = confirmFromApprove.getAttribute("value");
-		getTextFromApproveFromHCD	= value.replaceAll(value, "Approve Application");
+		getTextFromApproveFromHCD = confirmFromApprove.getAttribute("value");
+		getTextFromApproveFromHCD	= getTextFromApproveFromHCD.replaceAll(getTextFromApproveFromHCD, "Approve Application");
 		
 	}
 	
