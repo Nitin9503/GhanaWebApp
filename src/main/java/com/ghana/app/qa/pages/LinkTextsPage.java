@@ -16,24 +16,40 @@ public class LinkTextsPage extends TestBase{
 		// TODO Auto-generated constructor stub
 	}
 		@FindBy (xpath="//a[contains(text(),'Home')]")
-		WebElement linkstext;//a[contains(text(),'Home')]
+		WebElement linkstext;
 		
 		@FindBy (xpath="//h4[contains(text(),'Important Immigration Notice')]")
 		WebElement imigrationtext;
 		
 		
-		@FindBy (xpath="//a[contains(text(),'Home')]")
-		WebElement linkstext;//a[contains(text(),'Home')]
-		//h4[contains(text(),'Introduction to Consular Services')]
+		@FindBy (xpath="//h4[contains(text(),'Introduction to Consular Services')]")
+		WebElement consularSerText;
 		
-		@FindBy (xpath="//a[contains(text(),'Home')]")
-		WebElement linkstext;
 		
-		@FindBy (xpath="//a[contains(text(),'Home')]")
-		WebElement linkstext;//a[contains(text(),'Home')]
-		//h4[contains(text(),'Professionals')]
+		@FindBy (xpath="//h4[contains(text(),'Basic Requirements')]")
+		WebElement RequirementText;
 		
-		//h4[contains(text(),'Basic Requirements')]
+		@FindBy (xpath="//h4[contains(text(),'Professionals')]")
+		WebElement professionlaText;
+		
+		
+		public String getImigrationText(){
+			return imigrationtext.getText();
+			
+		}
+		public String getConsularSerText(){
+			return consularSerText.getText();
+			
+		}
+		public String getprofessionlaText(){
+			return professionlaText.getText();
+			
+		}
+		
+		public String getRequirementText(){
+			return RequirementText.getText();
+			
+		}
 		
 		//(Home, Immigration, Consular Services, Professionals, Required Documents)
 		public void verifyAllLinksTexts(String linkName) throws InterruptedException{

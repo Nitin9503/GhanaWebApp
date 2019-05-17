@@ -22,6 +22,7 @@ import com.ghana.app.qa.pages.CNAddressInfo;
 import com.ghana.app.qa.pages.CNDocumentVerificaton;
 import com.ghana.app.qa.pages.CNInterviewSchedule;
 import com.ghana.app.qa.pages.CNTravelInfo;
+import com.ghana.app.qa.pages.PartiallyFilledPage;
 import com.ghana.app.qa.pages.PersonalInfoPage;
 import com.ghana.app.qa.pages.ReviewApplicationPage;
 import com.ghana.app.qa.pages.SignUpPage;
@@ -29,6 +30,7 @@ import com.ghana.app.qa.pages.TravelInfoPage;
 import com.ghana.app.qa.pages.UploadDocPage;
 import com.ghana.app.qa.pages.VisaCategoriesPage;
 import com.ghana.app.qa.pages.VisaPaymentPage;
+import com.ghana.app.qa.pages.VisaStatusPage;
 import com.ghana.app.qa.xl.pages.AddressInfoXlPage;
 import com.ghana.app.qa.xl.pages.EmergencyContactXlPage;
 import com.ghana.app.qa.xl.pages.PersonalInfoXlPage;
@@ -59,6 +61,9 @@ public class DriverInit extends TestBase {
 	public static VisaPaymentPage visaPaymentPage;
 	public static UploadDocPage uploadDocPage;
 	public static UploadDocXlPage uploadDocXlPage;
+	public static PartiallyFilledPage partiallyfilledPage;
+	public static VisaStatusPage visaStatusPage;
+	
 
 	// Consulate side
 	public static HighAndConsulateLoginPage highAndConsulateLoginPage;
@@ -100,6 +105,8 @@ public class DriverInit extends TestBase {
 		uploadDocXlPage = new UploadDocXlPage();
 		reviewApplicationPage = new ReviewApplicationPage();
 		visaPaymentPage = new VisaPaymentPage();
+		visaPaymentPage = new VisaPaymentPage();
+		visaStatusPage = new VisaStatusPage();
 		
 		highAndConsulateLoginPage = new HighAndConsulateLoginPage();
 		consulatedashBoardPage = new ConsulatedashBoardPage();
