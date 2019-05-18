@@ -16,7 +16,7 @@ public class PartiallyFilledPage extends TestBase{
 		
 		
 	}
-	@FindBy(xpath="//button[text()='Partially/Filled Application']")
+	@FindBy(xpath="//button[contains(text(),'Partially/Filled Application')]")
 	WebElement partiallyFilledApplication;
     
 	@FindBy(xpath="//input[@id='txt_appn_id_prt']")
@@ -28,6 +28,8 @@ public class PartiallyFilledPage extends TestBase{
 	@FindBy(xpath="//label[@id='text_captcha']")
 	WebElement textCaptcha;
 	
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
+	WebElement errorMessage;
 	
 	@FindBy(xpath="//input[@id='txt_captcha_prt']")
 	WebElement textCaptchaFiled;
@@ -35,12 +37,15 @@ public class PartiallyFilledPage extends TestBase{
 	@FindBy(xpath="//input[@id='btn_partially']")
 	WebElement submitbtn;
 	
+	@FindBy(xpath="//a[@class='close']")
+	WebElement closebtn;
+	
 	public void clickOnpartialFilledTab(){
 		partiallyFilledApplication.click();
 	}
 	
-	public void passApplicationId(){
-		partiallyAppliIdField.sendKeys(applicationID);
+	public void passApplicationId(String AppID){
+		partiallyAppliIdField.sendKeys(AppID);
 	}
 	
 	public void selectDOB(String BirthDate) throws InterruptedException {
@@ -57,9 +62,16 @@ public class PartiallyFilledPage extends TestBase{
 		textCaptchaFiled.sendKeys(captchaTexts);
 		
 	}
-	
+	public String getErrorMessage(){
+		return errorMessage.getText();
+		
+	}
 	public void clickOnsubmitbtn(){
 		submitbtn.click();
+		
+	}
+	public void clickclosebtn(){
+		closebtn.click();
 		
 	}
 }

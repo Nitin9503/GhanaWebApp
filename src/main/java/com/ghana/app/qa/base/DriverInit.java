@@ -105,7 +105,7 @@ public class DriverInit extends TestBase {
 		uploadDocXlPage = new UploadDocXlPage();
 		reviewApplicationPage = new ReviewApplicationPage();
 		visaPaymentPage = new VisaPaymentPage();
-		visaPaymentPage = new VisaPaymentPage();
+		partiallyfilledPage = new PartiallyFilledPage();
 		visaStatusPage = new VisaStatusPage();
 		
 		highAndConsulateLoginPage = new HighAndConsulateLoginPage();

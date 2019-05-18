@@ -117,6 +117,7 @@ public class ConstantVariable {
 //Payment page
 	public static String month= "Dec (12)";
 	public static String year= "2020";
+	public static String newApplication= "";
 	
 
 }

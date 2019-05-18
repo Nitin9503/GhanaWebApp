@@ -290,7 +290,7 @@ public class TestBase {
 				.implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		// driver.get(prop.getProperty("HCDLoginURL"));
 
-		driver.get(prop.getProperty("GhanaGlobalWebURL")); // ---localhost
+		driver.get(prop.getProperty("GhanaLocalWebURL1")); // ---localhost
 		// driver.get(prop.getProperty("GhanaWebURL"));
 		// driver.get(prop.getProperty("HCDLoginURL"));
 	}
